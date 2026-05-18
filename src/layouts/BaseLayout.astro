@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Find the best VPS hosting for AI agents and self-hosted projects. Real reviews, real commission rates." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={Astro.url.href} />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-['Inter'] bg-gray-950 text-gray-100 antialiased">
+  <header class="border-b border-gray-800">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-white">VPSTier<span class="text-orange-500">.com</span></a>
+      <div class="flex gap-6 text-sm">
+        <a href="/vps" class="hover:text-orange-400 transition">VPS Reviews</a>
+        <a href="/compare" class="hover:text-orange-400 transition">Compare</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer class="border-t border-gray-800 mt-20 py-12 text-center text-sm text-gray-500">
+    <p>VPSTier.com — Affiliate reviews for developers and AI agents</p>
+    <p class="mt-2">Commission earnings support this site. We only recommend products we use.</p>
+  </footer>
+</body>
+</html>

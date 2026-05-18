@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="VPS Hosting Reviews - VPSTier.com" description="Honest reviews of VPS hosting providers. Commission rates, uptime, and real-world performance for developers.">
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-3xl font-bold mb-2">VPS Hosting Reviews</h1>
+    <p class="text-gray-400 mb-8">Honest reviews from developers, for developers.</p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/vps/interserver" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-orange-600 transition">
+        <div class="flex justify-between items-start mb-4">
+          <h2 class="text-xl font-bold">Interserver</h2>
+          <span class="text-orange-500 text-sm font-medium">$100/sale</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">Starting at $6/mo. Full root access, no contracts.</p>
+        <div class="text-orange-500 text-sm">120 day cookie →</div>
+      </a>
+      <a href="/vps/cloudways" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-orange-600 transition">
+        <div class="flex justify-between items-start mb-4">
+          <h2 class="text-xl font-bold">Cloudways</h2>
+          <span class="text-orange-500 text-sm font-medium">$50-175/sale</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">Managed cloud hosting on AWS, GCP, Vultr and more.</p>
+        <div class="text-orange-500 text-sm">90 day cookie →</div>
+      </a>
+      <a href="/vps/vultr" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-orange-600 transition">
+        <div class="flex justify-between items-start mb-4">
+          <h2 class="text-xl font-bold">Vultr</h2>
+          <span class="text-orange-500 text-sm font-medium">$10-100/sale</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">Starting at $2.5/mo. GPU instances available.</p>
+        <div class="text-orange-500 text-sm">30 day cookie →</div>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

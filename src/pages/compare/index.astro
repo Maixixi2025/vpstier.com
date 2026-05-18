@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="VPS Comparison - VPSTier.com" description="Compare VPS hosting providers by price, commission, and features.">
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-3xl font-bold mb-8">VPS Comparison</h1>
+    
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-gray-700">
+            <th class="text-left py-3 px-4">Provider</th>
+            <th class="text-left py-3 px-4">Price</th>
+            <th class="text-left py-3 px-4">Commission</th>
+            <th class="text-left py-3 px-4">Cookie</th>
+            <th class="text-left py-3 px-4">Best For</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-300">
+          <tr class="border-b border-gray-800">
+            <td class="py-3 px-4 font-medium text-white"><a href="/vps/interserver" class="hover:text-orange-500">Interserver</a></td>
+            <td class="py-3 px-4">$6/mo</td>
+            <td class="py-3 px-4 text-orange-500">$100/sale</td>
+            <td class="py-3 px-4">120 days</td>
+            <td class="py-3 px-4">Predictable pricing, no contracts</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="py-3 px-4 font-medium text-white"><a href="/vps/cloudways" class="hover:text-orange-500">Cloudways</a></td>
+            <td class="py-3 px-4">$10/mo</td>
+            <td class="py-3 px-4 text-orange-500">$50-175/sale</td>
+            <td class="py-3 px-4">90 days</td>
+            <td class="py-3 px-4">Managed cloud, multiple providers</td>
+          </tr>
+          <tr class="border-b border-gray-800">
+            <td class="py-3 px-4 font-medium text-white"><a href="/vps/vultr" class="hover:text-orange-500">Vultr</a></td>
+            <td class="py-3 px-4">$2.5/mo</td>
+            <td class="py-3 px-4 text-orange-500">$10-100/sale</td>
+            <td class="py-3 px-4">30 days</td>
+            <td class="py-3 px-4">GPU instances, global network</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>
