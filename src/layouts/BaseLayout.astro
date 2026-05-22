@@ -21,6 +21,40 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:site_name" content="VPSTier.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- JSON-LD: WebSite + Organization -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VPSTier.com",
+    "url": "https://vpstier.com",
+    "description": "Find the best VPS hosting for AI agents and self-hosted projects. Real reviews, real commission rates.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://vpstier.com/vps?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "VPSTier.com",
+      "url": "https://vpstier.com"
+    }
+  })} />
 </head>
 <body class="font-['Inter'] bg-[#0a0a0a] text-gray-100 antialiased">
   <!-- Header -->
