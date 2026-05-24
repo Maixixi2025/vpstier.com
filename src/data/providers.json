@@ -1,0 +1,319 @@
+[
+  {
+    "id": "racknerd",
+    "name": "RackNerd",
+    "tagline": "Budget VPS, unbeatable price",
+    "startingPrice": 1.99,
+    "cpu": "AMD EPYC / Intel Xeon",
+    "ram": "512MB - 64GB",
+    "storage": "1 - 640GB SSD",
+    "bandwidth": "1TB - 10TB",
+    "datacenters": [
+      "Los Angeles",
+      "Seattle",
+      "Dallas",
+      "New York",
+      "Chicago"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$80-100/sale",
+    "rating": 4.2,
+    "pros": [
+      "Lowest price in industry",
+      "Multiple US locations",
+      "Root access included"
+    ],
+    "cons": [
+      "No NVMe options",
+      "Support slower during peak"
+    ],
+    "bestFor": [
+      "Personal projects",
+      "VPN",
+      "Test environments",
+      "Budget AI agents"
+    ],
+    "featured": true
+  },
+  {
+    "id": "vultr",
+    "name": "Vultr",
+    "tagline": "Premium performance, global reach",
+    "startingPrice": 2.5,
+    "cpu": "AMD EPYC Milan",
+    "ram": "512MB - 192GB",
+    "storage": "10GB - 1TB NVMe",
+    "bandwidth": "500GB - 10TB",
+    "datacenters": [
+      "Los Angeles",
+      "New Jersey",
+      "Chicago",
+      "Seattle",
+      "Miami",
+      "Amsterdam",
+      "Frankfurt",
+      "Paris",
+      "London",
+      "Tokyo",
+      "Singapore",
+      "Sydney",
+      "Seoul"
+    ],
+    "affiliateUrl": "https://www.vultr.com/?ref=9148877",
+    "commission": "$10-100/sale",
+    "rating": 4.5,
+    "pros": [
+      "NVMe storage standard",
+      "Global datacenter network",
+      "Excellent API"
+    ],
+    "cons": [
+      "More expensive than budget options",
+      "No free tier"
+    ],
+    "bestFor": [
+      "Production AI agents",
+      "High-performance workloads",
+      "Global apps"
+    ],
+    "featured": true
+  },
+  {
+    "id": "digitalocean",
+    "name": "DigitalOcean",
+    "tagline": "Developers' favorite",
+    "startingPrice": 4.0,
+    "cpu": "AMD EPYC",
+    "ram": "1GB - 192GB",
+    "storage": "25GB - 300GB SSD",
+    "bandwidth": "1TB - 12TB",
+    "datacenters": [
+      "New York",
+      "San Francisco",
+      "Amsterdam",
+      "Frankfurt",
+      "London",
+      "Singapore",
+      "Toronto",
+      "Bengaluru"
+    ],
+    "affiliateUrl": "https://www.digitalocean.com/?refcode capacity=XXXX",
+    "commission": "$25-100/sale",
+    "rating": 4.4,
+    "pros": [
+      "Excellent documentation",
+      "1-click apps marketplace",
+      "Strong community"
+    ],
+    "cons": [
+      "No NVMe at entry level",
+      "US-centric network"
+    ],
+    "bestFor": [
+      "Web apps",
+      "Startups",
+      "Learning environments"
+    ],
+    "featured": true
+  },
+  {
+    "id": "hetzner",
+    "name": "Hetzner",
+    "tagline": "European performance, German reliability",
+    "startingPrice": 3.86,
+    "cpu": "AMD Ryzen / Intel Xeon",
+    "ram": "4GB - 64GB",
+    "storage": "20GB - 1TB NVMe",
+    "bandwidth": "20TB - 80TB",
+    "datacenters": [
+      "Nuremberg",
+      "Falkenstein"
+    ],
+    "affiliateUrl": "https://hetzner.cloud/?ref=XXXX",
+    "commission": "€20-50/sale",
+    "rating": 4.3,
+    "pros": [
+      "NVMe included",
+      "Massive bandwidth",
+      "No traffic throttling"
+    ],
+    "cons": [
+      "Limited datacenters (EU only)",
+      "Strict abuse policy"
+    ],
+    "bestFor": [
+      "European users",
+      "High-bandwidth projects",
+      "Self-hosted services"
+    ],
+    "featured": false
+  },
+  {
+    "id": "contabo",
+    "name": "Contabo",
+    "tagline": "Big specs, low price",
+    "startingPrice": 3.99,
+    "cpu": "AMD EPYC",
+    "ram": "4GB - 128GB",
+    "storage": "50GB - 800GB SSD",
+    "bandwidth": "200GB - 2TB",
+    "datacenters": [
+      "St. Louis",
+      "Munich",
+      "Nuremberg"
+    ],
+    "affiliateUrl": "https://www.contabo.com/?aff=XXXX",
+    "commission": "$50-150/sale",
+    "rating": 4.0,
+    "pros": [
+      "Large disk options",
+      "Competitive pricing",
+      " DDoS protection included"
+    ],
+    "cons": [
+      "Outdated control panel",
+      "Support response slow"
+    ],
+    "bestFor": [
+      "Storage-heavy projects",
+      "Archival hosting",
+      "Long-term projects"
+    ],
+    "featured": false
+  },
+  {
+    "id": "interserver",
+    "name": "Interserver",
+    "tagline": "Price lock guarantee",
+    "startingPrice": 6.0,
+    "cpu": "Intel Xeon",
+    "ram": "6GB - 128GB",
+    "storage": "30GB - 2TB SSD",
+    "bandwidth": "Unlimited",
+    "datacenters": [
+      "Los Angeles",
+      "Secaucus NJ"
+    ],
+    "affiliateUrl": "https://www.interserver.net/r/XXXX",
+    "commission": "$100/sale",
+    "rating": 4.1,
+    "pros": [
+      "Unlimited bandwidth",
+      "Price lock guarantee",
+      "Free migration"
+    ],
+    "cons": [
+      "Single US location",
+      "Higher starting price"
+    ],
+    "bestFor": [
+      "High-traffic sites",
+      "Long-term hosting",
+      "Data-heavy apps"
+    ],
+    "featured": false
+  },
+  {
+    "id": "cloudways",
+    "name": "Cloudways",
+    "tagline": "Managed cloud hosting",
+    "startingPrice": 11.0,
+    "cpu": "Variable (AWS/DO/GCP/etc)",
+    "ram": "1GB - 32GB",
+    "storage": "25GB - 1TB SSD",
+    "bandwidth": "1TB - 12TB",
+    "datacenters": [
+      "Multiple via AWS/DO/GCP/Vultr"
+    ],
+    "affiliateUrl": "https://www.cloudways.com/?id=XXXX",
+    "commission": "$50-175/sale",
+    "rating": 4.3,
+    "pros": [
+      "Managed hosting",
+      "Multiple cloud providers",
+      "SSH + Git included"
+    ],
+    "cons": [
+      "More expensive",
+      "No root access to underlying cloud"
+    ],
+    "bestFor": [
+      "Non-technical users",
+      "Managed web hosting",
+      "Agencies"
+    ],
+    "featured": true
+  },
+  {
+    "id": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Feature-rich budget host",
+    "startingPrice": 1.99,
+    "cpu": "AMD EPYC / Intel",
+    "ram": "1GB - 32GB",
+    "storage": "20GB - 200GB NVMe",
+    "bandwidth": "100GB - 6TB",
+    "datacenters": [
+      "US",
+      "UK",
+      "Netherlands",
+      "Lithuania",
+      "Singapore",
+      "Brazil"
+    ],
+    "affiliateUrl": "https://www.hostg.xyz/aff_sub5",
+    "commission": "$100-150/sale",
+    "rating": 4.1,
+    "pros": [
+      "NVMe at low price",
+      "Free domain + SSL",
+      "User-friendly hPanel"
+    ],
+    "cons": [
+      "Limited SSH at entry",
+      "No dedicated IP included"
+    ],
+    "bestFor": [
+      "Beginners",
+      "WordPress sites",
+      "Small business"
+    ],
+    "featured": false
+  },
+  {
+    "id": "scalahosting",
+    "name": "ScalaHosting",
+    "tagline": "Managed VPS with premium support",
+    "startingPrice": 3.95,
+    "cpu": "AMD EPYC / Intel Xeon",
+    "ram": "2GB - 64GB",
+    "storage": "20GB - 200GB NVMe",
+    "bandwidth": "1TB - 10TB",
+    "datacenters": [
+      "Dallas",
+      "New York",
+      "Amsterdam",
+      "Singapore"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$50-100/sale",
+    "rating": 4.3,
+    "pros": [
+      "Fully managed VPS with SPanel control panel",
+      "Free SSL certificates and daily backups",
+      "NVMe storage on higher plans",
+      "24/7 live chat support"
+    ],
+    "cons": [
+      "No GPU instances",
+      "US/EU datacenters only",
+      "Higher renewal rates"
+    ],
+    "bestFor": [
+      "WordPress sites",
+      "Small business websites",
+      "Managed hosting users"
+    ],
+    "featured": false
+  }
+]
