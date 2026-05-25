@@ -2,7 +2,20 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Cloudways Review - VPSTier.com" description="Cloudways offers managed cloud hosting across 5 major providers (AWS, GCP, Vultr, DigitalOcean, Linode). Perfect for developers who want the power of cloud providers without the management headache.">
+<BaseLayout title="Cloudways VPS Review - VPSTier.com" description="Cloudways offers managed cloud hosting across 5 major providers (AWS, GCP, Vultr, DigitalOcean, Linode). Great for developers wanting simplicity.">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "VPS Reviews", "item": "https://vpstier.com/vps/"}, {"@type": "ListItem", "position": 3, "name": "Cloudways Review", "item": "https://vpstier.com/vps/cloudways/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Review", "name": "Cloudways Review", "reviewRating": {"@type": "Rating", "ratingValue": "4.0", "bestRating": "5"}, "author": {"@type": "Organization", "name": "VPSTier.com"}, "itemReviewed": {"@type": "Product", "name": "Cloudways VPS Hosting", "description": "Review of Cloudways VPS hosting service"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Cloudways affiliate commission rate?", "acceptedAnswer": {"@type": "Answer", "text": "The Cloudways affiliate commission is $50-175/sale with a 90-day cookie window."}}, {"@type": "Question", "name": "Is Cloudways good for developers?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudways is rated 4.0/5 on VPSTier.com. It offers root access, competitive pricing, and strong uptime for developer workloads."}}, {"@type": "Question", "name": "Does Cloudways offer GPU instances?", "acceptedAnswer": {"@type": "Answer", "text": "GPU availability varies by provider. Check the full review for specifics on compute options."}}]}
+  </script>
+
+
+
   
   <!-- Hero -->
   <section class="hero-gradient">
@@ -105,4 +118,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     </div>
   </section>
+        <!-- In-Depth Review -->
+        <div class="bg-[#111] border border-white/5 rounded-2xl p-8">
+          <h2 class="text-xl font-bold text-white mb-4">Our Verdict</h2>
+          <p class="text-gray-400 leading-relaxed">Cloudways occupies an interesting niche — managed cloud hosting built on top of AWS, GCP, Vultr, DigitalOcean, and Linode. You get the infrastructure of major cloud providers with Cloudways' managed wrapper.</p>
+        </div>
+
 </BaseLayout>

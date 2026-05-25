@@ -97,7 +97,7 @@
       "Toronto",
       "Bengaluru"
     ],
-    "affiliateUrl": "https://www.digitalocean.com/?refcode capacity=XXXX",
+    "affiliateUrl": "https://m.do.co/c/6bda2b7bf62b",
     "commission": "$25-100/sale",
     "rating": 4.4,
     "pros": [
@@ -115,38 +115,6 @@
       "Learning environments"
     ],
     "featured": true
-  },
-  {
-    "id": "hetzner",
-    "name": "Hetzner",
-    "tagline": "European performance, German reliability",
-    "startingPrice": 3.86,
-    "cpu": "AMD Ryzen / Intel Xeon",
-    "ram": "4GB - 64GB",
-    "storage": "20GB - 1TB NVMe",
-    "bandwidth": "20TB - 80TB",
-    "datacenters": [
-      "Nuremberg",
-      "Falkenstein"
-    ],
-    "affiliateUrl": "https://hetzner.cloud/?ref=XXXX",
-    "commission": "€20-50/sale",
-    "rating": 4.3,
-    "pros": [
-      "NVMe included",
-      "Massive bandwidth",
-      "No traffic throttling"
-    ],
-    "cons": [
-      "Limited datacenters (EU only)",
-      "Strict abuse policy"
-    ],
-    "bestFor": [
-      "European users",
-      "High-bandwidth projects",
-      "Self-hosted services"
-    ],
-    "featured": false
   },
   {
     "id": "contabo",

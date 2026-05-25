@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="VPS Comparison - VPSTier.com" description="Compare VPS hosting providers by price, commission, and features.">
+<BaseLayout title="VPS Hosting Comparison Guide - VPSTier.com" description="Compare the best VPS hosting providers side by side by price, commission, features, and performance. Find your perfect VPS plan today.">
   
   <section class="hero-gradient">
     <div class="max-w-6xl mx-auto px-6 py-16">
@@ -82,6 +82,20 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </tbody>
         </table>
       </div>
+    </div>
+
+    <!-- Head-to-Head Comparisons -->
+    <h2 class="text-2xl font-bold text-white mb-6">Head-to-Head Comparisons</h2>
+    <div class="grid md:grid-cols-2 gap-4 mb-12">
+      <a href="/compare/digitalocean-vs-vultr" class="bg-[#111] border border-white/5 rounded-xl p-6 hover:border-orange-500/50 transition-colors group">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-blue-400 font-semibold">DigitalOcean</span>
+          <span class="text-gray-500 text-sm">vs</span>
+          <span class="text-orange-400 font-semibold">Vultr</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-3">Pricing, GPU options, global locations, and affiliate programs compared.</p>
+        <span class="text-orange-400 text-sm font-medium group-hover:text-orange-300">Read comparison →</span>
+      </a>
     </div>
 
     <!-- Key Takeaways -->

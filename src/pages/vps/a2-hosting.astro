@@ -2,7 +2,20 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="A2 Hosting Review - VPSTier.com" description="A2 Hosting Review: Turbo servers up to 20x faster, free site migration, and developer-friendly VPS plans starting at $5/mo.">
+<BaseLayout title="A2 Hosting Review - VPSTier.com" description="A2 Hosting offers turbo-fast VPS hosting with up to 9x faster speeds. Starting at $5/mo with free site migration, SSL, and 24/7 support.">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "VPS Reviews", "item": "https://vpstier.com/vps/"}, {"@type": "ListItem", "position": 3, "name": "A2 Hosting Review", "item": "https://vpstier.com/vps/a2-hosting/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Review", "name": "A2 Hosting Review", "reviewRating": {"@type": "Rating", "ratingValue": "4.3", "bestRating": "5"}, "author": {"@type": "Organization", "name": "VPSTier.com"}, "itemReviewed": {"@type": "Product", "name": "A2 Hosting VPS Hosting", "description": "Review of A2 Hosting VPS hosting service"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the A2 Hosting affiliate commission rate?", "acceptedAnswer": {"@type": "Answer", "text": "The A2 Hosting affiliate commission is $100/sale with a 90-day cookie window."}}, {"@type": "Question", "name": "Is A2 Hosting good for developers?", "acceptedAnswer": {"@type": "Answer", "text": "A2 Hosting is rated 4.3/5 on VPSTier.com. It offers turbo servers, developer-friendly features, and strong uptime for developer workloads."}}, {"@type": "Question", "name": "Does A2 Hosting offer GPU instances?", "acceptedAnswer": {"@type": "Answer", "text": "GPU availability varies by provider. Check the full review for specifics on compute options."}}]}
+  </script>
+
+
+
   <section class="max-w-4xl mx-auto px-6 py-16">
     <a href="/vps" class="text-gray-500 hover:text-orange-500 text-sm mb-6 block">← Back to VPS Reviews</a>
     
@@ -10,7 +23,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div>
         <h1 class="text-3xl font-bold mb-2">A2 Hosting Review</h1>
         <div class="flex gap-4 text-sm text-gray-400">
-          <span>Commission: <strong class="text-orange-500">$50-100/sale</strong></span>
+          <span>Commission: <strong class="text-orange-500">$100/sale</strong></span>
           <span>Cookie: <strong>90 days</strong></span>
         </div>
       </div>
@@ -22,10 +35,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
       <div class="flex items-center gap-4 mb-4">
-        <span class="text-2xl font-bold">4.2/5</span>
+        <span class="text-2xl font-bold">4.3/5</span>
         <span class="text-gray-500">Developer Rating</span>
       </div>
-      <p class="text-gray-300">A2 Hosting stands out with their Turbo Server plans offering up to 20x faster page loads compared to standard shared hosting. Great for developers who need speed and have outgrown shared hosting.</p>
+      <p class="text-gray-300">A2 Hosting is a high-performance VPS provider known for their Turbo Servers delivering up to 9x faster page loads. Starting at $5/mo with free site migration, SSL certificates, and developer-friendly tools.</p>
       <p class="text-gray-400 mt-2">Starting at $5/mo</p>
     </div>
 
@@ -33,32 +46,70 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div>
         <h2 class="text-xl font-bold mb-4 text-green-400">Pros</h2>
         <ul class="space-y-2">
-          <li class="text-gray-300 text-sm">✅ Turbo servers: up to 20x faster than standard</li>
-          <li class="text-gray-300 text-sm">✅ Free site migration for new customers</li>
+          <li class="text-gray-300 text-sm">✅ Turbo Servers — up to 9x faster speeds</li>
+          <li class="text-gray-300 text-sm">✅ Free site migration included</li>
+          <li class="text-gray-300 text-sm">✅ Free SSL certificates (Let's Encrypt)</li>
+          <li class="text-gray-300 text-sm">✅ 24/7/365 human support team</li>
+          <li class="text-gray-300 text-sm">✅ 99.9% uptime commitment</li>
           <li class="text-gray-300 text-sm">✅ Anytime money-back guarantee</li>
-          <li class="text-gray-300 text-sm">✅ SSH and WP-CLI pre-installed</li>
-          <li class="text-gray-300 text-sm">✅ 3 global datacenter locations (US, EU, Asia)</li>
+          <li class="text-gray-300 text-sm">✅ 4 global datacenter locations (US, EU, Asia)</li>
         </ul>
       </div>
       <div>
         <h2 class="text-xl font-bold mb-4 text-red-400">Cons</h2>
         <ul class="space-y-2">
-          <li class="text-gray-300 text-sm">⚠️ Higher renewal rates after first term</li>
+          <li class="text-gray-300 text-sm">⚠️ Renewal rates higher than intro pricing</li>
           <li class="text-gray-300 text-sm">⚠️ No GPU instances available</li>
-          <li class="text-gray-300 text-sm">⚠️ Entry-level VPS has limited resources</li>
-          <li class="text-gray-300 text-sm">⚠️ No Windows VPS options</li>
+          <li class="text-gray-300 text-sm">⚠️ Entry-level plans have limited resources</li>
+          <li class="text-gray-300 text-sm">⚠️ Windows VPS requires higher-tier plans</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">Key Features</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">$5/mo</div>
+          <div class="text-gray-500 text-sm">Starting Price</div>
+        </div>
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">4</div>
+          <div class="text-gray-500 text-sm">Datacenters</div>
+        </div>
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">99.9%</div>
+          <div class="text-gray-500 text-sm">Uptime SLA</div>
+        </div>
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">9x</div>
+          <div class="text-gray-500 text-sm">Turbo Speed Boost</div>
+        </div>
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">24/7</div>
+          <div class="text-gray-500 text-sm">Human Support</div>
+        </div>
+        <div class="text-center p-4 bg-gray-800/50 rounded-lg">
+          <div class="text-orange-400 font-bold text-lg">Free</div>
+          <div class="text-gray-500 text-sm">Site Migration & SSL</div>
+        </div>
       </div>
     </div>
 
     <div class="border-t border-gray-800 pt-8">
       <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener"
          class="block text-center bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg font-bold transition">
-        Sign Up via Our Affiliate Link ($50-100/sale)
+        Sign Up via Our Affiliate Link ($100/sale)
       </a>
       <p class="text-center text-gray-500 text-xs mt-3">
         We earn a commission when you sign up through our link. This doesn't affect our review.
       </p>
     </div>
   </section>
+        <!-- In-Depth Review -->
+        <div class="bg-[#111] border border-white/5 rounded-2xl p-8">
+          <h2 class="text-xl font-bold text-white mb-4">Our Verdict</h2>
+          <p class="text-gray-400 leading-relaxed">A2 Hosting's Turbo Servers are a real differentiator for developers who need speed. The combination of free migration, SSL, and 24/7 support makes it a solid choice for projects migrating from shared hosting or lower-end VPS plans.</p>
+        </div>
+
 </BaseLayout>

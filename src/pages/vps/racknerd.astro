@@ -2,7 +2,20 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="RackNerd Review - VPSTier.com" description="RackNerd offers incredibly affordable VPS hosting starting at $1.99/mo. Perfect for beginners and budget projects with reliable uptime.">
+<BaseLayout title="RackNerd VPS Hosting Review - VPSTier.com" description="RackNerd offers incredibly affordable VPS hosting starting at $1.99/mo. Perfect for beginners and budget projects with reliable uptime.">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "VPS Reviews", "item": "https://vpstier.com/vps/"}, {"@type": "ListItem", "position": 3, "name": "RackNerd Review", "item": "https://vpstier.com/vps/racknerd/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Review", "name": "RackNerd Review", "reviewRating": {"@type": "Rating", "ratingValue": "4.2", "bestRating": "5"}, "author": {"@type": "Organization", "name": "VPSTier.com"}, "itemReviewed": {"@type": "Product", "name": "RackNerd VPS Hosting", "description": "Review of RackNerd VPS hosting service"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the RackNerd affiliate commission rate?", "acceptedAnswer": {"@type": "Answer", "text": "The RackNerd affiliate commission is $100/sale with a 90-day cookie window."}}, {"@type": "Question", "name": "Is RackNerd good for developers?", "acceptedAnswer": {"@type": "Answer", "text": "RackNerd is rated 4.2/5 on VPSTier.com. It offers root access, competitive pricing, and strong uptime for developer workloads."}}, {"@type": "Question", "name": "Does RackNerd offer GPU instances?", "acceptedAnswer": {"@type": "Answer", "text": "GPU availability varies by provider. Check the full review for specifics on compute options."}}]}
+  </script>
+
+
+
   <section class="max-w-4xl mx-auto px-6 py-16">
     <a href="/vps" class="text-gray-500 hover:text-orange-500 text-sm mb-6 block">← Back to VPS Reviews</a>
     
@@ -61,4 +74,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </p>
     </div>
   </section>
+        <!-- In-Depth Review -->
+        <div class="bg-[#111] border border-white/5 rounded-2xl p-8">
+          <h2 class="text-xl font-bold text-white mb-4">Our Verdict</h2>
+          <p class="text-gray-400 leading-relaxed">RackNerd has built a cult following in the low-end VPS market with aggressive Black Friday deals and consistently low prices. Performance is reasonable for light workloads.</p>
+        </div>
+
 </BaseLayout>

@@ -3,6 +3,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="YeCaoCloud Review - VPSTier.com" description="YeCaoCloud offers affordable VPS hosting with China-optimized routes and BGP datacenter access. Starting at ¥15/mo with strong Asia-Pacific connectivity.">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "VPS Reviews", "item": "https://vpstier.com/vps/"}, {"@type": "ListItem", "position": 3, "name": "椰壳云 Review", "item": "https://vpstier.com/vps/yecaoyun/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Review", "name": "椰壳云 Review", "reviewRating": {"@type": "Rating", "ratingValue": "3.9", "bestRating": "5"}, "author": {"@type": "Organization", "name": "VPSTier.com"}, "itemReviewed": {"@type": "Product", "name": "椰壳云 VPS Hosting", "description": "Review of 椰壳云 VPS hosting service"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the 椰壳云 affiliate commission rate?", "acceptedAnswer": {"@type": "Answer", "text": "The 椰壳云 affiliate commission is $50/sale with a 60-day cookie window."}}, {"@type": "Question", "name": "Is 椰壳云 good for developers?", "acceptedAnswer": {"@type": "Answer", "text": "椰壳云 is rated 3.9/5 on VPSTier.com. It offers root access, competitive pricing, and strong uptime for developer workloads."}}, {"@type": "Question", "name": "Does 椰壳云 offer GPU instances?", "acceptedAnswer": {"@type": "Answer", "text": "GPU availability varies by provider. Check the full review for specifics on compute options."}}]}
+  </script>
+
+
+
   <section class="max-w-4xl mx-auto px-6 py-16">
     <a href="/vps" class="text-gray-500 hover:text-orange-500 text-sm mb-6 block">← Back to VPS Reviews</a>
     
@@ -91,4 +104,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </p>
     </div>
   </section>
+        <!-- In-Depth Review -->
+        <div class="bg-[#111] border border-white/5 rounded-2xl p-8">
+          <h2 class="text-xl font-bold text-white mb-4">Our Verdict</h2>
+          <p class="text-gray-400 leading-relaxed">椰壳云是一家专注于亚太市场的 VPS 提供商，提供针对中国大陆优化的线路。价格竞争力强，适合需要在亚洲区域部署项目的开发者。</p>
+        </div>
+
 </BaseLayout>

@@ -180,6 +180,47 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Latest Articles -->
+  <section class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <h2 class="section-heading">Latest Articles</h2>
+          <p class="section-subheading">Weekly VPS comparisons and commission benchmarks.</p>
+        </div>
+        <a href="/blog" class="text-orange-500 hover:text-orange-400 text-sm font-medium transition-colors">
+          View all →
+        </a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/blog/racknerd-vs-vultr-2025" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="badge badge-orange text-xs">Comparison</span>
+            <span class="text-gray-600 text-xs">May 21, 2025</span>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+            RackNerd vs Vultr: Which VPS is Better for AI Agents
+          </h3>
+          <p class="text-gray-500 text-sm line-clamp-2">
+            Deep dive comparison focusing on AI agent workloads. CPU PassMark, network latency, and real inference speeds tested.
+          </p>
+        </a>
+        <a href="/blog/cloudways-vs-digitalocean-2025" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="badge badge-blue text-xs">Comparison</span>
+            <span class="text-gray-600 text-xs">May 20, 2025</span>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+            Cloudways vs DigitalOcean: Managed vs Unmanaged
+          </h3>
+          <p class="text-gray-500 text-sm line-clamp-2">
+            Cloudways offers managed hosting while DigitalOcean gives raw infrastructure. Which is better for beginners?
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Trust Us -->
   <section class="border-t border-white/5">
     <div class="max-w-6xl mx-auto px-6 py-20">
