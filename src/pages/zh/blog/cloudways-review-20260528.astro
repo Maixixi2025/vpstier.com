@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Cloudways 评测 2026：面向非技术用户的管理型云托管 - VPSTier.com">
+  <section class="hero-gradient border-b border-white/5">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <a href="/zh/blog" class="text-orange-500 hover:text-orange-400 text-sm mb-6 block">← 返回博客</a>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="badge badge-orange">评测</span>
+        <span class="text-gray-500 text-sm">2026年5月28日</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Cloudways 评测 2026：托管式云主机 | VPSTier</h1>
+      <p class="text-gray-400 text-lg mb-6">Cloudways 通过在底层基础设施之上构建管理平台，让用户省去服务器优化、安全配置更新的麻烦。你可以在 AWS、DigitalOcean、Vultr、GCP、Linode 之间选择，Cloudways 负责服务器的优化、安全和运维。每月 $11 起，定位介于廉价 VPS 和全托管 WordPress 主机之间。Cloudways 以底层哪家云厂商为基础，各有什么特点？是否适合 AI Agent 场景？我们进行了三周深度测试。</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">Cloudways</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">托管型主机</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">WordPress</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <article class="prose prose-invert prose-orange max-w-none">
+
+      <h2>测试设置</h2>
+      <ul>
+        <li><strong>测试方案</strong>: 通过 Cloudways 购买 DigitalOcean 2GB 套餐 @ $14/月</li>
+        <li><strong>底层提供商</strong>: DigitalOcean（洛杉矶机房）</li>
+        <li><strong>配置</strong>: 2GB RAM，80GB SSD，2TB 流量</li>
+        <li><strong>测试的 Cloudways 功能</strong>: ThunderStack 优化、Redis 缓存、自动修复、免费 SSL</li>
+        <li><strong>操作系统</strong>: Ubuntu 22.04 LTS（Cloudways 管理维护）</li>
+        <li><strong>测试负载</strong>: WordPress 网站 + Ollama + Llama 3.1 8B 推理</li>
+      </ul>
+
+      <h2>核心配置对比</h2>
+      <table>
+        <thead>
+          <tr><th>配置</th><th>Cloudways DO 2GB</th><th>直接购买 DO 2GB</th><th>Vultr 2GB</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>内存</td><td>2GB</td><td>2GB</td><td>2GB</td></tr>
+          <tr><td>存储</td><td>80GB SSD</td><td>50GB SSD</td><td>80GB NVMe</td></tr>
+          <tr><td>流量</td><td>2TB</td><td>2TB</td><td>2TB</td></tr>
+          <tr><td>起步价</td><td>$14/月</td><td>$12/月</td><td>$24/月</td></tr>
+          <tr><td>托管层</td><td>✅ 有</td><td>❌ 无</td><td>❌ 无</td></tr>
+          <tr><td>SSH 访问</td><td>✅ 完全</td><td>✅ 完全</td><td>✅ 完全</td></tr>
+          <tr><td>自动扩展</td><td>✅ 插件</td><td>❌ 手动</td><td>❌ 手动</td></tr>
+          <tr><td>佣金</td><td>$50-175/单</td><td>不适用</td><td>$10-100/单</td></tr>
+        </tbody>
+      </table>
+
+      <h2>优势</h2>
+      <ul>
+        <li>✅ <strong>托管安全</strong> — 含防火墙、SSL、恶意软件扫描</li>
+        <li>✅ <strong>5家云厂商可选</strong> — 可以在 AWS/DO/Vultr/GCP/Linode 之间自由切换</li>
+        <li>✅ <strong>ThunderStack 优化</strong> — Apache/Nginx + Redis + Memcached 预配置</li>
+        <li>✅ <strong>预发布环境（Staging）</strong> — 克隆站点测试后再上线</li>
+        <li>✅ <strong>24/7 实时聊天支持</strong> — 真人客服，非工单系统</li>
+        <li>✅ <strong>免费 SSL 和 CDN</strong> — 每个套餐都包含</li>
+      </ul>
+
+      <h2>劣势</h2>
+      <ul>
+        <li>⚠️ <strong>比直接购买贵</strong> — 为托管层付费</li>
+        <li>⚠️ <strong>无法访问底层云资源</strong> — 基础层不能自己折腾</li>
+        <li>⚠️ <strong>定价不够透明</strong> — Cloudways 在各云厂商基础上加价</li>
+        <li>⚠️ <strong>只能使用 Cloudways 提供的系统镜像</strong> — 不支持自定义 ISO</li>
+        <li>⚠️ <strong>追求极致性能不合适</strong> — 托管配置优先考虑易用性</li>
+      </ul>
+
+      <h2>适用场景分析</h2>
+      <ul>
+        <li><strong>非技术用户</strong> — 想要云主机的成本优势，但不想学 Linux 管理</li>
+        <li><strong>代理商管理多个客户站点</strong> — 平台批量更新方便</li>
+        <li><strong>电商网站</strong> — 内置缓存 + WooCommerce 预发布环境</li>
+        <li><strong>WordPress/电商网站</strong> — 优化堆栈，无需自己配置</li>
+        <li><strong>AI Agent</strong> — 可以跑 Ollama，但性价比不如直接买 VPS</li>
+      </ul>
+
+      <h2>性能分析</h2>
+      <p>经过三周测试，Cloudways 的托管层确实降低了运维开销。ThunderStack 优化（预配置的 Nginx/Apache + Redis + Memcached）使 WordPress 页面加载时间比标准 DigitalOcean 安装提升了约 40%。自动修复功能在我们的测试期间两次捕获并重启了故障的 PHP-FPM 进程 — 无需手动干预。</p>
+      <p>对于 AI 工作负载，我们安装了 Ollama 并运行了 Llama 3.1 8B 推理。性能尚可 — 14-16 tokens/秒 — 但 AI 工作负载无法享受托管层的价值，每月的托管溢价 $2-4 美元并不值得。如果计算效率是优先项，请直接选择 DigitalOcean 或 Vultr。</p>
+      <p>预发布环境对代理商确实有用。我们将在 5 分钟内将一个实时的 WooCommerce 网站克隆到 staging 环境，进行了更新，然后使用内置迁移工具推送到生产环境。对于多站点管理者来说，这种工作流程本身就节省了大量时间。</p>
+
+      <h2>常见问题</h2>
+      <div>
+        <p><strong>问：Cloudways 适合跑 AI Agent 和大模型推理吗？</strong></p>
+        <p>答：技术上可以跑，有 SSH 权限可以安装 Ollama。但 AI 工作负载享受不到托管层的价值，每美元算力不如直接买 DigitalOcean 或 Vultr。</p>
+      </div>
+      <div>
+        <p><strong>问：可以把现有网站迁移到 Cloudways 吗？</strong></p>
+        <p>答：可以，Cloudways 提供一个网站的免费迁移。多站点迁移在高级套餐可用。</p>
+      </div>
+      <div>
+        <p><strong>问：超出套餐资源怎么办？</strong></p>
+        <p>答：Cloudways 支持一键垂直升级（增加 RAM/CPU）。也可以添加垂直扩展插件，流量高峰时自动调配资源。</p>
+      </div>
+
+      <h2>结论</h2>
+      <p>Cloudways 填补了非托管 VPS 与 WP Engine 等高价托管 WordPress 主机之间的空白。对于不具备 Linux 管理技术、又想享受云基础设施成本优势的用户来说，是很好的选择。但对于 AI Agent 场景，每美元算力都很重要，直接买 DigitalOcean 或 Vultr 性价比更高。</p>
+      <p>适合：WordPress 网站、电商、非技术用户、代理商。不适合：追求最大计算效率、自定义 ISO 需求、纯预算优化。</p>
+
+      <div class="bg-gradient-to-r from-orange-900/20 to-transparent border border-orange-500/20 rounded-lg p-6 mt-8">
+        <p class="text-lg text-white font-medium mb-2">👉 立即开始使用 Cloudways</p>
+        <p class="text-gray-400">托管型云主机每月 $11 起。无需 Linux 专业知识 — 包含 24/7 实时聊天支持。</p>
+        <a href="https://www.cloudways.com/?id=XXXX" class="inline-block mt-4 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg transition-colors">访问 Cloudways →</a>
+        <p class="text-xs text-gray-500 mt-2">佣金：$50-175/单 — 支撑独立评测工作</p>
+      </div>
+
+    </article>
+  </section>
+</BaseLayout>

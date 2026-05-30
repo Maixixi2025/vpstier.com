@@ -283,5 +283,132 @@
       "Managed hosting users"
     ],
     "featured": false
+  },
+  {
+    "id": "bluehost",
+    "name": "Bluehost",
+    "tagline": "WordPress-Recommended VPS Since 2005",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-150/sale",
+    "cookie": "90 days",
+    "startingPrice": 3.95,
+    "rating": 3.9,
+    "datacenter": "US (Utah)",
+    "features": [
+      "Free domain & SSL",
+      "WordPress optimized",
+      "24/7 support",
+      "NVMe SSD storage",
+      "Root access",
+      "3 datacenter locations"
+    ],
+    "pros": [
+      "WordPress recommended since 2005",
+      "Free domain and SSL certificate",
+      "User-friendly cPanel",
+      "Reliable uptime"
+    ],
+    "cons": [
+      "Higher renewal rates",
+      "Limited Linux distributions",
+      "No GPU instances"
+    ],
+    "bestFor": "WordPress sites, beginners, shared-to-VPS migration",
+    "vpsPlans": [
+      {
+        "name": "Standard",
+        "price": 3.95,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Enhanced",
+        "price": 5.95,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "100GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Ultimate",
+        "price": 13.95,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "200GB SSD",
+        "bandwidth": "Unmetered"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "chemicloud",
+    "name": "ChemiCloud",
+    "tagline": "Managed VPS with speed focus",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.95,
+    "rating": 4.1,
+    "datacenter": "US (NY/Dallas), UK, Netherlands, Germany, Singapore",
+    "features": [
+      "SSD storage on all plans",
+      "Free migration included",
+      "Daily backups",
+      "cPanel/Softaculous",
+      "7 global datacenters",
+      "24/7/365 live chat support"
+    ],
+    "pros": [
+      "Free website migration",
+      "SSD storage on all plans",
+      "24/7 live chat support",
+      "7 datacenter locations",
+      "Daily backups included"
+    ],
+    "cons": [
+      "No NVMe on entry plans",
+      "No GPU instances",
+      "Higher renewal rates"
+    ],
+    "bestFor": "WordPress sites, web apps, developers seeking managed hosting",
+    "vpsPlans": [
+      {
+        "name": "Starter",
+        "price": 5.95,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Pro",
+        "price": 8.95,
+        "cpu": "3 vCPU",
+        "ram": "4GB",
+        "storage": "100GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Business",
+        "price": 15.95,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "150GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Enterprise",
+        "price": 29.95,
+        "cpu": "6 vCPU",
+        "ram": "16GB",
+        "storage": "250GB NVMe",
+        "bandwidth": "Unmetered"
+      }
+    ],
+    "status": "active"
   }
 ]

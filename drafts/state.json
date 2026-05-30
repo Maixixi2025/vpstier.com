@@ -1,5 +1,5 @@
 {
-  "current_index": 3,
+  "current_index": 8,
   "published": [
     {
       "slug": "racknerd-vs-vultr-2025",
@@ -12,30 +12,55 @@
       "date": "2025-05-20",
       "type": "comparison",
       "status": "published"
-    }
-  ],
-  "drafts": [
+    },
     {
       "slug": "racknerd-deep-review-2025",
       "date": "2026-05-23",
       "type": "review",
-      "outline_file": "outline-racknerd-deep-review-2025-2026-05-23.md",
-      "status": "outline_pending"
+      "status": "published"
     },
     {
       "slug": "vultr-deep-review",
       "date": "2026-05-24",
       "type": "review",
-      "outline_file": "outline-vultr-deep-review-2026-05-24.md",
-      "status": "outline_pending"
+      "status": "published"
     },
     {
       "slug": "hetzner-vps-review-2025",
       "date": "2026-05-25",
       "type": "review",
-      "outline_file_en": "outline-hetzner-vps-review-2025-en-2026-05-25.md",
-      "outline_file_zh": "outline-hetzner-vps-review-2025-zh-2026-05-25.md",
-      "status": "outline_pending"
+      "status": "published"
+    },
+    {
+      "slug": "contabo-vps-review-2025",
+      "date": "2026-05-26",
+      "type": "review",
+      "status": "published"
+    },
+    {
+      "slug": "interserver-deep-review",
+      "date": "2026-05-27",
+      "type": "review",
+      "status": "published"
+    },
+    {
+      "slug": "cloudways-review-20260528",
+      "date": "2026-05-28",
+      "type": "review",
+      "status": "published"
+    },
+    {
+      "slug": "hostinger-review",
+      "date": "2026-05-29",
+      "type": "review",
+      "status": "published"
+    },
+    {
+      "slug": "best-north-america-vps-2025",
+      "date": "2026-05-30",
+      "type": "comparison",
+      "status": "published"
     }
-  ]
+  ],
+  "drafts": []
 }
