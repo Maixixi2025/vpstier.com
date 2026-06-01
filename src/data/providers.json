@@ -410,5 +410,40 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "dreamhost",
+    "name": "DreamHost",
+    "tagline": "Independent host since 1997, 97-day refund",
+    "startingPrice": 10.0,
+    "cpu": "AMD EPYC",
+    "ram": "1GB - 8GB",
+    "storage": "30GB - 240GB SSD",
+    "bandwidth": "Unmetered",
+    "datacenters": [
+      "Ashburn, VA",
+      "Hillsboro, OR"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$30-100/sale",
+    "rating": 4.3,
+    "pros": [
+      "97-day money-back guarantee",
+      "Independently owned since 1997",
+      "OpenStack-based DreamCompute cloud",
+      "Free SSL + WHOIS privacy + domain"
+    ],
+    "cons": [
+      "No GPU instances",
+      "Only 2 US datacenters",
+      "No live chat on basic plans"
+    ],
+    "bestFor": [
+      "WordPress",
+      "LAMP stacks",
+      "Long-running self-hosted apps",
+      "OpenStack batch jobs"
+    ],
+    "featured": false
   }
 ]
