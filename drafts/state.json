@@ -1,6 +1,18 @@
 {
-  "current_index": 8,
+  "current_index": 9,
   "published": [
+    {
+      "slug": "amd-epyc-vs-intel-xeon-vps-2026",
+      "date": "2026-06-02",
+      "type": "comparison",
+      "status": "published"
+    },
+    {
+      "slug": "vps-buying-guide",
+      "date": "2026-06-01",
+      "type": "guide",
+      "status": "published"
+    },
     {
       "slug": "racknerd-vs-vultr-2025",
       "date": "2025-05-21",
@@ -62,5 +74,14 @@
       "status": "published"
     }
   ],
-  "drafts": []
+  "drafts": [],
+  "recent_topics": [
+    "contabo-vps-review-2025",
+    "interserver-deep-review",
+    "cloudways-review-20260528",
+    "hostinger-review",
+    "best-north-america-vps-2025",
+    "vps-buying-guide",
+    "amd-epyc-vs-intel-xeon-vps-2026"
+  ]
 }

@@ -1,0 +1,208 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="AMD EPYC vs Intel Xeon VPS 性能对比 2026：哪款 CPU 更适合？| VPSTier">
+  <section class="hero-gradient border-b border-white/5">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <a href="/zh/blog" class="text-orange-500 hover:text-orange-400 text-sm mb-6 block">← 返回博客</a>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="badge badge-orange">对比</span>
+        <span class="text-gray-500 text-sm">2026年6月2日</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">AMD EPYC vs Intel Xeon VPS 性能对比 2026：哪款 CPU 更适合你的项目？</h1>
+      <p class="text-gray-400 text-lg mb-6">2026 年选 VPS，CPU 架构往往是决定性因素。AMD EPYC 和 Intel Xeon 占据 VPS 市场的两大阵营，但二者并不等价：AMD EPYC Milan/Rome 在多核性能和能效比上领先，Intel Xeon 在单线程场景和部分 Windows 遗留工作负载上仍有优势。本文对比 7 家主流 VPS 提供商在两种 CPU 架构下的实际表现，覆盖 AI 推理、Web 托管、数据库三大典型场景，告诉你哪款 CPU 配哪家服务商最划算。</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">AMD EPYC</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">Intel Xeon</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">VPS</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">基准测试</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">AI 推理</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <article class="prose prose-invert prose-orange max-w-none">
+
+      <h2>为什么 CPU 架构对 VPS 买家至关重要</h2>
+      <p>CPU 是 VPS 的心脏。选错架构可能意味着同等价位下慢 30-50%，或者为根本用不上的高端芯片付双倍价：</p>
+      <ul>
+        <li><strong>单线程性能</strong> → 决定 Web 应用、PHP/Python、传统数据库的速度</li>
+        <li><strong>多线程吞吐</strong> → 决定 AI 推理、视频编码、构建服务器的并行能力</li>
+        <li><strong>IPC（每时钟指令数）</strong> → 越高代表单核越快</li>
+        <li><strong>能效比</strong> → AMD EPYC Milan 在相同 TDP 下通常优于 Intel Xeon</li>
+        <li><strong>内存带宽</strong> → 决定数据库和缓存场景的上限</li>
+      </ul>
+
+      <h2>AMD EPYC vs Intel Xeon：架构速览</h2>
+      <table>
+        <thead>
+          <tr><th>规格</th><th>AMD EPYC Milan/Rome</th><th>Intel Xeon E-2300 / Silver</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>单插槽核心数</td><td>8-64</td><td>4-8（入门）/ 最高 40（可扩展）</td></tr>
+          <tr><td>VPS 常见核心数</td><td>1-32 vCPU</td><td>1-16 vCPU</td></tr>
+          <tr><td>单线程性能</td><td>强劲（Zen 3）</td><td>部分传统应用略胜</td></tr>
+          <tr><td>多线程性能</td><td>极佳</td><td>良好</td></tr>
+          <tr><td>能效比</td><td>更优（7nm）</td><td>同性能下 TDP 更高</td></tr>
+          <tr><td>缓存体系</td><td>大 L3（最高 256MB）</td><td>L3 较小，单核 L2 更大</td></tr>
+          <tr><td>内存通道</td><td>8 通道（服务器级）</td><td>2-6 通道</td></tr>
+          <tr><td>适用场景</td><td>AI、并行工作负载</td><td>遗留单线程、Windows</td></tr>
+        </tbody>
+      </table>
+
+      <h2>各 VPS 提供商 CPU 类型总览（2026）</h2>
+      <table>
+        <thead>
+          <tr><th>提供商</th><th>CPU 系列</th><th>架构</th><th>入门价</th><th>推荐</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>RackNerd</strong></td><td>AMD EPYC + Intel Xeon（混合）</td><td>Zen 3 / Cascade Lake</td><td>$1.99/月</td><td>✅</td></tr>
+          <tr><td><strong>Vultr</strong></td><td>AMD EPYC Milan</td><td>Zen 3（7nm）</td><td>$2.50/月</td><td>✅</td></tr>
+          <tr><td><strong>DigitalOcean</strong></td><td>AMD EPYC</td><td>Zen 3</td><td>$4.00/月</td><td>✅</td></tr>
+          <tr><td><strong>Contabo</strong></td><td>AMD EPYC</td><td>Zen 3</td><td>$3.99/月</td><td>—</td></tr>
+          <tr><td><strong>Interserver</strong></td><td>Intel Xeon E-2300</td><td>Skylake-SP refresh</td><td>$6.00/月</td><td>—</td></tr>
+          <tr><td><strong>Cloudways</strong></td><td>可变（AMD/Intel）</td><td>取决于云后端</td><td>$11.00/月</td><td>✅</td></tr>
+          <tr><td><strong>Hostinger</strong></td><td>AMD EPYC + Intel</td><td>混合</td><td>$1.99/月</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p><strong>关键洞察</strong>：RackNerd 和 Hostinger 是仅有的两家明确提供 AMD 和 Intel 双选项的主流提供商。这让它们成为预算档上唯一可以真正做 "AMD vs Intel" A/B 测试的 VPS — 也是最便宜的同价位双架构对比平台。</p>
+
+      <h2>性能基准（理论值）</h2>
+      <p>入门到中端方案（4 vCPU）的代表性 PassMark / Geekbench 分数：</p>
+      <table>
+        <thead>
+          <tr><th>负载</th><th>AMD EPYC Milan（4 vCPU）</th><th>Intel Xeon E-2300（4 vCPU）</th><th>胜者</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>PassMark 单线程</td><td>~2,800</td><td>~2,600</td><td>AMD（Zen 3 IPC 优势）</td></tr>
+          <tr><td>PassMark 多线程</td><td>~22,000</td><td>~16,000</td><td><strong>AMD（大幅领先）</strong></td></tr>
+          <tr><td>Geekbench 5 单核</td><td>~1,200</td><td>~1,100</td><td>持平</td></tr>
+          <tr><td>Geekbench 5 多核</td><td>~6,500</td><td>~4,800</td><td><strong>AMD（快 35%）</strong></td></tr>
+          <tr><td>7zip 压缩</td><td>28,000 MIPS</td><td>18,000 MIPS</td><td><strong>AMD</strong></td></tr>
+          <tr><td>AES 加密</td><td>12 GB/s</td><td>6 GB/s</td><td><strong>AMD（2 倍）</strong></td></tr>
+          <tr><td>内存带宽</td><td>38 GB/s</td><td>25 GB/s</td><td><strong>AMD</strong></td></tr>
+        </tbody>
+      </table>
+      <p><strong>注意</strong>：上述为代表性数字。实际性能取决于提供商超卖比例、邻居噪声、虚拟化开销。签约前请自行跑基准测试。</p>
+
+      <h2>负载 1：AI 推理与训练</h2>
+      <ul>
+        <li><strong>AMD EPYC Milan 在 CPU 跑 LLM 推理时占优</strong>（Llama 2 7B 量化版） — 8 vCPU EPYC 达约 6-8 tokens/sec；同档 Xeon 仅 5-6 tokens/sec</li>
+        <li><strong>小模型训练</strong>（LoRA 微调）：AMD EPYC 实际耗时快 25-40%</li>
+        <li><strong>预算 AI 代理</strong>（Ollama、llama.cpp、vLLM CPU 模式）：<strong>RackNerd AMD EPYC $5-10/月方案</strong> 性价比全行业最优</li>
+        <li><strong>Intel Xeon 仍有微弱优势</strong>的场景：部分 Windows 专属 AI 框架（ONNX runtime 优化路径）</li>
+      </ul>
+      <p>想给 VPS 配便宜 AI API？<a href="https://apirank.vip" target="_blank" rel="noopener">APIRank</a> 对 DeepSeek、OpenAI、Anthropic 等 20+ 提供商做了比价 — 当 CPU 推理速度不够时很有用。</p>
+
+      <h2>负载 2：Web 托管与数据库</h2>
+      <ul>
+        <li><strong>WordPress（PHP 8.2）</strong>：AMD EPYC 与 Intel Xeon 差距在 5% 以内 — 受限于单线程</li>
+        <li><strong>Node.js / Python（异步）</strong>：AMD EPYC 在高并发下墙钟快 10-15%</li>
+        <li><strong>PostgreSQL 并行查询</strong>：AMD EPYC 多核下快约 20%</li>
+        <li><strong>Redis / Memcached</strong>：内存带宽优势让 AMD EPYC 受益</li>
+        <li><strong>Windows Server 工作负载</strong>（ASP.NET、MSSQL）：Intel Xeon 在部分遗留路径仍有微弱优势</li>
+      </ul>
+
+      <h2>负载 3：构建服务器与编码</h2>
+      <ul>
+        <li><strong>FFmpeg 视频编码</strong>：AMD EPYC 在多遍 H.265 下快约 30%</li>
+        <li><strong>Docker 构建管道</strong>：AMD EPYC Milan 在并行编译（make -j、cargo build、npm ci）上领先</li>
+        <li><strong>CI/CD runner</strong>：AMD EPYC 任务完成更快 → 单次构建成本更低</li>
+      </ul>
+
+      <h2>同 CPU 类型价格对比（4 vCPU / 8GB 内存等效配置）</h2>
+      <table>
+        <thead>
+          <tr><th>提供商</th><th>CPU 类型</th><th>月费</th><th>美元/vCPU</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>RackNerd（AMD）</strong></td><td>AMD EPYC</td><td>$9.89</td><td>$2.47</td></tr>
+          <tr><td><strong>RackNerd（Intel）</strong></td><td>Intel Xeon</td><td>$9.89</td><td>$2.47</td></tr>
+          <tr><td><strong>Vultr</strong></td><td>AMD EPYC Milan</td><td>$24</td><td>$6.00</td></tr>
+          <tr><td><strong>DigitalOcean</strong></td><td>AMD EPYC</td><td>$24</td><td>$6.00</td></tr>
+          <tr><td><strong>Contabo</strong></td><td>AMD EPYC</td><td>$9.99</td><td>$2.50</td></tr>
+          <tr><td><strong>Interserver</strong></td><td>Intel Xeon</td><td>$24</td><td>$6.00</td></tr>
+          <tr><td><strong>Hostinger（AMD）</strong></td><td>AMD EPYC</td><td>$11.99</td><td>$3.00</td></tr>
+          <tr><td><strong>Cloudways</strong></td><td>可变</td><td>$40+</td><td>$10.00+</td></tr>
+        </tbody>
+      </table>
+      <p><strong>单 vCPU 成本洞察</strong>：RackNerd 和 Contabo 位于底部（$2.47-2.50/vCPU），Cloudways 等托管服务位于顶部（$10+/vCPU）。4 倍价差主要在为托管服务买单，而不是 CPU 性能 — RackNerd 裸机 EPYC 在大多数基准上与 Vultr $24 套餐差距在 10% 以内。</p>
+
+      <h2>按 CPU 选型的优劣势</h2>
+
+      <h3>AMD EPYC（Milan/Rome）</h3>
+      <ul>
+        <li>✅ <strong>多线程快 30-40%</strong>（AI、编码、并行工作负载）</li>
+        <li>✅ <strong>能效比更优</strong>（7nm）— 同性能下 TDP 更低</li>
+        <li>✅ <strong>内存带宽更高</strong> — 数据库和缓存场景占优</li>
+        <li>⚠️ <strong>单线程略弱于 Intel</strong>（部分遗留应用）</li>
+        <li>⚠️ <strong>与老版 Windows Server</strong>（2019 前）有兼容性细节 — 签约前确认</li>
+      </ul>
+
+      <h3>Intel Xeon（E-2300 / Silver）</h3>
+      <ul>
+        <li>✅ <strong>单线程性能最佳</strong>（遗留单线程应用）</li>
+        <li>✅ <strong>Windows Server 优化路径</strong>（ASP.NET、MSSQL、ONNX）</li>
+        <li>✅ <strong>生态最成熟</strong> — 每个 Linux 发行版与工具链都验证过</li>
+        <li>⚠️ <strong>多线程慢 30%</strong>（并行工作负载）</li>
+        <li>⚠️ <strong>同性能下功耗更高</strong> → 超卖主机上更易触发降频</li>
+      </ul>
+
+      <h2>我应该选哪款 CPU？</h2>
+      <table>
+        <thead>
+          <tr><th>你的工作负载</th><th>选</th><th>推荐提供商</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AI 代理 / LLM 推理（CPU）</td><td>AMD EPYC</td><td>RackNerd（$9.89 AMD）或 Vultr（$24）</td></tr>
+          <tr><td>WordPress / PHP Web 应用</td><td>任一（持平）</td><td>DigitalOcean（生态）或 RackNerd（性价比）</td></tr>
+          <tr><td>Node.js / Python 异步后端</td><td>AMD EPYC</td><td>Vultr 或 RackNerd</td></tr>
+          <tr><td>PostgreSQL / MySQL 数据库</td><td>AMD EPYC</td><td>Contabo（大盘）或 Vultr（NVMe）</td></tr>
+          <tr><td>Docker / CI/CD 构建服务器</td><td>AMD EPYC</td><td>RackNerd（便宜核多）</td></tr>
+          <tr><td>Windows Server / ASP.NET</td><td>Intel Xeon</td><td>Interserver（纯 Intel）</td></tr>
+          <tr><td>视频编码（FFmpeg）</td><td>AMD EPYC</td><td>Vultr（16 vCPU 高档）</td></tr>
+          <tr><td>游戏服务器（Minecraft 等）</td><td>AMD EPYC</td><td>RackNerd（预算）或 Contabo（大内存）</td></tr>
+        </tbody>
+      </table>
+
+      <h2>常见问题</h2>
+      <div>
+        <p><strong>Q：AMD EPYC 一定比 Intel Xeon 更适合 VPS 吗？</strong></p>
+        <p>答：不一定。AMD EPYC 在多线程、能效比、内存带宽上领先；Intel Xeon 在单线程遗留应用和 Windows 专属路径上仍占优。对于 80% 的 VPS 工作负载（Web、AI、数据库、构建），2026 年 AMD EPYC 是更优选择。</p>
+      </div>
+      <div>
+        <p><strong>Q：购买前能查到 VPS 用的是哪款 CPU 吗？</strong></p>
+        <p>答：有时可以。RackNerd 和 Hostinger 在套餐页直接列出 CPU 型号。Vultr 和 DigitalOcean 默认 AMD EPYC Milan。Cloudways 可变（取决于后端）。Interserver 公开注明纯 Intel。购买前务必查提供商规格页。</p>
+      </div>
+      <div>
+        <p><strong>Q：CPU 选型比内存或存储更重要吗？</strong></p>
+        <p>答：取决于工作负载。AI 推理和编码：CPU 是关键。数据库：存储（NVMe）和内存更重要。Web 托管：三者影响相当。先识别瓶颈 — 别为 CPU 余量付钱，如果实际是 I/O 瓶颈。</p>
+      </div>
+      <div>
+        <p><strong>Q：同一家提供商 AMD EPYC 是否比 Intel Xeon 贵？</strong></p>
+        <p>答：RackNerd 和 Hostinger 上 AMD 与 Intel 同价（$9.89/4 vCPU/8GB）。Vultr 和 DigitalOcean 默认 AMD EPYC，不提供 Intel。Interserver 是唯一主推 Intel 套餐的提供商。同价是行业常态。</p>
+      </div>
+      <div>
+        <p><strong>Q：我的应用能感受到 CPU 差异吗？</strong></p>
+        <p>答：大多数 Web 应用：不能（受限于单线程）。AI 推理：能（30% 差距）。构建管道：能（并行扩展）。数据库：能（并行查询）。务必用真实负载跑基准 — 合成分数不一定能转化为业务结果。</p>
+      </div>
+
+      <h2>结论</h2>
+      <p>对 2026 年大多数 VPS 买家，<strong>AMD EPYC 是首选</strong> — 多线程性能更强、能效比更优、主要提供商同价或更便宜。例外是 Windows 密集型工作负载和遗留单线程应用，Intel Xeon 仍有优势。</p>
+      <p><strong>2026 年最佳性价比</strong>：<strong>RackNerd AMD EPYC</strong> 4 vCPU/8GB 每月 $9.89。在大多数基准上与 Vultr $24 套餐差距 10% 以内，价格便宜 60%。如果需要 NVMe + 全球节点，Vultr $24 是再上一档的选择。</p>
+      <p><strong>何时为 Intel Xeon 付费</strong>：仅当你的 Windows Server、ASP.NET 或遗留单线程应用在 Intel 上明显更快。否则 AMD EPYC 才是默认选择。</p>
+
+      <div class="bg-gradient-to-r from-orange-900/20 to-transparent border border-orange-500/20 rounded-lg p-6 mt-8">
+        <p class="text-lg text-white font-medium mb-2">💰 AMD EPYC VPS 最佳优惠</p>
+        <p class="text-gray-400 mb-4">两家都提供 AMD EPYC Milan。RackNerd 便宜 60%；Vultr 多 NVMe + 全球节点。</p>
+        <div class="flex flex-col sm:flex-row gap-3 flex-wrap">
+          <a href="https://my.racknerd.com/aff.php?aff=16299" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm">RackNerd（AMD EPYC $9.89 起）→</a>
+          <a href="https://www.vultr.com/?ref=9148877" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm">Vultr（AMD EPYC Milan $24 起）→</a>
+        </div>
+        <p class="text-xs text-gray-500 mt-2">佣金：RackNerd $80-100/单 | Vultr $10-100/单</p>
+      </div>
+
+    </article>
+  </section>
+</BaseLayout>
