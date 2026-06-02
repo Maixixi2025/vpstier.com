@@ -445,5 +445,68 @@
       "OpenStack batch jobs"
     ],
     "featured": false
+  },
+  {
+    "id": "greengeeks",
+    "name": "GreenGeeks",
+    "tagline": "Eco-friendly VPS, 300% green energy match",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 4.95,
+    "rating": 4.2,
+    "datacenter": "US (Phoenix/Chicago), Canada (Toronto), Netherlands (Amsterdam), Singapore",
+    "features": [
+      "300% green energy match (3x renewable)",
+      "Free SSL + free Cloudflare CDN",
+      "Free domain for first year",
+      "Nightly backups included",
+      "Unmetered bandwidth",
+      "cPanel + Softaculous"
+    ],
+    "pros": [
+      "300% green energy match — industry-leading sustainability",
+      "Free domain first year + free SSL + free CDN",
+      "Unmetered bandwidth on every plan",
+      "Nightly backups included at no extra cost",
+      "cPanel + Softaculous familiar to most developers",
+      "Multiple datacenters including EU and APAC"
+    ],
+    "cons": [
+      "No GPU instances — CPU-only workloads",
+      "Higher renewal rates than intro pricing",
+      "No Windows VPS option",
+      "5 datacenters only — no Australia / South America",
+      "No live chat on entry VPS plans"
+    ],
+    "bestFor": "Environmentally-conscious developers, WordPress sites, small business websites, sustainable hosting",
+    "vpsPlans": [
+      {
+        "name": "Starter VPS",
+        "price": 4.95,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Pro VPS",
+        "price": 9.95,
+        "cpu": "4 vCPU",
+        "ram": "4GB",
+        "storage": "100GB SSD",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Premium VPS",
+        "price": 19.95,
+        "cpu": "6 vCPU",
+        "ram": "8GB",
+        "storage": "200GB SSD",
+        "bandwidth": "Unmetered"
+      }
+    ],
+    "status": "active"
   }
 ]
