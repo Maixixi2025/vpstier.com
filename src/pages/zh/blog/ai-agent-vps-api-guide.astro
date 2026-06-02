@@ -121,10 +121,9 @@ ollama run llama3.1:8b "Hello, what's 2+2?"
 
 # API 服务器模式（供 AI Agent 调用）：
 ollama serve &
-curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.1:8b",
-  "prompt": "Hello!"
-}'</code></pre>
+curl http://localhost:11434/api/generate \
+  -d "model=llama3.1:8b" \
+  -d "prompt=Hello!"</code></pre>
 
       <h3>第四步：连接到你的 AI Agent</h3>
       <p>大多数 AI Agent 框架（LangChain、LlamaIndex、AutoGen）支持 Ollama 作为本地后端。LangChain 示例：</p>

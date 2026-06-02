@@ -121,10 +121,9 @@ ollama run llama3.1:8b "Hello, what's 2+2?"
 
 # For API server mode (for AI agents to call):
 ollama serve &
-curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.1:8b",
-  "prompt": "Hello!"
-}'</code></pre>
+curl http://localhost:11434/api/generate \
+  -d "model=llama3.1:8b" \
+  -d "prompt=Hello!"</code></pre>
 
       <h3>Step 4: Connect to Your AI Agent</h3>
       <p>Most AI agent frameworks (LangChain, LlamaIndex, AutoGen) support Ollama as a local backend. Example with LangChain:</p>
