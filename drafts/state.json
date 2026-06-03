@@ -2,6 +2,12 @@
   "current_index": 9,
   "published": [
     {
+      "slug": "almalinux-vs-rocky-vs-ubuntu-vps-2026",
+      "date": "2026-06-03",
+      "type": "comparison",
+      "status": "published"
+    },
+    {
       "slug": "amd-epyc-vs-intel-xeon-vps-2026",
       "date": "2026-06-02",
       "type": "comparison",
