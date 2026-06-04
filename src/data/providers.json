@@ -508,5 +508,64 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "siteground",
+    "name": "SiteGround",
+    "tagline": "Managed VPS with Google Cloud Backbone",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-150/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.99,
+    "rating": 4.1,
+    "datacenter": "US (Iowa), EU (London/Amsterdam/Frankfurt), SG (Singapore), AU (Sydney)",
+    "features": [
+      "Google Cloud infrastructure",
+      "Free CDN & SSL",
+      "Daily backups included",
+      "24/7 support (chat & tickets)",
+      "Staging environment",
+      "WP CLI & Git integration"
+    ],
+    "pros": [
+      "Google Cloud architecture (99.99% uptime SLA)",
+      "Outstanding support quality",
+      "Free daily backups & restores",
+      "6 global datacenter locations"
+    ],
+    "cons": [
+      "No root access on lower tiers",
+      "Limited CPU cores on entry plans",
+      "No Windows VPS options"
+    ],
+    "bestFor": "Managed WordPress, fast-growth sites, WooCommerce, EU audience",
+    "vpsPlans": [
+      {
+        "name": "Entry",
+        "price": 5.99,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "40GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Business",
+        "price": 9.99,
+        "cpu": "4 vCPU",
+        "ram": "6GB",
+        "storage": "60GB SSD",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "Grow Big",
+        "price": 14.99,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "120GB SSD",
+        "bandwidth": "5TB"
+      }
+    ],
+    "status": "active"
   }
 ]
