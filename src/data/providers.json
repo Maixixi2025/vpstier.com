@@ -567,5 +567,76 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "hostpapa",
+    "name": "HostPapa",
+    "tagline": "Family-owned Canadian host, eco-friendly VPS since 2006",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 19.99,
+    "rating": 4.0,
+    "datacenter": "US (multiple), Canada (Toronto), EU (Amsterdam/Frankfurt)",
+    "features": [
+      "NVMe SSD storage on all plans",
+      "Free domain + SSL + Cloudflare CDN",
+      "cPanel + Softaculous one-click installs",
+      "DDoS protection included",
+      "24/7 multilingual support",
+      "Carbon-neutral green hosting"
+    ],
+    "pros": [
+      "Family-owned Canadian company since 2006",
+      "Carbon-neutral green data centers",
+      "Free domain + SSL + Cloudflare CDN on every plan",
+      "NVMe SSD storage standard on all VPS tiers",
+      "cPanel + Softaculous for easy WordPress/joomla installs",
+      "Free website migration included"
+    ],
+    "cons": [
+      "Higher starting price than budget hosts ($19.99/mo)",
+      "No GPU instances — CPU-only workloads",
+      "US/Canada/EU datacenters only — no APAC",
+      "No Windows VPS option",
+      "Renewal rates significantly higher than intro pricing"
+    ],
+    "bestFor": "Small business websites, WordPress sites, beginners needing managed support, eco-conscious developers, Canada-based businesses",
+    "vpsPlans": [
+      {
+        "name": "VPS 1",
+        "price": 19.99,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB NVMe",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "VPS 2",
+        "price": 29.99,
+        "cpu": "4 vCPU",
+        "ram": "4GB",
+        "storage": "100GB NVMe",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "VPS 4",
+        "price": 49.99,
+        "cpu": "6 vCPU",
+        "ram": "8GB",
+        "storage": "200GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "VPS 8",
+        "price": 89.99,
+        "cpu": "8 vCPU",
+        "ram": "16GB",
+        "storage": "400GB NVMe",
+        "bandwidth": "8TB"
+      }
+    ],
+    "status": "active"
   }
 ]

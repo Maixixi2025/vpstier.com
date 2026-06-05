@@ -1,5 +1,5 @@
 {
-  "current_index": 9,
+  "current_index": 0,
   "published": [
     {
       "slug": "almalinux-vs-rocky-vs-ubuntu-vps-2026",
@@ -78,16 +78,49 @@
       "date": "2026-05-30",
       "type": "comparison",
       "status": "published"
+    },
+    {
+      "slug": "hostpapa-review",
+      "date": "2026-06-05",
+      "type": "review",
+      "status": "published",
+      "provider": "hostpapa",
+      "en_astro": "src/pages/vps/hostpapa.astro",
+      "blog_astro": "src/pages/blog/hostpapa-review.astro"
     }
   ],
-  "drafts": [],
+  "drafts": [
+    {
+      "slug": "best-asia-pacific-vps-2026",
+      "date": "2026-06-05",
+      "type": "comparison",
+      "title_en": "Best Asia-Pacific VPS 2026: 5 Providers Ranked by Latency & Price",
+      "title_zh": "2026 亚太 VPS 推荐：5 家延迟与价格实测排名",
+      "description_en": "Compare 5 Asia-Pacific VPS providers in 2026. Real latency data from Tokyo, Singapore, Seoul, and Hong Kong. Pricing from $1.99/mo.",
+      "description_zh": "2026 年 5 家亚太 VPS 提供商对比,实测东京、新加坡、首尔、香港节点延迟,最低 $1.99/月起。",
+      "outline_file": "2026-06-05-best-asia-pacific-vps-2026.md",
+      "en_astro": "src/pages/blog/best-asia-pacific-vps-2026.astro",
+      "zh_astro": "src/pages/zh/blog/best-asia-pacific-vps-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "scalahosting",
+        "racknerd"
+      ],
+      "primary_affiliate": "racknerd"
+    }
+  ],
   "recent_topics": [
-    "contabo-vps-review-2025",
+    "hostpapa-review",
     "interserver-deep-review",
     "cloudways-review-20260528",
     "hostinger-review",
     "best-north-america-vps-2025",
     "vps-buying-guide",
-    "amd-epyc-vs-intel-xeon-vps-2026"
+    "amd-epyc-vs-intel-xeon-vps-2026",
+    "best-europe-vps-2026",
+    "best-asia-pacific-vps-2026"
   ]
 }
