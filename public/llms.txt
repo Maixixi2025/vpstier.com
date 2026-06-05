@@ -1,0 +1,32 @@
+# vpstier.com - VPS Hosting Reviews for AI Agents & Developers
+
+https://vpstier.com
+
+## About
+vpstier.com 是一个专注于 AI Agent 和开发者场景的 VPS 主机联盟评测站。提供真实的上行/下行速度测试、CPU 性能基准、佣金透明度信息，帮助自托管 LLM、AI Agent、Stable Diffusion 等项目的开发者选择最合适的 VPS。
+
+## Main Content
+- VPS 主机深度评测（性能基准、速度、稳定性、客服质量）
+- 联盟佣金透明披露（$50-175/sale 区间）
+- 国内外 VPS 对比（直连速度、支付方式、文档质量）
+- AI 部署场景适配（GPU VPS、LLM API 自托管、Stable Diffusion）
+- 价格追踪与优惠码
+
+## Providers Covered
+RackNerd, Vultr, DigitalOcean, Contabo, Interserver, Cloudways, Hostinger, ScalaHosting, Bluehost, ChemiCloud, DreamHost, GreenGeeks, SiteGround, HostPapa
+
+## Use Cases
+- Self-hosted LLM (Llama, Mistral, Qwen) deployment
+- AI Agent hosting (24/7 uptime, low latency)
+- Stable Diffusion / ComfyUI GPU VPS
+- Developer workflows (Docker, CI/CD, staging)
+- Long-running background jobs (cron, scrapers)
+
+## Monetization
+网站通过 Affiliate 推荐链接变现。佣金透明披露，评测独立不受厂商影响。
+
+## Contact
+https://vpstier.com/about
+
+---
+Last updated: 2026-06-05
