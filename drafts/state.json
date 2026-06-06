@@ -87,6 +87,33 @@
       "provider": "hostpapa",
       "en_astro": "src/pages/vps/hostpapa.astro",
       "blog_astro": "src/pages/blog/hostpapa-review.astro"
+    },
+    {
+      "slug": "upcloud-review",
+      "date": "2026-06-06",
+      "type": "review",
+      "title_en": "UpCloud VPS Review 2026: maxIOPS Performance + 8 Datacenters",
+      "title_zh": "UpCloud VPS 评测 2026：maxIOPS 性能 + 8 个机房 + $5/月起",
+      "status": "built_pending_deploy",
+      "provider": "upcloud",
+      "en_astro": "src/pages/blog/upcloud-review.astro",
+      "zh_astro": "src/pages/zh/blog/upcloud-review.astro",
+      "provider_astro": "src/pages/vps/upcloud.astro",
+      "en_file": "drafts/en-upcloud-review-2026-06-06.md",
+      "build_pages": 55,
+      "build_status": "success",
+      "deploy_status": "blocked_no_token",
+      "deploy_command": "cd /root/vpstier-site && npx wrangler pages deploy dist --project-name=vpstier-com",
+      "commit": "fcf235c67b710c5d30cddcce1e2a263a9ffe78cb",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "scalahosting"
+      ],
+      "hot_topic_source": "⏭️ Not used (task was provider+review, not hot-topic blog)",
+      "commit_short": "fcf235c"
     }
   ],
   "drafts": [
@@ -110,17 +137,61 @@
         "racknerd"
       ],
       "primary_affiliate": "racknerd"
+    },
+    {
+      "slug": "aws-us-east-1-outage-2026",
+      "date": "2026-06-06",
+      "type": "incident-postmortem",
+      "title_en": "AWS us-east-1 Outage May 2026: Single AZ Failure Cost & Multi-Region Backup Strategy",
+      "title_zh": "2026 年 5 月 AWS us-east-1 outage 复盘：单点故障的代价 + 多 AZ 备份策略",
+      "outline_file": "outline-2026-06-06-aws-us-east-1-outage-2026.md",
+      "en_astro": "src/pages/blog/aws-us-east-1-outage-2026.astro",
+      "zh_astro": "src/pages/zh/blog/aws-us-east-1-outage-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "scalahosting"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-06 daily report (HN 267 pts + CNBC)"
+    },
+    {
+      "slug": "2026-shutdown-cloud-services-vps-migration",
+      "date": "2026-06-06",
+      "type": "incident-postmortem+guide",
+      "title_en": "Garnix Shutdown 2026: How to Migrate Small SaaS to a VPS",
+      "title_zh": "Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南",
+      "outline_file": "outline-2026-06-06-2026-shutdown-cloud-services-vps-migration.md",
+      "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
+      "zh_astro": "src/pages/zh/blog/2026-shutdown-cloud-services-vps-migration.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "scalahosting",
+        "contabo",
+        "hostinger"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
+      "outline_size_bytes": 6998,
+      "banned_self_check": "PASSED"
     }
   ],
   "recent_topics": [
+    "upcloud-review",
+    "2026-shutdown-cloud-services-vps-migration",
+    "aws-us-east-1-outage-2026",
     "hostpapa-review",
     "interserver-deep-review",
     "cloudways-review-20260528",
     "hostinger-review",
     "best-north-america-vps-2025",
     "vps-buying-guide",
-    "amd-epyc-vs-intel-xeon-vps-2026",
-    "best-europe-vps-2026",
-    "best-asia-pacific-vps-2026"
+    "amd-epyc-vs-intel-xeon-vps-2026"
   ]
 }

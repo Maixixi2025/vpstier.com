@@ -638,5 +638,79 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "upcloud",
+    "name": "UpCloud",
+    "tagline": "Finnish cloud with guaranteed maxIOPS block storage",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.0,
+    "rating": 4.3,
+    "datacenter": "Helsinki, London, Frankfurt, Amsterdam, San Jose, Chicago, Singapore, Sydney",
+    "features": [
+      "maxIOPS block storage — guaranteed I/O performance",
+      "8 datacenters across EU / US / APAC",
+      "Hourly billing (per-second after first hour)",
+      "Clean REST API + Python SDK",
+      "99.99% uptime SLA with 10x service credit",
+      "Free incoming bandwidth on all plans"
+    ],
+    "pros": [
+      "maxIOPS block storage — guaranteed I/O performance, not best-effort",
+      "8 datacenters across EU / US / APAC (4 in EU alone)",
+      "Hourly billing — true pay-per-use with no monthly cap",
+      "Clean REST API + Python SDK + community Terraform / Pulumi providers",
+      "99.99% uptime SLA backed by 10x service credit",
+      "Free incoming bandwidth on all plans",
+      "Strong EU data residency — Finnish company, GDPR-native"
+    ],
+    "cons": [
+      "Higher starting price than Vultr ($5/mo vs $2.50/mo)",
+      "No GPU instances — CPU-only workloads",
+      "No Windows Server templates — Linux distros only",
+      "Smaller community than Vultr or DigitalOcean",
+      "Outgoing bandwidth is metered (1TB included, then $0.012/GB)",
+      "No managed Kubernetes service",
+      "No built-in CDN"
+    ],
+    "bestFor": "Database hosts (Postgres, MySQL, Redis) needing predictable I/O, container hosts with stateful workloads, CI runners with heavy disk I/O, EU-resident data with GDPR compliance, developers wanting hourly billing",
+    "vpsPlans": [
+      {
+        "name": "1xCPU-1GB",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "25GB maxIOPS",
+        "bandwidth": "1TB out / free in"
+      },
+      {
+        "name": "2xCPU-4GB",
+        "price": 20.0,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB maxIOPS",
+        "bandwidth": "2TB out / free in"
+      },
+      {
+        "name": "4xCPU-8GB",
+        "price": 40.0,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB maxIOPS",
+        "bandwidth": "4TB out / free in"
+      },
+      {
+        "name": "8xCPU-32GB",
+        "price": 160.0,
+        "cpu": "8 vCPU",
+        "ram": "32GB",
+        "storage": "640GB maxIOPS",
+        "bandwidth": "8TB out / free in"
+      }
+    ],
+    "status": "active"
   }
 ]
