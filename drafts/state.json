@@ -2,6 +2,28 @@
   "current_index": 0,
   "published": [
     {
+      "slug": "2026-shutdown-cloud-services-vps-migration",
+      "date": "2026-06-06",
+      "type": "incident-postmortem+guide",
+      "status": "built_pending_deploy",
+      "title_en": "Garnix Shutdown 2026: How to Migrate Small SaaS to a VPS",
+      "title_zh": "Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南",
+      "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
+      "zh_astro": "src/pages/zh/blog/2026-shutdown-cloud-services-vps-migration.astro",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "scalahosting",
+        "contabo",
+        "hostinger"
+      ],
+      "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count": 6
+    },
+    {
       "slug": "almalinux-vs-rocky-vs-ubuntu-vps-2026",
       "date": "2026-06-03",
       "type": "comparison",
@@ -114,6 +136,29 @@
       ],
       "hot_topic_source": "⏭️ Not used (task was provider+review, not hot-topic blog)",
       "commit_short": "fcf235c"
+    },
+    {
+      "slug": "aws-us-east-1-outage-2026",
+      "date": "2026-06-06",
+      "type": "incident-postmortem",
+      "title_en": "AWS us-east-1 Outage May 2026: Single AZ Failure Cost & Multi-Region Backup Strategy",
+      "title_zh": "2026 年 5 月 AWS us-east-1 outage 复盘：单点故障的代价 + 多 AZ 备份策略",
+      "outline_file": "outline-2026-06-06-aws-us-east-1-outage-2026.md",
+      "en_astro": "src/pages/blog/aws-us-east-1-outage-2026.astro",
+      "zh_astro": "src/pages/zh/blog/aws-us-east-1-outage-2026.astro",
+      "status": "published",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "scalahosting"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-06 daily report (HN 267 pts + CNBC)",
+      "published_at": "2026-06-06",
+      "deployed_url_en": "https://vpstier.com/blog/aws-us-east-1-outage-2026/",
+      "deployed_url_zh": "https://vpstier.com/zh/blog/aws-us-east-1-outage-2026/"
     }
   ],
   "drafts": [
@@ -139,26 +184,6 @@
       "primary_affiliate": "racknerd"
     },
     {
-      "slug": "aws-us-east-1-outage-2026",
-      "date": "2026-06-06",
-      "type": "incident-postmortem",
-      "title_en": "AWS us-east-1 Outage May 2026: Single AZ Failure Cost & Multi-Region Backup Strategy",
-      "title_zh": "2026 年 5 月 AWS us-east-1 outage 复盘：单点故障的代价 + 多 AZ 备份策略",
-      "outline_file": "outline-2026-06-06-aws-us-east-1-outage-2026.md",
-      "en_astro": "src/pages/blog/aws-us-east-1-outage-2026.astro",
-      "zh_astro": "src/pages/zh/blog/aws-us-east-1-outage-2026.astro",
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "hostinger",
-        "scalahosting"
-      ],
-      "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-06 daily report (HN 267 pts + CNBC)"
-    },
-    {
       "slug": "2026-shutdown-cloud-services-vps-migration",
       "date": "2026-06-06",
       "type": "incident-postmortem+guide",
@@ -167,7 +192,9 @@
       "outline_file": "outline-2026-06-06-2026-shutdown-cloud-services-vps-migration.md",
       "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
       "zh_astro": "src/pages/zh/blog/2026-shutdown-cloud-services-vps-migration.astro",
-      "status": "outline_pending_publish",
+      "status": "published",
+      "published_at": "2026-06-06T12:25:00Z",
+      "primary_affiliate": "racknerd",
       "providers_featured": [
         "racknerd",
         "vultr",
@@ -176,9 +203,7 @@
         "contabo",
         "hostinger"
       ],
-      "primary_affiliate": "racknerd",
       "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
-      "outline_size_bytes": 6998,
       "banned_self_check": "PASSED"
     }
   ],
@@ -193,5 +218,6 @@
     "best-north-america-vps-2025",
     "vps-buying-guide",
     "amd-epyc-vs-intel-xeon-vps-2026"
-  ]
+  ],
+  "updated": "2026-06-06"
 }

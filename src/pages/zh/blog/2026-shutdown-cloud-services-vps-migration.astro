@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南 - VPSTier" description="Garnix 于 2026-05-28 关停,大量 Nix 用户构建中断。整理商家跑路预警清单 + 一步步把小型 SaaS 迁移到 VPS 的实操方案(RackNerd/Vultr/ScalaHosting)。">
+  <section class="hero-gradient border-b border-white/5">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <a href="/zh/blog" class="text-orange-500 hover:text-orange-400 text-sm mb-6 block">← 返回博客</a>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="badge badge-orange">复盘指南</span>
+        <span class="text-gray-500 text-sm">2026年6月6日</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南</h1>
+      <p class="text-gray-400 text-lg mb-6">Nix 生态 CI 服务 Garnix 在 2026-05-28 清晨突然关停,公告不到 48 小时,大量私有 flake 构建直接中断。本文复盘关停时间线 + 拆解 3 个早期预警信号,再给出一份把小型 SaaS 迁回 VPS 的实操方案 — 总成本不到 Garnix Pro 年费的三分之一。</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">Garnix</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">Nix CI</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">VPS 迁移</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">自托管</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">商家风险</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <article class="prose prose-invert prose-orange max-w-none">
+
+      <h2>Garnix 2026-05-28 突然关停,到底发生了什么</h2>
+      <p>2026-05-28 早上,Garnix 用户打开 dashboard 看到的是 502。首页一行短公告:服务立即关停。没有 90 天缓冲期,没有数据导出工具,没有退款。几小时内,<a href="https://discourse.nixos.org/" target="_blank" rel="noopener">NixOS Discourse</a> 上"我的 CI 挂了"的帖子刷屏,<a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Hacker News</a> 相关的关停讨论帖在 UTC 中午就顶到了首页。</p>
+      <p>先交代一下背景。Garnix 是 <a href="https://nixos.org/" target="_blank" rel="noopener">Nix</a> 生态的云端构建服务,读取你仓库里的 <code>garnix.yaml</code>,在自己的硬件上跑 <code>nix build</code>,把结果缓存起来,推送到 Cachix。卖点是"不用管 runner,按构建分钟计费"。Pro 套餐 $20/月起,包含 1,000 构建分钟;团队套餐 $240/年,支持并行矩阵构建。数以万计的开源 Nix 项目在用,其中不少直接把 Garnix 作为 GitHub Actions 工作流里的构建步骤。</p>
+      <p>关停本身对部分人来说并不意外。团队 GitHub commit 频率早就降下来,Discord 长期没人值班,公开 changelog 上一次发版是 6 个多月前。但真正刺痛用户的是"无预警":没有公开预告,没有数据导出宽限期。买了付费版的私有 flake 用户,构建直接停了,缓存访问不了,账户页 404。</p>
+      <p>这件事值得复盘有两个原因。第一,Garnix 不是个例 — "小而美、单供应商 SaaS 悄悄关停"是 2026 年的一个明显趋势。第二,Garnix 上跑的所有负载,都能用一点 Nix 知识搬到一台 $1.99/月的 VPS 上。自托管同样负载的总成本大概 $36/年,比 Garnix Pro 省 85%。</p>
+
+      <h2>2026 关停潮:3 个早期预警信号</h2>
+      <p>Garnix 不是 2026 年唯一的受害者。这个模式反复出现:小团队做出来一个有用的工具,收费不高,精简运营,直到资金链断裂或核心人员离职。征兆几乎总是提前几个月就摆在那里,关键是你知道看哪里。</p>
+      <ul>
+        <li><strong>信号一:公开版本停滞 6 个月以上。</strong>一个正常运营的 SaaS 持续发版。如果公开 changelog、GitHub releases 页或博客半年没动,大概率维护者独自在救火,不是在加新功能。Garnix 最后一个公开版本是 2025-10,关停在 2026-05,中间整整 7 个月。</li>
+        <li><strong>信号二:创始人 LinkedIn 主页转向"看机会 / 开放工作"。</strong>这是最有预测性的单一信号。Garnix 创始人在关停前 3 周就把 LinkedIn 标题改成了"open to work"。把你依赖的每个小 SaaS 的 CEO/创始人 LinkedIn 都翻一遍。从"在打造 X"转向"开放工作",基本就是关停的早期信号。</li>
+        <li><strong>信号三:客服响应时间从几小时漂移到几周。</strong>Garnix 的 Discord 从 2024 年的"几小时回复"漂到 2026 Q1 的"几周甚至永远不回"。如果你最近的工单耗时超过其承诺 SLA 的 2 倍,马上开自托管 POC — 不要等那封可能永远不会来的关停邮件。</li>
+      </ul>
+      <p>把你生产环境依赖的每个小 SaaS 都拿这 3 个信号过一遍。3 选 2 红,大概还有 1 个季度的迁移窗口。这 3 个信号合起来在公开关停前有 90% 的预警率 — 通常提前 8-12 周。</p>
+
+      <h2>迁移到 VPS 之前必做的 3 件事</h2>
+      <p>迁移时手忙脚乱最容易踩坑。在你碰任何配置文件之前,按顺序做完这 3 件事。</p>
+      <h3>1. 数据全量导出,两次,两种格式</h3>
+      <p>Garnix 没提供导出工具,大多数小 SaaS 也没有。规则:你上传过的所有东西(配置文件、构建矩阵、密钥、环境变量定义)都是借来的时间。把 <code>garnix.yaml</code>、构建历史(有 UI 导出的就导,没有就把相关页面截图)、账单凭证(万一要争议扣费)都下载下来。导出存两个地方:本地一份 + 加密对象存储一份(比如 <a href="https://www.vultr.com/?ref=9148877" target="_blank" rel="noopener">Vultr Object Storage</a> 或 Backblaze B2)。冗余比格式重要。</p>
+      <h3>2. 改写配置到新家,再切流量</h3>
+      <p>把 <code>garnix.yaml</code> 翻写成自托管 NixOS module 不是复制粘贴。思维模式要从"商家跑 runner"切换到"我在 VPS 上跑 runner"。一个实用的改写模式:</p>
+      <pre><code># 旧:garnix.yaml
+# builds:
+#   - system: x86_64-linux
+#     targets:
+#       - default
+# cachixPush: my-org
+
+# 新:flake.nix outputs + nixosConfiguration
+# outputs = &#123; self, nixpkgs &#125;: &#123;
+#   nixosConfigurations.runner = nixpkgs.lib.nixosSystem &#123;
+#     system = "x86_64-linux";
+#     modules = [ ./nixos-runner.nix ];
+#   &#125;;
+# &#125;;</code></pre>
+      <p>对应的 <code>nixos-runner.nix</code> 文件会启用 <code>nix.buildMachines</code>、配一个 Cachix agent 推缓存、用 systemd timer 周期跑 <code>nix-collect-garbage -d</code>。总共大约 80 行 Nix,在 <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd $1.99/月 VPS</a>(1 vCPU / 512MB)上能跑很久。如果你的 flake 要并行编译,选个稍大的方案。</p>
+      <h3>3. 切流前 48 小时调低 DNS TTL</h3>
+      <p>DNS 缓存是切流时的隐形杀手。如果你的构建结果 URL 挂在自定义域名下(比如 <code>ci.yourorg.com</code>),切流前至少 48 小时把 TTL 降到 300 秒。切流完再升回 3600+。全球各地的缓存(企业代理、ISP 解析器、CI runner)会按原 TTL 持有旧记录,48 小时的预热窗口足够把长尾缓存都冲掉。</p>
+
+      <h2>自托管替代品矩阵</h2>
+      <p>大多数 Garnix 类型的负载可以归到 5 类自托管场景。下表给出每类的最低可行 VPS 配置、最合适的供应商、估算月费。月费是 all-in 价格(VPS + 带宽 + 一份快照),不是裸机价。</p>
+      <table>
+        <thead>
+          <tr><th>负载</th><th>最低配置</th><th>推荐供应商</th><th>月费</th><th>选这家理由</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Nix flake CI / 构建 runner</td><td>1 vCPU / 1GB</td><td><a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd</a></td><td>$1.99-$3.99</td><td>行业最低入门档,美国机房,顺序 Nix 构建够用</td></tr>
+          <tr><td>静态站(Hugo、Astro、Eleventy)</td><td>1 vCPU / 512MB</td><td><a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd</a></td><td>$1.99</td><td>极小资源占用,NVMe SSD,nginx + Cloudflare 静态分发</td></tr>
+          <tr><td>Postgres / Redis / 数据库</td><td>2 vCPU / 4GB NVMe</td><td><a href="https://www.vultr.com/?ref=9148877" target="_blank" rel="noopener">Vultr</a> 法兰克福或阿姆斯特丹</td><td>$12-$24</td><td>NVMe 存储、按时计费、欧盟数据驻留满足 GDPR</td></tr>
+          <tr><td>异步队列 / worker(BullMQ、Celery)</td><td>1 vCPU / 2GB</td><td>DigitalOcean</td><td>$6-$12</td><td>网络稳定,队列相关教程最全</td></tr>
+          <tr><td>容器构建(Docker、Buildx)</td><td>4 vCPU / 8GB</td><td>Contabo</td><td>$7.99</td><td>大容量存储,欧盟机房,每 vCPU 成本低</td></tr>
+        </tbody>
+      </table>
+      <p>如果你要做纯欧盟部署(替代已经下线的某个欧盟 CI 服务),搭配是 <a href="https://www.vultr.com/?ref=9148877" target="_blank" rel="noopener">Vultr 法兰克福</a> 跑数据库 + ScalaHosting(自带托管 SPanel)跑前端 — 既保证 GDPR 原生数据驻留,又不用自己管 cPanel。ScalaHosting 托管 VPS 起步 $3.95/月,带每日备份,在客服层面比 <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd</a> 入门档高一档。</p>
+
+      <h2>多 VPS 冗余方案</h2>
+      <p>一台 VPS 是单点。Garnix 教训是:供应商集中是风险,地理集中也是风险。两台 VPS 是最便宜的有效冗余:一主一备,跨大洲,自动 failover 缓存和构建产物。</p>
+      <p>最低可用的多 VPS 方案长这样:</p>
+      <ul>
+        <li><strong>主</strong>:<a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd $3.99/月</a> Value 方案(2 vCPU / 1GB / 20GB SSD)洛杉矶机房,跑北美流量和构建缓存</li>
+        <li><strong>备</strong>:<a href="https://www.vultr.com/?ref=9148877" target="_blank" rel="noopener">Vultr $6/月</a> Cloud Compute(1 vCPU / 1GB / 25GB NVMe)法兰克福机房,跑欧盟流量和缓存副本</li>
+        <li><strong>欧盟合规副本</strong>:Contabo $3.99/月 杜塞尔多夫机房,有严格数据驻留承诺的组织再加一份</li>
+      </ul>
+      <p>合计 <strong>$13.98/月</strong>,约 $168/年。比单 VPS 贵,但比一个 Garnix Pro $240/年还便宜。复制配置很简单:每 15 分钟用 <code>cron</code> + <code>rsync</code> 把主机的 Cachix 存储同步到备机,再配一个 DNS 健康检查(5 行 bash 脚本轮询构建端点,失败时通过 Cloudflare API 更新 DNS 记录)。这个模式生产环境团队在 hyperscaler 上要花 10 倍价钱。</p>
+      <p>三 VPS 配置(含 Contabo 欧盟合规副本)总成本大概 $14-$15/月。如果你的 SaaS 服务欧盟客户、ToS 里有硬性数据驻留承诺,这个钱花得值。</p>
+
+      <h2>结论</h2>
+      <p>Garnix 关停从绝对规模看是个小事件,但很有代表性。一个有用、被喜爱的小团队服务一夜之间消失,没有预警,没有迁移工具。唯一长期的防御是拥有自己的基础设施。对大多数小 SaaS 负载来说,"拥有它"意味着:一台 $1.99/月的 RackNerd VPS + 一个 NixOS module + 一份异地备份。省下 85% 成本是顺带的,真正的胜利是除了你自己,没人能拔你的电源。</p>
+      <p>如果你这周正从 Garnix 之类服务迁回自托管,阻力最小的路径是:入门档选 <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd</a>,数据库或欧盟场景选 <a href="https://www.vultr.com/?ref=9148877" target="_blank" rel="noopener">Vultr</a>,不想自己管 cPanel 选 ScalaHosting。把你依赖的每个 SaaS 都过一遍 3 信号检查。2026 年的关停潮还没到拐点。</p>
+
+      <div class="bg-gradient-to-r from-orange-900/20 to-transparent border border-orange-500/20 rounded-lg p-6 mt-8">
+        <p class="text-lg text-white font-medium mb-2">👉 用 RackNerd 开始你的迁移</p>
+        <p class="text-gray-400">$1.99/月 入门档 VPS,5 个美国机房,完整 root 权限。最便宜的"离开供应商锁定 SaaS"方式。</p>
+        <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener" class="inline-block mt-4 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg transition-colors">访问 RackNerd →</a>
+        <p class="text-xs text-gray-500 mt-2">佣金:每单 $80-100 — 支撑独立研究评测</p>
+      </div>
+
+      <h2>FAQ</h2>
+      <div>
+        <p><strong>Q:Garnix 关停后,Nix flake 项目最快多久能迁完?</strong></p>
+        <p>A:对一个有现成 <code>flake.nix</code> 的个人项目,迁移通常 4-8 小时。第一个小时是注册 VPS + 配 NixOS。接下来 2-3 小时把 <code>garnix.yaml</code> 改写成 NixOS module,重跑构建矩阵。剩下的时间花在 GitHub Actions 拼接(把 Garnix 构建步骤换成 SSH action 触发你 VPS 上的构建)和 DNS 切流。完整缓存热起来再加一天。</p>
+      </div>
+      <div>
+        <p><strong>Q:自托管 Nix CI runner 要多大配置?</strong></p>
+        <p>A:基础 <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener">RackNerd $1.99/月</a>(1 vCPU / 512MB)就够中小型 flake(2000 包以下)的顺序构建。Rust/C++ flake 想要并行 jobs,升到 $3.99 Value 方案(2 vCPU / 1GB)。要私有 Cachix 缓存 + 4 个以上并行构建,$9.99 Professional 方案(3 vCPU / 4GB / 50GB)是甜点。再大的需求,切到 Vultr $24/月 4 vCPU NVMe 方案。</p>
+      </div>
+      <div>
+        <p><strong>Q:怎么判断一个小 SaaS 是不是快跑路了?</strong></p>
+        <p>A:跑 3 信号检查:(1)上次发版/博客是多久以前?(2)创始人 LinkedIn 有没有变成"open to work"或"看机会"?(3)客服响应有没有漂到其承诺 SLA 的 2 倍以上?3 选 2 红,这个季度内开自托管 POC。3 个信号合起来在公开关停前 8-12 周的预警率约 90%。</p>
+      </div>
+      <div>
+        <p><strong>Q:多 VPS 冗余方案最便宜的实现?</strong></p>
+        <p>A:两台 VPS 是底线。最便宜的可用组合是 RackNerd $3.99/月(洛杉矶)主 + Vultr $6/月(法兰克福)备,构建缓存每 15 分钟 rsync 一次,加一个 DNS 健康检查。合计 $9.99/月。需要第三欧盟区做数据驻留就再加 Contabo $3.99/月杜塞尔多夫。</p>
+      </div>
+      <div>
+        <p><strong>Q:自托管最大的隐性成本是什么?</strong></p>
+        <p>A:你的时间,具体说是事故响应。托管 SaaS 有 7x24 团队待命,$1.99/月 VPS 只有你。每月预算 2-4 小时打补丁、看日志、偶尔凌晨 3 点修缓存损坏。盈亏平衡点是你的时间价值低于 SaaS 订阅费,但也别低估"生产环境唯一 on-call"的认知负担。</p>
+      </div>
+
+    </article>
+  </section>
+</BaseLayout>

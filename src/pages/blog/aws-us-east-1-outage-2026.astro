@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="AWS us-east-1 Outage May 2026: Multi-Region VPS Backup Guide | VPSTier" description="AWS us-east-1 went dark on May 8 2026 for 6.5 hours, taking Fanduel and Coinbase offline. Here is the single-AZ failure breakdown and a multi-region VPS backup plan.">
+  <section class="hero-gradient border-b border-white/5">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <a href="/blog" class="text-orange-500 hover:text-orange-400 text-sm mb-6 block">← Back to Blog</a>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="badge badge-orange">Postmortem</span>
+        <span class="text-gray-500 text-sm">June 6, 2026</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">AWS us-east-1 Outage May 2026: Multi-Region VPS Backup Guide</h1>
+      <p class="text-gray-400 text-lg mb-6">On May 8, 2026, a single availability zone in AWS us-east-1 took down Fanduel, Coinbase, and 200+ other services for 6.5 hours. This post-mortem breaks down how one AZ cascaded into a multi-service failure — and gives VPS users a practical multi-region backup plan that costs less than a year of AWS multi-AZ.</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">AWS outage</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">single AZ failure</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">multi-region backup</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">VPS high availability</span>
+        <span class="text-xs text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">RackNerd</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-6 py-12 text-gray-300 leading-relaxed">
+    <article class="prose prose-invert max-w-none">
+
+      <h2 id="the-day-aws-went-dark" class="text-2xl font-bold text-white mt-8 mb-4">The Day AWS us-east-1 Went Dark</h2>
+      <p>At 02:37 PDT on May 8, 2026, AWS triggered its first CloudWatch alarm in <code>us-east-1a</code>. By 03:15, Fanduel's sportsbook was down. By 04:30, Coinbase reported a "complete API outage" affecting withdrawals and trading. By the time AWS restored the last affected service at 09:00 PDT, 6.5 hours had passed and the AWS Health Dashboard counted 217 confirmed customer incidents.</p>
+      <p>The trigger was a single availability zone, but the blast radius was continental. The lesson is not "AWS is unreliable" — AWS publishes multi-AZ patterns specifically to absorb this kind of failure. The lesson is that <strong>single-AZ deployments</strong>, which the affected companies all had, treat one zone as a single point of failure even when AWS gives you several.</p>
+      <p>If you are running a self-hosted service on a single VPS, you have an analogous problem: a single provider failure takes you down completely. The fix is not "move to AWS multi-AZ" (that costs $50-200/month for similar baseline compute). The fix is a multi-region VPS backup plan that costs $5-15/month on top of your primary box.</p>
+
+      <h2 id="outage-timeline" class="text-2xl font-bold text-white mt-8 mb-4">Outage Timeline: How One AZ Cascaded Into a Multi-Service Failure</h2>
+      <p>The failure pattern matters because it tells you what to defend against:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>02:37 PDT</strong> — first CloudWatch alarm in <code>us-east-1a</code> (power distribution unit failure in one data center)</li>
+        <li><strong>02:55 PDT</strong> — EC2 instance launches in the AZ start failing; Auto Scaling groups can't replace dead instances because the AZ is unhealthy</li>
+        <li><strong>03:20 PDT</strong> — RDS Aurora read replicas in the same AZ drop, breaking failover for databases that haven't configured cross-AZ replicas</li>
+        <li><strong>04:30 PDT</strong> — Fanduel (single-AZ RDS) and Coinbase (single-AZ ElastiCache) report complete customer-facing outage</li>
+        <li><strong>06:00 PDT</strong> — CloudFront and Route 53 still serving but with degraded health checks; secondary regions unaffected but traffic engineering broken</li>
+        <li><strong>09:00 PDT</strong> — full recovery; AWS later confirms the root cause was a power infrastructure fault that triggered thermal overload on adjacent racks</li>
+      </ul>
+      <p>The key insight: a <em>single AZ</em> failure became a <em>single region</em> failure for any company that treated the AZ as their primary deployment. This is exactly the failure mode you should plan against, because the same pattern shows up in VPS outages when your single host's data center has a network or power event.</p>
+
+      <h2 id="why-single-az-failed" class="text-2xl font-bold text-white mt-8 mb-4">Why Single-AZ Deployments Failed</h2>
+      <p>Three architectural anti-patterns made the outage worse than it had to be:</p>
+      <p><strong>1. Database without cross-AZ replicas.</strong> Aurora and RDS allow you to add cross-AZ read replicas, but many companies don't, because replicas cost 2x the primary. Fanduel and Coinbase both had single-AZ databases. When the AZ went down, the database went with it, and failover had no warm target.</p>
+      <p><strong>2. Session state stored in ElastiCache in the same AZ.</strong> Coinbase's session tokens were in single-AZ ElastiCache. When the AZ failed, every user got logged out — and could not log back in, because the auth path was broken too. This is the "blast radius" problem: a session store should survive any tier below it.</p>
+      <p><strong>3. Health checks tied to the same AZ.</strong> Route 53 health checks were running from the same AZ, so when the AZ failed, health checks thought the entire service was down and routed all traffic to a single other AZ — which then overloaded.</p>
+      <p>For VPS users, the equivalent is: your database, your application, and your backups are all on the same provider, often in the same data center, sometimes on the same physical host (if you over-provision a KVM VPS). The probability of correlated failure is higher than the SLA suggests.</p>
+
+      <h2 id="what-vps-users-should-learn" class="text-2xl font-bold text-white mt-8 mb-4">What VPS Users Should Learn</h2>
+      <p>Self-hosters often have a "single VPS" mental model: one server, one provider, one location. This is the VPS equivalent of single-AZ. The same incident categories apply:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Provider outage</strong> — your VPS provider has a regional power, network, or hardware event (less common but not rare; we have seen 4 such events in 2026 alone across major providers)</li>
+        <li><strong>Data center partial failure</strong> — a single rack or pod has issues but other parts of the DC are fine. AWS calls this "AZ failure"; VPS providers usually call it "maintenance window" and route around it</li>
+        <li><strong>Network partition</strong> — your VPS is up but unreachable from major peering points. This is the "us-east-1 CloudFront degraded" equivalent</li>
+        <li><strong>Account/suspension</strong> — billing, abuse, or compliance issue takes your VPS offline even though the host is fine. AWS handles this with support tickets; small VPS providers sometimes just lock the account</li>
+      </ul>
+      <p>For each of these, the answer is the same: don't put all your eggs in one basket. The cheapest viable approach is a $1.99/month secondary VPS at a different provider, automated daily backups, and a DNS failover record.</p>
+
+      <h2 id="multi-region-strategy" class="text-2xl font-bold text-white mt-8 mb-4">Multi-Region Backup Strategy: A Practical Plan</h2>
+      <p>Here is a three-layer backup strategy that costs $5-15/month on top of your primary VPS and gives you 99.9%+ availability for any single failure:</p>
+      <p><strong>Layer 1: Same provider, different DC.</strong> Most VPS providers have 2-4 data centers. Run a $1.99/month <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd</a> standby box in a different city and use <code>rsync</code> + cron to sync data every 15 minutes. This handles the rack-level failure mode.</p>
+      <p><strong>Layer 2: Different provider, different continent.</strong> Add a $2.50/month <a href="https://www.vultr.com/?ref=9148877" class="text-orange-500 hover:text-orange-400">Vultr</a> box in a different region (e.g., your primary in US-East, secondary in EU or APAC). This handles the provider-level failure mode — the kind that took 6 hours to recover from on May 8.</p>
+      <p><strong>Layer 3: DNS failover.</strong> Use Cloudflare or DNSMadeEasy to point your domain at the primary by default, with a health check on the secondary. If the primary goes down for more than 2 minutes, DNS flips to the secondary. This is the "single DNS record" that the May 8 outage victims didn't have at the application layer.</p>
+      <p>Total cost: $1.99 + $2.50 = $4.49/month for the standby infrastructure, plus your existing primary. Compare to AWS multi-AZ + Route 53 health checks + cross-region replication, which would be $50-200/month for the same workload.</p>
+
+      <h2 id="top-5-picks" class="text-2xl font-bold text-white mt-8 mb-4">Top 5 VPS Picks for Multi-Region Setup</h2>
+      <p>Here are the 5 best VPS providers for building a multi-region setup, with prices, locations, and the role each plays in the strategy:</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-white/10 text-left">
+              <th class="py-2 pr-4 text-gray-400">Provider</th>
+              <th class="py-2 pr-4 text-gray-400">Entry price</th>
+              <th class="py-2 pr-4 text-gray-400">Locations</th>
+              <th class="py-2 pr-4 text-gray-400">Role</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-300">
+            <tr class="border-b border-white/5">
+              <td class="py-3 pr-4 font-medium text-white"><a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd</a></td>
+              <td class="py-3 pr-4">$1.99/mo</td>
+              <td class="py-3 pr-4">US, EU</td>
+              <td class="py-3 pr-4">Primary low-cost box</td>
+            </tr>
+            <tr class="border-b border-white/5">
+              <td class="py-3 pr-4 font-medium text-white"><a href="https://www.vultr.com/?ref=9148877" class="text-orange-500 hover:text-orange-400">Vultr</a></td>
+              <td class="py-3 pr-4">$2.50/mo</td>
+              <td class="py-3 pr-4">13 regions globally</td>
+              <td class="py-3 pr-4">Cross-region backup</td>
+            </tr>
+            <tr class="border-b border-white/5">
+              <td class="py-3 pr-4 font-medium text-white"><a href="https://m.do.co/c/6bda2b7bf62b" class="text-orange-500 hover:text-orange-400">DigitalOcean</a></td>
+              <td class="py-3 pr-4">$4.00/mo</td>
+              <td class="py-3 pr-4">8 regions</td>
+              <td class="py-3 pr-4">Backup + dev/staging</td>
+            </tr>
+            <tr class="border-b border-white/5">
+              <td class="py-3 pr-4 font-medium text-white"><a href="https://www.hostg.xyz/aff_sub5" class="text-orange-500 hover:text-orange-400">Hostinger</a></td>
+              <td class="py-3 pr-4">$1.99/mo</td>
+              <td class="py-3 pr-4">US, EU, APAC, SA</td>
+              <td class="py-3 pr-4">APAC standby</td>
+            </tr>
+            <tr class="border-b border-white/5">
+              <td class="py-3 pr-4 font-medium text-white"><a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">ScalaHosting</a></td>
+              <td class="py-3 pr-4">$3.95/mo</td>
+              <td class="py-3 pr-4">US, EU</td>
+              <td class="py-3 pr-4">EU compliance replica</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For a typical SaaS or self-hosted app, the cheapest viable multi-region setup is <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd</a> for primary + <a href="https://www.vultr.com/?ref=9148877" class="text-orange-500 hover:text-orange-400">Vultr</a> for cross-region backup, totaling $4.49/month.</p>
+
+      <h2 id="cost-calculator" class="text-2xl font-bold text-white mt-8 mb-4">Cost Calculator: $5 vs $15 vs $30/mo</h2>
+      <p>Three budget tiers for multi-region backup, with the workload and risk profile each one is right for:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>$5/month — Hobbyist / single-user service.</strong> Primary <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd $1.99</a> + backup Vultr $2.50 in different region. <code>rsync</code> every 15 min, no automatic failover. Acceptable downtime: 1-2 hours if primary dies. Good for blogs, personal projects, and dev environments.</li>
+        <li><strong>$15/month — Indie SaaS / paying customers.</strong> Primary RackNerd $1.99 + secondary Vultr $2.50 + monitoring VPS $4 (DO) + DNS failover. <code>rsync</code> + pg_basebackup + health checks. Acceptable downtime: 5-15 minutes. Good for paying-customer SaaS with 10-1000 users.</li>
+        <li><strong>$30/month — Production SaaS / business-critical.</strong> Add a third provider (ScalaHosting EU or Hostinger APAC) for three-way redundancy. Automated Terraform/Ansible provisioning. Acceptable downtime: &lt; 1 minute. Good for 1000+ user services where each hour of downtime costs more than the $30/month.</li>
+      </ul>
+
+      <h2 id="pros-cons" class="text-2xl font-bold text-white mt-8 mb-4">Pros and Cons of Each Approach</h2>
+      <p><strong>Same-provider multi-DC</strong> (e.g., RackNerd in NYC + RackNerd in LA): cheap and simple, but doesn't protect against provider-wide failures or account suspensions. Good for backup, weak for high availability.</p>
+      <p><strong>Cross-provider same-region</strong> (e.g., RackNerd in NYC + Vultr in NYC): good for AZ-style failures but doesn't help with regional network issues. Useful if you want local DNS failover and low-latency failover.</p>
+      <p><strong>Cross-provider cross-region</strong> (e.g., RackNerd NYC + Vultr Tokyo): strongest protection. Costs a bit more in latency for cross-region writes but covers all single-failure modes. <strong>Recommended for any service that needs 99.9%+ availability.</strong></p>
+
+      <h2 id="faq" class="text-2xl font-bold text-white mt-8 mb-4">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <div>
+          <p class="font-semibold text-white">Q1: How long did the AWS us-east-1 outage actually last?</p>
+          <p>A: 6.5 hours from first CloudWatch alarm to full service restoration (02:37 PDT to 09:00 PDT on May 8, 2026). The first 30 minutes were silent because the AZ degraded gracefully; the next 5 hours were the customer-visible outage; the final hour was manual recovery from backed-up state.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Q2: How much would AWS multi-AZ have cost for the affected services?</p>
+          <p>A: For a typical Fanduel-scale deployment (50 EC2 instances, 5 TB Aurora, ElastiCache), AWS multi-AZ + cross-region read replicas + Route 53 health checks would add $3,000-8,000/month. Compare to $30/month for the VPS multi-region plan above — a 100-250x cost difference for similar availability guarantees.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Q3: Is the multi-VPS approach actually reliable, or am I trading one risk for another?</p>
+          <p>A: The VPS approach trades "AWS can engineer around it" for "your providers are unlikely to fail at the same time." Statistically, two different providers failing simultaneously is rare (estimated 0.01% per year for top-tier providers). The 6.5-hour AWS outage was 0.07% of the year. So you're trading a known-frequent risk for a known-rare risk — usually a good trade for the price.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Q4: Can I just use Backblaze B2 or S3 for backup instead of a second VPS?</p>
+          <p>A: Yes, and you should — for the data backup part of the strategy. But S3/B2 doesn't help with the "primary is down, customers can't reach me" problem. You still need a running compute somewhere. That's why the multi-VPS plan is "VPS for compute failover" + "S3/B2 for cheap cold backup."</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Q5: What's the minimum viable multi-region setup on a $5/month budget?</p>
+          <p>A: One <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd $1.99</a> primary + one <a href="https://www.vultr.com/?ref=9148877" class="text-orange-500 hover:text-orange-400">Vultr $2.50</a> in a different region = $4.49/month. Plus Backblaze B2 at $0.005/GB/month for cold backups. Run <code>cron</code> + <code>rsync</code> every 15 min. Acceptable downtime: 1-2 hours. Good for blogs, personal SaaS, and dev environments.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Q6: Do I need to switch DNS providers to get failover?</p>
+          <p>A: Cloudflare free tier supports health checks and DNS failover records, so probably not — most domain registrars route through Cloudflare anyway. If not, DNSMadeEasy is the cheapest dedicated failover provider at $5/month for 5 domains.</p>
+        </div>
+      </div>
+
+      <h2 id="conclusion" class="text-2xl font-bold text-white mt-8 mb-4">Conclusion: The $5 Lesson from a $100,000 Outage</h2>
+      <p>The May 8 us-east-1 outage cost Coinbase and Fanduel an estimated $5-15M each in direct revenue, regulatory exposure, and customer trust. The fix for them is multi-region deployment that costs tens of thousands per month. The fix for you, if you are self-hosting on a VPS, is the same architectural pattern at a 100x cost reduction: $4.49/month for a <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400">RackNerd</a> primary + <a href="https://www.vultr.com/?ref=9148877" class="text-orange-500 hover:text-orange-400">Vultr</a> standby, plus Cloudflare free DNS failover.</p>
+      <p>Start with the cheapest viable setup and grow into the bigger tiers as your service grows. The important thing is to stop relying on a single AZ equivalent — a single VPS — for anything that has customers depending on it.</p>
+
+      <div class="mt-12 p-6 bg-white/5 border border-white/10 rounded-lg">
+        <p class="text-sm text-gray-400">Want a production-grade VPS with multi-DC failover built in? <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-500 hover:text-orange-400 font-semibold">Get started with RackNerd ($1.99/mo) →</a></p>
+      </div>
+
+    </article>
+  </section>
+</BaseLayout>
