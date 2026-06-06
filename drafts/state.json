@@ -159,9 +159,7 @@
       "published_at": "2026-06-06",
       "deployed_url_en": "https://vpstier.com/blog/aws-us-east-1-outage-2026/",
       "deployed_url_zh": "https://vpstier.com/zh/blog/aws-us-east-1-outage-2026/"
-    }
-  ],
-  "drafts": [
+    },
     {
       "slug": "best-asia-pacific-vps-2026",
       "date": "2026-06-05",
@@ -173,7 +171,7 @@
       "outline_file": "2026-06-05-best-asia-pacific-vps-2026.md",
       "en_astro": "src/pages/blog/best-asia-pacific-vps-2026.astro",
       "zh_astro": "src/pages/zh/blog/best-asia-pacific-vps-2026.astro",
-      "status": "outline_pending_publish",
+      "status": "published",
       "providers_featured": [
         "vultr",
         "digitalocean",
@@ -181,32 +179,13 @@
         "scalahosting",
         "racknerd"
       ],
-      "primary_affiliate": "racknerd"
-    },
-    {
-      "slug": "2026-shutdown-cloud-services-vps-migration",
-      "date": "2026-06-06",
-      "type": "incident-postmortem+guide",
-      "title_en": "Garnix Shutdown 2026: How to Migrate Small SaaS to a VPS",
-      "title_zh": "Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南",
-      "outline_file": "outline-2026-06-06-2026-shutdown-cloud-services-vps-migration.md",
-      "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
-      "zh_astro": "src/pages/zh/blog/2026-shutdown-cloud-services-vps-migration.astro",
-      "status": "published",
-      "published_at": "2026-06-06T12:25:00Z",
       "primary_affiliate": "racknerd",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "scalahosting",
-        "contabo",
-        "hostinger"
-      ],
-      "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
-      "banned_self_check": "PASSED"
+      "published_at": "2026-06-06",
+      "deployed_url_en": "https://vpstier.com/blog/best-asia-pacific-vps-2026/",
+      "deployed_url_zh": "https://vpstier.com/zh/blog/best-asia-pacific-vps-2026/"
     }
   ],
+  "drafts": [],
   "recent_topics": [
     "upcloud-review",
     "2026-shutdown-cloud-services-vps-migration",
