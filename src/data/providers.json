@@ -712,5 +712,112 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "hostwinds",
+    "name": "Hostwinds",
+    "tagline": "US-based VPS with 4 datacenters, 99.99% SLA, and free nightly backups",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.99,
+    "rating": 4.4,
+    "datacenter": "Dallas TX, Seattle WA, Durham NC, Amsterdam NL",
+    "features": [
+      "99.99% uptime SLA with service credits",
+      "4 datacenters across US coasts + Europe",
+      "Free nightly backups on every plan",
+      "Hourly billing — true pay-per-use",
+      "Linux + Windows VPS templates (license included)",
+      "DDoS protection available as add-on"
+    ],
+    "pros": [
+      "99.99% uptime SLA backed by service credits",
+      "4 datacenters spanning US coasts + Amsterdam",
+      "Free nightly backups included on every plan",
+      "Hourly billing for short-lived test environments",
+      "Windows VPS templates with license included",
+      "Public pricing and transparent renewal rates",
+      "24/7 US-based support via chat, phone, and tickets"
+    ],
+    "cons": [
+      "No GPU instances (CPU-only compute)",
+      "Limited Asia-Pacific presence (Amsterdam only outside US)",
+      "No native object storage like S3",
+      "DDoS protection is a paid add-on, not included",
+      "Smaller global community than DigitalOcean or Vultr"
+    ],
+    "bestFor": "Self-hosters and small teams running production workloads on US infrastructure who want a 99.99% SLA and free backups without managed-cloud pricing, plus developers who need Windows VPS or hourly billing for ephemeral test environments",
+    "vpsPlans": [
+      {
+        "name": "1xCPU-1GB",
+        "price": 5.99,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "30GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "2xCPU-4GB",
+        "price": 13.99,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "50GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "4xCPU-8GB",
+        "price": 26.99,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "100GB SSD",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "8xCPU-16GB",
+        "price": 49.99,
+        "cpu": "8 vCPU",
+        "ram": "16GB",
+        "storage": "200GB SSD",
+        "bandwidth": "4TB"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "turnkey-internet",
+    "name": "TurnKey Internet",
+    "tagline": "Independent green VPS since 1999",
+    "startingPrice": 7.95,
+    "cpu": "AMD EPYC / Intel Xeon",
+    "ram": "1GB - 32GB",
+    "storage": "25GB - 800GB SSD",
+    "bandwidth": "1TB - 10TB",
+    "datacenters": [
+      "Latham, New York"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$50-100/sale",
+    "rating": 3.9,
+    "pros": [
+      "Independent since 1999 (27+ years in business)",
+      "100% renewable energy / carbon-neutral data center",
+      "Single US East (New York) location — low-latency for North America",
+      "Full root access on KVM virtualization"
+    ],
+    "cons": [
+      "Only 1 datacenter (Latham, NY) — no EU or APAC options",
+      "Higher starting price than RackNerd ($7.95 vs $1.99)",
+      "No GPU instances",
+      "Smaller community than Vultr or DigitalOcean"
+    ],
+    "bestFor": [
+      "North America users needing low-latency VPS",
+      "Self-hosters prioritizing green/eco data centers",
+      "Small business websites",
+      "Long-term stability (27+ years operating)"
+    ],
+    "featured": false
   }
 ]

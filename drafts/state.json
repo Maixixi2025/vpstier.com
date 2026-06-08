@@ -66,12 +66,6 @@
       "status": "published"
     },
     {
-      "slug": "hetzner-vps-review-2025",
-      "date": "2026-05-25",
-      "type": "review",
-      "status": "published"
-    },
-    {
       "slug": "contabo-vps-review-2025",
       "date": "2026-05-26",
       "type": "review",
@@ -183,10 +177,101 @@
       "published_at": "2026-06-06",
       "deployed_url_en": "https://vpstier.com/blog/best-asia-pacific-vps-2026/",
       "deployed_url_zh": "https://vpstier.com/zh/blog/best-asia-pacific-vps-2026/"
+    },
+    {
+      "slug": "turnkey-internet",
+      "date": "2026-06-08",
+      "type": "review",
+      "title_en": "TurnKey Internet VPS Review 2026: Green NY Datacenter",
+      "title_zh": "TurnKey Internet VPS 评测 2026: 纽约绿色数据中心",
+      "vps_astro": "src/pages/vps/turnkey-internet.astro",
+      "status": "published",
+      "providers_featured": [
+        "turnkey-internet"
+      ],
+      "primary_affiliate": "racknerd",
+      "added_to_index": true,
+      "built_pages": 67,
+      "deployed_at": "2026-06-08"
     }
   ],
-  "drafts": [],
+  "drafts": [
+    {
+      "slug": "satellite-compute-vs-vps-2026",
+      "date": "2026-06-07",
+      "type": "guide",
+      "subtype": "comparison",
+      "title_en": "Satellite Compute vs VPS 2026: SpaceX-Google Deal Breakdown",
+      "title_zh": "卫星算力 vs VPS 2026:SpaceX-Google 9.2 亿$ 交易会重塑主机市场吗",
+      "outline_file": "outline-2026-06-07-satellite-compute-vs-vps-2026.md",
+      "en_astro": "src/pages/blog/satellite-compute-vs-vps-2026.astro",
+      "zh_astro": "src/pages/zh/blog/satellite-compute-vs-vps-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "cloudways",
+        "scalahosting",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-07 daily report (TechCrunch Google-SpaceX $920M/month compute deal)"
+    },
+    {
+      "slug": "hostwinds-review",
+      "date": "2026-06-07",
+      "type": "review",
+      "title_en": "Hostwinds VPS Review 2026: $5.99/mo Plans & 99.99% SLA",
+      "title_zh": "",
+      "outline_file": "outline-2026-06-07-hostwinds-review.md",
+      "en_astro": "src/pages/vps/hostwinds.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "hostwinds"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "User directive 2026-06-07: add new VPS provider + review"
+    },
+    {
+      "slug": "cheap-vps-under-5-2026",
+      "date": "2026-06-08",
+      "type": "comparison",
+      "title_en": "Cheap VPS 2026: 10 Best Hosting Plans Under $5/Month",
+      "title_zh": "便宜 VPS 2026:10 款月付 $5 以下的高性价比主机",
+      "outline_file": "outline-2026-06-08-cheap-vps-under-5-2026.md",
+      "en_astro": "src/pages/blog/cheap-vps-under-5-2026.astro",
+      "zh_astro": "src/pages/zh/blog/cheap-vps-under-5-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "contabo",
+        "hostwinds",
+        "interserver",
+        "hostinger",
+        "scalahosting",
+        "upcloud",
+        "hostpapa"
+      ],
+      "primary_affiliate": "racknerd",
+      "affiliate_placements": {
+        "racknerd": 7,
+        "vultr": 2,
+        "digitalocean": 2,
+        "hostinger": 1,
+        "scalahosting": 1
+      },
+      "heat_source": "Rotation topic — Hetzner 6/15 ⭐⭐⭐ dropped due to whitelist; pivoted to cheap VPS to hit racknerd GSC signal (rank 31-55)"
+    }
+  ],
   "recent_topics": [
+    "turnkey-internet",
+    "cheap-vps-under-5-2026",
+    "hostwinds-review",
+    "satellite-compute-vs-vps-2026",
     "upcloud-review",
     "2026-shutdown-cloud-services-vps-migration",
     "aws-us-east-1-outage-2026",
@@ -195,8 +280,7 @@
     "cloudways-review-20260528",
     "hostinger-review",
     "best-north-america-vps-2025",
-    "vps-buying-guide",
-    "amd-epyc-vs-intel-xeon-vps-2026"
+    "vps-buying-guide"
   ],
-  "updated": "2026-06-06"
+  "updated": "2026-06-07"
 }
