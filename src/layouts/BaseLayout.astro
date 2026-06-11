@@ -37,12 +37,76 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
   <!-- JSON-LD: WebSite + Organization -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "WebSite",
     "name": "VPSTier.com",
     "url": "https://vpstier.com",
     "description": "Find the best VPS hosting for AI agents and self-hosted projects. Real reviews, real commission rates.",
-    "sameAs": [
-      "https://twitter.com/vpstier"
+    "publisher": {
+      "@type": "Organization",
+      "name": "VPSTier.com",
+      "url": "https://vpstier.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Jason Mai",
+        "url": "https://about.me/jasonxmai"
+      },
+      "sameAs": [
+        "https://twitter.com/vpstier",
+        "https://about.me/jasonxmai"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://vpstier.com/blog/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  <!-- JSON-LD: FAQPage (top VPS questions) -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best VPS for AI agents in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For AI agents and long-running workloads, Hetzner Cloud (CCX/CPX) and Vultr High Performance are the top picks based on cost-per-vCPU. Budget options like RackNerd and BandwagonHost work for lighter workloads. See our VPS reviews for benchmarks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a VPS cost per month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VPS prices range from $5/month for budget providers (RackNerd, BandwagonHost) to $50+/month for managed cloud (Cloudways, DigitalOcean). The sweet spot for most developers is $10-25/month for 2-4 vCPU and 4-8 GB RAM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between VPS and shared hosting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VPS gives you dedicated CPU/RAM/disk in an isolated virtual environment. Shared hosting runs hundreds of sites on one server. VPS is faster, more secure, and more customizable, but costs more. For AI agents, APIs, or any production workload, VPS is required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which VPS has the best renewal pricing transparency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vultr, DigitalOcean, Linode, and Hetzner all show renewal prices upfront (same as intro). Hosts with steep renewal hikes include Bluehost, HostGator, and GoDaddy. VPSTier tracks renewal-vs-intro pricing on every provider page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you earn commission from VPS providers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, VPSTier uses affiliate links. When you click a provider link and purchase, we may earn a commission at no extra cost to you. Affiliate relationships never affect our ranking or review content. All rankings are based on benchmark data, pricing, and reliability."
+        }
+      }
     ]
   })} />
 </head>
@@ -65,6 +129,9 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
         <nav class="hidden md:flex items-center gap-8">
           <a href="/vps" class="text-sm text-gray-400 hover:text-white transition-colors">VPS Reviews</a>
           <a href="/compare" class="text-sm text-gray-400 hover:text-white transition-colors">Compare</a>
+          <a href="/blog" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a>
+          <a href="/about" class="text-sm text-gray-400 hover:text-white transition-colors">About</a>
+          <a href="/privacy" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy</a>
         </nav>
         
         <!-- CTA -->
@@ -109,6 +176,9 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
             <h4 class="text-white font-medium mb-4">Resources</h4>
             <ul class="space-y-2 text-gray-400">
               <li><a href="/compare" class="hover:text-white transition-colors">Compare VPS</a></li>
+              <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+              <li><a href="/privacy" class="hover:text-white transition-colors">Privacy</a></li>
+              <li><a href="https://about.me/jasonxmai" rel="me noopener" target="_blank" class="hover:text-white transition-colors">About the Author</a></li>
             </ul>
           </div>
         </div>

@@ -819,5 +819,48 @@
       "Long-term stability (27+ years operating)"
     ],
     "featured": false
+  },
+  {
+    "id": "buyvm",
+    "name": "BuyVM",
+    "tagline": "Community-favorite KVM VPS since 2010",
+    "startingPrice": 2.08,
+    "cpu": "Intel Xeon (dual-hexa, 12 cores / host)",
+    "ram": "256MB - 1GB+",
+    "storage": "30GB - 100GB SATA (Block Storage Slabs available)",
+    "bandwidth": "1TB - 5TB outgoing",
+    "datacenters": [
+      "Las Vegas",
+      "New York",
+      "Luxembourg"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$50-100/sale",
+    "rating": 4.1,
+    "pros": [
+      "Operating since 2010 (16+ years, owned by Cloudzy)",
+      "Includes 3500 Gbps+ DDoS protection free on all locations",
+      "3 diverse datacenters (Las Vegas / New York / Luxembourg)",
+      "Free DirectAdmin license + custom Stallion control panel",
+      "Anycast IP addresses available for global latency routing",
+      "Block Storage Slabs add-on for cheap extra storage",
+      "100+ OS templates including FreeBSD / OpenBSD / NetBSD"
+    ],
+    "cons": [
+      "SATA storage only (no NVMe tier — slower than Vultr/DO)",
+      "Smaller community than Vultr/DigitalOcean (fewer tutorials)",
+      "No managed services (unmanaged KVM only)",
+      "No GPU instances",
+      "Lower RAM ceiling at base tiers (max 1GB in published KVM plans)"
+    ],
+    "bestFor": [
+      "LowEndTalk / community-favorite hosting",
+      "VPN / Wireguard / personal projects",
+      "IPv6 + Anycast routing experiments",
+      "Small static sites and dev sandboxes",
+      "EU hosting (Luxembourg location is rare among budget hosts)"
+    ],
+    "featured": false,
+    "affiliateAvailable": false
   }
 ]

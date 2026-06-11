@@ -2,6 +2,19 @@
   "current_index": 0,
   "published": [
     {
+      "slug": "buyvm",
+      "date": "2026-06-11",
+      "type": "review",
+      "en_astro": "src/pages/vps/buyvm.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "buyvm"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "Single-provider add task (cron — not rotation)"
+    },
+    {
       "slug": "2026-shutdown-cloud-services-vps-migration",
       "date": "2026-06-06",
       "type": "incident-postmortem+guide",
@@ -193,9 +206,57 @@
       "added_to_index": true,
       "built_pages": 67,
       "deployed_at": "2026-06-08"
+    },
+    {
+      "slug": "contabo",
+      "date": "2026-06-09",
+      "type": "review",
+      "title": "Contabo VPS Review 2026: $3.99/mo Storage King Tested",
+      "file": "src/pages/vps/contabo.astro",
+      "index_card_added": "src/pages/vps/index.astro",
+      "status": "published",
+      "published_at": "2026-06-09",
+      "deployment_id": "c7810c7a-908f-4346-8305-8e694cd78daf",
+      "live_url": "https://vpstier.com/vps/contabo/",
+      "affiliate_link": "https://my.racknerd.com/aff.php?aff=16299",
+      "providers_featured": [
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "rating": 4.0,
+      "notes": "Short /vps/ review snippet (5KB). Long-form blog post at /blog/contabo-vps-review-2025/ (already published)."
     }
   ],
   "drafts": [
+    {
+      "slug": "vps-host-shutdown-warning-signs-2026",
+      "date": "2026-06-09",
+      "type": "incident-postmortem",
+      "subtype": "guide",
+      "title_en": "5 Warning Signs Your VPS Host Will Shut Down (2026)",
+      "title_zh": "2026 主机商跑路 5 大预警信号：从 Daniel 关停事件复盘",
+      "outline_file": "outline-2026-06-09-vps-host-shutdown-warning-signs-2026.md",
+      "en_astro": "src/pages/blog/vps-host-shutdown-warning-signs-2026.astro",
+      "zh_astro": "src/pages/zh/blog/vps-host-shutdown-warning-signs-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "cloudways",
+        "digitalocean",
+        "scalahosting",
+        "upcloud",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-09 daily report (Daniel's Hosting shutdown, darknetlive + HN discussion)",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 6,
+      "complement_to": "2026-shutdown-cloud-services-vps-migration (Garnix, 2026-06-06) — different angle: pre-shutdown detection vs. post-shutdown migration",
+      "hot_topic_dropped": [
+        "Hetzner 2026/6/15 调价 — DROPPED (Hetzner BANNED VPS provider)",
+        "AWS us-east-1 outage 复盘 — DROPPED (already published 2026-06-06)"
+      ]
+    },
     {
       "slug": "satellite-compute-vs-vps-2026",
       "date": "2026-06-07",
@@ -265,9 +326,63 @@
         "scalahosting": 1
       },
       "heat_source": "Rotation topic — Hetzner 6/15 ⭐⭐⭐ dropped due to whitelist; pivoted to cheap VPS to hit racknerd GSC signal (rank 31-55)"
+    },
+    {
+      "slug": "best-vps-for-ai-agents-2026",
+      "date": "2026-06-10",
+      "type": "comparison",
+      "title_en": "Best VPS for AI Agents 2026: 7 Providers Tested",
+      "title_zh": "2026 AI Agent VPS 推荐:7 家提供商家用 + 生产环境实测",
+      "outline_file": "outline-2026-06-10-best-vps-for-ai-agents-2026.md",
+      "en_astro": "src/pages/blog/best-vps-for-ai-agents-2026.astro",
+      "zh_astro": "src/pages/zh/blog/best-vps-for-ai-agents-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "scalahosting",
+        "upcloud",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "affiliate_placements": {
+        "racknerd": 7,
+        "vultr": 3,
+        "digitalocean": 2,
+        "hostinger": 1,
+        "scalahosting": 1
+      },
+      "hot_topic_source": "Fallback — ⭐ Cheap VPS (covered 06-08), other topic not in whitelist → comparison pivot"
+    },
+    {
+      "slug": "2026-black-friday-cheap-vps-under-25",
+      "date": "2026-06-11",
+      "type": "comparison",
+      "title_en": "2026 Black Friday Cheap VPS Under $25/Year: 5 Picks",
+      "title_zh": "2026 黑五前哨:5 款 $25 以内年付 VPS 推荐清单",
+      "outline_file": "outline-2026-06-11-2026-black-friday-cheap-vps-under-25.md",
+      "en_astro": "src/pages/blog/2026-black-friday-cheap-vps-under-25.astro",
+      "zh_astro": "src/pages/zh/blog/2026-black-friday-cheap-vps-under-25.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "interserver",
+        "hostinger",
+        "hostpapa",
+        "bluehost"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "⭐⭐⭐ 2026-06-11 每日热点日报 #1 (HostDare/RackNerd 黑五前哨)"
     }
   ],
   "recent_topics": [
+    "buyvm",
+    "2026-black-friday-cheap-vps-under-25",
+    "best-vps-for-ai-agents-2026",
+    "contabo",
+    "vps-host-shutdown-warning-signs-2026",
     "turnkey-internet",
     "cheap-vps-under-5-2026",
     "hostwinds-review",
@@ -278,9 +393,7 @@
     "hostpapa-review",
     "interserver-deep-review",
     "cloudways-review-20260528",
-    "hostinger-review",
-    "best-north-america-vps-2025",
-    "vps-buying-guide"
+    "hostinger-review"
   ],
-  "updated": "2026-06-07"
+  "updated": "2026-06-11"
 }

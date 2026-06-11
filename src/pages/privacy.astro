@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Privacy Policy | VPSTier.com" description="VPSTier.com privacy policy. We explain what data we collect, how we use cookies, and how affiliate links work on this site.">
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <a href="/" class="text-orange-500 hover:text-orange-400 text-sm mb-6 block">← Back to Home</a>
+    <h1 class="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
+    <p class="text-gray-400 text-sm mb-8">Last updated: June 6, 2026</p>
+
+    <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-6">
+      <p>This page explains what data VPSTier.com collects, how we use it, and what choices you have.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">1. Data we collect</h2>
+      <p><strong>Personal data we do NOT collect:</strong> We do not require you to create an account, log in, or provide any personal information to read any content on VPSTier.com.</p>
+      <p><strong>Data collected automatically by third parties:</strong></p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Cloudflare</strong> (our CDN): Logs your IP address, user agent, and requested URL for security and performance. Cloudflare's privacy policy applies: <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank" class="text-orange-500 hover:text-orange-400">cloudflare.com/privacypolicy</a>.</li>
+        <li><strong>Google Analytics</strong> (if enabled): We may use Google Analytics to understand traffic patterns. Google's privacy policy applies: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank" class="text-orange-500 hover:text-orange-400">policies.google.com/privacy</a>.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">2. Cookies</h2>
+      <p>VPSTier.com uses a minimal number of cookies, set by Cloudflare and (optionally) Google Analytics. These cookies are used for:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Security (Cloudflare bot detection and rate limiting)</li>
+        <li>Anonymous traffic analytics (if Google Analytics is enabled)</li>
+      </ul>
+      <p>We do not use cookies for advertising, cross-site tracking, or any third-party data sale.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">3. Affiliate links</h2>
+      <p>VPSTier.com participates in affiliate programs with VPS providers. When you click a provider link in our reviews and sign up, the provider may set a cookie in your browser to attribute the referral to us. This is how we earn commissions. These cookies do not track you across other sites.</p>
+      <p>Affiliate programs we participate in:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>RackNerd (ID: 16299)</li>
+        <li>Vultr (referral ID via our link)</li>
+        <li>DigitalOcean (referral ID via our link)</li>
+        <li>Hostinger (affiliate ID via our link)</li>
+        <li>Others as listed in individual review articles</li>
+      </ul>
+      <p>Clicking an affiliate link does not change the price you pay. It only gives us a small commission at no extra cost to you.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">4. AI / LLM use</h2>
+      <p>We publish an <code>llms.txt</code> file at <a href="/llms.txt" class="text-orange-500 hover:text-orange-400">/llms.txt</a> that explicitly allows AI crawlers (Googlebot, GPTBot, ClaudeBot) to access our content for search citation purposes. We do not have a separate "AI training opt-out" beyond what <code>llms.txt</code> provides. If you are an AI operator and want to opt out of citation, contact us via the About.me profile.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">5. Your rights</h2>
+      <p>You have the right to:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Use VPSTier.com without creating an account or providing personal data</li>
+        <li>Block cookies via your browser settings (some site features may degrade)</li>
+        <li>Request deletion of any personal data you have provided (we don't store any by default, so this is usually a no-op)</li>
+        <li>Contact us with privacy questions via the About.me profile</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">6. Children</h2>
+      <p>VPSTier.com is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">7. Changes to this policy</h2>
+      <p>If we make material changes to this privacy policy, we will update the "Last updated" date at the top. Continued use of the site after changes constitutes acceptance.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">8. Contact</h2>
+      <p>For privacy questions, contact via the <a href="https://about.me/jasonxmai" rel="me noopener" target="_blank" class="text-orange-500 hover:text-orange-400">About.me profile</a>.</p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects for vpstier.com
+# Chinese homepage and blog index are not built yet (partial i18n) — redirect ZH placeholder paths to the EN equivalents
+# 308 = permanent redirect, preserves SEO signal
+
+/zh        /        308
+/zh/       /        308
+/zh/blog   /blog    308
+/zh/blog/  /blog    308
