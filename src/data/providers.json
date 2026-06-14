@@ -862,5 +862,178 @@
     ],
     "featured": false,
     "affiliateAvailable": false
+  },
+  {
+    "id": "kamatera",
+    "name": "Kamatera",
+    "tagline": "Enterprise cloud with 30-day free trial since 1995",
+    "startingPrice": 4.0,
+    "cpu": "Intel Xeon (dedicated threads, Type A/B/D/T options)",
+    "ram": "1GB - 512GB+ (fully configurable)",
+    "storage": "20GB - 1000GB+ SSD NVMe (configurable)",
+    "bandwidth": "1TB - 10TB+ (configurable)",
+    "datacenters": [
+      "New York",
+      "Dallas",
+      "Los Angeles",
+      "Toronto",
+      "Amsterdam",
+      "Frankfurt",
+      "London",
+      "Madrid",
+      "Paris",
+      "Stockholm",
+      "Tel Aviv",
+      "Singapore",
+      "Hong Kong"
+    ],
+    "affiliateUrl": "",
+    "commission": "",
+    "rating": 4.2,
+    "pros": [
+      "30+ years in business (founded 1995) — exceptional longevity signal",
+      "14 datacenters globally including strong EU/APAC presence",
+      "Fully customizable cloud — choose your own CPU/RAM/SSD per server",
+      "30-day free trial with no credit card required",
+      "Hourly and monthly billing with no long-term contracts",
+      "24/7 live technical support included",
+      "Built-in firewall, snapshots, private networking, and load balancers"
+    ],
+    "cons": [
+      "No branded 'plans' — requires using their pricing calculator to configure",
+      "Less community presence on LowEndTalk / WHT than budget hosts",
+      "Not the cheapest option at $4/mo starting price (RackNerd/Contabo are cheaper)",
+      "SSD NVMe available but smallest plans may use shared resources under Type A",
+      "No one-click app marketplace (manual setup required)"
+    ],
+    "bestFor": [
+      "Businesses needing fully customizable cloud infrastructure",
+      "30-day free trial evaluation without upfront cost",
+      "Multi-region deployments requiring 14+ global locations",
+      "Projects that may grow from small to large — Kamatera scales easily",
+      "Users who want both hourly billing and enterprise-grade support"
+    ],
+    "featured": false,
+    "affiliateAvailable": false
+  },
+  {
+    "id": "knownhost",
+    "name": "KnownHost",
+    "tagline": "Premium NVMe VPS since 2006, 20+ years of operation",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.0,
+    "rating": 4.2,
+    "datacenter": "US (Atlanta, Seattle), EU (Amsterdam)",
+    "features": [
+      "NVMe SSD storage on all plans",
+      "Full root access on all unmanaged plans",
+      "20+ years in business since 2006",
+      "24/7/365 support via tickets and chat",
+      "2 dedicated IP addresses included",
+      "/64 IPv6 included on all plans",
+      "Free migrations with supported control panel",
+      "DDoS protection included"
+    ],
+    "pros": [
+      "NVMe storage standard on ALL unmanaged plans, including entry-level $5/mo plan — rare at this price",
+      "20+ years independently operating since 2006 — strong longevity signal",
+      "3 datacenter locations spanning US coasts + Europe (Atlanta, Seattle, Amsterdam)",
+      "Full root access with KVM virtualization on unmanaged plans",
+      "2 dedicated IPv4 addresses + /64 IPv6 included on every plan",
+      "Affordable unmanaged starting at $5/mo with 1 core, 1GB RAM, 25GB NVMe, 2TB bandwidth"
+    ],
+    "cons": [
+      "No GPU instances — CPU-only workloads",
+      "No APAC datacenter presence (unlike Vultr's Tokyo/Singapore/Sydney)",
+      "Managed VPS starting at $43.25/mo is expensive compared to budget hosts",
+      "No free domain included",
+      "Smaller community than DigitalOcean or Vultr (fewer third-party tutorials)"
+    ],
+    "bestFor": "Self-hosters, developers needing NVMe storage at low price points, US-based small businesses, tech-savvy users who want full root access on a budget",
+    "vpsPlans": [
+      {
+        "name": "Entry VPS",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "25GB NVMe",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Entry Plus VPS",
+        "price": 10.0,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB NVMe",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "Basic VPS",
+        "price": 20.0,
+        "cpu": "4 vCPU",
+        "ram": "6GB",
+        "storage": "100GB NVMe",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "Standard VPS",
+        "price": 40.0,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "200GB NVMe",
+        "bandwidth": "4TB"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "ovhcloud",
+    "name": "OVHcloud",
+    "tagline": "European cloud leader since 1999, NVMe VPS with daily backup",
+    "startingPrice": 4.54,
+    "cpu": "AMD EPYC / Intel Xeon",
+    "ram": "4GB - 24GB",
+    "storage": "40GB - 200GB NVMe",
+    "bandwidth": "Unlimited (200Mbps - 1.5Gbps)",
+    "datacenters": [
+      "US East (Vint Hill VA)",
+      "US West (Hillsboro OR)",
+      "Canada (Beauharnois)",
+      "France (Gravelines/Roubaix/Strasbourg)",
+      "UK (London)",
+      "Germany (Frankfurt)",
+      "Poland (Warsaw)",
+      "Australia (Sydney)",
+      "Singapore"
+    ],
+    "affiliateUrl": "",
+    "affiliateAvailable": false,
+    "commission": "$50-150/sale",
+    "rating": 4.3,
+    "pros": [
+      "25+ years in business since 1999 — proven European infrastructure provider",
+      "NVMe storage standard on all VPS plans (no SATA/SSD slow tiers)",
+      "Daily automatic backup included free on every VPS",
+      "Unlimited traffic on all plans — no overage charges",
+      "30+ datacenters in 10+ countries across 4 continents",
+      "Linux and Windows OS templates available",
+      "Easy 1-click scaling without downtime or data migration"
+    ],
+    "cons": [
+      "No GPU VPS instances — CPU-only compute",
+      "US datacenter presence limited to 2 locations (East + West)"
+    ],
+    "bestFor": [
+      "European businesses needing GDPR-compliant hosting",
+      "Developers wanting NVMe + daily backup at competitive prices",
+      "Projects needing unlimited traffic without metered bandwidth",
+      "Multi-region deployments using OVHcloud's global datacenter network",
+      "Users wanting enterprise infrastructure at indie VPS pricing"
+    ],
+    "featured": false,
+    "status": "active"
   }
 ]

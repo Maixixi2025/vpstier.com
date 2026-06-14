@@ -2,6 +2,27 @@
   "current_index": 0,
   "published": [
     {
+      "slug": "nvme-vps-under-10-2026",
+      "date": "2026-06-14",
+      "type": "comparison",
+      "title_en": "NVMe VPS Under $10/Month 2026: 5 Best Providers",
+      "outline_file": "outline-2026-06-14-nvme-vps-under-10-2026.md",
+      "en_astro": "src/pages/blog/nvme-vps-under-10-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "knownhost",
+        "vultr",
+        "hostinger",
+        "scalahosting",
+        "upcloud"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signal: vultr vps (rank 59) + racknerd (rank 50). No hot topics. Pivoted to NVMe comparison.",
+      "published_at": "2026-06-14",
+      "deployed_url_en": "https://vpstier.com/blog/nvme-vps-under-10-2026/"
+    },
+    {
       "slug": "2026-black-friday-cheap-vps-under-25",
       "date": "2026-06-11",
       "type": "comparison",
@@ -39,7 +60,7 @@
       "slug": "2026-shutdown-cloud-services-vps-migration",
       "date": "2026-06-06",
       "type": "incident-postmortem+guide",
-      "status": "built_pending_deploy",
+      "status": "published",
       "title_en": "Garnix Shutdown 2026: How to Migrate Small SaaS to a VPS",
       "title_zh": "Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南",
       "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
@@ -55,7 +76,8 @@
       ],
       "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
       "banned_self_check": "PASSED",
-      "racknerd_cta_count": 6
+      "racknerd_cta_count": 6,
+      "published_at": "2026-06-13"
     },
     {
       "slug": "almalinux-vs-rocky-vs-ubuntu-vps-2026",
@@ -144,7 +166,7 @@
       "type": "review",
       "title_en": "UpCloud VPS Review 2026: maxIOPS Performance + 8 Datacenters",
       "title_zh": "UpCloud VPS 评测 2026：maxIOPS 性能 + 8 个机房 + $5/月起",
-      "status": "built_pending_deploy",
+      "status": "published",
       "provider": "upcloud",
       "en_astro": "src/pages/blog/upcloud-review.astro",
       "zh_astro": "src/pages/zh/blog/upcloud-review.astro",
@@ -152,7 +174,7 @@
       "en_file": "drafts/en-upcloud-review-2026-06-06.md",
       "build_pages": 55,
       "build_status": "success",
-      "deploy_status": "blocked_no_token",
+      "deploy_status": "success",
       "deploy_command": "cd /root/vpstier-site && npx wrangler pages deploy dist --project-name=vpstier-com",
       "commit": "fcf235c67b710c5d30cddcce1e2a263a9ffe78cb",
       "primary_affiliate": "racknerd",
@@ -163,7 +185,10 @@
         "scalahosting"
       ],
       "hot_topic_source": "⏭️ Not used (task was provider+review, not hot-topic blog)",
-      "commit_short": "fcf235c"
+      "commit_short": "fcf235c",
+      "published_at": "2026-06-13",
+      "deployed_url_en": "https://vpstier.com/blog/upcloud-review/",
+      "deployed_url_zh": "https://vpstier.com/zh/blog/upcloud-review/"
     },
     {
       "slug": "aws-us-east-1-outage-2026",
@@ -246,6 +271,44 @@
       "primary_affiliate": "racknerd",
       "rating": 4.0,
       "notes": "Short /vps/ review snippet (5KB). Long-form blog post at /blog/contabo-vps-review-2025/ (already published)."
+    },
+    {
+      "slug": "knownhost",
+      "date": "2026-06-13",
+      "type": "review",
+      "title": "KnownHost VPS Review 2026: Unmanaged From $5/mo",
+      "vps_astro": "src/pages/vps/knownhost.astro",
+      "status": "published",
+      "providers_featured": [
+        "knownhost"
+      ],
+      "primary_affiliate": "racknerd",
+      "added_to_index": true,
+      "affiliate_link": "https://my.racknerd.com/aff.php?aff=16299",
+      "rating": 4.2
+    },
+    {
+      "slug": "vps-pricing-trap-guide-2026",
+      "date": "2026-06-13",
+      "type": "guide",
+      "subtype": "comparison",
+      "title_en": "VPS Pricing Traps 2026: Avoid Bait-and-Switch Renewal Fees",
+      "outline_file": "outline-2026-06-13-vps-pricing-trap-guide-2026.md",
+      "en_astro": "src/pages/blog/vps-pricing-trap-guide-2026.astro",
+      "zh_astro": "src/pages/zh/blog/vps-pricing-trap-guide-2026.astro",
+      "status": "published",
+      "published_at": "2026-06-13",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "contabo",
+        "hostinger",
+        "interserver"
+      ],
+      "primary_affiliate": "racknerd",
+      "racknerd_cta_count": 7,
+      "hot_topic_source": "⭐ 2026-06-13 daily report (Godlike.Host bait-and-switch pricing, LowEndBox community warnings)"
     }
   ],
   "drafts": [
@@ -353,7 +416,7 @@
       "date": "2026-06-10",
       "type": "comparison",
       "title_en": "Best VPS for AI Agents 2026: 7 Providers Tested",
-      "title_zh": "2026 AI Agent VPS 推荐:7 家提供商家用 + 生产环境实测",
+      "title_zh": "2026 AI Agent VPS 推荐:7 家供应商家用 + 生产环境实测",
       "outline_file": "outline-2026-06-10-best-vps-for-ai-agents-2026.md",
       "en_astro": "src/pages/blog/best-vps-for-ai-agents-2026.astro",
       "zh_astro": "src/pages/zh/blog/best-vps-for-ai-agents-2026.astro",
@@ -376,9 +439,30 @@
         "scalahosting": 1
       },
       "hot_topic_source": "Fallback — ⭐ Cheap VPS (covered 06-08), other topic not in whitelist → comparison pivot"
+    },
+    {
+      "slug": "best-unmetered-bandwidth-vps-north-america-2026",
+      "date": "2026-06-12",
+      "type": "comparison",
+      "title_en": "Top Unmetered Bandwidth VPS in North America 2026",
+      "outline_file": "outline-2026-06-12-best-unmetered-bandwidth-vps-north-america-2026.md",
+      "en_astro": "src/pages/blog/best-unmetered-bandwidth-vps-north-america-2026.astro",
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "buyvm",
+        "hostwinds",
+        "interserver"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "GSC keyword signal — unmetered bandwidth vps near n (rank 35)"
     }
   ],
   "recent_topics": [
+    "nvme-vps-under-10-2026",
+    "knownhost",
+    "vps-pricing-trap-guide-2026",
+    "best-unmetered-bandwidth-vps-north-america-2026",
     "buyvm",
     "2026-black-friday-cheap-vps-under-25",
     "best-vps-for-ai-agents-2026",
@@ -396,5 +480,5 @@
     "cloudways-review-20260528",
     "hostinger-review"
   ],
-  "updated": "2026-06-11"
+  "updated": "2026-06-14"
 }
