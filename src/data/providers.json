@@ -1035,5 +1035,214 @@
     ],
     "featured": false,
     "status": "active"
+  },
+  {
+    "id": "hostarmada",
+    "name": "HostArmada",
+    "tagline": "Cloud SSD VPS with NVMe RAID, daily backups, and 9 datacenters",
+    "startingPrice": 3.69,
+    "cpu": "Intel Xeon / AMD EPYC",
+    "ram": "1GB - 16GB",
+    "storage": "40GB - 320GB NVMe RAID",
+    "bandwidth": "2TB - 8TB",
+    "datacenters": [
+      "Los Angeles",
+      "Dallas",
+      "New York",
+      "Ashburn",
+      "Chicago",
+      "London",
+      "Amsterdam",
+      "Frankfurt",
+      "Singapore"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "rating": 4.1,
+    "features": [
+      "KVM virtualization",
+      "RAID NVMe storage on all plans",
+      "Free daily backups + snapshots",
+      "17 Tbps DDoS protection",
+      "Free cPanel + Softaculous",
+      "Free SSL certificates",
+      "Free website migration",
+      "Dedicated IPv4 address",
+      "Full root access",
+      "9 global datacenters"
+    ],
+    "pros": [
+      "RAID NVMe storage on ALL plans — no SATA slow tiers",
+      "9 global datacenters spanning US, Europe, and APAC",
+      "Free automated daily backups + manual snapshots",
+      "17 Tbps DDoS protection included",
+      "Free cPanel + Softaculous + SSL certificates",
+      "Free website migration service"
+    ],
+    "cons": [
+      "Newer company (2019) — shorter track record than established providers",
+      "No GPU instances — CPU-only compute",
+      "Only 1 APAC location (Singapore), no Australia/Japan",
+      "No Windows VPS templates — Linux only",
+      "Higher renewal rates than intro pricing"
+    ],
+    "bestFor": "Developers wanting NVMe VPS with managed support, small businesses needing cloud hosting with daily backups, users seeking a middle-ground between budget and premium VPS, EU users needing London/Amsterdam/Frankfurt locations",
+    "vpsPlans": [
+      {
+        "name": "Spark",
+        "price": 3.69,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "40GB NVMe",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Flux",
+        "price": 5.18,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Fusion",
+        "price": 10.74,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB NVMe",
+        "bandwidth": "5TB"
+      },
+      {
+        "name": "Ignition",
+        "price": 16.89,
+        "cpu": "8 vCPU",
+        "ram": "16GB",
+        "storage": "320GB NVMe",
+        "bandwidth": "8TB"
+      }
+    ],
+    "status": "active",
+    "featured": false
+  },
+  {
+    "id": "linode",
+    "name": "Linode (Akamai Connected Cloud)",
+    "tagline": "Developer-favorite VPS since 2003, now Akamai-powered",
+    "startingPrice": 5.0,
+    "cpu": "AMD EPYC Milan / Intel Xeon",
+    "ram": "1GB - 192GB",
+    "storage": "25GB - 800GB NVMe",
+    "bandwidth": "1TB - 10TB",
+    "datacenters": [
+      "Atlanta",
+      "Dallas",
+      "Frankfurt",
+      "Fremont",
+      "London",
+      "Mumbai",
+      "Newark",
+      "Osaka",
+      "Singapore",
+      "Sydney",
+      "Tokyo",
+      "Toronto"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": false,
+    "commission": "",
+    "rating": 4.5,
+    "pros": [
+      "11 global datacenters — strongest US/EU/APAC coverage",
+      "Excellent documentation and developer API/CLI",
+      "S3-compatible Object Storage + NodeBalancers + Block Storage",
+      "40Gbps network across all plans",
+      "Transparent renewal pricing (same as intro)"
+    ],
+    "cons": [
+      "No GPU instances — CPU-only compute",
+      "Higher starting price than budget hosts ($5/mo vs $2/mo)",
+      "Akamai acquisition created some migration uncertainty (2022+)",
+      "No free tier for VPS (only $100 credit for new accounts)"
+    ],
+    "bestFor": [
+      "Production web applications",
+      "Full-stack developers needing rich ecosystem",
+      "Startups scaling from prototype to production",
+      "Multi-region deployments across 11 datacenters",
+      "Users who value documentation and community support"
+    ],
+    "featured": false,
+    "status": "active"
+  },
+  {
+    "id": "ionos",
+    "name": "IONOS",
+    "tagline": "European Cloud Hosting from $1/mo",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$10-50/sale",
+    "cookie": "30 days",
+    "startingPrice": 1.0,
+    "rating": 4.0,
+    "datacenter": "EU + US (Frankfurt, London, Spain, US)",
+    "features": [
+      "EU-native German company (GDPR-native)",
+      "Unlimited traffic on all plans",
+      "Personal consultant for business plans",
+      "24/7 multilingual support",
+      "Free SSL & domain (annual plans)",
+      "VPS, Cloud Server, and Dedicated options"
+    ],
+    "pros": [
+      "Cheapest EU entry tier ($1/mo intro, 1GB RAM)",
+      "Unlimited traffic — no metered bandwidth",
+      "Multiple EU datacenters (Frankfurt, London, Spain)",
+      "Personal consultant included on business plans",
+      "30-day money-back guarantee"
+    ],
+    "cons": [
+      "Intro pricing spikes 3-5x on renewal",
+      "No hourly billing (monthly only)",
+      "Limited GPU options (no ML workloads)",
+      "Setup fee on some plans"
+    ],
+    "bestFor": "EU businesses, GDPR-bound workloads, SMB sites, mail/Exchange hosting",
+    "vpsPlans": [
+      {
+        "name": "VPS XS",
+        "price": 1.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "10GB SSD",
+        "bandwidth": "Unlimited"
+      },
+      {
+        "name": "VPS S",
+        "price": 4.0,
+        "cpu": "1 vCPU",
+        "ram": "2GB",
+        "storage": "40GB SSD",
+        "bandwidth": "Unlimited"
+      },
+      {
+        "name": "VPS M",
+        "price": 8.0,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "Unlimited"
+      },
+      {
+        "name": "VPS L",
+        "price": 16.0,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "Unlimited"
+      }
+    ],
+    "status": "active"
   }
 ]

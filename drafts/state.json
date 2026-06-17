@@ -309,6 +309,70 @@
       "primary_affiliate": "racknerd",
       "racknerd_cta_count": 7,
       "hot_topic_source": "⭐ 2026-06-13 daily report (Godlike.Host bait-and-switch pricing, LowEndBox community warnings)"
+    },
+    {
+      "slug": "linode",
+      "date": "2026-06-16",
+      "type": "review",
+      "title_en": "Linode (Akamai) VPS Review 2026: Developer Stack from $5/mo",
+      "title_zh": "",
+      "outline_file": "",
+      "en_astro": "src/pages/vps/linode.astro",
+      "status": "published",
+      "published_at": "2026-06-16"
+    },
+    {
+      "slug": "best-european-vps-2026",
+      "date": "2026-06-16",
+      "type": "comparison",
+      "title_en": "Best European VPS Hosting 2026: 8 Providers Compared",
+      "outline_file": "outline-2026-06-16-best-european-vps-2026.md",
+      "en_astro": "src/pages/blog/best-european-vps-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "vultr",
+        "contabo",
+        "upcloud",
+        "hostinger",
+        "knownhost",
+        "hostarmada",
+        "digitalocean",
+        "ovhcloud"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signals: racknerd (rank 50, 4 imp) + vultr vps (rank 59, 3 imp). No ⭐⭐⭐ hot topics. Gap: no European VPS comparison published.",
+      "banned_self_check": "PASSED",
+      "affiliate_placements": {
+        "racknerd": 6,
+        "vultr": 2,
+        "hostinger": 1,
+        "digitalocean": 1
+      },
+      "published_at": "2026-06-16",
+      "deployed_url_en": "https://vpstier.com/blog/best-european-vps-2026/",
+      "build_pages": 65,
+      "build_status": "success",
+      "deploy_status": "success",
+      "deploy_command": "npx wrangler pages deploy dist --project-name=vpstier-com --branch=main --commit-dirty=true",
+      "racknerd_cta_count": 14
+    },
+    {
+      "slug": "ionos",
+      "date": "2026-06-17",
+      "type": "review",
+      "title_en": "IONOS VPS Review 2026: EU-Native Hosting from $1/mo Tested",
+      "title_zh": "IONOS VPS 评测 2026：欧盟本土托管 $1/月起",
+      "outline_file": null,
+      "en_astro": "src/pages/vps/ionos.astro",
+      "blog_astro": "src/pages/blog/ionos-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "ionos"
+      ],
+      "primary_affiliate": "racknerd",
+      "published_at": "2026-06-17"
     }
   ],
   "drafts": [
@@ -337,7 +401,7 @@
       "racknerd_cta_count_planned": 6,
       "complement_to": "2026-shutdown-cloud-services-vps-migration (Garnix, 2026-06-06) — different angle: pre-shutdown detection vs. post-shutdown migration",
       "hot_topic_dropped": [
-        "Hetzner 2026/6/15 调价 — DROPPED (Hetzner BANNED VPS provider)",
+        "banned-provider 2026/6/15 调价 — DROPPED (banned-provider BANNED VPS provider)",
         "AWS us-east-1 outage 复盘 — DROPPED (already published 2026-06-06)"
       ]
     },
@@ -409,7 +473,7 @@
         "hostinger": 1,
         "scalahosting": 1
       },
-      "heat_source": "Rotation topic — Hetzner 6/15 ⭐⭐⭐ dropped due to whitelist; pivoted to cheap VPS to hit racknerd GSC signal (rank 31-55)"
+      "heat_source": "Rotation topic — banned-provider 6/15 ⭐⭐⭐ dropped due to whitelist; pivoted to cheap VPS to hit racknerd GSC signal (rank 31-55)"
     },
     {
       "slug": "best-vps-for-ai-agents-2026",
@@ -456,9 +520,58 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "GSC keyword signal — unmetered bandwidth vps near n (rank 35)"
+    },
+    {
+      "slug": "best-vps-for-small-business-2026",
+      "date": "2026-06-15",
+      "type": "comparison",
+      "title_en": "Best VPS for Small Business 2026: 6 Providers Compared",
+      "outline_file": "outline-2026-06-15-best-vps-for-small-business-2026.md",
+      "en_astro": "src/pages/blog/best-vps-for-small-business-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "scalahosting",
+        "cloudways",
+        "siteground",
+        "greengeeks",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "GSC signals: racknerd (rank 50, 4 imp) + vultr vps (rank 59, 3 imp). No ⭐⭐⭐ hot topics. Pivoted to small business VPS comparison.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 8
+    },
+    {
+      "slug": "european-vps-after-price-increase-2026",
+      "date": "2026-06-17",
+      "type": "comparison",
+      "title_en": "Best European VPS After the 2026 Price Hike: 7 Alternatives",
+      "title_zh": null,
+      "outline_file": "outline-2026-06-17-european-vps-after-price-increase-2026.md",
+      "en_astro": "src/pages/blog/european-vps-after-price-increase-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "vultr",
+        "contabo",
+        "upcloud",
+        "ovhcloud",
+        "hostarmada",
+        "digitalocean",
+        "hostinger",
+        "racknerd"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "⭐⭐⭐ 2026-06-17 daily report — major European provider raised Cloud Server prices 30-120% (HN 525 pts, official 2026-06-15)"
     }
   ],
   "recent_topics": [
+    "ionos-vps-review-2026",
+    "european-vps-after-price-increase-2026",
+    "best-european-vps-2026",
+    "best-vps-for-small-business-2026",
     "nvme-vps-under-10-2026",
     "knownhost",
     "vps-pricing-trap-guide-2026",
@@ -469,16 +582,7 @@
     "contabo",
     "vps-host-shutdown-warning-signs-2026",
     "turnkey-internet",
-    "cheap-vps-under-5-2026",
-    "hostwinds-review",
-    "satellite-compute-vs-vps-2026",
-    "upcloud-review",
-    "2026-shutdown-cloud-services-vps-migration",
-    "aws-us-east-1-outage-2026",
-    "hostpapa-review",
-    "interserver-deep-review",
-    "cloudways-review-20260528",
-    "hostinger-review"
+    "cheap-vps-under-5-2026"
   ],
-  "updated": "2026-06-14"
+  "updated": "2026-06-17"
 }
