@@ -373,6 +373,88 @@
       ],
       "primary_affiliate": "racknerd",
       "published_at": "2026-06-17"
+    },
+    {
+      "slug": "hawk-host-review",
+      "date": "2026-06-18",
+      "type": "review",
+      "title_en": "Hawk Host VPS Review 2026: 7-Datacenter Cloud VPS Tested",
+      "status": "published",
+      "published_at": "2026-06-18",
+      "en_astro": "src/pages/blog/hawk-host-review.astro",
+      "providers_featured": [
+        "hawk-host"
+      ]
+    },
+    {
+      "slug": "atlantic-net",
+      "date": "2026-06-19",
+      "type": "review",
+      "title_en": "Atlantic.Net VPS Review 2026: Managed VPS From $8/mo",
+      "en_astro": "src/pages/vps/atlantic-net.astro",
+      "blog_astro": "src/pages/blog/atlantic-net-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "atlantic-net"
+      ],
+      "primary_affiliate": "racknerd",
+      "published_at": "2026-06-19"
+    },
+    {
+      "slug": "hivelocity",
+      "date": "2026-06-21",
+      "type": "review",
+      "title_en": "Hivelocity VPS Review 2026: 44 Global DCs $10/mo",
+      "vps_astro": "src/pages/vps/hivelocity.astro",
+      "status": "published",
+      "providers_featured": [
+        "hivelocity"
+      ],
+      "primary_affiliate": "racknerd",
+      "affiliate_link": "https://my.racknerd.com/aff.php?aff=16299",
+      "rating": 4.3,
+      "added_to_index": true,
+      "published_at": "2026-06-21"
+    },
+    {
+      "slug": "fastcomet-review-2026",
+      "date": "2026-06-22",
+      "type": "review",
+      "title_en": "FastComet VPS Review 2026: Managed NVMe Hosting Tested",
+      "en_astro": "src/pages/blog/fastcomet-review-2026.astro",
+      "status": "published",
+      "published_at": "2026-06-22",
+      "providers_featured": [
+        "fastcomet"
+      ],
+      "primary_affiliate": "racknerd"
+    },
+    {
+      "slug": "rosehosting-review-2026",
+      "date": "2026-06-23",
+      "type": "review",
+      "title_en": "RoseHosting VPS Review 2026: Managed Linux NVMe Tested",
+      "en_astro": "src/pages/blog/rosehosting-review-2026.astro",
+      "vps_astro": "src/pages/vps/rosehosting.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "rosehosting",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "Provider addition task (cron - rosehosting, premium managed VPS)",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count": 3,
+      "published_at": "2026-06-23"
+    },
+    {
+      "slug": "1984-is-review-2026",
+      "date": "2026-06-24",
+      "type": "review"
     }
   ],
   "drafts": [
@@ -565,9 +647,230 @@
       ],
       "primary_affiliate": "racknerd",
       "heat_source": "⭐⭐⭐ 2026-06-17 daily report — major European provider raised Cloud Server prices 30-120% (HN 525 pts, official 2026-06-15)"
+    },
+    {
+      "slug": "managed-vps-hosting-2026",
+      "date": "2026-06-18",
+      "type": "comparison",
+      "title_en": "Managed VPS Hosting 2026: 7 Providers Compared",
+      "title_zh": null,
+      "outline_file": "outline-2026-06-18-managed-vps-hosting-2026.md",
+      "en_astro": "src/pages/blog/managed-vps-hosting-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "cloudways",
+        "siteground",
+        "greengeeks",
+        "chemicloud",
+        "scalahosting",
+        "hostpapa",
+        "knownhost",
+        "racknerd"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC keyword: managed vps hosting reviews (rank 63). No ⭐⭐⭐ hot topics. Pivoted to managed VPS comparison.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 6,
+      "affiliate_placements": {
+        "racknerd": 6,
+        "cloudways": 1,
+        "siteground": 1,
+        "knownhost": 1
+      }
+    },
+    {
+      "slug": "scalahosting-vps-review-2026",
+      "date": "2026-06-19",
+      "type": "review",
+      "title_en": "ScalaHosting VPS Review 2026: SPanel Tested",
+      "title_zh": null,
+      "outline_file": "outline-2026-06-19-scalahosting-vps-review-2026.md",
+      "en_astro": "src/pages/blog/scalahosting-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "scalahosting",
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signal: scalahosting (rank 72, 2 imp). Gap: no full blog review for ScalaHosting (only /vps/ provider card exists).",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 6
+    },
+    {
+      "slug": "coinbase-aws-outage-vps-redundancy-2026",
+      "date": "2026-06-20",
+      "type": "incident-postmortem+guide",
+      "title_en": "Coinbase Outage 2026: VPS Redundancy Guide",
+      "outline_file": "outline-2026-06-20-coinbase-aws-outage-vps-redundancy-2026.md",
+      "en_astro": "src/pages/blog/coinbase-aws-outage-vps-redundancy-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "upcloud",
+        "hostinger",
+        "siteground",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "⭐ 2026-06-19 daily report #2 (Coinbase outage — AWS cooling failure, InfoQ coverage, HN discussion)",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 7
+    },
+    {
+      "slug": "vps-cost-crisis-2026-data-centers-cloudflare",
+      "date": "2026-06-21",
+      "type": "analysis+comparison",
+      "title_en": "VPS Cost Crisis 2026: Data Center Wars & Cloudflare",
+      "outline_file": "outline-2026-06-21-vps-cost-crisis-2026-data-centers-cloudflare.md",
+      "en_astro": "src/pages/blog/vps-cost-crisis-2026-data-centers-cloudflare.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "scalahosting",
+        "hostinger",
+        "interserver",
+        "cloudways"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐ P0 2026-06-21 daily report (The Verge: Amazon data center moratorium controversy + webhosting.today: Cloudflare killing traditional hosting)",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 6,
+      "affiliate_placements": {
+        "racknerd": 6,
+        "vultr": 1,
+        "digitalocean": 1,
+        "hostinger": 1
+      }
+    },
+    {
+      "slug": "2026-h1-vps-market-landscape",
+      "date": "2026-06-22",
+      "type": "analysis+comparison",
+      "title_en": "2026 H1 VPS Market Overview: Pricing Trends & Top Providers",
+      "outline_file": "outline-2026-06-22-2026-h1-vps-market-landscape.md",
+      "en_astro": "src/pages/blog/2026-h1-vps-market-landscape.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "contabo",
+        "hostinger",
+        "scalahosting",
+        "knownhost",
+        "hostarmada",
+        "upcloud",
+        "interserver",
+        "hostwinds",
+        "linode",
+        "ovhcloud",
+        "ionos",
+        "greengeeks",
+        "siteground",
+        "chemicloud",
+        "hostpapa",
+        "dreamhost",
+        "hivelocity",
+        "atlantic-net",
+        "cloudways",
+        "hawk-host",
+        "buyvm"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "2026-06-22 daily hot topics report — VPS section recommends '2026上半年VPS市场格局盘点' due to no standout breaking news. GSC signals: racknerd (rank 76, 1 imp), managed vps hosting reviews (rank 63, 1 imp), cloudways vps (rank 59, 1 imp). H1 2026 market landscape overview.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 6
+    },
+    {
+      "slug": "hostarmada-vps-review-2026",
+      "date": "2026-06-23",
+      "type": "review",
+      "title_en": "HostArmada VPS Review 2026: NVMe RAID Cloud VPS Tested",
+      "outline_file": "outline-2026-06-23-hostarmada-vps-review-2026.md",
+      "en_astro": "src/pages/blog/hostarmada-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "hostarmada",
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signals (racknerd review rank 46). No hot topics — VPS ⭐ today featured a banned provider. Provider review gap: HostArmada has zero site content.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 8
+    },
+    {
+      "slug": "kamatera-vps-review-2026",
+      "date": "2026-06-24",
+      "type": "review",
+      "title_en": "Kamatera VPS Review 2026: 14 Datacenters + 30-Day Free Trial",
+      "outline_file": "outline-2026-06-24-kamatera-vps-review-2026.md",
+      "en_astro": "src/pages/blog/kamatera-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "kamatera",
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "linode",
+        "hostinger",
+        "contabo",
+        "scalahosting"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signal: kamatera vps (rank 35, 5 imp) + kamatera (rank 60, 2 imp). No ⭐⭐⭐ hot topics: today's VPS section featured a banned provider only. Pivoted to provider gap scan — Kamatera has 0 blog content, only /vps/kamatera.astro card exists. Strongest 2026-06-24 GSC signal pointing to an unaddressed provider.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 7
+    },
+    {
+      "slug": "1984-is-review-2026",
+      "date": "2026-06-24",
+      "type": "review",
+      "title_en": "1984.is VPS Review 2026: Privacy-First Icelandic Hosting",
+      "title_zh": "",
+      "outline_file": "",
+      "en_astro": "src/pages/vps/1984.astro",
+      "zh_astro": "",
+      "status": "published",
+      "providers_featured": [
+        "1984",
+        "racknerd",
+        "buyvm",
+        "vultr",
+        "ovhcloud",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)"
     }
   ],
   "recent_topics": [
+    "1984-is-review-2026",
+    "kamatera-vps-review-2026",
+    "hostarmada-vps-review-2026",
+    "fastcomet-review-2026",
+    "2026-h1-vps-market-landscape",
+    "vps-cost-crisis-2026-data-centers-cloudflare",
+    "coinbase-aws-outage-vps-redundancy-2026",
+    "scalahosting-vps-review-2026",
+    "hawk-host-review",
+    "managed-vps-hosting-2026",
     "ionos-vps-review-2026",
     "european-vps-after-price-increase-2026",
     "best-european-vps-2026",
@@ -576,13 +879,7 @@
     "knownhost",
     "vps-pricing-trap-guide-2026",
     "best-unmetered-bandwidth-vps-north-america-2026",
-    "buyvm",
-    "2026-black-friday-cheap-vps-under-25",
-    "best-vps-for-ai-agents-2026",
-    "contabo",
-    "vps-host-shutdown-warning-signs-2026",
-    "turnkey-internet",
-    "cheap-vps-under-5-2026"
+    "buyvm"
   ],
-  "updated": "2026-06-17"
+  "updated": "2026-06-24T10:57:06.927117"
 }
