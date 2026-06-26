@@ -36,7 +36,7 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
   <meta name="twitter:description" content={description} />
 
   <!-- JSON-LD: WebSite + Organization -->
-  <script type="application/ld+json" set:html={JSON.stringify({
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "VPSTier.com",
@@ -64,7 +64,7 @@ const { title, description = "Find the best VPS hosting for AI agents and self-h
   })} />
 
   <!-- JSON-LD: FAQPage (top VPS questions) -->
-  <script type="application/ld+json" set:html={JSON.stringify({
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
