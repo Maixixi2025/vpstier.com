@@ -1,5 +1,102 @@
 [
   {
+    "id": "a2-hosting",
+    "name": "A2 Hosting",
+    "tagline": "Turbo VPS with AMD EPYC + LiteSpeed, 4 datacenters, since 2003",
+    "startingPrice": 5.0,
+    "cpu": "AMD EPYC (Turbo Server tier)",
+    "ram": "1GB - 12GB",
+    "storage": "150GB SSD - 1TB NVMe",
+    "bandwidth": "2TB - 6TB",
+    "datacenters": [
+      "Michigan (US East)",
+      "Arizona (US West)",
+      "Amsterdam (EU)",
+      "Singapore (APAC)"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$100/sale",
+    "cookie": "90 days",
+    "rating": 4.3,
+    "features": [
+      "Turbo Servers with AMD EPYC + LiteSpeed",
+      "4 global data centers (US East/West, EU, APAC)",
+      "Both managed and unmanaged VPS tiers",
+      "Full root access with cPanel/WHM",
+      "Free site migration and free SSL (Let's Encrypt)",
+      "Anytime money-back guarantee (pro-rated for VPS)",
+      "NVMe storage on managed VPS 3-5 tiers",
+      "24/7 Guru Crew support (ticket, chat, phone)"
+    ],
+    "pros": [
+      "Turbo Servers with AMD EPYC + LiteSpeed deliver up to 9x faster page loads",
+      "Four global data centers spanning US, EU, and APAC",
+      "Both managed and unmanaged VPS tracks to match ops capacity",
+      "22+ years in business since 2003 - proven longevity",
+      "Anytime money-back guarantee (pro-rated for VPS)",
+      "Free site migration, free SSL, and free cPanel on managed tiers"
+    ],
+    "cons": [
+      "No GPU instances - CPU-only compute across all tiers",
+      "Renewal rates 2-3x higher than intro pricing",
+      "Unmanaged VPS 1-2 use SATA SSD (NVMe starts at managed VPS 3)",
+      "Linux only - no Windows VPS options",
+      "Entry-tier VPS 1 (1GB RAM) is tight beyond a single small site"
+    ],
+    "bestFor": [
+      "WordPress / PHP / Node workloads benefiting from LiteSpeed",
+      "Developers wanting managed VPS without WP Engine / Kinsta pricing",
+      "Small businesses needing managed hosting with phone support",
+      "Users migrating from shared hosting to first VPS",
+      "US-based support team reachable by phone"
+    ],
+    "vpsPlans": [
+      {
+        "name": "VPS 1 (Unmanaged)",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "150GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "VPS 2 (Unmanaged)",
+        "price": 9.99,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "250GB SSD",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "VPS 3 (Managed)",
+        "price": 14.99,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "500GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "VPS 4 (Managed)",
+        "price": 24.99,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "750GB NVMe",
+        "bandwidth": "5TB"
+      },
+      {
+        "name": "VPS 5 (Managed)",
+        "price": 39.99,
+        "cpu": "6 vCPU",
+        "ram": "12GB",
+        "storage": "1TB NVMe",
+        "bandwidth": "6TB"
+      }
+    ],
+    "status": "active",
+    "featured": false
+  },
+  {
     "id": "racknerd",
     "name": "RackNerd",
     "tagline": "Budget VPS, unbeatable price",
@@ -466,7 +563,7 @@
       "cPanel + Softaculous"
     ],
     "pros": [
-      "300% green energy match — industry-leading sustainability",
+      "300% green energy match \u2014 industry-leading sustainability",
       "Free domain first year + free SSL + free CDN",
       "Unmetered bandwidth on every plan",
       "Nightly backups included at no extra cost",
@@ -474,10 +571,10 @@
       "Multiple datacenters including EU and APAC"
     ],
     "cons": [
-      "No GPU instances — CPU-only workloads",
+      "No GPU instances \u2014 CPU-only workloads",
       "Higher renewal rates than intro pricing",
       "No Windows VPS option",
-      "5 datacenters only — no Australia / South America",
+      "5 datacenters only \u2014 no Australia / South America",
       "No live chat on entry VPS plans"
     ],
     "bestFor": "Environmentally-conscious developers, WordPress sites, small business websites, sustainable hosting",
@@ -597,8 +694,8 @@
     ],
     "cons": [
       "Higher starting price than budget hosts ($19.99/mo)",
-      "No GPU instances — CPU-only workloads",
-      "US/Canada/EU datacenters only — no APAC",
+      "No GPU instances \u2014 CPU-only workloads",
+      "US/Canada/EU datacenters only \u2014 no APAC",
       "No Windows VPS option",
       "Renewal rates significantly higher than intro pricing"
     ],
@@ -651,7 +748,7 @@
     "rating": 4.3,
     "datacenter": "Helsinki, London, Frankfurt, Amsterdam, San Jose, Chicago, Singapore, Sydney",
     "features": [
-      "maxIOPS block storage — guaranteed I/O performance",
+      "maxIOPS block storage \u2014 guaranteed I/O performance",
       "8 datacenters across EU / US / APAC",
       "Hourly billing (per-second after first hour)",
       "Clean REST API + Python SDK",
@@ -659,18 +756,18 @@
       "Free incoming bandwidth on all plans"
     ],
     "pros": [
-      "maxIOPS block storage — guaranteed I/O performance, not best-effort",
+      "maxIOPS block storage \u2014 guaranteed I/O performance, not best-effort",
       "8 datacenters across EU / US / APAC (4 in EU alone)",
-      "Hourly billing — true pay-per-use with no monthly cap",
+      "Hourly billing \u2014 true pay-per-use with no monthly cap",
       "Clean REST API + Python SDK + community Terraform / Pulumi providers",
       "99.99% uptime SLA backed by 10x service credit",
       "Free incoming bandwidth on all plans",
-      "Strong EU data residency — Finnish company, GDPR-native"
+      "Strong EU data residency \u2014 Finnish company, GDPR-native"
     ],
     "cons": [
       "Higher starting price than Vultr ($5/mo vs $2.50/mo)",
-      "No GPU instances — CPU-only workloads",
-      "No Windows Server templates — Linux distros only",
+      "No GPU instances \u2014 CPU-only workloads",
+      "No Windows Server templates \u2014 Linux distros only",
       "Smaller community than Vultr or DigitalOcean",
       "Outgoing bandwidth is metered (1TB included, then $0.012/GB)",
       "No managed Kubernetes service",
@@ -728,7 +825,7 @@
       "99.99% uptime SLA with service credits",
       "4 datacenters across US coasts + Europe",
       "Free nightly backups on every plan",
-      "Hourly billing — true pay-per-use",
+      "Hourly billing \u2014 true pay-per-use",
       "Linux + Windows VPS templates (license included)",
       "DDoS protection available as add-on"
     ],
@@ -803,11 +900,11 @@
     "pros": [
       "Independent since 1999 (27+ years in business)",
       "100% renewable energy / carbon-neutral data center",
-      "Single US East (New York) location — low-latency for North America",
+      "Single US East (New York) location \u2014 low-latency for North America",
       "Full root access on KVM virtualization"
     ],
     "cons": [
-      "Only 1 datacenter (Latham, NY) — no EU or APAC options",
+      "Only 1 datacenter (Latham, NY) \u2014 no EU or APAC options",
       "Higher starting price than RackNerd ($7.95 vs $1.99)",
       "No GPU instances",
       "Smaller community than Vultr or DigitalOcean"
@@ -847,7 +944,7 @@
       "100+ OS templates including FreeBSD / OpenBSD / NetBSD"
     ],
     "cons": [
-      "SATA storage only (no NVMe tier — slower than Vultr/DO)",
+      "SATA storage only (no NVMe tier \u2014 slower than Vultr/DO)",
       "Smaller community than Vultr/DigitalOcean (fewer tutorials)",
       "No managed services (unmanaged KVM only)",
       "No GPU instances",
@@ -891,16 +988,16 @@
     "commission": "",
     "rating": 4.2,
     "pros": [
-      "30+ years in business (founded 1995) — exceptional longevity signal",
+      "30+ years in business (founded 1995) \u2014 exceptional longevity signal",
       "14 datacenters globally including strong EU/APAC presence",
-      "Fully customizable cloud — choose your own CPU/RAM/SSD per server",
+      "Fully customizable cloud \u2014 choose your own CPU/RAM/SSD per server",
       "30-day free trial with no credit card required",
       "Hourly and monthly billing with no long-term contracts",
       "24/7 live technical support included",
       "Built-in firewall, snapshots, private networking, and load balancers"
     ],
     "cons": [
-      "No branded 'plans' — requires using their pricing calculator to configure",
+      "No branded 'plans' \u2014 requires using their pricing calculator to configure",
       "Less community presence on LowEndTalk / WHT than budget hosts",
       "Not the cheapest option at $4/mo starting price (RackNerd/Contabo are cheaper)",
       "SSD NVMe available but smallest plans may use shared resources under Type A",
@@ -910,7 +1007,7 @@
       "Businesses needing fully customizable cloud infrastructure",
       "30-day free trial evaluation without upfront cost",
       "Multi-region deployments requiring 14+ global locations",
-      "Projects that may grow from small to large — Kamatera scales easily",
+      "Projects that may grow from small to large \u2014 Kamatera scales easily",
       "Users who want both hourly billing and enterprise-grade support"
     ],
     "featured": false,
@@ -938,15 +1035,15 @@
       "DDoS protection included"
     ],
     "pros": [
-      "NVMe storage standard on ALL unmanaged plans, including entry-level $5/mo plan — rare at this price",
-      "20+ years independently operating since 2006 — strong longevity signal",
+      "NVMe storage standard on ALL unmanaged plans, including entry-level $5/mo plan \u2014 rare at this price",
+      "20+ years independently operating since 2006 \u2014 strong longevity signal",
       "3 datacenter locations spanning US coasts + Europe (Atlanta, Seattle, Amsterdam)",
       "Full root access with KVM virtualization on unmanaged plans",
       "2 dedicated IPv4 addresses + /64 IPv6 included on every plan",
       "Affordable unmanaged starting at $5/mo with 1 core, 1GB RAM, 25GB NVMe, 2TB bandwidth"
     ],
     "cons": [
-      "No GPU instances — CPU-only workloads",
+      "No GPU instances \u2014 CPU-only workloads",
       "No APAC datacenter presence (unlike Vultr's Tokyo/Singapore/Sydney)",
       "Managed VPS starting at $43.25/mo is expensive compared to budget hosts",
       "No free domain included",
@@ -1014,16 +1111,16 @@
     "commission": "$50-150/sale",
     "rating": 4.3,
     "pros": [
-      "25+ years in business since 1999 — proven European infrastructure provider",
+      "25+ years in business since 1999 \u2014 proven European infrastructure provider",
       "NVMe storage standard on all VPS plans (no SATA/SSD slow tiers)",
       "Daily automatic backup included free on every VPS",
-      "Unlimited traffic on all plans — no overage charges",
+      "Unlimited traffic on all plans \u2014 no overage charges",
       "30+ datacenters in 10+ countries across 4 continents",
       "Linux and Windows OS templates available",
       "Easy 1-click scaling without downtime or data migration"
     ],
     "cons": [
-      "No GPU VPS instances — CPU-only compute",
+      "No GPU VPS instances \u2014 CPU-only compute",
       "US datacenter presence limited to 2 locations (East + West)"
     ],
     "bestFor": [
@@ -1074,7 +1171,7 @@
       "9 global datacenters"
     ],
     "pros": [
-      "RAID NVMe storage on ALL plans — no SATA slow tiers",
+      "RAID NVMe storage on ALL plans \u2014 no SATA slow tiers",
       "9 global datacenters spanning US, Europe, and APAC",
       "Free automated daily backups + manual snapshots",
       "17 Tbps DDoS protection included",
@@ -1082,10 +1179,10 @@
       "Free website migration service"
     ],
     "cons": [
-      "Newer company (2019) — shorter track record than established providers",
-      "No GPU instances — CPU-only compute",
+      "Newer company (2019) \u2014 shorter track record than established providers",
+      "No GPU instances \u2014 CPU-only compute",
       "Only 1 APAC location (Singapore), no Australia/Japan",
-      "No Windows VPS templates — Linux only",
+      "No Windows VPS templates \u2014 Linux only",
       "Higher renewal rates than intro pricing"
     ],
     "bestFor": "Developers wanting NVMe VPS with managed support, small businesses needing cloud hosting with daily backups, users seeking a middle-ground between budget and premium VPS, EU users needing London/Amsterdam/Frankfurt locations",
@@ -1154,14 +1251,14 @@
     "commission": "",
     "rating": 4.5,
     "pros": [
-      "11 global datacenters — strongest US/EU/APAC coverage",
+      "11 global datacenters \u2014 strongest US/EU/APAC coverage",
       "Excellent documentation and developer API/CLI",
       "S3-compatible Object Storage + NodeBalancers + Block Storage",
       "40Gbps network across all plans",
       "Transparent renewal pricing (same as intro)"
     ],
     "cons": [
-      "No GPU instances — CPU-only compute",
+      "No GPU instances \u2014 CPU-only compute",
       "Higher starting price than budget hosts ($5/mo vs $2/mo)",
       "Akamai acquisition created some migration uncertainty (2022+)",
       "No free tier for VPS (only $100 credit for new accounts)"
@@ -1197,7 +1294,7 @@
     ],
     "pros": [
       "Cheapest EU entry tier ($1/mo intro, 1GB RAM)",
-      "Unlimited traffic — no metered bandwidth",
+      "Unlimited traffic \u2014 no metered bandwidth",
       "Multiple EU datacenters (Frankfurt, London, Spain)",
       "Personal consultant included on business plans",
       "30-day money-back guarantee"
@@ -1244,5 +1341,1216 @@
       }
     ],
     "status": "active"
+  },
+  {
+    "id": "hawk-host",
+    "name": "Hawk Host",
+    "nameCn": "Hawk Host",
+    "website": "https://www.hawkhost.com/",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "affiliateCommission": "Up to $100/sale",
+    "pricing": {
+      "entry": "$5.00/mo",
+      "1gb": "$5.00/mo",
+      "2gb": "$10.00/mo",
+      "4gb": "$20.00/mo"
+    },
+    "datacenters": [
+      "Los Angeles",
+      "Dallas",
+      "New York",
+      "Toronto",
+      "London",
+      "Singapore",
+      "Hong Kong"
+    ],
+    "storage": "NVMe SSD",
+    "rootAccess": true,
+    "moneyBack": "60 days",
+    "founded": 2001,
+    "highlights": [
+      "NVMe on all plans",
+      "7 global datacenters",
+      "Full root access",
+      "60-day guarantee",
+      "Asia-Pacific coverage"
+    ],
+    "cons": [
+      "No hourly billing",
+      "No GPU instances",
+      "Self-managed only"
+    ],
+    "bestFor": "Multi-region developers needing Asia-Pacific VPS",
+    "rating": 4.0,
+    "status": "active"
+  },
+  {
+    "id": "atlantic-net",
+    "name": "Atlantic.Net",
+    "tagline": "Managed VPS with all-inclusive pricing since 1994",
+    "startingPrice": 8.0,
+    "cpu": "Intel Xeon / AMD EPYC",
+    "ram": "2GB - 64GB",
+    "storage": "50GB - 1280GB SSD",
+    "bandwidth": "3TB - 10TB",
+    "datacenters": [
+      "Orlando",
+      "Dallas",
+      "San Francisco",
+      "Toronto",
+      "London",
+      "Frankfurt",
+      "Singapore"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$50-100/sale",
+    "rating": 4.1,
+    "pros": [
+      "100% uptime SLA \u2014 industry's strongest guarantee",
+      "Post-paid billing with hourly and monthly options",
+      "7 datacenter locations across US, Canada, EU, and APAC",
+      "All-inclusive pricing with no surprise fees",
+      "HIPAA and PCI compliance available",
+      "30+ years operating since 1994"
+    ],
+    "cons": [
+      "No GPU instances for AI/ML workloads",
+      "Higher starting price than budget competitors ($8/mo vs $1.99/mo)",
+      "No NVMe on entry-level plans (SATA SSD on G3.2GB)",
+      "Control panel not included on base plans"
+    ],
+    "bestFor": [
+      "Business compliance (HIPAA/PCI)",
+      "Managed VPS with all-inclusive billing",
+      "Long-term stable hosting",
+      "Enterprise-adjacent workloads",
+      "Users wanting post-paid billing"
+    ],
+    "featured": false
+  },
+  {
+    "id": "mochahost",
+    "name": "MochaHost",
+    "tagline": "Managed VPS since 2002 with AMD EPYC NVMe",
+    "startingPrice": 30.63,
+    "cpu": "AMD EPYC (dedicated cores)",
+    "ram": "4GB - 160GB",
+    "storage": "80GB - 800GB NVMe",
+    "bandwidth": "Unmetered",
+    "datacenters": [
+      "US",
+      "Europe",
+      "India",
+      "Singapore",
+      "Australia"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "rating": 4.0,
+    "features": [
+      "AMD EPYC processors on all plans",
+      "NVMe SSD storage standard",
+      "Fully managed support 24/7",
+      "Free SSL certificates",
+      "Free domain on annual plans",
+      "Free website migration",
+      "cPanel (Linux) / Plesk (Windows)",
+      "Carbon-neutral hosting",
+      "Immunify360 security",
+      "Multiple global datacenter locations"
+    ],
+    "pros": [
+      "23+ years in business since 2002 \u2014 proven longevity",
+      "AMD EPYC CPUs with dedicated cores",
+      "NVMe storage on all plans",
+      "Fully managed support (phone + chat 24/7)",
+      "Free SSL + domain + migrations included",
+      "Carbon-neutral / renewable energy data centers",
+      "Unmetered bandwidth options",
+      "Windows VPS with Plesk available"
+    ],
+    "cons": [
+      "Higher starting price than budget hosts ($30.63/mo intro)",
+      "Linux VPS plans confusingly merged with dedicated server page",
+      "Money-back guarantee excludes 'Servers' in fine print",
+      "No GPU instances \u2014 CPU-only compute",
+      "Renewal rates significantly higher than intro pricing",
+      "Datacenter locations not explicitly listed per plan"
+    ],
+    "bestFor": [
+      "Businesses needing fully managed VPS with 24/7 support",
+      "Windows VPS users needing Plesk control panel",
+      "Users wanting long-established provider (23+ years)",
+      "Managed WordPress hosting with cPanel",
+      "Carbon-conscious buyers wanting green hosting"
+    ],
+    "featured": false,
+    "status": "active",
+    "vpsPlans": [
+      {
+        "name": "Windows I (VPS)",
+        "price": 30.63,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Windows II (VPS)",
+        "price": 55.63,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "cPanel 4GB (Linux VPS)",
+        "price": 57.5,
+        "cpu": "2 cores",
+        "ram": "4GB",
+        "storage": "100GB NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "Windows III (VPS)",
+        "price": 99.38,
+        "cpu": "8 vCPU",
+        "ram": "16GB",
+        "storage": "320GB NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "cPanel 8GB (Linux VPS)",
+        "price": 90.83,
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "storage": "150GB NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "cPanel 16GB (Linux VPS)",
+        "price": 140.83,
+        "cpu": "8 cores",
+        "ram": "16GB",
+        "storage": "300GB NVMe",
+        "bandwidth": "Unmetered"
+      }
+    ]
+  },
+  {
+    "id": "hivelocity",
+    "name": "Hivelocity",
+    "tagline": "44 global datacenters, bare-metal VPS",
+    "startingPrice": 10.0,
+    "cpu": "AMD EPYC / Intel Xeon",
+    "ram": "4GB - 1536GB",
+    "storage": "40GB - 84TB NVMe SSD",
+    "bandwidth": "10TB - Unmetered",
+    "datacenters": [
+      "Los Angeles (LAX2)",
+      "Orlando (OGB1)",
+      "Dallas",
+      "Atlanta",
+      "New York/New Jersey",
+      "Chicago",
+      "Seattle",
+      "Miami",
+      "Phoenix",
+      "Denver",
+      "Toronto",
+      "Montreal",
+      "London",
+      "Amsterdam",
+      "Frankfurt",
+      "Paris",
+      "Stockholm",
+      "Tokyo",
+      "Singapore",
+      "Hong Kong",
+      "Sydney"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "$50-100/sale",
+    "rating": 4.3,
+    "pros": [
+      "44 global datacenters across 3 continents",
+      "99.99% uptime SLA with 24/7 US-based support",
+      "AMD EPYC processors with NVMe SSD storage",
+      "VDS tier with dedicated (unshared) CPU cores",
+      "2+ Tbps global network, 7+ minute deployment"
+    ],
+    "cons": [
+      "Higher starting price ($10/mo) than budget options",
+      "No free tier",
+      "7-day money-back guarantee is shorter than most",
+      "No control panel on base VPS plans"
+    ],
+    "bestFor": [
+      "Global application deployments",
+      "Performance-demanding workloads",
+      "Multi-region hosting",
+      "Dedicated CPU core needs"
+    ],
+    "featured": false,
+    "status": "active"
+  },
+  {
+    "id": "fastcomet",
+    "name": "FastComet",
+    "tagline": "Managed VPS with NVMe, Free CDN & 24/7 Support",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 2.36,
+    "rating": 4.4,
+    "datacenter": "US (New York, Dallas, Fremont), EU (London, Amsterdam, Frankfurt), Asia (Singapore, Tokyo), AU (Sydney)",
+    "features": [
+      "NVMe SSD storage on higher-tier plans",
+      "Free CDN powered by CloudFlare",
+      "Free daily backups",
+      "24/7 support via live chat & tickets",
+      "9 global datacenter locations",
+      "KVM virtualization with full root access",
+      "Free dedicated IP on higher plans",
+      "cPanel/WHM available"
+    ],
+    "pros": [
+      "NVMe storage on higher-tier plans for fast I/O",
+      "Free CDN and daily backups included",
+      "9 global datacenter locations (US, EU, Asia, AU)",
+      "Fully managed support with 24/7 live chat",
+      "Root access and KVM virtualization",
+      "Free website migration service"
+    ],
+    "cons": [
+      "No GPU instances available",
+      "Renewal rates higher than initial term",
+      "No Windows VPS options",
+      "No native load balancer"
+    ],
+    "bestFor": "Managed hosting, small-to-medium business sites, e-commerce stores, users needing full management support",
+    "vpsPlans": [
+      {
+        "name": "VPS 1",
+        "price": 2.36,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "25GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "VPS 2",
+        "price": 4.7,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "VPS 3",
+        "price": 7.08,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "75GB NVMe",
+        "bandwidth": "6TB"
+      },
+      {
+        "name": "VPS 4",
+        "price": 12.03,
+        "cpu": "3 vCPU",
+        "ram": "6GB",
+        "storage": "100GB NVMe",
+        "bandwidth": "8TB"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "rosehosting",
+    "name": "RoseHosting",
+    "tagline": "Managed Linux VPS Since 2001, Human Support",
+    "startingPrice": 43.99,
+    "cpu": "Dedicated Xeon Cores",
+    "ram": "2GB - 64GB",
+    "storage": "50GB - 400GB PCIe 4.0 NVMe",
+    "bandwidth": "Unmetered",
+    "datacenters": [
+      "St. Louis, MO (US)"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "rating": 4.4,
+    "features": [
+      "25+ years in business since 2001",
+      "PCIe 4.0 NVMe storage (20x faster)",
+      "100% uptime SLA with 1,000% money-back guarantee",
+      "No price increase on renewal \u2014 fair price for life",
+      "Fully managed 24/7 human support",
+      "Dedicated Xeon CPU cores",
+      "Unmetered data transfer",
+      "Free SSL certificates",
+      "Free website migrations",
+      "Weekly offsite backups",
+      "Free control panel (cPanel/DirectAdmin)",
+      "Root SSH access",
+      "Proactive server monitoring",
+      "Redundant N+1 datacenter",
+      "U.S. owned and operated"
+    ],
+    "pros": [
+      "25+ years in business since 2001 \u2014 exceptional longevity",
+      "PCIe 4.0 NVMe storage across all plans \u2014 rare at this class",
+      "No price increase on renewal \u2014 locked-in pricing for life",
+      "100% uptime SLA with 1,000% money-back guarantee",
+      "Fully managed 24/7 human support (no AI bots)",
+      "Dedicated Xeon CPU cores on every plan",
+      "Unmetered data transfer included"
+    ],
+    "cons": [
+      "Starting at $43.99/mo \u2014 premium pricing, not for budget users",
+      "Single US datacenter (St. Louis) \u2014 no EU or APAC presence",
+      "No GPU instances available",
+      "No hourly billing \u2014 monthly commitment only",
+      "No free domain or trial period beyond 30-day money-back"
+    ],
+    "bestFor": "Premium managed VPS, business websites, agencies needing white-glove support, users who value price stability",
+    "vpsPlans": [
+      {
+        "name": "NVME 2 VPS",
+        "price": 43.99,
+        "cpu": "2 Dedi Xeon Cores",
+        "ram": "2GB DDR5",
+        "storage": "50GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 4 VPS",
+        "price": 64.99,
+        "cpu": "3 Dedi Xeon Cores",
+        "ram": "4GB DDR5",
+        "storage": "80GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 8 VPS",
+        "price": 89.99,
+        "cpu": "4 Dedi Xeon Cores",
+        "ram": "8GB DDR5",
+        "storage": "120GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 12 VPS",
+        "price": 129.99,
+        "cpu": "6 Dedi Xeon Cores",
+        "ram": "12GB DDR5",
+        "storage": "160GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 16 VPS",
+        "price": 159.99,
+        "cpu": "8 Dedi Xeon Cores",
+        "ram": "16GB DDR5",
+        "storage": "200GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 24 VPS",
+        "price": 199.99,
+        "cpu": "10 Dedi Xeon Cores",
+        "ram": "24GB DDR5",
+        "storage": "300GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 32 VPS",
+        "price": 239.99,
+        "cpu": "12 Dedi Xeon Cores",
+        "ram": "32GB DDR5",
+        "storage": "300GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      },
+      {
+        "name": "NVME 64 VPS",
+        "price": 439.99,
+        "cpu": "12 Dedi Xeon Cores",
+        "ram": "64GB DDR5",
+        "storage": "400GB PCIe4 NVMe",
+        "bandwidth": "Unmetered"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "1984",
+    "name": "1984.is",
+    "tagline": "Privacy-First Icelandic VPS Since 2006, ISO 27001, Green Energy",
+    "startingPrice": 9.66,
+    "cpu": "Modern x86 (1 vCPU entry, scalable)",
+    "ram": "1GB+ (entry plan; tiers available via portal)",
+    "storage": "25GB+ NVMe SSD",
+    "bandwidth": "1TB/mo (metered)",
+    "datacenters": [
+      "Reykjav\u00edk, Iceland"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale (via RackNerd primary affiliate)",
+    "cookie": "90 days",
+    "rating": 4.3,
+    "features": [
+      "Founded 2006 \u2014 20 years in business, longest-running Icelandic indie host",
+      "ISO 27001 certified information security management",
+      "100% green energy (Icelandic geothermal + hydroelectric)",
+      "No-logging policy explicitly stated on the VPS product",
+      "NVMe SSD storage on all plans",
+      "Out-of-band VNC console + root SSH access",
+      "Privacy-focused 1-click templates: WireGuard, OpenVPN, LEMP, Nextcloud",
+      "Bitcoin and Monero accepted for non-Icelandic customers",
+      "Icelandic jurisdiction \u2014 outside 14-eyes, outside US CLOUD Act reach",
+      "Independently owned, no big-VC data-collection business model"
+    ],
+    "pros": [
+      "Icelandic jurisdiction offers strong privacy protections, outside EU/US data-sharing agreements",
+      "Explicit 'No Logging' policy on the VPS product \u2014 rare among mainstream hosts",
+      "100% renewable energy (geothermal + hydro) \u2014 strongest ESG story in our reviews",
+      "ISO 27001 audited security management \u2014 enterprise-grade compliance signal",
+      "20 years in business (since 2006) \u2014 exceptional longevity for an indie host",
+      "Bitcoin and Monero accepted \u2014 payment privacy for crypto users",
+      "Privacy-focused 1-click templates (WireGuard/OpenVPN/Nextcloud) save setup time",
+      "NVMe SSD storage even on entry plan"
+    ],
+    "cons": [
+      "Prepaid only \u2014 1-year or 3-year commitment required, no monthly billing option",
+      "Single datacenter in Iceland only \u2014 high latency to North America and Asia",
+      "Higher entry price ($9.66/mo prepaid) vs. RackNerd $1.99/mo or Vultr $2.50/mo",
+      "Metered bandwidth (1 TB on entry plan) \u2014 no unmetered option advertised",
+      "Full VPS plan lineup only visible inside the customer portal \u2014 pricing opaque",
+      "No public affiliate program \u2014 referrals harder to monetize",
+      "English site is partial \u2014 some docs and FAQ still in Icelandic",
+      "Linux-only \u2014 Windows VPS not allowed on their platform",
+      "No public SLA / uptime guarantee published for VPS product",
+      "Icelandic residents cannot pay with crypto (local tax law constraint)"
+    ],
+    "bestFor": [
+      "Privacy-focused users (journalists, activists, researchers)",
+      "EU-residing users seeking non-14-eyes jurisdiction",
+      "Crypto-paying customers who value Bitcoin/Monero support",
+      "Sustainability-conscious buyers (green energy mandate)",
+      "WireGuard/OpenVPN self-hosting with 1-click templates"
+    ],
+    "founded": 2006,
+    "headquarters": "Reykjav\u00edk, Iceland",
+    "jurisdiction": "Iceland (outside 14-eyes, outside US CLOUD Act)",
+    "billingModel": "Prepaid 1-year or 3-year only; pro-rata refund for unused months",
+    "paymentMethods": [
+      "Credit card",
+      "PayPal",
+      "Bitcoin",
+      "Monero (non-Icelandic residents)"
+    ],
+    "supportChannels": [
+      "Email ticket (1984@1984.is)",
+      "Phone (+354 546 1984)",
+      "No public 24/7 live chat"
+    ],
+    "vpsPlans": [
+      {
+        "name": "Grunnpakki (Entry)",
+        "price": 9.66,
+        "cpu": "1 vCPU",
+        "ram": "1 GB",
+        "storage": "25 GB NVMe SSD",
+        "bandwidth": "1 TB/mo",
+        "term": "Prepaid 1 or 3 years"
+      }
+    ],
+    "sla": "No public SLA for VPS product",
+    "ddosProtection": "Advertised on FreeDNS; VPS DDoS specifics not publicly disclosed",
+    "additionalServices": [
+      "FreeDNS (anycast, DNSSEC, 100% uptime since 2006)",
+      "Shared hosting",
+      "Domain registration"
+    ]
+  },
+  {
+    "id": "zap-hosting",
+    "name": "ZAP-Hosting",
+    "tagline": "Game & Dev Server VPS \u2014 25+ Years, 10+ Global DCs, 480 Gbps DDoS",
+    "startingPrice": 2.99,
+    "cpu": "AMD EPYC Milan",
+    "ram": "2GB - 16GB",
+    "storage": "20GB SSD - 200GB NVMe",
+    "bandwidth": "Unmetered (1 Gbit/s shared)",
+    "datacenters": [
+      "Frankfurt",
+      "Strasbourg",
+      "London",
+      "Madrid",
+      "Helsinki",
+      "Warsaw",
+      "Ashburn (US East)",
+      "Dallas (US Central)",
+      "Los Angeles (US West)",
+      "Singapore",
+      "Tokyo",
+      "S\u00e3o Paulo"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "25% lifetime revenue share (ZAP partner program) / RackNerd primary affiliate for tracking",
+    "cookie": "30 days",
+    "rating": 4.1,
+    "features": [
+      "Founded 1998 in Saarbr\u00fccken, Germany \u2014 25+ years in business",
+      "10+ global datacenter locations spanning EU, US, APAC, South America",
+      "KVM virtualization with full root access on all plans",
+      "Game-server-grade DDoS protection (480 Gbps mitigation capacity) included free",
+      "One-click installers for 50+ game titles (Minecraft, CS2, Rust, Valheim, ARK, etc.)",
+      "Custom ZAP web interface (in-house developed control panel)",
+      "Hourly billing on all VPS plans (pay-per-hour for active VMs)",
+      "Unmetered bandwidth on all tiers \u2014 no traffic caps",
+      "Free 7-day rolling backups on all plans",
+      "REST API for programmatic VM management",
+      "24/7 support via ticket and live chat (German headquarters, English coverage)",
+      "Tier-1 transit with 10 Gbit/s+ uplinks and direct peering to DE-CIX, LINX, AMS-IX"
+    ],
+    "pros": [
+      "25+ years of operation \u2014 among the most established European hosting providers",
+      "480 Gbps DDoS protection included free \u2014 saves $10-30/mo vs competitors",
+      "50+ one-click game server installers \u2014 best-in-class for game server admins",
+      "Unmetered bandwidth on all plans \u2014 ideal for streaming and bandwidth-intensive workloads",
+      "Hourly billing \u2014 flexible for short-lived dev/staging environments",
+      "European datacenter presence (Frankfurt, Strasbourg) \u2014 low latency for EU users",
+      "Custom control panel \u2014 polished UX with VM management, console access, ISO mounting",
+      "10+ global datacenter locations \u2014 strong geographic spread including APAC and South America"
+    ],
+    "cons": [
+      "No GPU instances \u2014 cannot run AI model training or GPU-accelerated workloads",
+      "Renewal pricing higher than intro \u2014 standard managed-hosting pattern",
+      "Limited managed services on VPS tier \u2014 closer to self-managed than Cloudways/ScalaHosting",
+      "English support sometimes routed through German queue \u2014 minor friction for English-only users",
+      "Windows Server licenses are extra add-on (not free) \u2014 minor cost for Windows workloads",
+      "No native load balancer or multi-region replication \u2014 high-availability requires manual setup",
+      "Crypto payments supported but not for all customers (depends on jurisdiction)"
+    ],
+    "bestFor": [
+      "Game server administrators (Minecraft, CS2, Rust, ARK, Valheim, Satisfactory, Palworld)",
+      "European developers needing low-latency Frankfurt/Strasbourg datacenter access",
+      "Indie makers running side projects, dev/staging environments, or VPN servers",
+      "Small studios needing hosting for community game servers, Discord bots, or backend services",
+      "Privacy-conscious users who prefer crypto payments (Bitcoin, Ethereum) over credit card"
+    ],
+    "founded": 1998,
+    "headquarters": "Saarbr\u00fccken, Germany",
+    "jurisdiction": "Germany (EU)",
+    "billingModel": "Monthly or hourly billing; annual plans available with discount",
+    "paymentMethods": [
+      "Credit card",
+      "PayPal",
+      "Bank transfer",
+      "Sofort / Klarna",
+      "Bitcoin",
+      "Ethereum"
+    ],
+    "supportChannels": [
+      "24/7 live chat",
+      "Email ticket",
+      "Public knowledge base + community forum"
+    ],
+    "vpsPlans": [
+      {
+        "name": "Cloud Server S",
+        "price": 2.99,
+        "currency": "EUR",
+        "cpu": "2 vCPU AMD EPYC",
+        "ram": "2 GB",
+        "storage": "20 GB SSD",
+        "bandwidth": "Unmetered (1 Gbit/s shared)"
+      },
+      {
+        "name": "Cloud Server M",
+        "price": 5.99,
+        "currency": "EUR",
+        "cpu": "3 vCPU AMD EPYC",
+        "ram": "4 GB",
+        "storage": "50 GB NVMe",
+        "bandwidth": "Unmetered (1 Gbit/s shared)"
+      },
+      {
+        "name": "Cloud Server L",
+        "price": 9.99,
+        "currency": "EUR",
+        "cpu": "4 vCPU AMD EPYC",
+        "ram": "8 GB",
+        "storage": "100 GB NVMe",
+        "bandwidth": "Unmetered (1 Gbit/s shared)"
+      },
+      {
+        "name": "Cloud Server XL",
+        "price": 19.99,
+        "currency": "EUR",
+        "cpu": "6 vCPU AMD EPYC",
+        "ram": "16 GB",
+        "storage": "200 GB NVMe",
+        "bandwidth": "Unmetered (1 Gbit/s shared)"
+      }
+    ],
+    "sla": "99.9% uptime SLA",
+    "ddosProtection": "480+ Gbps mitigation capacity, included free on all plans (game-server-grade)",
+    "status": "active"
+  },
+  {
+    "id": "liquidweb",
+    "name": "Liquid Web",
+    "tagline": "Managed VPS with 24/7 Heroic Support since 1997",
+    "startingPrice": 5.0,
+    "cpu": "AMD EPYC (managed VPS) \u2014 configurable on dedicated",
+    "ram": "2GB - 32GB",
+    "storage": "40GB - 200GB SSD",
+    "bandwidth": "10TB - 30TB outbound",
+    "datacenters": [
+      "Lansing, MI (US)",
+      "Phoenix, AZ (US)",
+      "Amsterdam (EU)"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "commission": "RackNerd affiliate (Liquid Web has no public affiliate program)",
+    "rating": 4.4,
+    "pros": [
+      "25+ years in business (founded 1997) \u2014 strong longevity signal",
+      "Fully managed VPS with 24/7 Heroic Support\u00ae included on all plans",
+      "100% network uptime SLA on managed VPS products",
+      "Owns and operates its own data centers (Lansing, Phoenix, Amsterdam)",
+      "Free nightly backups + DDoS protection included",
+      "Free site migrations with zero-downtime handling",
+      "cPanel / Plesk / InterWorx control panel options"
+    ],
+    "cons": [
+      "Higher starting price ($5/mo unmanaged, $19/mo managed) vs RackNerd ($1.06/mo)",
+      "Smaller geographic footprint (3 main datacenters vs Linode's 11 or Vultr's 32)",
+      "Limited to US + EU; no APAC datacenter of their own",
+      "Slower provisioning than self-service hyperscalers",
+      "Premium pricing on dedicated servers ($199+/mo) limits budget appeal"
+    ],
+    "bestFor": [
+      "Small-to-medium businesses needing managed VPS with phone support",
+      "Agencies that want a single host for multiple client sites",
+      "WordPress / WooCommerce sites needing managed performance + backups",
+      "eCommerce stores that require 100% uptime SLA and 24/7 human support",
+      "Organizations that prefer a US-owned provider with private data centers"
+    ],
+    "featured": false,
+    "affiliateAvailable": false
+  },
+  {
+    "id": "netcup",
+    "name": "Netcup",
+    "tagline": "German KVM VPS from \u20ac3.69/mo \u2014 best EU budget KVM for production & Docker",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 3.69,
+    "rating": 4.3,
+    "datacenter": "Germany (Nuremberg, Dusseldorf), Austria (Vienna)",
+    "features": [
+      "KVM virtualization with dedicated CPU cores (AMD EPYC Milan/Genoa)",
+      "NVMe SSD storage on all G7 series plans",
+      "DDR4/DDR5 ECC RAM depending on plan tier",
+      "3 EU datacenters: Nuremberg, Vienna, Dusseldorf",
+      "Free basic DDoS protection (L3-L4) on every plan",
+      "Optional DDoS Pro add-on for L7 protection (\u20ac2.99/mo)",
+      "IPv4 + IPv6 included on all plans",
+      "Snapshots, backups, and ISO install via control panel",
+      "Direct DE-CIX peering in Nuremberg and Dusseldorf",
+      "Free trial VPS available for new accounts"
+    ],
+    "pros": [
+      "Strongest EU budget KVM VPS for the entry price tier in 2026",
+      "Entry plan at \u20ac3.69/mo is one of the cheapest dedicated-core KVM VPS in the EU",
+      "3 EU datacenters on Tier-1 networks (DE-CIX, VIX peering)",
+      "KVM with dedicated CPU cores \u2014 full kernel control for Docker/K8s",
+      "NVMe SSD across all current G7 series plans",
+      "Free basic DDoS protection included",
+      "German company with strong GDPR posture and EU data residency",
+      "Snapshots and ISO install included in control panel"
+    ],
+    "cons": [
+      "No GPU instances \u2014 CPU-only workloads",
+      "No datacenter presence outside the EU (no US/APAC)",
+      "Support is German-first \u2014 English response can be slower",
+      "L7 DDoS protection requires paid add-on (\u20ac2.99/mo)",
+      "Annual billing required for lowest prices",
+      "Control panel is functional but dated vs Vultr/DigitalOcean"
+    ],
+    "bestFor": "EU users wanting dedicated-core KVM at the lowest entry price, GDPR-sensitive workloads, developers running Docker/Kubernetes on a budget, production sites serving European traffic",
+    "vpsPlans": [
+      {
+        "name": "VPS 1000 G7",
+        "price": 3.69,
+        "cpu": "1 vCPU AMD EPYC",
+        "ram": "2GB DDR4",
+        "storage": "20GB NVMe",
+        "bandwidth": "1TB / 1 Gbit"
+      },
+      {
+        "name": "VPS 2000 G7",
+        "price": 5.69,
+        "cpu": "2 vCPU AMD EPYC",
+        "ram": "4GB DDR4",
+        "storage": "40GB NVMe",
+        "bandwidth": "2TB / 1 Gbit"
+      },
+      {
+        "name": "VPS 4000 G7",
+        "price": 9.69,
+        "cpu": "4 vCPU AMD EPYC",
+        "ram": "8GB DDR4",
+        "storage": "80GB NVMe",
+        "bandwidth": "4TB / 1 Gbit"
+      },
+      {
+        "name": "VPS 8000 G7",
+        "price": 17.69,
+        "cpu": "6 vCPU AMD EPYC",
+        "ram": "16GB DDR5",
+        "storage": "160GB NVMe",
+        "bandwidth": "8TB / 1 Gbit"
+      },
+      {
+        "name": "VPS 16000 G7",
+        "price": 33.69,
+        "cpu": "8 vCPU AMD EPYC",
+        "ram": "32GB DDR5",
+        "storage": "320GB NVMe",
+        "bandwidth": "16TB / 1 Gbit"
+      },
+      {
+        "name": "VPS 32000 G7",
+        "price": 65.69,
+        "cpu": "12 vCPU AMD EPYC",
+        "ram": "64GB DDR5",
+        "storage": "640GB NVMe",
+        "bandwidth": "32TB / 1 Gbit"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "cherryservers",
+    "name": "Cherry Servers",
+    "tagline": "EU bare-metal + cloud since 2000 \u2014 \u20ac5/mo entry, 4 EU datacenters, ISO 27001",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "10% lifetime recurring (Cherry's program) \u2014 secondary RackNerd affiliate",
+    "cookie": "90 days",
+    "startingPrice": 5.0,
+    "rating": 4.1,
+    "datacenter": "4 EU datacenters: Netherlands (Amsterdam), Lithuania (Vilnius), Germany (Frankfurt), Sweden (Stockholm)",
+    "features": [
+      "KVM virtualization on Cloud VPS tier; hypervisor-grade bare-metal since 2000",
+      "AMD EPYC Milan + Intel Xeon Scalable CPUs on dedicated tier",
+      "NVMe SSD storage standard on Cloud VPS 8+ tier and Performance VDS",
+      "DDR4/DDR5 ECC RAM depending on plan tier",
+      "4 EU data centers (NL/LT/DE/SE), all Tier III+ with ISO 27001 + ISO 14001",
+      "100% renewable energy supply contracts at all EU sites",
+      "1 Gbps+ standard uplinks; 10 Gbps unmetered on dedicated tier",
+      "Free basic DDoS protection (L3-L4) on every plan",
+      "IPv4 + IPv6 included on all plans; rDNS configurable via control panel",
+      "API for provisioning, snapshots, backups, power cycling"
+    ],
+    "pros": [
+      "25+ years in business (founded 2000 in Kaunas, Lithuania) \u2014 long European track record",
+      "4 EU-only data centers (NL/LT/DE/SE) \u2014 no US or APAC footprint for true GDPR isolation",
+      "ISO 27001 + ISO 14001 certified, 100% renewable energy contracts at all sites",
+      "Bare-metal dedicated server heritage \u2014 AMD EPYC + Intel Xeon options",
+      "Predictable \u20ac/mo pricing in a market where the largest EU operator raised prices in mid-2025",
+      "10% lifetime recurring affiliate, 90-day cookie, \u20ac50 minimum payout",
+      "Free inbound bandwidth, unmetered on dedicated tier"
+    ],
+    "cons": [
+      "EU-only footprint \u2014 no North America, Asia-Pacific, or South America locations",
+      "Smaller cloud feature set vs hyperscalers (no managed Kubernetes, no self-service GPU)",
+      "Cloud VPS provisioning slower than self-service hyperscalers (typically 5-30 minutes)",
+      "Higher base pricing than US budget hosts \u2014 \u20ac5/mo entry vs RackNerd ($1.06/mo)",
+      "Dedicated servers require sales-engineering contact for custom configurations",
+      "Limited brand recognition outside Lithuania-proximate EU markets"
+    ],
+    "bestFor": "EU-only GDPR deployments, teams wanting a 25-year-old European brand with bare-metal depth, dedicated server buyers needing EU jurisdiction, ISO-certified infrastructure, public-sector / regulated workloads requiring EU contractural entity, sustainability-focused deployments",
+    "vpsPlans": [
+      {
+        "name": "Cloud VPS 1",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "25GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "Cloud VPS 2",
+        "price": 10.0,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "50GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Cloud VPS 4",
+        "price": 20.0,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Cloud VPS 8",
+        "price": 40.0,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "8TB"
+      },
+      {
+        "name": "Performance VDS 16",
+        "price": 80.0,
+        "cpu": "6 vCPU (dedicated cores)",
+        "ram": "16GB",
+        "storage": "240GB NVMe",
+        "bandwidth": "10TB"
+      },
+      {
+        "name": "Bare-metal EPYC 7402P",
+        "price": 49.0,
+        "cpu": "AMD EPYC 7402P (24c/48t)",
+        "ram": "32GB DDR4 ECC",
+        "storage": "1TB NVMe",
+        "bandwidth": "10 Gbps unmetered"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "cloudcone",
+    "name": "CloudCone",
+    "tagline": "US-focused SSD VPS with hourly billing from $3.88/mo",
+    "startingPrice": 3.88,
+    "cpu": "KVM virtualized (shared/dedicated tiers)",
+    "ram": "1GB - 32GB",
+    "storage": "30GB - 640GB SSD",
+    "bandwidth": "Unmetered on most plans",
+    "datacenters": [
+      "Los Angeles (US-West)",
+      "Dallas (US-South)"
+    ],
+    "affiliateUrl": "https://app.cloudcone.com/?ref=14241",
+    "affiliateAvailable": true,
+    "commission": "$4.50/credit",
+    "cookie": "90 days",
+    "rating": 3.7,
+    "features": [
+      "Hourly billing on select plans (pay only for compute used)",
+      "SSD storage across all tiers",
+      "Automated backups included on most plans",
+      "Custom control panel (developer-friendly API)",
+      "KVM virtualization with root access",
+      "Multiple US datacenter locations",
+      "Free DDoS protection on managed plans",
+      "Private VLAN / VPC available"
+    ],
+    "pros": [
+      "Hourly billing flex for short-lived workloads",
+      "Lowest entry price in US-focused unmanaged VPS at $3.88/mo",
+      "Automated backup system included",
+      "Clean dashboard and RESTful API for automation",
+      "Full root access with KVM virtualization",
+      "90-day cookie window is generous vs industry 30-day norm"
+    ],
+    "cons": [
+      "US-only datacenter footprint (no EU or APAC)",
+      "No GPU instances offered",
+      "Support response times vary (community-tracked)",
+      "Renewal pricing higher than promotional intro rates",
+      "Smaller brand awareness vs Vultr / DigitalOcean"
+    ],
+    "bestFor": [
+      "Developers wanting hourly billing for short-lived compute",
+      "US-centric deployments needing LA or Dallas low-latency",
+      "Users who prefer automated backups included at base price",
+      "DevOps automation via REST API",
+      "Budget-conscious US-market VPS buyers"
+    ],
+    "featured": false,
+    "status": "active",
+    "vpsPlans": [
+      {
+        "name": "VC1S (1 vCPU / 1GB)",
+        "price": 3.88,
+        "cpu": "1 vCPU shared",
+        "ram": "1GB",
+        "storage": "30GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "VC2S (2 vCPU / 4GB)",
+        "price": 9.99,
+        "cpu": "2 vCPU shared",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "VC4S (4 vCPU / 8GB)",
+        "price": 19.99,
+        "cpu": "4 vCPU shared",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "8TB"
+      }
+    ]
+  },
+  {
+    "id": "inmotion-hosting",
+    "name": "InMotion Hosting",
+    "tagline": "US managed VPS since 2001 \u2014 NVMe on every tier from $4.99/mo, 90-day guarantee",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale with 90-day cookie (InMotion's program) \u2014 secondary RackNerd affiliate",
+    "cookie": "90 days",
+    "startingPrice": 4.99,
+    "rating": 4.3,
+    "datacenter": "2 MAX Speed zones: Ashburn, VA (US-east) + Los Angeles, CA (US-west)",
+    "features": [
+      "NVMe SSD storage standard on every tier including the $4.99/mo entry plan",
+      "KVM virtualization with full root + SSH access on every plan",
+      "Free cPanel/WHM license on every tier (no add-on fee)",
+      "2 MAX Speed zones for US audience tuning (east coast / west coast)",
+      "Weekly backups with one-click restore from cPanel",
+      "Free Let's Encrypt SSL auto-installed and renewed on every site",
+      "24/7 live chat + ticket support, phone during US business hours",
+      "Free website migrations handled by InMotion's team"
+    ],
+    "pros": [
+      "NVMe SSD on every plan (including entry) \u2014 5-10x SATA SSD IOPS on most workloads",
+      "Free cPanel/WHM bundled with base price (competitors charge $10-15/mo add-on)",
+      "Industry-leading 90-day money-back guarantee on all VPS tiers",
+      "25+ years operating (founded 2001 in Los Angeles) \u2014 long-tenured US provider",
+      "SSH + full root access on every tier (not restricted like some managed competitors)",
+      "Free website migrations included (InMotion team handles the move)",
+      "24/7 chat + ticket support on every tier; phone during US business hours"
+    ],
+    "cons": [
+      "US-only datacenter footprint \u2014 2 MAX Speed zones (Ashburn + Los Angeles), no EU/APAC options",
+      "No GPU instances on any tier \u2014 not suitable for AI/ML workloads",
+      "Higher starting price than budget unmanaged hosts ($4.99/mo vs $1.99/mo at RackNerd)",
+      "Renewal rates noticeably higher than intro pricing (typically 2-3x)",
+      "No Windows OS options (Linux only)",
+      "2-zone footprint limits audience reach outside the US"
+    ],
+    "bestFor": "US-focused developers + small businesses needing NVMe SSD on every tier, free bundled cPanel/WHM, MAX Speed zones for east/west coast audience latency, and the longest refund window (90 days) in managed VPS",
+    "vpsPlans": [
+      {
+        "name": "Entry",
+        "price": 4.99,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "90GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Developer",
+        "price": 9.99,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "165GB NVMe",
+        "bandwidth": "5TB"
+      },
+      {
+        "name": "Scale",
+        "price": 17.99,
+        "cpu": "6 vCPU",
+        "ram": "16GB",
+        "storage": "270GB NVMe",
+        "bandwidth": "6TB"
+      },
+      {
+        "name": "High-Performance",
+        "price": 29.99,
+        "cpu": "8 vCPU",
+        "ram": "32GB",
+        "storage": "360GB NVMe",
+        "bandwidth": "8TB"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "yecaoyun",
+    "name": "YeCaoCloud",
+    "tagline": "APAC-focused KVM with CN2 routes from $2/mo",
+    "startingPrice": 2.0,
+    "cpu": "KVM virtualized (shared/dedicated tiers)",
+    "ram": "1GB - 16GB",
+    "storage": "20GB - 320GB SSD",
+    "bandwidth": "1TB - 16TB",
+    "datacenters": [
+      "Hong Kong",
+      "Tokyo",
+      "Singapore",
+      "Shanghai"
+    ],
+    "affiliateUrl": "https://my.yecaoyun.com/aff.php?aff=6802",
+    "affiliateAvailable": true,
+    "commission": "$50/sale (YeCaoCloud's own program)",
+    "cookie": "30 days",
+    "rating": 3.6,
+    "features": [
+      "CN2 GT/IA line support for stable China connectivity",
+      "Four Asia-Pacific datacenter regions (HK, Tokyo, Singapore, Shanghai)",
+      "BGP routing for optimal APAC path selection",
+      "KVM virtualization with full root access",
+      "REST API for VPS lifecycle automation",
+      "SSD storage on every tier",
+      "30-day refund window",
+      "Basic DDoS protection included"
+    ],
+    "pros": [
+      "CN2 GT/IA/GIA lines for stable mainland China connectivity",
+      "Lowest entry price in APAC + CN2-accessible KVM at $2/mo",
+      "Four-region APAC footprint covering HK/Tokyo/Singapore/Shanghai",
+      "REST API for VPS lifecycle automation",
+      "Full root access with KVM virtualization",
+      "30-day refund window (matches industry standard)"
+    ],
+    "cons": [
+      "APAC-only datacenter footprint (no US, EU, South America, Africa)",
+      "English documentation is limited (Chinese-first platform)",
+      "No GPU instances - CPU-only compute",
+      "No managed Windows or managed service tiers (Linux only)",
+      "Smaller provider with less Western brand awareness",
+      "Support response times can vary (smaller team vs hyperscalers)"
+    ],
+    "bestFor": [
+      "Cross-border e-commerce backends serving China consumers",
+      "China-targeting APIs needing low-latency stable connectivity",
+      "Game backends with Chinese player communities",
+      "Shanghai datacenter users with valid ICP\u5907\u6848",
+      "APAC dev/test environments with China access requirements"
+    ],
+    "featured": false,
+    "status": "active",
+    "vpsPlans": [
+      {
+        "name": "YC-1 (1 vCPU / 1GB)",
+        "price": 2.0,
+        "cpu": "1 vCPU shared",
+        "ram": "1GB",
+        "storage": "20GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "YC-2 (2 vCPU / 2GB)",
+        "price": 4.0,
+        "cpu": "2 vCPU shared",
+        "ram": "2GB",
+        "storage": "40GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "YC-4 (2 vCPU / 4GB)",
+        "price": 8.0,
+        "cpu": "2 vCPU shared",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "YC-8 (4 vCPU / 8GB)",
+        "price": 17.0,
+        "cpu": "4 vCPU shared",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "8TB"
+      }
+    ]
+  },
+  {
+    "id": "namecheap",
+    "name": "Namecheap",
+    "tagline": "Domain registrar turned VPS provider with 6 global datacenters",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale",
+    "cookie": "90 days",
+    "startingPrice": 5.88,
+    "rating": 4.2,
+    "datacenter": "US (Phoenix, Atlanta), UK (London), EU (Amsterdam, Frankfurt), APAC (Singapore)",
+    "features": [
+      "SSD storage on all plans (NVMe on higher tiers)",
+      "6 global datacenters across US, EU, and APAC",
+      "Full root access on unmanaged plans",
+      "Both Linux and Windows OS options",
+      "Free domain and SSL with annual plans",
+      "24/7 live chat and ticket support",
+      "30-day money-back guarantee",
+      "99.9% uptime SLA"
+    ],
+    "pros": [
+      "Six global datacenter regions spanning US, EU, and APAC",
+      "SSD standard on all plans with NVMe on Galaxy and Nebula",
+      "Full root access \u2014 no managed-only lock-in",
+      "Windows and Linux OS flexibility",
+      "Free domain + SSL included on annual VPS plans"
+    ],
+    "cons": [
+      "No GPU instances across any VPS tier",
+      "Bandwidth capped at 1TB on entry Pulsar plan",
+      "Renewal rates 2-3x higher than intro pricing",
+      "Only one APAC datacenter (Singapore)"
+    ],
+    "bestFor": "Developers seeking root-access unmanaged VPS, multi-region deployments, Windows VPS users, domain-first ecosystem users",
+    "vpsPlans": [
+      {
+        "name": "Pulsar",
+        "price": 5.88,
+        "cpu": "2 vCPU",
+        "ram": "2GB",
+        "storage": "40GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "Quasar",
+        "price": 11.88,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Galaxy",
+        "price": 23.88,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Nebula",
+        "price": 47.88,
+        "cpu": "6 vCPU",
+        "ram": "16GB",
+        "storage": "320GB SSD",
+        "bandwidth": "6TB"
+      }
+    ],
+    "status": "active",
+    "featured": false
   }
 ]
