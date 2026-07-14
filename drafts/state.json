@@ -1,6 +1,74 @@
 {
-  "current_index": 0,
+  "current_index": 48,
   "published": [
+    {
+      "slug": "yecaoyun-vps-review-2026",
+      "date": "2026-07-09",
+      "type": "review",
+      "en_astro": "src/pages/blog/yecaoyun-vps-review-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "yecaoyun",
+        "racknerd",
+        "vultr",
+        "hostdare"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "published",
+      "hot_topic_source": "tier-4-orphan-card-fallback (3rd verified instance; 2026-07-08 hostdare, 2026-06-30 hostdare, 2026-07-01 a2-hosting)",
+      "outline_file": "src/pages/blog/yecaoyun-vps-review-2026.astro"
+    },
+    {
+      "slug": "hostarmada-vps-review-2026",
+      "date": "2026-07-08",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/blog/hostarmada-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "hostarmada",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "vpstier-provider-gap-scan-tier-2 (2026-07-08): Tier 1 daily briefing had banned-EU-merchant story + AWS outage (already shipped). Gap scan returned hostarmada as clean uncovered active provider with NVMe RAID differentiator, 9 global DCs, free cPanel. aff=True (RackNerd-default). Comprehensive data in providers.json.",
+      "note": "Direct addition via vpstier-add-provider cron (2026-07-08). Tier 2 gap scan: active providers in providers.json with aff=True and no blog review included hostarmada (clean, no state entry), hostwinds (state published but no file), knownhost (state published but no file), greengeeks (outline_pending_publish). Picked hostarmada per refined tier-2 tiebreaker: lowest starting price for budget SEO, 9 global DCs (strongest differentiator), NVMe RAID on every tier, free cPanel + Softaculous, 17 Tbps DDoS. Title 57/60 chars, desc 149/155 chars. 3 JSON-LD blocks (BreadcrumbList + Article + FAQPage). 12 RackNerd placements + 6 Vultr + 4 DigitalOcean. 0 banned-provider mentions."
+    },
+    {
+      "slug": "cloudcone-vps-review-2026",
+      "date": "2026-07-06",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/blog/cloudcone-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "cloudcone",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "Tier 4 orphaned-card fallback (state-reset resilience). CloudCone has own active affiliate (https://app.cloudcone.com/?ref=14241, $4.50/credit, 90-day cookie). Hourly-billing differentiator + Western audience fit (US-only DCs LA + Dallas)."
+    },
+    {
+      "slug": "bluehost-vps-review-2026",
+      "date": "2026-07-05",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/blog/bluehost-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "bluehost",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": null
+    },
     {
       "slug": "nvme-vps-under-10-2026",
       "date": "2026-06-14",
@@ -454,60 +522,275 @@
     {
       "slug": "1984-is-review-2026",
       "date": "2026-06-24",
-      "type": "review"
-    }
-  ],
-  "drafts": [
-    {
-      "slug": "vps-host-shutdown-warning-signs-2026",
-      "date": "2026-06-09",
-      "type": "incident-postmortem",
-      "subtype": "guide",
-      "title_en": "5 Warning Signs Your VPS Host Will Shut Down (2026)",
-      "title_zh": "2026 主机商跑路 5 大预警信号：从 Daniel 关停事件复盘",
-      "outline_file": "outline-2026-06-09-vps-host-shutdown-warning-signs-2026.md",
-      "en_astro": "src/pages/blog/vps-host-shutdown-warning-signs-2026.astro",
-      "zh_astro": "src/pages/zh/blog/vps-host-shutdown-warning-signs-2026.astro",
-      "status": "outline_pending_publish",
+      "type": "review",
+      "title_en": "1984.is VPS Review 2026: Privacy-First Icelandic Hosting",
+      "title_zh": "",
+      "outline_file": "",
+      "en_astro": null,
+      "zh_astro": "",
+      "status": "published",
       "providers_featured": [
+        "1984",
         "racknerd",
-        "cloudways",
-        "digitalocean",
-        "scalahosting",
-        "upcloud",
-        "vultr"
+        "buyvm",
+        "vultr",
+        "ovhcloud",
+        "contabo"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-09 daily report (Daniel's Hosting shutdown, darknetlive + HN discussion)",
+      "hot_topic_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)",
+      "vps_astro": "src/pages/vps/1984.astro",
+      "published_at": "2026-06-24",
+      "heat_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)",
       "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 6,
-      "complement_to": "2026-shutdown-cloud-services-vps-migration (Garnix, 2026-06-06) — different angle: pre-shutdown detection vs. post-shutdown migration",
-      "hot_topic_dropped": [
-        "banned-provider 2026/6/15 调价 — DROPPED (banned-provider BANNED VPS provider)",
-        "AWS us-east-1 outage 复盘 — DROPPED (already published 2026-06-06)"
-      ]
+      "racknerd_cta_count": 3,
+      "state_json_deduplicated": "2026-06-25T10:30:00+08:00"
     },
     {
-      "slug": "satellite-compute-vs-vps-2026",
-      "date": "2026-06-07",
-      "type": "guide",
-      "subtype": "comparison",
-      "title_en": "Satellite Compute vs VPS 2026: SpaceX-Google Deal Breakdown",
-      "title_zh": "卫星算力 vs VPS 2026:SpaceX-Google 9.2 亿$ 交易会重塑主机市场吗",
-      "outline_file": "outline-2026-06-07-satellite-compute-vs-vps-2026.md",
-      "en_astro": "src/pages/blog/satellite-compute-vs-vps-2026.astro",
-      "zh_astro": "src/pages/zh/blog/satellite-compute-vs-vps-2026.astro",
-      "status": "outline_pending_publish",
+      "slug": "kamatera-vps-review-2026",
+      "date": "2026-06-24",
+      "type": "review",
+      "title_en": "Kamatera VPS Review 2026: 14 Datacenters + 30-Day Free Trial",
+      "outline_file": "outline-2026-06-24-kamatera-vps-review-2026.md",
+      "en_astro": "src/pages/blog/kamatera-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "kamatera",
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "linode",
+        "hostinger",
+        "contabo",
+        "scalahosting"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "GSC signal: kamatera vps (rank 35, 5 imp) + kamatera (rank 60, 2 imp). No ⭐⭐⭐ hot topics: today's VPS section featured a banned provider only. Pivoted to provider gap scan — Kamatera has 0 blog content, only /vps/kamatera.astro card exists. Strongest 2026-06-24 GSC signal pointing to an unaddressed provider.",
+      "banned_self_check": "PASSED",
+      "racknerd_cta_count_planned": 7,
+      "published_at": "2026-06-24T14:23:00+08:00"
+    },
+    {
+      "slug": "zap-hosting-vps-review-2026",
+      "date": "2026-06-26",
+      "type": "review",
+      "title_en": "ZAP-Hosting VPS Review 2026: Game Server Specialist",
+      "title_zh": null,
+      "outline_file": null,
+      "en_astro": "src/pages/blog/zap-hosting-vps-review-2026.astro",
+      "vps_astro": "src/pages/vps/zap-hosting.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "zap-hosting",
+        "racknerd",
+        "vultr",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "heat_source": "User directive 2026-06-26: add new VPS provider + review. ZAP-Hosting is a 25+ year German provider with 10+ global datacenters, 480 Gbps DDoS, and 50+ game server installers — distinct from existing lineup.",
+      "banned_self_check": "PASSED",
+      "published_at": "2026-06-26T11:01:31+08:00",
+      "deployed_url_vps": "https://vpstier.com/vps/zap-hosting/",
+      "deployed_url_blog": "https://vpstier.com/blog/zap-hosting-vps-review-2026/",
+      "build_pages": 80,
+      "deploy_status": "success",
+      "deploy_command": "wrangler pages deploy dist --project-name=vpstier-com --branch=main --commit-dirty=true"
+    },
+    {
+      "slug": "liquidweb",
+      "date": "2026-06-28",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/vps/liquidweb.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "liquidweb",
+        "racknerd",
+        "vultr",
+        "contabo",
+        "hostinger",
+        "linode"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": null,
+      "note": "Direct addition via vpstier-add-provider cron (2026-06-28). Liquid Web is a managed-VPS provider added to fill the managed-VPS niche gap; complementary to existing budget/self-managed providers."
+    },
+    {
+      "slug": "netcup",
+      "date": "2026-06-29",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/vps/netcup.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "netcup"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "vpstier_eu_budget_kvm_2026"
+    },
+    {
+      "slug": "cherryservers",
+      "date": "2026-06-30",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/vps/cherryservers.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "cherryservers",
+        "racknerd",
+        "vultr",
+        "liquidweb",
+        "netcup",
+        "kamatera"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "vpstier-orphaned-card-tier-4-fallback (2026-06-30)",
+      "note": "Direct addition via vpstier-add-provider cron (2026-06-30). Tier 4 fallback — orphaned card in /vps/ for months. Picked cherry over 7 other orphans (a2-hosting/aliyun/cloudcone/inmotion-hosting/yecaoyun/yinnet) for unique differentiator: only whitelisted EU bare-metal specialist + ISO 27001 + 25-year longevity, fills the gap left by EU market's June 2025 price shock. Title 56/60, desc 155/155, 0 banned-provider mentions, 5 JSON-LD blocks all parse, RackNerd primary affiliate."
+    },
+    {
+      "slug": "a2-hosting-vps-review-2026",
+      "date": "2026-07-01",
+      "type": "review",
+      "en_astro": "src/pages/blog/a2-hosting-vps-review-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "a2-hosting",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "published",
+      "hot_topic_source": "tier-4-orphan-card-fallback",
+      "outline_file": "drafts/outline-2026-07-01-a2-hosting-vps-review-2026.md",
+      "publish_notes": "Re-publish: blog review post was missing, provider profile en_astro was incorrect"
+    },
+    {
+      "slug": "mochahost-vps-review-2026",
+      "date": "2026-07-02",
+      "type": "review",
+      "title_en": "MochaHost VPS Review 2026: Managed Plans from $30/mo",
+      "title_zh": null,
+      "outline_file": "drafts/outline-2026-07-02-mochahost-vps-review-2026.md",
+      "en_astro": "src/pages/blog/mochahost-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "mochahost",
+        "racknerd",
+        "vultr",
+        "chemicloud"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "tier-2-provider-gap-scan",
+      "note": "Tier 2 fallback (2026-07-02). Daily ⭐ VPS briefing #1 and #2 were both banned-merchant stories (price hike + 30-day outage open letter). Provider gap scan returned 4 uncovered active providers (chemicloud/greengeeks/siteground/mochahost); picked mochahost for richest providers.json data (8 pros / 6 cons / 10 features + cpu/ram/storage/bandwidth specs absent from the other 3), 23-year longevity, multi-region DCs, and existing /vps/mochahost.astro profile card. Affiliate quirk: mochahost.affiliateAvailable=true but affiliateUrl defaults to RackNerd per skill data quirk — RackNerd is primary affiliate per convention."
+    },
+    {
+      "slug": "chemicloud-vps-review-2026",
+      "date": "2026-07-04",
+      "type": "review",
+      "title_en": "ChemiCloud VPS Review 2026: Managed Cloud Plans from $9.95/mo",
+      "title_zh": null,
+      "outline_file": null,
+      "en_astro": "src/pages/blog/chemicloud-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "chemicloud",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "tier-2-provider-gap-scan",
+      "note": "Tier 2 provider gap scan pick. ChemiCloud was the only active provider in providers.json missing a dedicated blog review (providers.json + /vps/ card already exist, PARTIAL matrix → only blog review was needed). 7 global datacenters, free cPanel, free migrations, 60-day refund. RackNerd-default affiliate per data quirk. 11 H2 sections, 8 FAQ Q&A. Unmetered bandwidth on all plans."
+    },
+    {
+      "slug": "best-vps-deals-codes-2026",
+      "date": "2026-07-06",
+      "type": "hub-launch",
+      "url": "https://vpstier.com/promo-codes/best-vps-deals-codes-2026/",
+      "hub_url": "https://vpstier.com/promo-codes/",
+      "title_en": "Best VPS Deals & Promo Codes (July 2026, Verified)",
       "providers_featured": [
         "racknerd",
         "vultr",
         "digitalocean",
+        "hostinger",
         "cloudways",
-        "scalahosting",
-        "contabo"
+        "a2-hosting",
+        "chemicloud"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-07 daily report (TechCrunch Google-SpaceX $920M/month compute deal)"
+      "status": "published",
+      "published_at": "2026-07-06"
+    },
+    {
+      "slug": "inmotion-hosting-vps-review-2026",
+      "date": "2026-07-07",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/blog/inmotion-hosting-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "inmotion-hosting",
+        "racknerd",
+        "vultr",
+        "chemicloud",
+        "siteground"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "vpstier-orphaned-card-tier-4-fallback (2026-07-07)",
+      "note": "Direct addition via vpstier-add-provider cron (2026-07-07). Tier 4 fallback — orphaned card in /vps/inmotion-hosting.astro existed for months. Daily briefing focused on banned-EU-merchant story (Tier 1 fail) + Tier 2 gap scan exhausted (only greengeeks pending outline already covered). Tier 4 candidates: inmotion-hosting (RackNerd-default affiliate, EN-focused, Western audience fit) vs hostdare (own aff, CN2 routes, mixed audience) vs aliyun/yecaoyun/yinnet (CN-only, excluded for vpstier EN-only audience). Picked inmotion-hosting per canonical Tier-4 priority #2 (Western audience fit) + #3 (NVMe differentiation no other whitelisted provider serves). providers.json mutated 37→38 entries. Title 58/60, desc 141/155, 5 JSON-LD blocks (BreadcrumbList + Article + FAQPage + 2 Article extras). 12 RackNerd placements + 6 Vultr + 4 ChemiCloud + 1 SiteGround. 0 banned-provider mentions in article body or self-check."
+    },
+    {
+      "slug": "aliyun-vps-review-2026",
+      "date": "2026-07-14",
+      "type": "review",
+      "title_en": "Aliyun ECS Review 2026: Is Alibaba Cloud VPS Worth It?",
+      "title_zh": null,
+      "outline_file": "drafts/outline-aliyun-vps-review-2026-2026-07-14.md",
+      "en_astro": "src/pages/blog/aliyun-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "aliyun",
+        "racknerd",
+        "vultr",
+        "cloudways",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "url": "https://vpstier.com/blog/aliyun-vps-review-2026/",
+      "hot_topic_source": "tier-4-orphan-card-fallback",
+      "tier_decision": "Tier 4 — daily Tier 1 VPS briefing all Hetzner-anchored (hard-banned); tier 0 GSC comparison covered 2026-07-12; aliyun was the safe Tier 4 orphan (state.json had entry with no status; hostdare outline_pending_publish skipped; virmach /vps/ already complete)"
+    }
+  ],
+  "drafts": [
+    {
+      "slug": "siteground-vps-review-2026",
+      "date": "2026-07-03",
+      "type": "review",
+      "outline_file": null,
+      "en_astro": "src/pages/blog/siteground-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "siteground",
+        "racknerd",
+        "vultr",
+        "chemicloud"
+      ],
+      "primary_affiliate": "racknerd",
+      "deployed_url_en": "https://vpstier.com/blog/siteground-vps-review-2026/",
+      "deployed_url_zh": null,
+      "note": "Tier 2 provider gap scan pick (2 candidates: greengeeks, siteground). Picked siteground over greengeeks due to higher brand recognition + Google Cloud backbone differentiator + 3-tier plan structure (better SEO price-tier coverage). siteground already in providers.json + /vps/siteground.astro (PARTIAL matrix → only blog review was needed). Both candidates are RackNerd-default affiliate, so no own-affiliate tiebreaker. 14 RackNerd placements (1 direct CTA + 13 internal /vps/racknerd cross-links). 12 H2 sections, 8 FAQ Q&A. Built 86 pages in 1.21s on heap=1200, deployed 88 new files. Live verified HTTP 200 on all 4 URLs."
     },
     {
       "slug": "hostwinds-review",
@@ -526,342 +809,84 @@
       "hot_topic_source": "User directive 2026-06-07: add new VPS provider + review"
     },
     {
-      "slug": "cheap-vps-under-5-2026",
-      "date": "2026-06-08",
-      "type": "comparison",
-      "title_en": "Cheap VPS 2026: 10 Best Hosting Plans Under $5/Month",
-      "title_zh": "便宜 VPS 2026:10 款月付 $5 以下的高性价比主机",
-      "outline_file": "outline-2026-06-08-cheap-vps-under-5-2026.md",
-      "en_astro": "src/pages/blog/cheap-vps-under-5-2026.astro",
-      "zh_astro": "src/pages/zh/blog/cheap-vps-under-5-2026.astro",
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "contabo",
-        "hostwinds",
-        "interserver",
-        "hostinger",
-        "scalahosting",
-        "upcloud",
-        "hostpapa"
-      ],
-      "primary_affiliate": "racknerd",
-      "affiliate_placements": {
-        "racknerd": 7,
-        "vultr": 2,
-        "digitalocean": 2,
-        "hostinger": 1,
-        "scalahosting": 1
-      },
-      "heat_source": "Rotation topic — banned-provider 6/15 ⭐⭐⭐ dropped due to whitelist; pivoted to cheap VPS to hit racknerd GSC signal (rank 31-55)"
-    },
-    {
-      "slug": "best-vps-for-ai-agents-2026",
-      "date": "2026-06-10",
-      "type": "comparison",
-      "title_en": "Best VPS for AI Agents 2026: 7 Providers Tested",
-      "title_zh": "2026 AI Agent VPS 推荐:7 家供应商家用 + 生产环境实测",
-      "outline_file": "outline-2026-06-10-best-vps-for-ai-agents-2026.md",
-      "en_astro": "src/pages/blog/best-vps-for-ai-agents-2026.astro",
-      "zh_astro": "src/pages/zh/blog/best-vps-for-ai-agents-2026.astro",
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "hostinger",
-        "scalahosting",
-        "upcloud",
-        "contabo"
-      ],
-      "primary_affiliate": "racknerd",
-      "affiliate_placements": {
-        "racknerd": 7,
-        "vultr": 3,
-        "digitalocean": 2,
-        "hostinger": 1,
-        "scalahosting": 1
-      },
-      "hot_topic_source": "Fallback — ⭐ Cheap VPS (covered 06-08), other topic not in whitelist → comparison pivot"
-    },
-    {
-      "slug": "best-unmetered-bandwidth-vps-north-america-2026",
-      "date": "2026-06-12",
-      "type": "comparison",
-      "title_en": "Top Unmetered Bandwidth VPS in North America 2026",
-      "outline_file": "outline-2026-06-12-best-unmetered-bandwidth-vps-north-america-2026.md",
-      "en_astro": "src/pages/blog/best-unmetered-bandwidth-vps-north-america-2026.astro",
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "buyvm",
-        "hostwinds",
-        "interserver"
-      ],
-      "primary_affiliate": "racknerd",
-      "hot_topic_source": "GSC keyword signal — unmetered bandwidth vps near n (rank 35)"
-    },
-    {
-      "slug": "best-vps-for-small-business-2026",
-      "date": "2026-06-15",
-      "type": "comparison",
-      "title_en": "Best VPS for Small Business 2026: 6 Providers Compared",
-      "outline_file": "outline-2026-06-15-best-vps-for-small-business-2026.md",
-      "en_astro": "src/pages/blog/best-vps-for-small-business-2026.astro",
+      "slug": "best-vps-deals-codes-2026",
+      "date": "2026-07-06",
+      "type": "hub-launch",
+      "outline_file": "drafts/outline-2026-07-06-best-vps-deals-codes-2026.md",
+      "en_astro": "src/pages/promo-codes/best-vps-deals-codes-2026.astro",
       "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "scalahosting",
-        "cloudways",
-        "siteground",
-        "greengeeks",
-        "vultr"
-      ],
-      "primary_affiliate": "racknerd",
-      "hot_topic_source": "GSC signals: racknerd (rank 50, 4 imp) + vultr vps (rank 59, 3 imp). No ⭐⭐⭐ hot topics. Pivoted to small business VPS comparison.",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 8
-    },
-    {
-      "slug": "european-vps-after-price-increase-2026",
-      "date": "2026-06-17",
-      "type": "comparison",
-      "title_en": "Best European VPS After the 2026 Price Hike: 7 Alternatives",
-      "title_zh": null,
-      "outline_file": "outline-2026-06-17-european-vps-after-price-increase-2026.md",
-      "en_astro": "src/pages/blog/european-vps-after-price-increase-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "vultr",
-        "contabo",
-        "upcloud",
-        "ovhcloud",
-        "hostarmada",
-        "digitalocean",
-        "hostinger",
-        "racknerd"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "⭐⭐⭐ 2026-06-17 daily report — major European provider raised Cloud Server prices 30-120% (HN 525 pts, official 2026-06-15)"
-    },
-    {
-      "slug": "managed-vps-hosting-2026",
-      "date": "2026-06-18",
-      "type": "comparison",
-      "title_en": "Managed VPS Hosting 2026: 7 Providers Compared",
-      "title_zh": null,
-      "outline_file": "outline-2026-06-18-managed-vps-hosting-2026.md",
-      "en_astro": "src/pages/blog/managed-vps-hosting-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "cloudways",
-        "siteground",
-        "greengeeks",
-        "chemicloud",
-        "scalahosting",
-        "hostpapa",
-        "knownhost",
-        "racknerd"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "GSC keyword: managed vps hosting reviews (rank 63). No ⭐⭐⭐ hot topics. Pivoted to managed VPS comparison.",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 6,
-      "affiliate_placements": {
-        "racknerd": 6,
-        "cloudways": 1,
-        "siteground": 1,
-        "knownhost": 1
-      }
-    },
-    {
-      "slug": "scalahosting-vps-review-2026",
-      "date": "2026-06-19",
-      "type": "review",
-      "title_en": "ScalaHosting VPS Review 2026: SPanel Tested",
-      "title_zh": null,
-      "outline_file": "outline-2026-06-19-scalahosting-vps-review-2026.md",
-      "en_astro": "src/pages/blog/scalahosting-vps-review-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "scalahosting",
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "hostinger"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "GSC signal: scalahosting (rank 72, 2 imp). Gap: no full blog review for ScalaHosting (only /vps/ provider card exists).",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 6
-    },
-    {
-      "slug": "coinbase-aws-outage-vps-redundancy-2026",
-      "date": "2026-06-20",
-      "type": "incident-postmortem+guide",
-      "title_en": "Coinbase Outage 2026: VPS Redundancy Guide",
-      "outline_file": "outline-2026-06-20-coinbase-aws-outage-vps-redundancy-2026.md",
-      "en_astro": "src/pages/blog/coinbase-aws-outage-vps-redundancy-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "upcloud",
-        "hostinger",
-        "siteground",
-        "contabo"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "⭐ 2026-06-19 daily report #2 (Coinbase outage — AWS cooling failure, InfoQ coverage, HN discussion)",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 7
-    },
-    {
-      "slug": "vps-cost-crisis-2026-data-centers-cloudflare",
-      "date": "2026-06-21",
-      "type": "analysis+comparison",
-      "title_en": "VPS Cost Crisis 2026: Data Center Wars & Cloudflare",
-      "outline_file": "outline-2026-06-21-vps-cost-crisis-2026-data-centers-cloudflare.md",
-      "en_astro": "src/pages/blog/vps-cost-crisis-2026-data-centers-cloudflare.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "scalahosting",
-        "hostinger",
-        "interserver",
-        "cloudways"
-      ],
-      "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐ P0 2026-06-21 daily report (The Verge: Amazon data center moratorium controversy + webhosting.today: Cloudflare killing traditional hosting)",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 6,
-      "affiliate_placements": {
-        "racknerd": 6,
-        "vultr": 1,
-        "digitalocean": 1,
-        "hostinger": 1
-      }
-    },
-    {
-      "slug": "2026-h1-vps-market-landscape",
-      "date": "2026-06-22",
-      "type": "analysis+comparison",
-      "title_en": "2026 H1 VPS Market Overview: Pricing Trends & Top Providers",
-      "outline_file": "outline-2026-06-22-2026-h1-vps-market-landscape.md",
-      "en_astro": "src/pages/blog/2026-h1-vps-market-landscape.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "contabo",
-        "hostinger",
-        "scalahosting",
-        "knownhost",
-        "hostarmada",
-        "upcloud",
-        "interserver",
-        "hostwinds",
-        "linode",
-        "ovhcloud",
-        "ionos",
-        "greengeeks",
-        "siteground",
-        "chemicloud",
-        "hostpapa",
-        "dreamhost",
-        "hivelocity",
-        "atlantic-net",
-        "cloudways",
-        "hawk-host",
-        "buyvm"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "2026-06-22 daily hot topics report — VPS section recommends '2026上半年VPS市场格局盘点' due to no standout breaking news. GSC signals: racknerd (rank 76, 1 imp), managed vps hosting reviews (rank 63, 1 imp), cloudways vps (rank 59, 1 imp). H1 2026 market landscape overview.",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 6
-    },
-    {
-      "slug": "hostarmada-vps-review-2026",
-      "date": "2026-06-23",
-      "type": "review",
-      "title_en": "HostArmada VPS Review 2026: NVMe RAID Cloud VPS Tested",
-      "outline_file": "outline-2026-06-23-hostarmada-vps-review-2026.md",
-      "en_astro": "src/pages/blog/hostarmada-vps-review-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "hostarmada",
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "hostinger"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "GSC signals (racknerd review rank 46). No hot topics — VPS ⭐ today featured a banned provider. Provider review gap: HostArmada has zero site content.",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 8
-    },
-    {
-      "slug": "kamatera-vps-review-2026",
-      "date": "2026-06-24",
-      "type": "review",
-      "title_en": "Kamatera VPS Review 2026: 14 Datacenters + 30-Day Free Trial",
-      "outline_file": "outline-2026-06-24-kamatera-vps-review-2026.md",
-      "en_astro": "src/pages/blog/kamatera-vps-review-2026.astro",
-      "zh_astro": null,
-      "status": "outline_pending_publish",
-      "providers_featured": [
-        "kamatera",
-        "racknerd",
-        "vultr",
-        "digitalocean",
-        "linode",
-        "hostinger",
-        "contabo",
-        "scalahosting"
-      ],
-      "primary_affiliate": "racknerd",
-      "heat_source": "GSC signal: kamatera vps (rank 35, 5 imp) + kamatera (rank 60, 2 imp). No ⭐⭐⭐ hot topics: today's VPS section featured a banned provider only. Pivoted to provider gap scan — Kamatera has 0 blog content, only /vps/kamatera.astro card exists. Strongest 2026-06-24 GSC signal pointing to an unaddressed provider.",
-      "banned_self_check": "PASSED",
-      "racknerd_cta_count_planned": 7
-    },
-    {
-      "slug": "1984-is-review-2026",
-      "date": "2026-06-24",
-      "type": "review",
-      "title_en": "1984.is VPS Review 2026: Privacy-First Icelandic Hosting",
-      "title_zh": "",
-      "outline_file": "",
-      "en_astro": "src/pages/vps/1984.astro",
-      "zh_astro": "",
       "status": "published",
       "providers_featured": [
-        "1984",
         "racknerd",
-        "buyvm",
         "vultr",
-        "ovhcloud",
-        "contabo"
+        "digitalocean",
+        "hostinger",
+        "cloudways",
+        "a2-hosting",
+        "chemicloud"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)"
+      "hot_topic_source": "Manual — category-launch article",
+      "note": "Hub-launch article creating /promo-codes/ Astro route. Only RackNerd dedicated has verified standalone code (15OFFDEDI); other deals are link-based credits or auto-applied banners. Article pivots from 'coupon code' to 'deals + codes' framing. 9 RackNerd affiliate placements, 10 H2 sections, 5 FAQ. Hub at /promo-codes/ lists all 7 active deals in a table."
+    },
+    {
+      "slug": "greengeeks-vps-review-2026",
+      "date": "2026-07-07",
+      "type": "review",
+      "outline_file": "drafts/outline-2026-07-07-greengeeks-vps-review-2026.md",
+      "en_astro": "src/pages/blog/greengeeks-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "greengeeks",
+        "racknerd",
+        "chemicloud",
+        "siteground"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "tier-2-provider-gap-scan",
+      "note": "Tier 2 provider gap scan pick (1 candidate: greengeeks). Picked because: (a) sole uncovered active provider after 2026-07-03 siteground ship, (b) eco-friendly 300% green energy match is unique differentiator not covered by any whitelisted provider, (c) 5-datacenter / 4-region breadth covers EU + APAC audiences vpstier cares about, (d) profile card already exists at /vps/greengeeks.astro (PARTIAL matrix → only blog review needed). RackNerd-default affiliate quirk applied. Tier 4 fallback (hostdare/inmotion) skipped per 2026-07-03 state-reset resilience rule. 8+ RackNerd placements planned (1 direct CTA + 7+ body mentions). 10 H2 sections, 5 FAQ Q&A. Build pending."
+    },
+    {
+      "slug": "hostdare-vps-review-2026",
+      "date": "2026-07-08",
+      "type": "review",
+      "outline_file": "drafts/outline-2026-07-08-hostdare-vps-review-2026.md",
+      "en_astro": "src/pages/blog/hostdare-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "hostdare",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "hostdare",
+      "hot_topic_source": "tier-4-orphaned-card-fallback",
+      "tier": "tier-4",
+      "note": "Tier 4 fallback (1st verified instance of 2026-07; hostdare prior 2026-06-30 outline never reached CDN per 2026-07-08 HTTP verification). Own active affiliate != RackNerd default. CN2 routing differentiator. Cross-link to best-asia-pacific-vps-2026 (GSC cluster fit)."
+    },
+    {
+      "slug": "vps-kyc-privacy-checklist-2026",
+      "date": "2026-07-10",
+      "type": "guide+news-analysis",
+      "outline_file": "drafts/outline-2026-07-10-vps-kyc-privacy-checklist-2026.md",
+      "en_astro": "src/pages/blog/vps-kyc-privacy-checklist-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "daily-briefing-2026-07-10-lowendbox-vps-selfie-kyc-control-panel-story",
+      "tier": "tier-1",
+      "note": "Outline-only daily pick. A July 2026 VPS control-panel selfie/liveness-check dispute becomes an evergreen KYC privacy checklist for budget VPS buyers. No Astro page, build, deploy, or publication performed."
     }
   ],
   "recent_topics": [
-    "1984-is-review-2026",
+    "aliyun-vps-review-2026",
     "kamatera-vps-review-2026",
     "hostarmada-vps-review-2026",
     "fastcomet-review-2026",
@@ -879,7 +904,17 @@
     "knownhost",
     "vps-pricing-trap-guide-2026",
     "best-unmetered-bandwidth-vps-north-america-2026",
-    "buyvm"
+    "buyvm",
+    "cloudflare-workers-billing-trap-2026",
+    {
+      "date": "2026-06-27",
+      "slug": "digitalocean-openrouter-ai-gateway-2026",
+      "topic_source": "daily-briefing-2026-06-27",
+      "rationale": "DO+OpenRouter partnership = VPS-as-AI-API-Gateway archetype; RackNerd escape-hatch for self-hosted LiteLLM proxy",
+      "provider_gap_scan": "exhausted (all 32 whitelisted providers covered)"
+    }
   ],
-  "updated": "2026-06-24T10:57:06.927117"
+  "updated": "2026-07-14T02:58:56.787139Z",
+  "drafts_count": 6,
+  "published_count": 48
 }

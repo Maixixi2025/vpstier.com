@@ -2552,5 +2552,261 @@
     ],
     "status": "active",
     "featured": false
-  }
+  },
+{
+  "id": "scaleway",
+  "name": "Scaleway",
+  "tagline": "EU sovereign cloud & VPS provider, AMD EPYC, no egress fees",
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "$80-100/sale",
+  "cookie": "60 days",
+  "startingPrice": 0.43,
+  "rating": 4.1,
+  "datacenter": "Paris (PAR-1/PAR-2), Warsaw (WAW), Amsterdam (AMS), Milan (MIL)",
+  "features": [
+    "AMD EPYC processors on all instance families",
+    "No egress fees \u2014 bandwidth included in list price",
+    "EU sovereign cloud owned by iliad Group (Paris)",
+    "100+ cloud, AI, and quantum products",
+    "KVM virtualization across all tiers",
+    "GPU instances (NVIDIA H100, A100) for AI workloads",
+    "4 multi-AZ EU regions (FR/PL/NL/IT)",
+    "GDPR-native data residency"
+  ],
+  "pros": [
+    "No egress fees saves 20-40% vs AWS/GCP/Azure",
+    "EU sovereign \u2014 full GDPR compliance, no US CLOUD Act exposure",
+    "AMD EPYC only \u2014 consistent CPU architecture",
+    "5,000+ GPUs available (rare in EU-native)",
+    "Hourly billing on most instance families",
+    "Wide product range (cloud + AI + bare metal + storage)"
+  ],
+  "cons": [
+    "EU-only regions \u2014 no US or APAC datacenters",
+    "Documentation and tutorials smaller than hyperscalers",
+    "Smaller community / third-party ecosystem",
+    "Free-tier support slower than paid enterprise tier"
+  ],
+  "bestFor": "EU-based SaaS, GDPR-sensitive workloads, AI/ML training on NVIDIA H100, EU data residency, no-egress-fee data pipelines",
+  "vpsPlans": [
+    {
+      "name": "STARDUST1-S",
+      "vcpu": 1,
+      "ram_gb": 1,
+      "bandwidth": "100 Mbps",
+      "price_usd": 0.47
+    },
+    {
+      "name": "DEV1-S",
+      "vcpu": 2,
+      "ram_gb": 2,
+      "bandwidth": "200 Mbps",
+      "price_usd": 7.1
+    },
+    {
+      "name": "DEV1-M",
+      "vcpu": 3,
+      "ram_gb": 4,
+      "bandwidth": "300 Mbps",
+      "price_usd": 16.0
+    },
+    {
+      "name": "DEV1-L",
+      "vcpu": 4,
+      "ram_gb": 8,
+      "bandwidth": "400 Mbps",
+      "price_usd": 33.9
+    },
+    {
+      "name": "DEV1-XL",
+      "vcpu": 4,
+      "ram_gb": 12,
+      "bandwidth": "500 Mbps",
+      "price_usd": 51.45
+    },
+    {
+      "name": "PLAY2-PICO",
+      "vcpu": 1,
+      "ram_gb": 2,
+      "bandwidth": "100 Mbps",
+      "price_usd": 11.3
+    }
+  ],
+  "status": "active",
+  "featured": false
+},
+{
+  "id": "yinnet",
+  "name": "Yin-net",
+  "tagline": "Dual-ISP cross-border VPS, HK/JP/US/TW, since 2014",
+  "affiliateUrl": "https://www.yin-net.com/aff.php?aff=379",
+  "affiliateAvailable": true,
+  "commission": "$50-200/sale",
+  "cookie": "30 days",
+  "startingPrice": 10.0,
+  "rating": 3.9,
+  "datacenter": "Hong Kong, Tokyo, Taipei, Los Angeles, Seoul, Singapore, Kuala Lumpur, Ho Chi Minh, London, Frankfurt, Paris, Madrid",
+  "features": [
+    "Dual-ISP routing (CN2 + international BGP per IPv4)",
+    "12+ global regions across Asia, EU, US",
+    "USD pricing across all regions (no FX risk)",
+    "KVM virtualization with full root access",
+    "Hourly billing on most plans",
+    "Linux + Windows OS support",
+    "200-500Mbps bandwidth on tier 1-4",
+    "1-5TB monthly traffic depending on tier"
+  ],
+  "pros": [
+    "Dual-ISP routing without premium CN2 pricing",
+    "12+ regions including Japan/Korea/Taiwan/SE Asia",
+    "Predictable USD pricing across regions",
+    "Hourly billing available for dev workloads",
+    "KVM isolation with full root access",
+    "12-year operating history (since 2014)"
+  ],
+  "cons": [
+    "Port 80/443 blocked by default on most plans",
+    "English documentation limited",
+    "No GPU instances available on any tier",
+    "Lower-tier monthly traffic (1TB on tier 1) restrictive",
+    "Smaller ecosystem vs hyperscalers"
+  ],
+  "bestFor": "Cross-border Asia workloads, China-facing e-commerce, indie apps with APAC users, game server hosting in HK/JP, VPN exit nodes in Asia, multi-region APAC testing",
+  "vpsPlans": [
+    {
+      "name": "HK Tier 1",
+      "vcpu": 1,
+      "ram_gb": 1,
+      "storage_gb": 10,
+      "bandwidth": "200 Mbps, 1TB/mo",
+      "price_usd": 10.0
+    },
+    {
+      "name": "HK Tier 2",
+      "vcpu": 2,
+      "ram_gb": 2,
+      "storage_gb": 20,
+      "bandwidth": "300 Mbps, 2TB/mo",
+      "price_usd": 14.0
+    },
+    {
+      "name": "HK Tier 3",
+      "vcpu": 4,
+      "ram_gb": 4,
+      "storage_gb": 50,
+      "bandwidth": "400 Mbps, 3TB/mo",
+      "price_usd": 25.0
+    },
+    {
+      "name": "HK Tier 4",
+      "vcpu": 8,
+      "ram_gb": 8,
+      "storage_gb": 100,
+      "bandwidth": "500 Mbps, 5TB/mo",
+      "price_usd": 40.0
+    },
+    {
+      "name": "JP Tier 1",
+      "vcpu": 1,
+      "ram_gb": 1,
+      "storage_gb": 10,
+      "bandwidth": "200 Mbps, 1TB/mo",
+      "price_usd": 10.0
+    },
+    {
+      "name": "JP Tier 4",
+      "vcpu": 8,
+      "ram_gb": 8,
+      "storage_gb": 100,
+      "bandwidth": "500 Mbps, 5TB/mo",
+      "price_usd": 34.0
+    }
+  ],
+  "status": "active",
+  "featured": false
+},
+{
+  "id": "aliyun",
+  "name": "Aliyun (Alibaba Cloud)",
+  "tagline": "Asia-Pacific hyperscaler & VPS, 26 regions, ECS 9th Gen with 35% off",
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "$100/sale (RackNerd fallback)",
+  "cookie": "90 days",
+  "startingPrice": 2.5,
+  "rating": 4.1,
+  "datacenter": "China (Hangzhou/Shanghai/Beijing/Shenzhen/Qingdao), Hong Kong, Singapore, Malaysia, Indonesia, Japan, Australia, Frankfurt, London, Amsterdam, UAE, Saudi Arabia, US-East, US-West, Canada, Mexico, Brazil, South Africa",
+  "features": [
+    "26 global regions and 89 availability zones across 80+ countries",
+    "ECS 9th Gen with up to 35% promotional discount on 1-year terms",
+    "Mainland China presence (10+ regions) no US/EU-focused host matches",
+    "AMD EPYC + Intel Sapphire Rapids CPU options on g9i/c7/m7 families",
+    "DDR5 memory bandwidth on 9th Gen (~30% gain over 7th Gen)",
+    "ESSD PL1/PL2/PL3 storage with sub-millisecond latency",
+    "OpenAPI with SDKs for Java, Python, Go, Node.js, PHP, .NET",
+    "Backbone network across Asia-Pacific, EU, and Americas"
+  ],
+  "pros": [
+    "26 global regions - largest Asia-Pacific depth of any hyperscaler",
+    "Mainland China presence no US/EU host offers",
+    "ECS 9th Gen 35% off promotional rate competitive with AWS",
+    "Strong intra-Asia network (10-30 ms lower than AWS US-routed)",
+    "GDPR-compliant EU regions under Alibaba Cloud Singapore entity",
+    "9th Gen delivers 15-20% single-thread CPU gain over 7th Gen"
+  ],
+  "cons": [
+    "Cross-border egress from Mainland China expensive ($0.13/GB+)",
+    "OpenAPI signing differs from AWS SigV4 - code rewrite required",
+    "Documentation primarily in Chinese, English secondary",
+    "Region ID vocabulary differs from AWS (us-east vs us-west swapped)",
+    "Free tier is time-boxed trial credits, not perpetual",
+    "International billing USD reflects higher cost vs US/EU hyperscalers"
+  ],
+  "bestFor": "Cross-border SaaS with Mainland China + global users, Asia-Pacific-first products (gaming, fintech, e-commerce), 9th Gen promotional workloads on 1-year terms, ICP-licensed Mainland China apps, multi-AZ deployments across Asia/EU/NA",
+  "vpsPlans": [
+    {
+      "name": "ECS t5-c1m1 (burstable)",
+      "vcpu": 1,
+      "ram_gb": 1,
+      "storage_gb": 40,
+      "bandwidth": "1 Gbps shared",
+      "price_usd": 2.5
+    },
+    {
+      "name": "ECS t6-c2m2 (burstable)",
+      "vcpu": 2,
+      "ram_gb": 2,
+      "storage_gb": 40,
+      "bandwidth": "1 Gbps shared",
+      "price_usd": 8.5
+    },
+    {
+      "name": "ECS g7.large (general-purpose)",
+      "vcpu": 2,
+      "ram_gb": 8,
+      "storage_gb": 40,
+      "bandwidth": "Up to 10 Gbps",
+      "price_usd": 36.0
+    },
+    {
+      "name": "ECS g9i.large (9th gen, new)",
+      "vcpu": 2,
+      "ram_gb": 8,
+      "storage_gb": 40,
+      "bandwidth": "Up to 12.5 Gbps",
+      "price_usd": 32.0
+    },
+    {
+      "name": "ECS c7.large (compute-optimized)",
+      "vcpu": 2,
+      "ram_gb": 4,
+      "storage_gb": 40,
+      "bandwidth": "Up to 10 Gbps",
+      "price_usd": 30.0
+    }
+  ],
+  "status": "active",
+  "featured": false
+}
 ]
