@@ -770,6 +770,33 @@
       "url": "https://vpstier.com/blog/aliyun-vps-review-2026/",
       "hot_topic_source": "tier-4-orphan-card-fallback",
       "tier_decision": "Tier 4 — daily Tier 1 VPS briefing all Hetzner-anchored (hard-banned); tier 0 GSC comparison covered 2026-07-12; aliyun was the safe Tier 4 orphan (state.json had entry with no status; hostdare outline_pending_publish skipped; virmach /vps/ already complete)"
+    },
+    {
+      "slug": "kainode-vps-review-2026",
+      "provider": "kainode",
+      "date": "2026-07-16",
+      "type": "add-provider-and-review",
+      "vps_astro": "src/pages/vps/kainode.astro",
+      "blog_astro": "src/pages/blog/kainode-vps-review-2026.astro",
+      "en_astro": "src/pages/blog/kainode-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "kainode",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "daily-briefing-2026-07-16-kainode-singapore-vps",
+      "title": "Kainode VPS Review 2026: Singapore VPS from $16.99/mo Tested",
+      "description": "Kainode VPS review 2026 — VDS plans from $16.99/mo across Singapore, Germany, USA. NVMe + DDoS-by-default. Tested vs RackNerd + Vultr.",
+      "live_urls": {
+        "vps_card": "https://vpstier.com/vps/kainode/",
+        "blog": "https://vpstier.com/blog/kainode-vps-review-2026/",
+        "preview": "https://f605e7e4.vpstier-com.pages.dev"
+      },
+      "deploy_id": "f605e7e4",
+      "published_at": "2026-07-16T11:30:00Z"
     }
   ],
   "drafts": [
@@ -883,6 +910,43 @@
       "hot_topic_source": "daily-briefing-2026-07-10-lowendbox-vps-selfie-kyc-control-panel-story",
       "tier": "tier-1",
       "note": "Outline-only daily pick. A July 2026 VPS control-panel selfie/liveness-check dispute becomes an evergreen KYC privacy checklist for budget VPS buyers. No Astro page, build, deploy, or publication performed."
+    },
+    {
+      "slug": "ny-data-center-moratorium-2026-vps-buyers",
+      "date": "2026-07-15",
+      "type": "guide+news-analysis",
+      "outline_file": "drafts/outline-2026-07-15-ny-data-center-moratorium-2026-vps-buyers.md",
+      "en_astro": "src/pages/blog/ny-data-center-moratorium-2026-vps-buyers.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "scaleway"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "daily-briefing-2026-07-15-new-york-data-center-moratorium-tier-1-news-analysis",
+      "tier": "tier-1",
+      "note": "Daily-outline vpstier pick 2026-07-15 (cron id 5fd2a36f2dc4). Tier 1 ⭐ from today's briefing: NY became first U.S. state to impose a 1-year data-center construction moratorium (Reuters + CNBC + NYT + WaPo + HN 150p). Tier 0 GSC empty for comparison-intent; Tier 2/4 drafts exhausted (greengeeks + hostdare + vps-kyc + aliyun already pending). 10 H2 + 5 FAQ + 10 RackNerd placements. Title 47/60 chars, description 151/155 chars, 0 banned-provider mentions, 0 ZH chars, 0 /zh/ paths. Outline only — no Astro, no build, no deploy, no publication. User must reply `publish` to commit + build + wrangler deploy."
+    },
+    {
+      "slug": "januscape-kvm-escape-vps-security-2026",
+      "date": "2026-07-16",
+      "type": "security-news-analysis+buyer-guide",
+      "outline_file": "drafts/outline-2026-07-16-januscape-kvm-escape-vps-security-2026.md",
+      "en_astro": "src/pages/blog/januscape-kvm-escape-vps-security-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "daily-briefing-2026-07-16-kvm-guest-to-host-security-story",
+      "note": "Outline-only daily pick. Public KVM/x86 guest-to-host disclosure cross-checked against LowEndBox, Openwall, NVD, and the Januscape research repository. No Astro page, build, deploy, or publication performed."
     }
   ],
   "recent_topics": [
@@ -914,7 +978,7 @@
       "provider_gap_scan": "exhausted (all 32 whitelisted providers covered)"
     }
   ],
-  "updated": "2026-07-14T02:58:56.787139Z",
-  "drafts_count": 6,
-  "published_count": 48
+  "updated": "2026-07-16T02:57:33.164484Z",
+  "drafts_count": 8,
+  "published_count": 49
 }

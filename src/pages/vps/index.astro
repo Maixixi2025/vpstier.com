@@ -801,6 +801,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </div>
       </a>
 
+      <!-- Scaleway -->
+      <a href="/vps/scaleway" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div class="badge badge-blue">EU Cloud</div>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Scaleway</h2>
+        <p class="text-gray-500 text-sm mb-4">Starting at €0.43/mo. European sovereign cloud, zero egress fees, 6 regions, AMD EPYC, NVMe.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+          <div class="text-orange-400 font-bold">$50-100<span class="text-gray-600 text-xs font-normal">/sale</span></div>
+          <div class="text-gray-500 text-sm">90 days cookie</div>
+        </div>
+      </a>
+
       <!-- VirMach -->
       <a href="/vps/virmach" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
         <div class="flex items-start justify-between mb-4">
@@ -817,6 +835,42 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <div class="text-orange-400 font-bold">Recurring<span class="text-gray-600 text-xs font-normal">/affiliate</span></div>
           <div class="text-gray-500 text-sm">KVM + OpenVZ</div>
         </div>
-      </a></div>
+      </a>
+
+      <!-- HostNamaste -->
+      <a href="/vps/hostnamaste" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/20 flex items-center justify-center">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <div class="badge badge-yellow">Physical CPU</div>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">HostNamaste</h2>
+        <p class="text-gray-500 text-sm mb-4">Starting at $3.99/mo. India-based KVM VPS from $3.99 + new VDS tier with dedicated physical CPU cores. 6+ DCs, multi-currency checkout.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+          <div class="text-orange-400 font-bold">$50<span class="text-gray-600 text-xs font-normal">/sale (fallback)</span></div>
+          <div class="text-gray-500 text-sm">Windows + Linux</div>
+        </div>
+      </a>
+      <!-- Kainode -->
+      <a href="/vps/kainode" class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20 flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <div class="badge badge-cyan">Singapore</div>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Kainode</h2>
+        <p class="text-gray-500 text-sm mb-4">Starting at $16.99/mo. Singapore VPS relaunched 2026 with NVMe + DDoS-by-default. 3 datacenters (SG/DE/USA).</p>
+        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+          <div class="text-orange-400 font-bold">$50<span class="text-gray-600 text-xs font-normal">/sale (fallback)</span></div>
+          <div class="text-gray-500 text-sm">VDS only</div>
+        </div>
+      </a>
+</div>
   </section>
 </BaseLayout>
