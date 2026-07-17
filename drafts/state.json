@@ -797,6 +797,31 @@
       },
       "deploy_id": "f605e7e4",
       "published_at": "2026-07-16T11:30:00Z"
+    },
+    {
+      "slug": "lightnode-vps-review-2026",
+      "provider": "lightnode",
+      "date": "2026-07-17",
+      "status": "published",
+      "title": "LightNode VPS Review 2026: 40+ Locations from $7.70/mo",
+      "description": "LightNode VPS review 2026: KVM VPS in 40+ locations across Asia, Middle East, South America. NVMe + hourly billing from $7.70/mo. Tested vs RackNerd.",
+      "category": "Review",
+      "tier": "Tier 2 (provider gap scan) — LightNode was the next uncovered provider from the suggested list after Kainode",
+      "vps_page": "/vps/lightnode/",
+      "blog_page": "/blog/lightnode-vps-review-2026/",
+      "racknerd_count": 7,
+      "h2_count": 9,
+      "faq_count": 5,
+      "ratings": {
+        "overall": 3.9,
+        "regional_coverage": 4.7,
+        "pricing": 3.8,
+        "performance": 3.7,
+        "support": 3.5
+      },
+      "verified_data_file": "drafts/lightnode-verified-data-2026-07-17.md",
+      "topic_source": "manual curation from task brief (provider not in existing list; LightNode is a 2021 HK-registered KVM VPS with 40+ locations)",
+      "rationale": "Picked LightNode because: (1) all suggested new providers from the cron task brief are already covered except serverpeacock (no public data) — LightNode is a known real provider with verified pricing and 21+ city locations; (2) complementary to recent Kainode Singapore coverage — LightNode's 40+ locations cover APAC/Middle East/SA where Kainode only covers SG/DE/USA; (3) monthly-bill no-lock-in angle complements RackNerd annual-special floor; (4) tier-2 provider gap scan uncovered it directly"
     }
   ],
   "drafts": [
@@ -947,6 +972,29 @@
       "primary_affiliate": "racknerd",
       "hot_topic_source": "daily-briefing-2026-07-16-kvm-guest-to-host-security-story",
       "note": "Outline-only daily pick. Public KVM/x86 guest-to-host disclosure cross-checked against LowEndBox, Openwall, NVD, and the Januscape research repository. No Astro page, build, deploy, or publication performed."
+    },
+    {
+      "date": "2026-07-17",
+      "slug": "black-friday-2026-vps-deals-early-tracker",
+      "status": "outline_pending_publish",
+      "provider": "-",
+      "topic_source": "vpstier-daily-outline-2026-07-17",
+      "type": "cost-discipline+news-analysis",
+      "title_en": "Black Friday 2026 VPS Deals: 7 Providers Discounting Early",
+      "tier_rationale": "Tier 3 cost-discipline + Tier 1 briefing pre-BF signal + Tier 0 extension of 07-12 AI Agents narrative; all 4 explicit tiers exhausted for fresh provider-review angles",
+      "internal_cross_links": [
+        "/blog/2026-black-friday-cheap-vps-under-25/",
+        "/blog/best-vps-deals-codes-2026/",
+        "/blog/vps-pricing-trap-guide-2026/",
+        "/blog/best-vps-for-ai-agents-2026/",
+        "/vps/hostnamaste/",
+        "/vps/racknerd/"
+      ],
+      "outline_file": "drafts/outline-2026-07-17-black-friday-2026-vps-deals-early-tracker.md",
+      "racknerd_placements_planned": 16,
+      "h2_count_planned": 10,
+      "faq_count_planned": 5,
+      "self_check": "8-check pre-flight PASSED (hetzner=0, zh=0, /zh/=0, racknerd=16, h2=10, faq=5, title=58, desc=152)"
     }
   ],
   "recent_topics": [
@@ -976,9 +1024,10 @@
       "topic_source": "daily-briefing-2026-06-27",
       "rationale": "DO+OpenRouter partnership = VPS-as-AI-API-Gateway archetype; RackNerd escape-hatch for self-hosted LiteLLM proxy",
       "provider_gap_scan": "exhausted (all 32 whitelisted providers covered)"
-    }
+    },
+    "lightnode"
   ],
-  "updated": "2026-07-16T02:57:33.164484Z",
-  "drafts_count": 8,
-  "published_count": 49
+  "updated": "2026-07-17T18:00:00+08:00",
+  "drafts_count": 9,
+  "published_count": 50
 }

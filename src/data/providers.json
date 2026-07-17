@@ -3004,5 +3004,76 @@
     ],
     "status": "active",
     "featured": false
+  },
+  {
+    "id": "lightnode",
+    "name": "LightNode",
+    "tagline": "Hong Kong-registered KVM VPS in 40+ locations, NVMe + hourly billing from $7.70/mo, 2021 launch",
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": true,
+    "commission": "$50-100/sale (RackNerd fallback affiliate)",
+    "cookie": "90 days",
+    "startingPrice": 7.70,
+    "rating": 3.9,
+    "datacenter": "Hong Kong, Singapore, Tokyo, Seoul, Jakarta, Manila, Bangkok, Dubai, Riyadh, Frankfurt, London, Sao Paulo, Santiago, Lima, Bogota, Quito, Buenos Aires, Mexico, Silicon Valley, Washington, Toronto (+20 more)",
+    "features": [
+      "40+ datacenter locations across 5 continents, strongest APAC/Middle East/SA coverage in the budget tier",
+      "NVMe SSD on every plan — no SATA-SSD downgrade tiers",
+      "Hourly (pay-as-you-go) and monthly billing supported on every plan",
+      "$15 free credit for new users — full-feature trial with no card friction",
+      "99.95% uptime SLA published across all regions",
+      "Wide payment support: Visa, Mastercard, Amex, UnionPay, Alipay, Google Pay, PayPal",
+      "Hong Kong-registered brand (LEVEL 54 HOPEWELL CENTRE, 183 QUEEN'S ROAD EAST, HK), founded 2021"
+    ],
+    "pros": [
+      "40+ locations including Hong Kong, Singapore, Tokyo, Dubai, Riyadh, Sao Paulo — uncommon breadth in budget tier",
+      "NVMe SSD on every tier — meaningful for I/O-heavy workloads",
+      "Hourly billing with no annual lock-in — short-lived dev environments are cheaper than monthly commits",
+      "$15 free credit makes the service effectively zero-cost for first-month test deployments",
+      "APAC-friendly checkout (Alipay, UnionPay) — fewer payment-friction drops for non-Western buyers"
+    ],
+    "cons": [
+      "$7.70/mo entry is higher than RackNerd annual-special floor (<$1/mo on BF specials)",
+      "No published affiliate program detected — uses RackNerd fallback affiliate",
+      "No GPU instance tier advertised on the public pricing page",
+      "No dedicated-CPU tier advertised — shared-core KVM only",
+      "Newer Western review footprint — less third-party benchmarking than Vultr/DO/RackNerd"
+    ],
+    "bestFor": [
+      "APAC-focused buyers needing HK / Singapore / Tokyo / Seoul at predictable USD pricing",
+      "Middle East and South America buyers (Dubai / Riyadh / Sao Paulo / Santiago) where Western hyperscalers have thin coverage",
+      "Hourly-billing dev environments — pay-as-you-go beats monthly commit for short-lived test stacks",
+      "Alipay / UnionPay-first buyers — checkout friction drops significantly vs Stripe-only providers",
+      "Multi-region app backends needing 3+ regions on one provider (LightNode's HK + Singapore + Tokyo combo)"
+    ],
+    "vpsPlans": [
+      {
+        "name": "Entry Plan",
+        "vcpu": 1,
+        "ram_gb": 2,
+        "storage_gb": 50,
+        "bandwidth": "2000 GB",
+        "price_usd": 7.70
+      },
+      {
+        "name": "Standard Plan",
+        "vcpu": 2,
+        "ram_gb": 4,
+        "storage_gb": 80,
+        "bandwidth": "4000 GB",
+        "price_usd": 15.00
+      },
+      {
+        "name": "Performance Plan",
+        "vcpu": 4,
+        "ram_gb": 8,
+        "storage_gb": 160,
+        "bandwidth": "8000 GB",
+        "price_usd": 30.00
+      }
+    ],
+    "status": "active",
+    "featured": false
   }
+
 ]
