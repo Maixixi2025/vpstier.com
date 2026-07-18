@@ -3074,6 +3074,33 @@
     ],
     "status": "active",
     "featured": false
+   }  ,
+  {
+    "id": "bandwagonhost",
+    "name": "BandwagonHost",
+    "tagline": "Mass VPS hosting on Enterprise equipment",
+    "founded": "Long-running LET staple (IT7 Networks Inc.)",
+    "operator": "IT7 Networks Inc.",
+    "datacenters": ["Los Angeles", "New York", "Hong Kong"],
+    "cheapestPlan": "$19.99/mo (80G) or $49.99/yr (20G)",
+    "affiliateLink": "https://my.racknerd.com/aff.php?aff=16299",
+    "rating": 3.8,
+    "category": "Self-Managed",
+    "bestFor": "Multi-month prepay economics + HK APAC presence + LowEndTalk community reputation",
+    "highlights": [
+      "KVM virtualization on every plan (Intel Xeon + RAID-10 SSD)",
+      "Multi-month prepay economics: 20G annual at $49.99/yr, 40G half-year at $52.99",
+      "Hong Kong APAC datacenter for Pacific-rim buyers",
+      "30-day refund on new orders (subject to 5 conditions)",
+      "Long-running LowEndTalk community brand"
+    ],
+    "cons": [
+      "Self-managed only — buyer must know Linux",
+      "SLA only on select plans",
+      "No GPU instances or dedicated-CPU tier",
+      "Smaller datacenter footprint than Vultr/DO"
+    ],
+    "reviewUrl": "/blog/bandwagonhost-vps-review-2026"
   }
 
 ]

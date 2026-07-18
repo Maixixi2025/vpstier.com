@@ -822,6 +822,16 @@
       "verified_data_file": "drafts/lightnode-verified-data-2026-07-17.md",
       "topic_source": "manual curation from task brief (provider not in existing list; LightNode is a 2021 HK-registered KVM VPS with 40+ locations)",
       "rationale": "Picked LightNode because: (1) all suggested new providers from the cron task brief are already covered except serverpeacock (no public data) — LightNode is a known real provider with verified pricing and 21+ city locations; (2) complementary to recent Kainode Singapore coverage — LightNode's 40+ locations cover APAC/Middle East/SA where Kainode only covers SG/DE/USA; (3) monthly-bill no-lock-in angle complements RackNerd annual-special floor; (4) tier-2 provider gap scan uncovered it directly"
+    },
+    {
+      "date": "2026-07-18",
+      "slug": "bandwagonhost-vps-review-2026",
+      "provider": "bandwagonhost",
+      "topic": "Tier 2 provider gap scan",
+      "title": "BandwagonHost VPS Review 2026: KVM Plans from $19.99/mo",
+      "reviewUrl": "https://vpstier.com/blog/bandwagonhost-vps-review-2026/",
+      "vpsUrl": "https://vpstier.com/vps/bandwagonhost/",
+      "tier": "2"
     }
   ],
   "drafts": [
@@ -995,6 +1005,28 @@
       "h2_count_planned": 10,
       "faq_count_planned": 5,
       "self_check": "8-check pre-flight PASSED (hetzner=0, zh=0, /zh/=0, racknerd=16, h2=10, faq=5, title=58, desc=152)"
+    },
+    {
+      "date": "2026-07-18",
+      "slug": "agent-zero-vps-setup-guide-2026",
+      "status": "outline_pending_publish",
+      "provider": "-",
+      "topic_source": "gsc-tier-0-agent-zero-cluster-2026-07-17-successful-report",
+      "type": "deployment-guide+security",
+      "title_en": "Agent Zero VPS Setup Guide 2026: Docker & Security",
+      "description_en": "Deploy Agent Zero on a VPS with Docker, HTTPS, persistent storage, firewall hardening, backups, sizing guidance, and a secure RackNerd option.",
+      "tier_rationale": "Tier 0 GSC cluster: agent zero vps hosting (3 imp, pos 56) plus AI-agent setup and requirements queries; distinct product-specific setup intent not covered by existing general AI-agent VPS pages",
+      "internal_cross_links": [
+        "/blog/best-vps-for-ai-agents-2026/",
+        "/blog/ai-agent-vps-api-guide/",
+        "/vps/racknerd/",
+        "/blog/vps-pricing-trap-guide-2026/"
+      ],
+      "outline_file": "drafts/outline-2026-07-18-agent-zero-vps-setup-guide-2026.md",
+      "racknerd_placements_planned": 9,
+      "h2_count_planned": 10,
+      "faq_count_planned": 5,
+      "self_check": "8-check pre-flight passed; source restrictions satisfied; title=50; description=142"
     }
   ],
   "recent_topics": [
@@ -1025,9 +1057,10 @@
       "rationale": "DO+OpenRouter partnership = VPS-as-AI-API-Gateway archetype; RackNerd escape-hatch for self-hosted LiteLLM proxy",
       "provider_gap_scan": "exhausted (all 32 whitelisted providers covered)"
     },
-    "lightnode"
+    "lightnode",
+    "agent-zero-vps-setup-guide-2026"
   ],
-  "updated": "2026-07-17T18:00:00+08:00",
-  "drafts_count": 9,
-  "published_count": 50
+  "updated": "2026-07-18",
+  "drafts_count": 10,
+  "published_count": 51
 }
