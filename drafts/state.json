@@ -1,5 +1,5 @@
 {
-  "current_index": 48,
+  "current_index": 49,
   "published": [
     {
       "slug": "yecaoyun-vps-review-2026",
@@ -832,6 +832,36 @@
       "reviewUrl": "https://vpstier.com/blog/bandwagonhost-vps-review-2026/",
       "vpsUrl": "https://vpstier.com/vps/bandwagonhost/",
       "tier": "2"
+    },
+    {
+      "slug": "crowncloud-vps-review-2026",
+      "date": "2026-07-19",
+      "type": "review",
+      "title_en": "CrownCloud VPS Review 2026: KVM from $5/mo + Ryzen 9950X",
+      "en_astro": "src/pages/blog/crowncloud-vps-review-2026.astro",
+      "zh_astro": null,
+      "provider": "crowncloud",
+      "providers_featured": [
+        "crowncloud",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "published",
+      "vps_astro": "src/pages/vps/crowncloud.astro",
+      "affiliate_link": "https://my.racknerd.com/aff.php?aff=16299",
+      "rating": 3.7,
+      "hot_topic_source": "vpstier-provider-gap-scan-tier-2 (2026-07-19): 47 providers in providers.json, last 5 picks (07-18 bandwagon, 07-17 lightnode, 07-16 kainode, 07-14 aliyun, 07-12 scaleway) all provider reviews - editorial variety continues with CrownCloud. Tier 1 briefing items (NY moratorium, AWS outage, Garnix) all already covered. Tier 4 orphan repick (hostdare, virmach) not safe - hostdare locked, virmach already-complete review card. Picked CrownCloud: 7 KVM tiers from $5/mo, AMD Ryzen 9 9950X tier at $15/mo (modern Zen 5 desktop CPU rare at this price), Intel Core Ultra 9 285 at $7/mo, in-house CrownPanel control panel, 2-DC footprint (LA + Frankfurt). Title 56/60 chars, desc 137/155 chars. 3 JSON-LD blocks (BreadcrumbList + Article + FAQPage). 10 RackNerd placements (>= 6 verified). 0 banned-provider mentions.",
+      "build_pages": 111,
+      "build_status": "success",
+      "deploy_status": "success",
+      "deploy_command": "npx wrangler pages deploy dist --project-name=vpstier-com --branch=main --commit-dirty=true",
+      "deployment_id": "be4528ba",
+      "racknerd_cta_count": 10,
+      "published_at": "2026-07-19",
+      "deployed_url_en": "https://vpstier.com/blog/crowncloud-vps-review-2026/",
+      "live_url_provider_card": "https://vpstier.com/vps/crowncloud/",
+      "banned_self_check": "PASSED"
     }
   ],
   "drafts": [
@@ -1027,9 +1057,36 @@
       "h2_count_planned": 10,
       "faq_count_planned": 5,
       "self_check": "8-check pre-flight passed; source restrictions satisfied; title=50; description=142"
+    },
+    {
+      "date": "2026-07-19",
+      "status": "outline_pending_publish",
+      "slug": "cloudflare-markdown-for-agents-vps-sites-2026",
+      "title": "Cloudflare Markdown for Agents: What VPS Sites Need to Know",
+      "title_chars": 59,
+      "description": "Cloudflare's Markdown for Agents update (July 2026) changes caching for AI/LLM crawlers on VPS-hosted sites. What VPS owners should configure.",
+      "description_chars": 142,
+      "outline_file": "drafts/outline-2026-07-19-cloudflare-markdown-for-agents-vps-sites-2026.md",
+      "h2_count": 10,
+      "faq_count": 5,
+      "racknerd_placements": 6,
+      "self_check_passed": true,
+      "hot_topic_source": "tier-3-cost-discipline-cloudflare-markdown-for-agents-2026-07-13",
+      "tier_used": 3,
+      "tier_rationale": "Tier 0 GSC failed (HTTP 403); Tier 1 briefing VPS items already covered (NY moratorium 07-15, Kainode SG 07-16); Tier 2 last 5 picks all reviews; Tier 4 hostdare locked + virmach redundant. Tier 3 wins: 9-day gap since last Tier 3 (CF Workers Cache 07-09), and CF's 2026-07-13 'Origin Content Signals for Markdown for Agents' is free immediate-impact for VPS-hosted sites on CF Pages.",
+      "verified_data_sources": [
+        "https://developers.cloudflare.com/changelog/post/2026-07-13-markdown-for-agents-header-preservation/",
+        "https://blog.cloudflare.com/introducing-precursor/",
+        "/root/.hermes/cron/output/3ea88f8bb2d0/2026-07-19_08-03-18.md",
+        "/root/.hermes/cron/output/5570fe2cffa6/2026-07-17_07-00-40.md (today's failed, 403)"
+      ],
+      "primary_affiliate": "racknerd",
+      "language": "en",
+      "created_at": "2026-07-19T08:30:00Z"
     }
   ],
   "recent_topics": [
+    "cloudflare-markdown-for-agents-vps-sites-2026",
     "aliyun-vps-review-2026",
     "kamatera-vps-review-2026",
     "hostarmada-vps-review-2026",
@@ -1060,7 +1117,7 @@
     "lightnode",
     "agent-zero-vps-setup-guide-2026"
   ],
-  "updated": "2026-07-18",
-  "drafts_count": 10,
+  "updated": "2026-07-19T01:49:18Z",
+  "drafts_count": 11,
   "published_count": 51
 }

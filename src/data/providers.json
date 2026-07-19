@@ -3101,6 +3101,35 @@
       "Smaller datacenter footprint than Vultr/DO"
     ],
     "reviewUrl": "/blog/bandwagonhost-vps-review-2026"
+  },
+
+  {
+    "id": "crowncloud",
+    "name": "CrownCloud",
+    "tagline": "Long-running KVM VPS with Ryzen 9 9950X tier",
+    "founded": "Long-running LowEndTalk community provider (early 2010s)",
+    "operator": "CrownCloud",
+    "datacenters": ["Los Angeles", "Frankfurt"],
+    "cheapestPlan": "$5/mo (Classic KVM); Ryzen 9 9950X tier at $15/mo",
+    "affiliateLink": "https://my.racknerd.com/aff.php?aff=16299",
+    "rating": 3.7,
+    "category": "Self-Managed",
+    "bestFor": "Modern AMD Ryzen / Intel Core Ultra CPU tiers at budget pricing + in-house CrownPanel",
+    "highlights": [
+      "Seven KVM tiers from $5/mo (Classic HDD) to $15/mo (AMD Ryzen 9 9950X)",
+      "AMD Ryzen 9 9950X SSD KVM at $15/mo — modern Zen 5 desktop CPU, rare at this price point",
+      "Intel Core Ultra 9 285 NVMe KVM at $7/mo (Arrow Lake, also uncommon budget-side)",
+      "In-house CrownPanel control panel — full feature set (1-click apps, ISO, snapshot, 2FA, SSH keys, API)",
+      "Los Angeles + Frankfurt dual-DC coverage for US + EU routing"
+    ],
+    "cons": [
+      "Two-DC footprint only — no APAC, LATAM, or Africa locations",
+      "Self-managed only — buyer must administer Linux",
+      "No GPU instance tier advertised",
+      "Entry $5/mo is higher than RackNerd annual-special floor",
+      "No published affiliate program — uses RackNerd fallback affiliate on this site"
+    ],
+    "reviewUrl": "/blog/crowncloud-vps-review-2026"
   }
 
 ]
