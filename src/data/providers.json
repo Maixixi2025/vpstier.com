@@ -3130,6 +3130,40 @@
       "No published affiliate program — uses RackNerd fallback affiliate on this site"
     ],
     "reviewUrl": "/blog/crowncloud-vps-review-2026"
-  }
+  },
+{
+  "id": "zappiehost",
+  "name": "Zappiehost",
+  "tagline": "Rare-region VPS on own AS61138 (NZ + SA + Chile) with free BGP",
+  "founded": "March 2015",
+  "operator": "Zappie Host LLC",
+  "datacenters": [
+    "Auckland, New Zealand",
+    "Johannesburg, South Africa",
+    "Santiago, Chile"
+  ],
+  "cheapestPlan": "$4.50/mo (LXC Starter, semi-annual); Premium KVM Starter $6/mo",
+  "affiliateLink": "https://my.racknerd.com/aff.php?aff=16299",
+  "rating": 3.8,
+  "category": "Self-Managed",
+  "bestFor": "Rare-region coverage (NZ + SA + Chile) on own network + free BGP sessions on Premium KVM",
+  "highlights": [
+    "Own network AS61138 in Auckland, Johannesburg, and Santiago \u2014 uncommon rare-region footprint",
+    "Free BGP session on request for all Premium KVM tiers \u2014 unusual at budget price point",
+    "Multi-RIR membership: ARIN, RIPE, APNIC, Afrinic \u2014 broader than typical small operator",
+    "Bitcoin + other crypto payments accepted, alongside PayPal \u2014 privacy-first payment stack",
+    "Automatic backups included on all VPS tiers + dedicated IPv4 + IPv6 per VPS",
+    "11+ years operating history (founded March 2015) with active community sponsorships (Tor exit node, LowEndSpirit, RIPE Atlas)"
+  ],
+  "cons": [
+    "Semi-annual billing required for advertised prices \u2014 month-to-month carries a premium",
+    "No US or EU datacenter locations \u2014 limits North American / European compliance use cases",
+    "Self-managed only \u2014 no managed services tier or hands-off support",
+    "Limited to 6 vCPUs on top tier (Super KVM) \u2014 not viable for high-core compute",
+    "Johannesburg + Santiago capped at 100 Mbps port (only Auckland gets 1 Gbps)",
+    "No published affiliate program \u2014 uses RackNerd fallback affiliate on this site"
+  ],
+  "reviewUrl": "/blog/zappiehost-vps-review-2026"
+}
 
 ]

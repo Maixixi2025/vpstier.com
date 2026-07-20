@@ -862,6 +862,46 @@
       "deployed_url_en": "https://vpstier.com/blog/crowncloud-vps-review-2026/",
       "live_url_provider_card": "https://vpstier.com/vps/crowncloud/",
       "banned_self_check": "PASSED"
+    },
+    {
+      "slug": "zappiehost-vps-review-2026",
+      "title": "Zappiehost VPS Review 2026: NZ + SA + Chile from $4.50/mo",
+      "provider": "Zappiehost",
+      "published_date": "2026-07-20",
+      "live_url": "/blog/zappiehost-vps-review-2026",
+      "category": "provider-review",
+      "tags": [
+        "vps",
+        "rare-regions",
+        "new-zealand",
+        "south-africa",
+        "chile",
+        "bgp",
+        "self-managed"
+      ],
+      "provider_url": "/vps/zappiehost",
+      "datacenters": [
+        "Auckland NZ",
+        "Johannesburg SA",
+        "Santiago Chile"
+      ],
+      "founded": "March 2015",
+      "operator": "Zappie Host LLC",
+      "network_asn": "AS61138",
+      "tier_system": "vpstier-Tier-2-fresh-provider",
+      "selection_rationale": "Tier 2 fresh provider addition: own AS61138 with rare NZ+SA+Chile footprint, free BGP on Premium KVM, multi-RIR membership (ARIN+RIPE+APNIC+Afrinic), Bitcoin/crypto payments, 11+ years operating. Not in existing 48 providers; not banned; not in Tier 4 orphan set; not in pending outlines.",
+      "build": {
+        "heap": 300,
+        "command": "NODE_OPTIONS=--max-old-space-size=300 npx astro build --silent",
+        "pages_built": 113,
+        "duration_sec": 3.62
+      },
+      "deploy": {
+        "command": "wrangler pages deploy dist --project-name=vpstier-com --branch=main --commit-dirty=true",
+        "files_uploaded": 115,
+        "deployment_id": "1fb0795c",
+        "preview_url": "https://1fb0795c.vpstier-com.pages.dev"
+      }
     }
   ],
   "drafts": [
@@ -1083,6 +1123,25 @@
       "primary_affiliate": "racknerd",
       "language": "en",
       "created_at": "2026-07-19T08:30:00Z"
+    },
+    {
+      "slug": "luxvps-special-offer-shutdown-alternatives-2026",
+      "date": "2026-07-20",
+      "type": "news-analysis",
+      "en_astro": "src/pages/blog/luxvps-special-offer-shutdown-alternatives-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "luxvps",
+        "racknerd",
+        "bandwagonhost",
+        "lightnode",
+        "hostdare",
+        "kainode"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "outline_pending_publish",
+      "hot_topic_source": "daily-briefing-2026-07-20-luxvps-closes-special-offer-category-july-31-2026-tier-1-news-analysis-with-comparison-subtable",
+      "outline_file": "outline-2026-07-20-luxvps-special-offer-shutdown-alternatives-2026.md"
     }
   ],
   "recent_topics": [
