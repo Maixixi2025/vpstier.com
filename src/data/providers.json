@@ -3164,6 +3164,39 @@
     "No published affiliate program \u2014 uses RackNerd fallback affiliate on this site"
   ],
   "reviewUrl": "/blog/zappiehost-vps-review-2026"
+},
+{
+  "id": "webdock",
+  "name": "Webdock",
+  "tagline": "Own Denmark datacenter (DK-DC1) + GDPR-native VPS from €2.15/mo",
+  "founded": "2012 (own datacenter launched 2024)",
+  "operator": "Webdock ApS (VAT DK40630015)",
+  "datacenters": [
+    "Nørre Aaby, Funen, Denmark (DK-DC1, own facility)"
+  ],
+  "cheapestPlan": "€2.15/mo (Xeon Essential) / €7.10/mo (Epyc Advanced, most popular)",
+  "affiliateLink": "https://my.racknerd.com/aff.php?aff=16299",
+  "rating": 4.1,
+  "category": "Self-Managed",
+  "bestFor": "EU-only GDPR-native VPS workloads with free DDoS + SSL + backup snapshots on every tier, backed by own datacenter",
+  "highlights": [
+    "Own datacenter DK-DC1 in Nørre Aaby, Denmark (built 2024) — full infrastructure control, not rented colocation",
+    "100% EU jurisdiction (Danish company Webdock ApS, VAT DK40630015) — full GDPR coverage, no US data exposure",
+    "Intel Xeon Platinum (Essential) + AMD Epyc Milan (Advanced + Pro) — datacenter-grade CPUs on every tier",
+    "NVMe SSD storage + 1 Gbit/s network port on every tier (uncommon at budget pricing)",
+    "Free DDoS protection + free SSL + free backup snapshots + free control panel + transactional emails on every tier",
+    "Custom VPS profile builder — pick CPU / RAM / SSD / transfer independently, see price in real time",
+    "12+ years operating history (founded 2012) + own datacenter launch 2024 — well past early-stage risk"
+  ],
+  "cons": [
+    "Single-region footprint — DK-DC1 only, no US / APAC / LATAM / Africa presence",
+    "Pricing in EUR (€), not USD — buyers in USD zones carry FX exposure",
+    "Self-managed only — no managed services tier; buyer must administer Linux",
+    "Entry transfer cap 1 TB on Essential tier — heavy-bandwidth workloads must jump to Pro (7 TB)",
+    "Entry storage 15 GB NVMe — tight for databases / media / container workloads; Pro tier 40 GB or use custom profile",
+    "No GPU instances, no dedicated-CPU reservations, no bare-metal line"
+  ],
+  "reviewUrl": "/blog/webdock-vps-review-2026"
 }
 
 ]

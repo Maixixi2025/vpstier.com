@@ -1,5 +1,5 @@
 {
-  "current_index": 49,
+  "current_index": 50,
   "published": [
     {
       "slug": "yecaoyun-vps-review-2026",
@@ -902,6 +902,49 @@
         "deployment_id": "1fb0795c",
         "preview_url": "https://1fb0795c.vpstier-com.pages.dev"
       }
+    },
+    {
+      "slug": "webdock-vps-review-2026",
+      "title": "Webdock VPS Review 2026: Own Denmark DC + GDPR from €2.15/mo",
+      "description": "Webdock VPS review 2026: own DK-DC1 datacenter in Nørre Aaby, Denmark. Xeon + Epyc tiers, free DDoS + SSL + backups, EU jurisdiction. From €2.15/mo.",
+      "date": "2026-07-21",
+      "datePublished": "2026-07-21",
+      "dateModified": "2026-07-21",
+      "status": "published",
+      "deployUrl": "https://vpstier.com/blog/webdock-vps-review-2026/",
+      "providerCardUrl": "https://vpstier.com/vps/webdock/",
+      "providerId": "webdock",
+      "cardTitle": "Webdock VPS Review 2026: Own Denmark DC from €2.15/mo",
+      "tier": "Tier 2 (provider gap scan)",
+      "rating": 4.1,
+      "priceMin": "€2.15/mo",
+      "category": "Self-Managed",
+      "datacenters": [
+        "Nørre Aaby, Funen, Denmark (own DK-DC1)"
+      ],
+      "keyFeatures": [
+        "own DK-DC1 datacenter (built 2024)",
+        "Xeon + Epyc CPUs",
+        "free DDoS on every tier",
+        "free SSL + backups on every tier",
+        "EU jurisdiction (Webdock ApS, DK40630015)"
+      ],
+      "source": "drafts/webdock-verified-data-2026-07-21.md",
+      "bannedAudit": "0 Hetzner mentions across full src/ (verified 2026-07-21)",
+      "8check": {
+        "hetzner": "0/0",
+        "titleCard": "53/60",
+        "titleBlog": "60/60",
+        "descCard": "148/155",
+        "descBlog": "148/155",
+        "zhChars": "0/0",
+        "zhPaths": "0/0",
+        "racknerdBlog": 6,
+        "h2Count": 8,
+        "faqCount": 5
+      },
+      "build": "npx astro build --silent, heap=400, ~3.5s",
+      "deploy": "wrangler pages deploy dist --project-name=vpstier-com, deployment ID 0abfafb2"
     }
   ],
   "drafts": [
@@ -1142,9 +1185,26 @@
       "status": "outline_pending_publish",
       "hot_topic_source": "daily-briefing-2026-07-20-luxvps-closes-special-offer-category-july-31-2026-tier-1-news-analysis-with-comparison-subtable",
       "outline_file": "outline-2026-07-20-luxvps-special-offer-shutdown-alternatives-2026.md"
+    },
+    {
+      "slug": "cloudflare-internal-dns-ga-vps-2026",
+      "date": "2026-07-21",
+      "type": "news-analysis + buyer guide",
+      "outline_file": "drafts/outline-2026-07-21-cloudflare-internal-dns-ga-vps-2026.md",
+      "en_astro": "src/pages/blog/cloudflare-internal-dns-ga-vps-2026.astro",
+      "status": "outline_pending_publish",
+      "tier": "Tier 3 (cost-discipline + Cloudflare pivot)",
+      "heat_source": "Cloudflare Blog 2026-07-13 'Cloudflare Internal DNS is now generally available' (verified live: 946 KB page, OG description confirms authoritative + recursive DNS for private networks)",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd"
+      ],
+      "collision_check": "no existing slug for CF Internal DNS; closest CF cluster mates are 2026-07-19 markdown-for-agents + 2026-07-09 workers-cache — different products, no duplication",
+      "editorial_rebalance": "last 5 picks (zappiehost, crowncloud, bandwagonhost, lightnode, kainode) are all provider reviews — non-provider angle breaks the streak"
     }
   ],
   "recent_topics": [
+    "webdock-vps-review-2026",
     "cloudflare-markdown-for-agents-vps-sites-2026",
     "aliyun-vps-review-2026",
     "kamatera-vps-review-2026",
@@ -1153,30 +1213,9 @@
     "2026-h1-vps-market-landscape",
     "vps-cost-crisis-2026-data-centers-cloudflare",
     "coinbase-aws-outage-vps-redundancy-2026",
-    "scalahosting-vps-review-2026",
-    "hawk-host-review",
-    "managed-vps-hosting-2026",
-    "ionos-vps-review-2026",
-    "european-vps-after-price-increase-2026",
-    "best-european-vps-2026",
-    "best-vps-for-small-business-2026",
-    "nvme-vps-under-10-2026",
-    "knownhost",
-    "vps-pricing-trap-guide-2026",
-    "best-unmetered-bandwidth-vps-north-america-2026",
-    "buyvm",
-    "cloudflare-workers-billing-trap-2026",
-    {
-      "date": "2026-06-27",
-      "slug": "digitalocean-openrouter-ai-gateway-2026",
-      "topic_source": "daily-briefing-2026-06-27",
-      "rationale": "DO+OpenRouter partnership = VPS-as-AI-API-Gateway archetype; RackNerd escape-hatch for self-hosted LiteLLM proxy",
-      "provider_gap_scan": "exhausted (all 32 whitelisted providers covered)"
-    },
-    "lightnode",
-    "agent-zero-vps-setup-guide-2026"
+    "scalahosting-vps-review-2026"
   ],
-  "updated": "2026-07-19T01:49:18Z",
+  "updated": "2026-07-21",
   "drafts_count": 11,
-  "published_count": 51
+  "published_count": 54
 }
