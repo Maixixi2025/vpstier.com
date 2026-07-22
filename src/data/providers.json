@@ -3197,6 +3197,68 @@
     "No GPU instances, no dedicated-CPU reservations, no bare-metal line"
   ],
   "reviewUrl": "/blog/webdock-vps-review-2026"
+},
+{
+  "id": "ramnode",
+  "name": "RamNode",
+  "tagline": "Hourly-billed KVM VPS from $2/mo, now under InMotion Hosting",
+  "startingPrice": 2.0,
+  "cpu": "KVM virtualized (Standard) / dedicated cores (VDS)",
+  "ram": "512MB - 64GB",
+  "storage": "15GB NVMe - 4TB HDD (mixed SSD/NVMe/HDD tiers)",
+  "bandwidth": "500GB - 150TB/mo",
+  "datacenters": [
+    "Atlanta (US East)",
+    "New Jersey (US East)",
+    "Seattle (US West)",
+    "Los Angeles (US West)",
+    "The Netherlands (EU)"
+  ],
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "$50/sale (via InMotion affiliate)",
+  "cookie": "90 days",
+  "rating": 4.0,
+  "features": [
+    "Hourly billing with no monthly lock-in (Lite / Standard / Premium / Storage / VDS tiers)",
+    "5 datacenters: Atlanta, NJ, Seattle, LA + Netherlands",
+    "PayPal, Credit Card, Crypto, and Alipay accepted",
+    "NVMe Premium VPS from $14/mo, VDS dedicated-CPU from $50/mo",
+    "Lite IPv6-only tier from $2/mo for small servers",
+    "Block Storage add-on ($0.085/GB/mo) attachable via API",
+    "24/7 chat + ticket support with real engineers",
+    "Now operated by InMotion Hosting, Inc. (registered trademark holder)"
+  ],
+  "pros": [
+    "Hourly billing model — pay only for what you use, no annual lock-in",
+    "Crypto + Alipay payment support — unusual at this price tier",
+    "5 datacenters across US East/West + EU on a budget-tier footprint",
+    "Lite IPv6-only tier at $2/mo — cheapest entry in vpstier's US/EU mix",
+    "VDS dedicated-CPU tier from $50/mo for guaranteed compute",
+    "Block Storage add-on with API attach (EWR/LAX/NLX only)",
+    "InMotion Hosting ownership provides financial backing vs indie risk"
+  ],
+  "cons": [
+    "Standard tier uses SSD not NVMe — Premium tier is the NVMe path ($14/mo entry)",
+    "Bandwidth caps are tighter than competitors — 14TB cap on the highest tier",
+    "No APAC datacenter outside SEA-coming-soon",
+    "Storage VPS uses HDD — archival only, not for hot data",
+    "Lite tier is IPv6-only — IPv4-only firewalls will not connect",
+    "No GPU instances — pure CPU compute across all tiers",
+    "Only 5 datacenters vs Vultr (32+) or LightNode (40+)"
+  ],
+  "use_cases": [
+    "Developers wanting hourly billing without annual prepay",
+    "US East/West + NL coverage on a budget",
+    "Crypto + Alipay payers excluded from typical Western providers",
+    "Workloads needing dedicated CPU cores via VDS tier"
+  ],
+  "skipIf": [
+    "You want the absolute cheapest VPS — RackNerd annual-special floor at $10.98/yr wins",
+    "You need APAC presence — pick LightNode or Vultr",
+    "You want unmetered bandwidth on a budget tier"
+  ],
+  "lastUpdated": "2026-07-22"
 }
 
 ]

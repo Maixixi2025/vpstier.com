@@ -945,6 +945,57 @@
       },
       "build": "npx astro build --silent, heap=400, ~3.5s",
       "deploy": "wrangler pages deploy dist --project-name=vpstier-com, deployment ID 0abfafb2"
+    },
+    {
+      "slug": "ramnode-vps-review-2026",
+      "title": "RamNode VPS Review 2026: Hourly Billing from $2/mo",
+      "description": "RamNode VPS review 2026: hourly-billed KVM from $2/mo Lite to $50/mo VDS. 5 datacenters, crypto + Alipay, InMotion operator.",
+      "provider": "ramnode",
+      "date": "2026-07-22",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "status": "published",
+      "deployUrl": "https://vpstier.com/blog/ramnode-vps-review-2026/",
+      "providerCardUrl": "https://vpstier.com/vps/ramnode/",
+      "providerId": "ramnode",
+      "cardTitle": "RamNode VPS Review 2026: Hourly Billing from $2/mo",
+      "tier": "Tier 2 (provider gap scan) — RamNode picked via batch-probe fallback",
+      "rating": 4.0,
+      "priceMin": "$2/mo Lite",
+      "category": "Long-running boutique VPS (InMotion Hosting operator)",
+      "datacenters": [
+        "Atlanta",
+        "New Jersey",
+        "Seattle",
+        "Los Angeles",
+        "Netherlands"
+      ],
+      "keyFeatures": [
+        "hourly billing model",
+        "crypto + Alipay payment stack",
+        "5 datacenters (US East/West + NL)",
+        "Lite IPv6-only $2/mo entry",
+        "VDS dedicated-CPU from $50/mo",
+        "Premium NVMe from $14/mo",
+        "InMotion Hosting operator"
+      ],
+      "source": "drafts/ramnode-verified-data-2026-07-22.md",
+      "bannedAudit": "0 Hetzner mentions across all 4 new files (verified 2026-07-22)",
+      "8check": {
+        "hetzner": "0/0",
+        "titleCard": "50/60",
+        "titleBlog": "50/60",
+        "descCard": "124/155",
+        "descBlog": "132/155",
+        "racknerdBlog": 17,
+        "h2Count": 8,
+        "faqCount": 6,
+        "jsonldBlocks": 3
+      },
+      "build": "npm run build, heap=4096, 1.22s, 117 pages",
+      "deploy": "wrangler pages deploy dist --project-name=vpstier-com, deployment ID 6ae016eb",
+      "hot_topic_source": "vpstier-add-provider-and-review cron 2026-07-22 (Tier 2 batch-probe fallback): all 12 task-prompt suggestions already in providers.json; brainstormed 15 fresh candidates; deep-probed top 5; picked RamNode for distinctive payment stack + InMotion ownership.",
+      "selection_rationale": "Picked RamNode for hourly billing model + crypto + Alipay payment stack + InMotion Hosting ownership + cheapest $2/mo entry in vpstier US/EU mix."
     }
   ],
   "drafts": [
@@ -1215,7 +1266,7 @@
     "coinbase-aws-outage-vps-redundancy-2026",
     "scalahosting-vps-review-2026"
   ],
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "drafts_count": 11,
-  "published_count": 54
+  "published_count": 55
 }
