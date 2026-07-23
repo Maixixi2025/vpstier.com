@@ -3259,6 +3259,67 @@
     "You want unmetered bandwidth on a budget tier"
   ],
   "lastUpdated": "2026-07-22"
+},
+{
+  "id": "servarica",
+  "name": "ServaRica",
+  "tagline": "Canadian EPYC KVM from $4/mo, 100% Hydro-Quebec renewable",
+  "startingPrice": 4.0,
+  "cpu": "AMD EPYC (all tiers; Milan gen on V3 KVM Slices)",
+  "ram": "2GB - 60GB",
+  "storage": "40GB NVMe - 10TB HDD (NVMe + ZFS RAIDZ2 storage tiers)",
+  "bandwidth": "6TB - 24TB/mo on KVM slices; unmetered 100Mbps on storage",
+  "datacenters": [
+    "Montreal QC (Canada)"
+  ],
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "RackNerd fallback affiliate on this site (no published ServaRica affiliate program)",
+  "cookie": "N/A",
+  "rating": 4.1,
+  "features": [
+    "4 product lines: NVMe VPS ($5+/mo), V3 KVM Slices ($4+/mo on AMD EPYC Milan), NVMe VDS ($8+/mo), Storage ($10+/mo)",
+    "Single Montreal QC datacenter, 100% Hydro-Quebec renewable energy (99% renewable: water dams)",
+    "Cold-weather free cooling reduces energy + heat for Canadian cold months",
+    "Full SLA with progressive refunds: 99.9% / 99% / 97% / 95% thresholds",
+    "PayPal + Alipay + crypto (BTC/ETH) + credit cards + bank transfer (>$200)",
+    "Multi-homed network with own ASN + own routers (no single-carrier dependency)",
+    "Custom 'Xenica' VM automation software + 10-minute average setup time",
+    "Founded 2010 by Hani (still active); 9-person engineering team"
+  ],
+  "pros": [
+    "AMD EPYC across all 4 product lines — modern server CPUs at budget pricing",
+    "V3 KVM Slices on 10Gbps with 1:1 vCPU/RAM and EPYC Milan cores (entry $4/mo)",
+    "Canadian operator under Canadian jurisdiction (not subject to US Patriot Act / PRISM)",
+    "100% renewable energy + cold-weather free cooling = lowest-carbon VPS in vpstier mix",
+    "Full SLA with 100% refund if uptime drops below 95% (rare at this price tier)",
+    "Crypto + Alipay payment stack on a North American provider",
+    "Wholly original operator (Rica Web Services Inc.) — not a reseller"
+  ],
+  "cons": [
+    "Single datacenter (Montreal) — no US East/West, EU, or APAC presence",
+    "Storage Server bandwidth tier requires choosing between unmetered 100Mbps or 1Gbps/4TB cap",
+    "No GPU instances across any product line",
+    "Disallows adult content, public proxies, IRC servers, gambling sites, TOR exit nodes",
+    "Some orders take 'several hours' if billing fraud-screening is triggered",
+    "Yearly pricing on Storage Servers shows 50% off the monthly rate (annual prepay lock-in)",
+    "Standard tier uses 1Gbps; only V3 KVM Slices get 10Gbps"
+  ],
+  "use_cases": [
+    "Buyers wanting Canadian-jurisdiction VPS outside US Patriot Act / PRISM scope",
+    "Carbon-conscious buyers prioritizing 100% renewable energy operators",
+    "Developers needing AMD EPYC Milan compute on 10Gbps with dedicated cores (V3 / VDS)",
+    "Buyers needing Alipay + crypto payment stack on a North American provider",
+    "Workloads with SLA requirements that demand progressive uptime refunds"
+  ],
+  "skipIf": [
+    "You need multiple geographic regions — only Montreal QC is available",
+    "You want the absolute cheapest VPS — RackNerd annual-special floor at $10.98/yr wins",
+    "You need GPU instances — ServaRica does not offer GPU compute",
+    "You run public proxy servers, IRC servers, or TOR exit nodes (against ToS)",
+    "You want unmetered 1Gbps bandwidth on the storage tier (4TB cap applies)"
+  ],
+  "lastUpdated": "2026-07-23"
 }
 
 ]

@@ -1,5 +1,5 @@
 {
-  "current_index": 50,
+  "current_index": 56,
   "published": [
     {
       "slug": "yecaoyun-vps-review-2026",
@@ -996,6 +996,19 @@
       "deploy": "wrangler pages deploy dist --project-name=vpstier-com, deployment ID 6ae016eb",
       "hot_topic_source": "vpstier-add-provider-and-review cron 2026-07-22 (Tier 2 batch-probe fallback): all 12 task-prompt suggestions already in providers.json; brainstormed 15 fresh candidates; deep-probed top 5; picked RamNode for distinctive payment stack + InMotion ownership.",
       "selection_rationale": "Picked RamNode for hourly billing model + crypto + Alipay payment stack + InMotion Hosting ownership + cheapest $2/mo entry in vpstier US/EU mix."
+    },
+    {
+      "slug": "servarica-vps-review-2026",
+      "title": "ServaRica VPS Review 2026: Canadian EPYC KVM from $4/mo",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:02:30Z",
+      "type": "add-provider-and-review",
+      "provider_id": "servarica",
+      "providers_count_after": 52,
+      "deployment_id": "48116369",
+      "verified_data_file": "drafts/servarica-verified-data-2026-07-23.md",
+      "tier": "Tier 2 batch-probe fallback (15 fresh candidates)",
+      "differentiator": "Canadian operator + 100% Hydro-Quebec renewable + EPYC Milan on 10Gbps + Alipay/crypto + full progressive SLA"
     }
   ],
   "drafts": [
@@ -1252,6 +1265,38 @@
       ],
       "collision_check": "no existing slug for CF Internal DNS; closest CF cluster mates are 2026-07-19 markdown-for-agents + 2026-07-09 workers-cache — different products, no duplication",
       "editorial_rebalance": "last 5 picks (zappiehost, crowncloud, bandwagonhost, lightnode, kainode) are all provider reviews — non-provider angle breaks the streak"
+    },
+    {
+      "slug": "luxvps-special-offer-migration-checklist-2026-07-31",
+      "date": "2026-07-23",
+      "type": "news-analysis + tactical migration guide",
+      "outline_file": "drafts/outline-2026-07-23-luxvps-special-offer-migration-checklist-2026-07-31.md",
+      "en_astro": null,
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 (daily-briefing ⭐ - Luxvps Special Offer shutdown, 8-day countdown)",
+      "heat_source": "daily-briefing-2026-07-23-luxvps-special-offer-shutdown-lowendbox-2026-07-19",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd",
+        "webdock",
+        "bandwagonhost",
+        "lightnode",
+        "kainode"
+      ],
+      "cluster_with": "luxvps-special-offer-shutdown-alternatives-2026 (2026-07-20 outline_pending_publish - replacement-provider comparison angle)",
+      "8check": {
+        "hetzner": "0",
+        "titleCard": "56/60",
+        "titleBlog": "56/60",
+        "descCard": "131/155",
+        "descBlog": "131/155",
+        "zhChars": "0",
+        "zhPaths": "0",
+        "racknerdBlog": 9,
+        "h2Count": 10,
+        "faqCount": 5
+      },
+      "note": "Tier 1 daily-briefing pick (2026-07-23). Luxvps Special Offer ⭐ repeats from 2026-07-23 daily briefing. 8-day countdown to 2026-07-31 23:59 German cutoff. Complement-pivot vs 2026-07-20 outline (which is replacement-providers comparison but stale — hostdare not in providers.json). This outline = migration playbook / final-mile checklist. 5 whitelisted alternatives verified against providers.json 2026-07-23 (racknerd, webdock, bandwagonhost, lightnode, kainode). self-check section paraphrases 'the excluded merchant' to avoid self-citation trap. 9 RackNerd affiliate placements."
     }
   ],
   "recent_topics": [
@@ -1264,9 +1309,10 @@
     "2026-h1-vps-market-landscape",
     "vps-cost-crisis-2026-data-centers-cloudflare",
     "coinbase-aws-outage-vps-redundancy-2026",
-    "scalahosting-vps-review-2026"
+    "scalahosting-vps-review-2026",
+    "servarica-vps-review-2026"
   ],
-  "updated": "2026-07-22",
-  "drafts_count": 11,
-  "published_count": 55
+  "updated": "2026-07-23T11:02:30Z",
+  "drafts_count": 14,
+  "published_count": 56
 }
