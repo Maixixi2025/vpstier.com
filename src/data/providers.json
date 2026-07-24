@@ -3320,6 +3320,79 @@
     "You want unmetered 1Gbps bandwidth on the storage tier (4TB cap applies)"
   ],
   "lastUpdated": "2026-07-23"
+},
+{
+  "id": "alphavps",
+  "name": "AlphaVPS",
+  "tagline": "EU-Native VPS since 2013, Own DCs, AMD EPYC / Ryzen, from €2.54/mo",
+  "startingPrice": 2.54,
+  "cpu": "AMD EPYC Milan / Ryzen 9 7950X (Gaming tier)",
+  "ram": "1GB - 128GB (all product lines)",
+  "storage": "20GB NVMe - 16TB HDD RAID-10",
+  "bandwidth": "1TB - 8TB/mo (varies by tier)",
+  "datacenters": [
+    "Sofia (Bulgaria)",
+    "Nuremberg (Germany)",
+    "London (UK)",
+    "New York (US East)",
+    "Dallas (US Central)",
+    "Los Angeles (US West)",
+    "Seattle (US West)"
+  ],
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "RackNerd fallback affiliate on this site (no published AlphaVPS affiliate program)",
+  "cookie": "N/A",
+  "rating": 4.2,
+  "features": [
+    "EU-native provider based in Sofia, Bulgaria since 2013 — not a US company with EU region bolted on",
+    "Owns every rack, switch, and cable — not a reseller. Enterprise hardware (Dell, HP, Supermicro).",
+    "7 global datacenter locations: Sofia, Nuremberg, London, New York, Dallas, Los Angeles, Seattle",
+    "5 product lines: Cloud VPS (NVMe), High-Performance VPS (AMD EPYC), Gaming Ryzen VPS (DDR5), Storage VPS, GPU Compute (RTX PRO Blackwell)",
+    "ISO 27001 & ISO 9001 certified (2026) — formalised security and operational standards",
+    "99.9% uptime SLA with 14-day money-back guarantee on all plans",
+    "Instant deployment — VPS online in under 60 seconds, dedicated servers in under 10 minutes",
+    "24/7 in-house sysadmin support from Sofia office (not outsourced)",
+    "RESTful API for server management, automation, and CI/CD integration",
+    "30+ OS templates: Ubuntu, Debian, Rocky, AlmaLinux, CentOS, Fedora, Arch, Windows Server",
+    "KVM virtualization with full root access on all VPS plans",
+    "EUR pricing — clear VAT handling (prices exclude VAT for EU customers)"
+  ],
+  "pros": [
+    "EU-native operator headquartered in Bulgaria — your data stays under European jurisdiction by default",
+    "Own infrastructure across 7 global locations — not a reseller, no third-party dependency on hardware level",
+    "5 distinct product lines (NVMe VPS, AMD EPYC High-Perf, Ryzen Gaming, Storage, GPU) covering every workload profile",
+    "ISO 27001 & ISO 9001 certified — enterprise-grade compliance for regulated workloads",
+    "AMD Ryzen 9 7950X Gaming VPS with DDR5 ECC and NVMe Gen4 — up to 5.7 GHz single-thread performance",
+    "Instant VPS deployment in under 60 seconds, dedicated servers in under 10 minutes",
+    "24/7 in-house support from Sofia office — real sysadmins, not first-line script readers",
+    "14-day money-back guarantee on all plans with no setup fees",
+    "40,000+ customers across 100+ countries with 12+ years operating history"
+  ],
+  "cons": [
+    "Pricing in EUR — USD-zone buyers carry FX exposure on every transaction",
+    "GPU compute is limited to RTX PRO Blackwell / RTX 5090 — no data-center GPU options (H100 / A100)",
+    "No published public affiliate or referral program — RackNerd fallback used for tracking",
+    "Some product lines (GPU, Gaming VPS) require browsing separate product category, not listed under unified VPS menu",
+    "Entry Cloud VPS has 1 TB transfer cap — heavy-bandwidth users must step up to High-Performance tier",
+    "Single-bureau (Bulgaria) support office means limited timezone overlap for APAC customers",
+    "No multi-region high-availability features built in — manual replication setup required"
+  ],
+  "use_cases": [
+    "EU-resident buyers who want GDPR-native hosting under full European jurisdiction",
+    "Developers needing instant NVMe VPS with 30+ OS templates and root access across 7 DCs",
+    "Gaming server admins wanting Ryzen 9 7950X + DDR5 performance at €2.54/mo entry",
+    "Buyers wanting AMD EPYC Milan compute (500K+ IOPS, 10Gbit) without US jurisdiction",
+    "Users needing multi-DC redundancy across both EU (Sofia, Nuremberg, London) and US (NY, Dallas, LA, Seattle)"
+  ],
+  "skipIf": [
+    "You need the absolute cheapest VPS — RackNerd annual special at $10.98/yr wins",
+    "You require APAC-only datacenters — AlphaVPS has no Asia-Pacific presence",
+    "You want managed VPS with cPanel — AlphaVPS is self-managed root access only",
+    "You need H100 / A100 GPU compute — only RTX PRO Blackwell and RTX 5090 available",
+    "You want USD pricing — only EUR is offered"
+  ],
+  "lastUpdated": "2026-07-24"
 }
 
 ]

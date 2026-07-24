@@ -1009,6 +1009,22 @@
       "verified_data_file": "drafts/servarica-verified-data-2026-07-23.md",
       "tier": "Tier 2 batch-probe fallback (15 fresh candidates)",
       "differentiator": "Canadian operator + 100% Hydro-Quebec renewable + EPYC Milan on 10Gbps + Alipay/crypto + full progressive SLA"
+    },
+    {
+      "slug": "alphavps-vps-review-2026",
+      "type": "vps-review",
+      "title": "AlphaVPS VPS Review 2026: EU-Native, 7 DCs, from €2.54/mo",
+      "description": "AlphaVPS VPS review 2026: EU-native provider in Sofia, Bulgaria since 2013. 7 DCs, AMD EPYC + Ryzen 9 CPUs, ISO 27001. From €2.54/mo.",
+      "provider": "alphavps",
+      "category": "vps-review",
+      "date": "2026-07-24",
+      "file": "src/pages/vps/alphavps.astro",
+      "url": "https://vpstier.com/vps/alphavps/",
+      "status": "published",
+      "lang": "en-US",
+      "deploymentId": "958decca",
+      "deploymentDate": "2026-07-24",
+      "affiliateLinks": 6
     }
   ],
   "drafts": [
