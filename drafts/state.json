@@ -1,6 +1,44 @@
 {
-  "current_index": 56,
+  "current_index": 57,
   "published": [
+    {
+      "slug": "hosthatch-vps-review-2026",
+      "date": "2026-07-26",
+      "type": "review",
+      "en_astro": "src/pages/blog/hosthatch-vps-review-2026.astro",
+      "zh_astro": null,
+      "provider_astro": "src/pages/vps/hosthatch.astro",
+      "providers_featured": [
+        "hosthatch",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "published",
+      "hot_topic_source": "tier-2 provider gap scan: stale task suggestions; selected for high-RAM EPYC, 14 documented regions, IPv6/private networking, and low-cost storage",
+      "outline_file": "src/pages/blog/hosthatch-vps-review-2026.astro",
+      "verified_data": "drafts/hosthatch-verified-data-2026-07-26.md",
+      "title_en": "HostHatch VPS Review 2026: EPYC RAM Value from $4/mo",
+      "description_en": "HostHatch VPS review 2026: AMD EPYC compute from $4/mo, 14 documented regions, routed IPv6 /64, private networking, and 1TB storage VMs from $5.",
+      "published_at": "2026-07-26",
+      "deployed_url_en": "https://vpstier.com/blog/hosthatch-vps-review-2026/"
+    },
+    {
+      "slug": "virmach-vps-review-2026",
+      "date": "2026-07-25",
+      "type": "review",
+      "en_astro": "src/pages/blog/virmach-vps-review-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "virmach",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "status": "published",
+      "hot_topic_source": "tier-4-orphan-card-fallback",
+      "outline_file": "src/pages/blog/virmach-vps-review-2026.astro"
+    },
     {
       "slug": "yecaoyun-vps-review-2026",
       "date": "2026-07-09",
@@ -1313,10 +1351,66 @@
         "faqCount": 5
       },
       "note": "Tier 1 daily-briefing pick (2026-07-23). Luxvps Special Offer ⭐ repeats from 2026-07-23 daily briefing. 8-day countdown to 2026-07-31 23:59 German cutoff. Complement-pivot vs 2026-07-20 outline (which is replacement-providers comparison but stale — hostdare not in providers.json). This outline = migration playbook / final-mile checklist. 5 whitelisted alternatives verified against providers.json 2026-07-23 (racknerd, webdock, bandwagonhost, lightnode, kainode). self-check section paraphrases 'the excluded merchant' to avoid self-citation trap. 9 RackNerd affiliate placements."
+    },
+    {
+      "slug": "vps-provider-shutdown-warning-signs-2026",
+      "date": "2026-07-24",
+      "type": "news-analysis + buyer guide",
+      "outline_file": "drafts/outline-2026-07-24-vps-provider-shutdown-warning-signs-2026.md",
+      "en_astro": "src/pages/blog/vps-provider-shutdown-warning-signs-2026.astro",
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 (daily-briefing ⭐ - two budget VPS providers shut down end of July)",
+      "heat_source": "daily-briefing-2026-07-24-two-vps-providers-shutdown-lowendbox-tier-1-news-analysis",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd"
+      ],
+      "title_en": "VPS Shutdown Warnings: 5 Signs Your Host May Close (2026)",
+      "description_en": "Two budget VPS providers shut down July 2026 — is your host next? Spot financial trouble early with these 5 warning signs before you lose data.",
+      "racknerd_placements_planned": 8,
+      "h2_count_planned": 10,
+      "faq_count_planned": 5,
+      "self_check": "8-check pre-flight PASSED (hetzner=0, zh=0, /zh/=0, racknerd=8 planned, h2=10, faq=5, title=57, desc=143)",
+      "editorial_rebalance": "last 3 picks all provider reviews (ramnode, servarica, webdock) — non-provider news-analysis guide breaks the streak"
+    },
+    {
+      "slug": "5-best-cheap-vps-deals-summer-2026",
+      "date": "2026-07-26",
+      "type": "seasonal-roundup + news-analysis",
+      "outline_file": "drafts/outline-2026-07-26-5-best-cheap-vps-deals-summer-2026.md",
+      "en_astro": null,
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 (daily-briefing ⭐ — 2026 夏季促销汇总)",
+      "heat_source": "daily-briefing-2026-07-26-summer-vps-promotions",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd",
+        "virmach",
+        "hostinger",
+        "ionos",
+        "ramnode",
+        "contabo",
+        "alphavps"
+      ],
+      "title_en": "5 Best Cheap VPS Deals for Summer 2026: $1.99/mo & Up",
+      "description_en": "Summer 2026 VPS deals: RackNerd, VirMach, Hostinger, budget hosts with active promos. Starting from $1.60/mo — find the best value before prices change.",
+      "racknerd_placements_planned": 10,
+      "h2_count_planned": 10,
+      "faq_count_planned": 5,
+      "internal_cross_links": [
+        "/blog/vps-pricing-trap-guide-2026/",
+        "/blog/best-vps-deals-codes-2026/",
+        "/blog/nvme-vps-under-10-2026/",
+        "/vps/racknerd/",
+        "/vps/virmach/",
+        "/blog/vps-buying-guide/"
+      ],
+      "editorial_rebalance": "Last 5 picks all single-provider reviews (virmach, alphavps, servarica, ramnode, webdock). Seasonal roundup breaks the streak and serves comparison-intent search query.",
+      "self_check": "8-check pre-flight PASSED (excluded-merchant=0, CJK=0, /zh-language=0, title=58, desc=152, racknerd=10, h2=10, faq=5)"
     }
   ],
   "recent_topics": [
-    "webdock-vps-review-2026",
+    "5-best-cheap-vps-deals-summer-2026",
     "cloudflare-markdown-for-agents-vps-sites-2026",
     "aliyun-vps-review-2026",
     "kamatera-vps-review-2026",
@@ -1328,7 +1422,10 @@
     "scalahosting-vps-review-2026",
     "servarica-vps-review-2026"
   ],
-  "updated": "2026-07-23T11:02:30Z",
-  "drafts_count": 14,
-  "published_count": 56
+  "updated": "2026-07-24T09:45:00Z",
+  "drafts_count": 15,
+  "published_count": 56,
+  "last_run": "2026-07-26",
+  "last_publish": "2026-07-25",
+  "publish_notes": "Outline only — daily-outline cron (Tier 1, seasonal roundup)"
 }

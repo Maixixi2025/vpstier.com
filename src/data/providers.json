@@ -3393,6 +3393,141 @@
     "You want USD pricing — only EUR is offered"
   ],
   "lastUpdated": "2026-07-24"
+},
+{
+  "id": "virmach",
+  "name": "VirMach",
+  "tagline": "Ultra-cheap KVM from $1.60/mo, 14 datacenters",
+  "startingPrice": 1.6,
+  "cpu": "Shared vCPU (standard tiers); AMD Ryzen on the NVMe tier",
+  "ram": "1GB - 16GB",
+  "storage": "15GB SSD - 160GB SSD (SATA on standard; NVMe on Ryzen tier)",
+  "bandwidth": "500GB - 4TB/mo",
+  "datacenters": [
+    "Los Angeles CA (US West)",
+    "New York NY (US East)",
+    "Chicago IL (US Central)",
+    "Atlanta GA (US South)",
+    "Amsterdam (EU West)"
+  ],
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "RackNerd fallback affiliate on this site (no published VirMach affiliate program on this site)",
+  "cookie": "N/A",
+  "rating": 3.6,
+  "features": [
+    "14 datacenters across US and Europe — wider geographic spread than most budget hosts",
+    "KVM and OpenVZ virtualization options on separate product lines",
+    "AMD Ryzen + NVMe SSD tier for modern single-thread workloads",
+    "Windows VPS plans with included license — rare at this price tier",
+    "Full root access on all KVM plans; custom ISO mounting via Virtualizor",
+    "Recurring affiliate commission model for partners",
+    "12+ year operating history since 2014 — long-tail stability in the low-end segment",
+    "Free IPv6 on most plans; dedicated IPv4 on higher tiers"
+  ],
+  "pros": [
+    "Lowest entry-tier KVM price in the industry at $1.60/mo (multi-year)",
+    "14 datacenters across US + EU — widest geographic reach among budget hosts",
+    "KVM + OpenVZ + Windows VPS in one product catalog",
+    "AMD Ryzen + NVMe tier for buyers who outgrow the SATA SSD baseline",
+    "12+ years of continuous operation (2014-present)",
+    "Recurring affiliate commissions available for partners"
+  ],
+  "cons": [
+    "Renewal rates significantly higher than intro pricing — must verify at checkout",
+    "Control panel (Virtualizor) is functional but dated; no native CF or API integration",
+    "Support is ticket-only with slow response during peak periods",
+    "No managed tier — self-managed KVM only",
+    "Mixed community reputation around oversold entry tiers",
+    "NVMe only on the Ryzen tier; standard plans use SATA SSD"
+  ],
+  "use_cases": [
+    "Hobbyists and developers needing the absolute cheapest KVM VPS for personal projects",
+    "Users who need a cheap Windows VPS license bundled with the plan",
+    "Staging and dev environments where occasional support delay is acceptable",
+    "Buyers wanting geographic diversity (14 DCs) at budget pricing",
+    "VPN or low-traffic personal server applications"
+  ],
+  "skipIf": [
+    "You need NVMe storage on every plan — Vultr ($2.50/mo) or RackNerd ($1.99/mo NVMe) are better",
+    "You need 24/7 live chat support — try RackNerd or Hostinger",
+    "You run production customer-facing SaaS requiring an SLA",
+    "You need hourly billing — Vultr and DigitalOcean offer per-second billing",
+    "You want a modern control panel with one-click app installs"
+  ],
+  "lastUpdated": "2026-07-25"
+},
+{
+  "id": "hosthatch",
+  "name": "HostHatch",
+  "tagline": "High-RAM AMD EPYC VPS from $4/mo across 14 documented regions",
+  "startingPrice": 4.0,
+  "cpu": "AMD EPYC (fair-share and disclosed dedicated allocations)",
+  "ram": "2GB - 96GB",
+  "storage": "10GB - 250GB NVMe; 1TB - 10TB HDD storage VMs",
+  "bandwidth": "1TB - 20TB/mo compute; APAC exceptions",
+  "datacenters": [
+    "Amsterdam",
+    "Chicago",
+    "Hong Kong",
+    "London",
+    "Los Angeles",
+    "New York",
+    "Oslo",
+    "Seoul",
+    "Singapore",
+    "Stockholm",
+    "Sydney",
+    "Tokyo",
+    "Vienna",
+    "Zurich"
+  ],
+  "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+  "affiliateAvailable": true,
+  "commission": "RackNerd fallback affiliate on this site",
+  "cookie": "N/A",
+  "rating": 4.1,
+  "features": [
+    "AMD EPYC compute from $4/mo with high RAM-per-dollar",
+    "14 compute regions listed in current official documentation",
+    "Routed IPv6 /64 per VM and same-region VLAN/VXLAN private networking",
+    "Storage VMs from $5/mo for 1TB HDD",
+    "Custom ISO support, root access, and Peregrine control panel",
+    "BGP/BYOIP available by arrangement",
+    "Public REST API documentation with access limited to selected users"
+  ],
+  "pros": [
+    "Excellent RAM-per-dollar",
+    "Broad and unusual global region coverage",
+    "Routed IPv6 /64 and private networking",
+    "Low-cost bulk storage VMs",
+    "Root access and custom ISO support",
+    "Advanced BGP/BYOIP option"
+  ],
+  "cons": [
+    "No clearly published contractual uptime SLA",
+    "API access limited to selected users",
+    "Inbound and outbound bandwidth both count",
+    "Conditional fault-based refund policy",
+    "Modest NVMe capacity relative to RAM",
+    "Strict late-payment suspension and deletion timeline"
+  ],
+  "bestFor": [
+    "Memory-heavy applications",
+    "Containers and development environments",
+    "Low-cost backup repositories",
+    "IPv6 and private-network deployments",
+    "Users needing uncommon regions"
+  ],
+  "skipIf": [
+    "You require a public contractual SLA",
+    "You need unrestricted API-first provisioning",
+    "You want managed administration",
+    "You need large local NVMe per GB of RAM"
+  ],
+  "status": "active",
+  "featured": false,
+  "reviewUrl": "/blog/hosthatch-vps-review-2026"
 }
 
 ]
