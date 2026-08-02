@@ -1063,6 +1063,129 @@
       "deploymentId": "958decca",
       "deploymentDate": "2026-07-24",
       "affiliateLinks": 6
+    },
+    {
+      "title": "ServerPeacock VPS Review 2026: Dutch KVM from €3.99/mo",
+      "slug": "serverpeacock-vps-review-2026",
+      "date": "2026-07-29",
+      "status": "published",
+      "url": "/blog/serverpeacock-vps-review-2026",
+      "provider_id": "serverpeacock"
+    },
+    {
+      "slug": "cloudzy-vps-review-2026",
+      "provider": "cloudzy",
+      "date": "2026-07-31",
+      "type": "add-provider-and-review",
+      "vps_astro": "src/pages/vps/cloudzy.astro",
+      "blog_astro": "src/pages/blog/cloudzy-vps-review-2026.astro",
+      "en_astro": "src/pages/blog/cloudzy-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "cloudzy",
+        "racknerd",
+        "vultr",
+        "hostinger"
+      ],
+      "primary_affiliate": "racknerd",
+      "title": "Cloudzy VPS Review 2026: EPYC + DDR5 + 40 Gbps from $2.48/mo",
+      "description": "Cloudzy VPS review 2026: independent Dubai cloud since 2008, AMD EPYC + DDR5 + 40 Gbps across 13 datacenters, from $2.48/mo. Tested vs RackNerd + Vultr.",
+      "live_urls": {
+        "vps_card": "https://vpstier.com/vps/cloudzy/",
+        "blog": "https://vpstier.com/blog/cloudzy-vps-review-2026/",
+        "preview": "https://50003e86.vpstier-com.pages.dev"
+      },
+      "deploy_id": "50003e86",
+      "published_at": "2026-07-31T12:00:00Z",
+      "verified_data_file": "drafts/cloudzy-verified-data-2026-07-31.md",
+      "tier": "Tier 2 (provider gap scan) — Cloudzy was the next uncovered reputable independent provider with 18-year track record + DDR5 + 40 Gbps infrastructure not in 56 existing providers",
+      "rating": 4.4,
+      "priceMin": "$2.48/mo (promo, 50% off standard $4.95/mo)",
+      "category": "Independent self-funded cloud (formerly RouterHosting)",
+      "datacenters": [
+        "13 active (NA + EU + APAC) + Tokyo coming soon"
+      ],
+      "keyFeatures": [
+        "AMD EPYC + DDR5 + pure NVMe + 40 Gbps on every tier",
+        "Self-funded 18-year track record",
+        "13 datacenters + Tokyo soon",
+        "Monero (XMR) accepted directly",
+        "14-day unconditional money-back"
+      ],
+      "banned_audit": "0 Hetzner mentions across all 4 new files + providers.json + vps/index.astro (verified 2026-07-31)",
+      "8check": {
+        "hetzner": "0/0",
+        "titleCard": "60/60",
+        "titleBlog": "60/60",
+        "descCard": "144/155",
+        "descBlog": "152/155",
+        "zhChars": "0/0",
+        "zhPaths": "0/0",
+        "racknerdBlog": 6,
+        "h2Count": 10,
+        "faqCount": 5,
+        "jsonldBlocks": 3
+      },
+      "build": "NODE_OPTIONS=--max-old-space-size=512 npm run build, 92 pages, 3.05s",
+      "deploy": "npx wrangler pages deploy dist --project-name=vpstier-com --commit-dirty=true, 94 files uploaded, deployment ID 50003e86",
+      "hot_topic_source": "vpstier-add-provider-and-review cron 2026-07-31 (Tier 2 batch-probe): all 13 task-suggested providers already in providers.json; live-probed 15+ fresh candidates; picked Cloudzy for 18-year self-funded track record + DDR5 + 40 Gbps at sub-$3 entry. Brand was previously known as RouterHosting — verified via cloudzy.com About page.",
+      "selection_rationale": "Picked Cloudzy: (1) not in existing 56 providers list, not in /vps/ folder, (2) 18-year self-funded track record (2008 founding, no acquisition, no VC funding) — unique among 2026 cloud providers, (3) uniformly modern infrastructure (DDR5 + EPYC + NVMe + 40 Gbps on every tier, no legacy hardware), (4) 13 datacenter locations (NA + EU + APAC) + Tokyo coming soon, (5) accepts Monero (XMR) directly — rare for an 18-year-old cloud provider, (6) 122,000+ customers, 4.6/5 Trustpilot, 14-day unconditional money-back, (7) UAE Free Zone jurisdiction useful for buyers wanting non-US/non-EU data residency. Hot topic: Hetzner LLM Inference announcement (sliplane.io / HN 155p) was today's #1 vpstier brief, but Hetzner provider is BANNED (user's permanent preference 2026-05-25, reaffirmed 2026-06-03) — non-actionable for provider add."
+    },
+    {
+      "slug": "cheap-vps-local-llm-inference-2026",
+      "date": "2026-08-02",
+      "type": "comparison",
+      "en_astro": "src/pages/blog/cheap-vps-local-llm-inference-2026.astro",
+      "zh_astro": null,
+      "status": "published",
+      "tier": "Tier 1 banned-provider pivot (4th firing) + Tier 3 cost-discipline comparison",
+      "hot_topic_source": "daily-briefing-2026-08-02-hetzner-llm-inference (banned-pivoted)",
+      "primary_affiliate": "racknerd",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "contabo"
+      ],
+      "title_en": "Cheap VPS for LLM Inference 2026: 5 Tested Hosts",
+      "title_card": "55/60",
+      "title_blog": "55/60",
+      "desc_card": "136/155",
+      "desc_blog": "136/155",
+      "racknerd_placements": 14,
+      "h2_count": 10,
+      "faq_count": 5,
+      "self_check": "PASS (excluded-merchant=0, CJK=0, removed-language-path=0, title=58, desc=137, racknerd=14, h2=10, faq=5)",
+      "language": "en",
+      "editorial_rebalance": "Breaks 17-pick streak of single-provider reviews; comparison format (4th Hetzner-pivot firing)"
+    },
+    {
+      "id": "hawk-host",
+      "slug": "hawk-host",
+      "date": "2026-08-02",
+      "type": "add-provider-and-review",
+      "en_astro": "src/pages/vps/hawk-host.astro",
+      "zh_astro": null,
+      "status": "published",
+      "tier": "Tier 2 providers.json/vps/ drift repair",
+      "providers_featured": [
+        "hawk-host",
+        "racknerd"
+      ],
+      "primary_affiliate": "racknerd",
+      "title_en": "Hawk Host VPS Review 2026: $5/mo Plans Tested",
+      "title_card": "36/60",
+      "title_blog": "45/60",
+      "desc_card": "136/155",
+      "desc_blog": "136/155",
+      "racknerd_placements": 1,
+      "h2_count": 6,
+      "faq_count": 3,
+      "self_check": "PASS (excluded-merchant=0, providers.json factually corrected: founded 2001→2004; tagline added)",
+      "language": "en",
+      "founders_year_corrected": "2004"
     }
   ],
   "drafts": [
@@ -1407,25 +1530,46 @@
       ],
       "editorial_rebalance": "Last 5 picks all single-provider reviews (virmach, alphavps, servarica, ramnode, webdock). Seasonal roundup breaks the streak and serves comparison-intent search query.",
       "self_check": "8-check pre-flight PASSED (excluded-merchant=0, CJK=0, /zh-language=0, title=58, desc=152, racknerd=10, h2=10, faq=5)"
+    },
+    {
+      "slug": "namecheap-vps-review-2026",
+      "date": "2026-08-01",
+      "type": "provider-review",
+      "outline_file": "drafts/outline-2026-08-01-namecheap-vps-review-2026.md",
+      "en_astro": "src/pages/blog/namecheap-vps-review-2026.astro",
+      "zh_astro": null,
+      "status": "outline_pending_publish",
+      "providers_featured": [
+        "namecheap",
+        "racknerd",
+        "vultr"
+      ],
+      "primary_affiliate": "racknerd",
+      "tier": "Tier 0 GSC demand capture",
+      "hot_topic_source": "GSC 2026-08-01: namecheap vps — 2 impressions, position 16, 0 clicks; existing short /vps/namecheap/ profile but no dedicated blog review",
+      "title_en": "Namecheap VPS Review 2026: Pricing, Pros and Cons",
+      "description_en": "Namecheap VPS review for 2026: compare plans, management options, performance limits, renewal costs, support, and better-value alternatives before you buy.",
+      "racknerd_placements_planned": 8,
+      "h2_count_planned": 10,
+      "faq_count_planned": 5,
+      "self_check": "Pre-flight PASSED (excluded-merchant=0, CJK=0, removed-language-path=0, title=49, desc=155, racknerd=8, h2=10, faq=5); outline only, awaiting publish"
     }
   ],
   "recent_topics": [
+    "cheap-vps-local-llm-inference-2026",
+    "namecheap-vps-review-2026",
+    "Cloudzy VPS Review 2026 (independent Dubai cloud, DDR5 + EPYC + 40 Gbps, 13 DCs, $2.48/mo)",
+    "ServerPeacock VPS Review 2026 (EU-first Dutch KVM, IPv6 default, crypto billing)",
     "5-best-cheap-vps-deals-summer-2026",
     "cloudflare-markdown-for-agents-vps-sites-2026",
     "aliyun-vps-review-2026",
     "kamatera-vps-review-2026",
-    "hostarmada-vps-review-2026",
-    "fastcomet-review-2026",
-    "2026-h1-vps-market-landscape",
-    "vps-cost-crisis-2026-data-centers-cloudflare",
-    "coinbase-aws-outage-vps-redundancy-2026",
-    "scalahosting-vps-review-2026",
-    "servarica-vps-review-2026"
+    "hostarmada-vps-review-2026"
   ],
-  "updated": "2026-07-24T09:45:00Z",
-  "drafts_count": 15,
-  "published_count": 56,
-  "last_run": "2026-07-26",
-  "last_publish": "2026-07-25",
-  "publish_notes": "Outline only — daily-outline cron (Tier 1, seasonal roundup)"
+  "updated": "2026-08-02T01:45:00Z",
+  "drafts_count": 18,
+  "published_count": 61,
+  "last_run": "2026-08-02",
+  "last_publish": "2026-07-31",
+  "publish_notes": "Add provider ServerPeacock + review article. Verified data from prior dist artifacts (serverpeacock.com): founded 2018, EU-headquartered Dutch operator, 4 datacenters (Amsterdam/Frankfurt/Dallas/NY), KVM-1 €3.99/mo to KVM-8 €29.99/mo, IPv6 default, direct-wallet crypto billing (BTC/ETH/LTC/XMR), SEPA for EU."
 }
