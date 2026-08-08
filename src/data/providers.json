@@ -1274,7 +1274,67 @@
       "Users who value documentation and community support"
     ],
     "featured": false,
-    "status": "active"
+    "status": "active",
+    "features": [
+      "Transparent renewal pricing — intro equals renewal (no jump)",
+      "Hourly and monthly billing on the same $5/mo Nanode floor",
+      "40Gbps network uplinks on every plan",
+      "11+ global datacenters (9 US) with Akamai backbone peering",
+      "Polished API + CLI + some of the industry's best documentation",
+      "S3-compatible Object Storage, NodeBalancers, Block Storage, LKE Kubernetes",
+      "$100 credit for 60 days on new accounts",
+      "NVMe storage on 16GB+ shared tiers (SSD below)"
+    ],
+    "vpsPlans": [
+      {
+        "name": "Nanode 1GB",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "25GB SSD",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "Linode 2GB",
+        "price": 12.0,
+        "cpu": "1 vCPU",
+        "ram": "2GB",
+        "storage": "50GB SSD",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Linode 4GB",
+        "price": 24.0,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Linode 8GB",
+        "price": 48.0,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "160GB SSD",
+        "bandwidth": "5TB"
+      },
+      {
+        "name": "Linode 16GB",
+        "price": 96.0,
+        "cpu": "6 vCPU",
+        "ram": "16GB",
+        "storage": "320GB NVMe",
+        "bandwidth": "8TB"
+      },
+      {
+        "name": "Linode 32GB",
+        "price": 192.0,
+        "cpu": "8 vCPU",
+        "ram": "32GB",
+        "storage": "640GB NVMe",
+        "bandwidth": "16TB"
+      }
+    ]
   },
   {
     "id": "ionos",
