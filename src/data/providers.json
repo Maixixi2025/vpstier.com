@@ -2076,10 +2076,10 @@
     "name": "Liquid Web",
     "tagline": "Managed VPS with 24/7 Heroic Support since 1997",
     "startingPrice": 5.0,
-    "cpu": "AMD EPYC (managed VPS) — configurable on dedicated",
-    "ram": "2GB - 32GB",
-    "storage": "40GB - 200GB SSD",
-    "bandwidth": "10TB - 30TB outbound",
+    "cpu": "1 - 6 vCPU (AMD/Intel) on launch; dedicated on higher tiers",
+    "ram": "1GB - 16GB (launch tiers)",
+    "storage": "30GB - 440GB SSD",
+    "bandwidth": "1TB - 7TB outbound",
     "datacenters": [
       "Lansing, MI (US)",
       "Phoenix, AZ (US)",
@@ -2112,7 +2112,55 @@
       "Organizations that prefer a US-owned provider with private data centers"
     ],
     "featured": false,
-    "affiliateAvailable": false
+    "affiliateAvailable": false,
+    "features": [
+      "VPS hosting launch tier from $5/mo — 1 vCPU, 1GB RAM, 30GB SSD, 1TB bandwidth",
+      "Self-managed OR fully managed on every plan — paid Heroic Support® add-on with 24/7 human engineers",
+      "50% off for 2 months promo on 4GB (from $17), 8GB (from $45) and 16GB (from $90) tiers",
+      "Hourly billing available on launch plans (from $0.007/hr) with instant provisioning",
+      "Linux or Windows instances; InterWorx, cPanel and Plesk control panels available",
+      "Owns and operates its own data centers (Lansing MI, Phoenix AZ, Amsterdam EU)",
+      "Free nightly backups + unmetered inbound DDoS protection on all plans",
+      "100% network uptime SLA on managed products"
+    ],
+    "vpsPlans": [
+      {
+        "name": "1 vCPU / 1GB (Launch)",
+        "price": 5.0,
+        "cpu": "1 vCPU",
+        "ram": "1GB",
+        "storage": "30GB SSD",
+        "bandwidth": "1TB",
+        "note": "$0.007/hr hourly; self or fully managed"
+      },
+      {
+        "name": "2 vCPU / 4GB",
+        "price": 8.5,
+        "cpu": "2 vCPU",
+        "ram": "4GB",
+        "storage": "80GB SSD",
+        "bandwidth": "3TB",
+        "note": "Promo $8.50/mo, regular $17/mo (50% off 2 months)"
+      },
+      {
+        "name": "4 vCPU / 8GB",
+        "price": 22.5,
+        "cpu": "4 vCPU",
+        "ram": "8GB",
+        "storage": "240GB SSD",
+        "bandwidth": "5TB",
+        "note": "Promo $22.50/mo, regular $45/mo (50% off 2 months)"
+      },
+      {
+        "name": "6 vCPU / 16GB",
+        "price": 45.0,
+        "cpu": "6 vCPU",
+        "ram": "16GB",
+        "storage": "440GB SSD",
+        "bandwidth": "7TB",
+        "note": "Promo $45/mo, regular $90/mo (50% off 2 months)"
+      }
+    ]
   },
   {
     "id": "netcup",
