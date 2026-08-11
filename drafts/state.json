@@ -1926,19 +1926,65 @@
       "content_gap_evidence": "0 'mcp' / 0 'managed k8s' matches in src/; 'kubernetes' only in passing review mentions; no dedicated K8s-on-a-budget buyer-guide exists (grep verified 2026-08-10)",
       "self_check": "PASSED (excluded-merchant-in-outline=0 incl. rationale, cjk=0, zh-routes=0, title=53, desc=152, h2=9, faq=5, racknerd=7 CTA exact match, 12/12 internal links resolve; briefing SUCCEEDED; provider K8s facts flagged for full-draft reverification from live provider pages)",
       "note": "Briefing SUCCEEDED 2026-08-10 (first since 8-06/8-08/8-09 HTTP-400 failures) and produced official vpstier ⭐ (RareCloud K8s+MCP). RareCloud not whitelisted -> built as multi-provider 'managed Kubernetes on a budget VPS in 2026' buyer-guide anchored on RackNerd(DIY K3s)/Vultr(VKE)/DigitalOcean(DOKS)/Hostinger/Contabo, with the LEB-attributed RareCloud return as news hook + MCP-as-agentic-VPS-management section. Content gap confirmed (0 mcp / 0 managed-k8s). Orthogonal to all pending outlines; does not compound backlog. GSC today = only 'ovh vps ssd' (already captured by 8-07 ovhcloud outline). Outline only - awaiting publish."
+    },
+    {
+      "date": "2026-08-11",
+      "slug": "cloud-outages-2026-redundant-vps-setup",
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 daily-briefing substitute (briefing FAILED 400 'reasoning_content' again on 2026-08-11: 8-06/8-08/8-09/8-11 with an 8-10 success in between -> intermittent, re-check daily); direct Google News RSS fallback + fresh CRN Jul-30 '10 biggest cloud outages of 2026' + multi-outlet 2026 outage cluster",
+      "type": "news-analysis + buyer guide (multi-provider redundancy/fault-tolerance)",
+      "title_en": "Cloud Outages 2026: How to Build a Redundant VPS Setup",
+      "title_chars": 54,
+      "description_en": "A record year for cloud outages in 2026. Build a fault-tolerant, multi-provider VPS setup with RackNerd, Vultr, DigitalOcean and Hostinger.",
+      "description_chars": 139,
+      "outline_file": "drafts/outline-2026-08-11-vpstier-daily.md",
+      "run_record_file": "drafts/run-record-2026-08-11-vpstier-daily-outline.md",
+      "en_astro": "src/pages/blog/cloud-outages-2026-redundant-vps-setup.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "linode",
+        "contabo",
+        "scalahosting"
+      ],
+      "primary_affiliate": "racknerd",
+      "h2_count": 9,
+      "faq_count": 5,
+      "racknerd_placements_planned": 7,
+      "heat_source": "CRN 'The 10 Biggest Cloud Outages Of 2026 (So Far)' (Jul 30 2026) + corroborating multi-outlet 2026 outage cluster: Register(07-21 Google Cloud resilience), ET Datacenters(07-23 Google Cloud Netherlands power/cooling), NY Post(07-24 regional AWS outage disrupts dozens), Reuters/CRN(05-08 AWS North Virginia thermal), Reuters(03-02 AWS UAE/Bahrain strikes), Guardian/Reuters/FT(02-20 two AWS outages caused by AI tools/Kiro AI), Register(03-04 Oracle->TikTok), TechTarget(01-14 outages new normal), InfoWorld(2025-12-30 stop trusting any single cloud), Cloudflare(04-28 Q1 disruptions), Railway(05-19 GCP suspension HN 457p)",
+      "internal_cross_links": [
+        "/vps/racknerd/",
+        "/vps/vultr/",
+        "/vps/digitalocean/",
+        "/vps/hostinger/",
+        "/vps/linode/",
+        "/vps/contabo/",
+        "/vps/scalahosting/",
+        "/blog/aws-us-east-1-outage-2026/",
+        "/blog/vps-buying-guide/",
+        "/blog/vps-pricing-trap-guide-2026/",
+        "/blog/nvme-vps-under-10-2026/",
+        "/blog/2026-shutdown-cloud-services-vps-migration/"
+      ],
+      "content_gap_evidence": "0 'outage roundup' / 0 'biggest cloud outages' / 0 'multi-cloud redundancy' matches in src/ (grep verified 2026-08-11); only single-incident aws-us-east-1-outage-2026 exists; no redundancy/fault-tolerance buyer-guide on site",
+      "self_check": "PASSED (excluded-merchant-in-outline=0 incl. rationale, cjk=0, zh-routes=0 new [2 self-doc audit lines], title=54, desc=139, h2=9, faq=5, racknerd=7 CTA exact match, 12/12 internal links resolve; briefing-failure fallback via direct Google News RSS; facts multi-outlet attributed)",
+      "note": "Briefing FAILED again 2026-08-11 (HTTP 400 'reasoning_content'; intermittent - 8-10 succeeded). Direct Google News RSS fallback picked CRN Jul-30 '10 Biggest Cloud Outages of 2026' + a dense multi-outlet 2026 outage cluster (AWS thermal/regional, Google Cloud NL power/cooling, AI-tool-caused AWS outages, Oracle->TikTok, geopolitical DC strikes) -> multi-provider redundancy/fault-tolerance buyer-guide, orthogonal to all pending outlines and to the already-covered single-incident aws-us-east-1-outage-2026. Content gap confirmed (0 outage-roundup / 0 multi-cloud-redundancy matches). AI-agent security angle (Paperclip/OpenClaw) surfaced but NOT re-picked (overlaps queued kernel-escape + agent-zero). GSC today = only 'ovh vps ssd' (already captured by 8-07 ovhcloud outline). Outline only - awaiting publish."
     }
   ],
   "recent_topics": [
+    "cloud-outages-2026-redundant-vps-setup",
     "liquidweb-vps-review-2026",
     "managed-kubernetes-on-budget-vps-2026",
     "rosehosting-vps-review-2026",
-    "linux-kernel-escape-patches-august-2026-vps",
-    "linode-vps-review-2026"
+    "linux-kernel-escape-patches-august-2026-vps"
   ],
-  "updated": "2026-08-10T02:31:50.069096+00:00",
-  "drafts_count": 23,
+  "updated": "2026-08-11T08:00:00+00:00",
+  "drafts_count": 24,
   "published_count": 67,
-  "last_run": "2026-08-10",
+  "last_run": "2026-08-11",
   "last_publish": "2026-08-10",
-  "publish_notes": "2026-08-10: published Liquid Web add-provider-and-review (liquidweb-vps-review-2026); fixes dead /vps/liquidweb soft-404 card (6th dead card resolved); backfilled providers.json features+vpsPlans from official pricing; 108 pages built; live verified."
+  "publish_notes": "2026-08-11: selected outline cloud-outages-2026-redundant-vps-setup (news-analysis+multi-provider redundancy buyer-guide; briefing FAILED 400, direct Google News RSS fallback: CRN Jul-30 10-biggest-cloud-outages + 2026 outage cluster). | 2026-08-10: published Liquid Web add-provider-and-review (liquidweb-vps-review-2026); fixes dead /vps/liquidweb soft-404 card (6th dead card resolved); backfilled providers.json features+vpsPlans from official pricing; 108 pages built; live verified."
 }
