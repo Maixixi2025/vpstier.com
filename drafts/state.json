@@ -512,20 +512,41 @@
       "published_at": "2026-06-19"
     },
     {
-      "slug": "hivelocity",
-      "date": "2026-06-21",
-      "type": "review",
-      "title_en": "Hivelocity VPS Review 2026: 44 Global DCs $10/mo",
-      "vps_astro": "src/pages/vps/hivelocity.astro",
+      "slug": "hivelocity-vps-review-2026",
+      "date": "2026-08-11",
+      "type": "add-provider-and-review",
+      "title_en": "Hivelocity VPS Review 2026: Dedicated Cores From $10/mo",
+      "en_file": "src/pages/vps/hivelocity.astro",
+      "en_url": "https://vpstier.com/vps/hivelocity/",
       "status": "published",
-      "providers_featured": [
-        "hivelocity"
+      "primary_keyword": "hivelocity vps review",
+      "secondary_keywords": [
+        "hivelocity",
+        "hivelocity vds",
+        "dedicated core vps",
+        "hivelocity pricing"
       ],
+      "hot_topic_source": "dead-card soft-404 fix (hivelocity 4.3 rating, highest remaining) + live hivelocity.net/vps/ pricing verification",
+      "faqqage_jsonld_included": true,
+      "build_verified": true,
+      "build_pages_added": 1,
+      "build_exit_code": 0,
+      "sitemap_urls_added": 1,
+      "meta_title_chars": 55,
+      "meta_desc_chars": 142,
+      "published_at": "2026-08-11T02:49:01.711070+00:00",
+      "git_commit": "89b3f36",
+      "deployed_url_en": "https://vpstier.com/vps/hivelocity/",
+      "live_verified": true,
+      "deployment_id": "96667995",
+      "dead_card_fixed": "hivelocity",
+      "phantom_entry_reconciled": true,
+      "provider": "hivelocity",
       "primary_affiliate": "racknerd",
-      "affiliate_link": "https://my.racknerd.com/aff.php?aff=16299",
       "rating": 4.3,
-      "added_to_index": true,
-      "published_at": "2026-06-21"
+      "racknerd_placements": 3,
+      "faq_count": 5,
+      "self_check": "PASS (banned-provider=0, title=55, desc=142, faq=5, JSON-LD valid x3, internal links resolve, live verified, sitemap 109 URLs)"
     },
     {
       "slug": "fastcomet-review-2026",
@@ -1975,16 +1996,16 @@
     }
   ],
   "recent_topics": [
+    "hivelocity-vps-review-2026",
     "cloud-outages-2026-redundant-vps-setup",
     "liquidweb-vps-review-2026",
     "managed-kubernetes-on-budget-vps-2026",
-    "rosehosting-vps-review-2026",
-    "linux-kernel-escape-patches-august-2026-vps"
+    "rosehosting-vps-review-2026"
   ],
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 24,
   "published_count": 67,
   "last_run": "2026-08-11",
-  "last_publish": "2026-08-10",
-  "publish_notes": "2026-08-11: selected outline cloud-outages-2026-redundant-vps-setup (news-analysis+multi-provider redundancy buyer-guide; briefing FAILED 400, direct Google News RSS fallback: CRN Jul-30 10-biggest-cloud-outages + 2026 outage cluster). | 2026-08-10: published Liquid Web add-provider-and-review (liquidweb-vps-review-2026); fixes dead /vps/liquidweb soft-404 card (6th dead card resolved); backfilled providers.json features+vpsPlans from official pricing; 108 pages built; live verified."
+  "last_publish": "2026-08-11",
+  "publish_notes": "2026-08-11: Hivelocity VPS review (add-provider-and-review). Dead-card fix (4.3 highest remaining). Backfilled providers.json features+vpsPlans. Reconciled phantom hivelocity state entry (was dated 2026-06-21 claiming a page that never existed on disk)."
 }
