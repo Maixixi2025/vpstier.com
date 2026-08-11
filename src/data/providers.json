@@ -1659,7 +1659,53 @@
       "Dedicated CPU core needs"
     ],
     "featured": false,
-    "status": "active"
+    "status": "active",
+    "features": [
+      "AMD EPYC and Intel Xeon CPU options (shared VPS and dedicated VDS cores)",
+      "NVMe SSD storage on VPS plans (40GB - 80GB+); bare-metal NVMe up to 84TB",
+      "99.99% uptime SLA",
+      "2+ Tbps global network, private backbone, 1,000+ peering connections",
+      "40+ data centers across 6 continents",
+      "Linux and Windows operating systems",
+      "24/7/365 human-first support (NPS 79)",
+      "API, Terraform provider, and product docs for automated deployment"
+    ],
+    "vpsPlans": [
+      {
+        "name": "pro.sm.amd",
+        "price": 10.0,
+        "cpu": "2 vCPU (AMD)",
+        "ram": "4GB",
+        "storage": "40GB NVMe",
+        "bandwidth": "10TB / 1Gbps"
+      },
+      {
+        "name": "pro.md.amd",
+        "price": 15.0,
+        "cpu": "4 vCPU (AMD)",
+        "ram": "8GB",
+        "storage": "80GB NVMe",
+        "bandwidth": "10TB / 1Gbps",
+        "note": "regular $20/mo"
+      },
+      {
+        "name": "vds.sm.intel",
+        "price": 21.0,
+        "cpu": "2 vCPU (Intel, dedicated)",
+        "ram": "4GB",
+        "storage": "80GB",
+        "bandwidth": "10TB / 1Gbps"
+      },
+      {
+        "name": "vds.md.intel",
+        "price": 37.0,
+        "cpu": "4 vCPU (Intel, dedicated)",
+        "ram": "8GB",
+        "storage": "160GB",
+        "bandwidth": "10TB / 1Gbps",
+        "note": "regular $42/mo"
+      }
+    ]
   },
   {
     "id": "fastcomet",
