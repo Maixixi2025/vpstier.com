@@ -1374,7 +1374,7 @@
       "published_at": "2026-08-12T02:55:03.959338+00:00",
       "deployed_url_en": "https://vpstier.com/vps/atlantic-net/",
       "git_commit": "be9d9c2",
-      "live_verified": "pending"
+      "live_verified": true
     },
     {
       "slug": "vps-price-hikes-2026-ramageddon",
@@ -1403,7 +1403,7 @@
       "published_at": "2026-08-12T02:55:03.959338+00:00",
       "deployed_url_en": "https://vpstier.com/blog/vps-price-hikes-2026-ramageddon/",
       "git_commit": "be9d9c2",
-      "live_verified": "pending"
+      "live_verified": true
     }
   ],
   "drafts": [
