@@ -1404,6 +1404,34 @@
       "deployed_url_en": "https://vpstier.com/blog/vps-price-hikes-2026-ramageddon/",
       "git_commit": "be9d9c2",
       "live_verified": true
+    },
+    {
+      "slug": "mochahost-vps-review-2026",
+      "date": "2026-08-13",
+      "type": "add-provider-and-review",
+      "title_en": "MochaHost VPS Review 2026: Managed NVMe Plans from $30.63",
+      "en_file": "src/pages/vps/mochahost.astro",
+      "en_url": "/vps/mochahost/",
+      "status": "published",
+      "primary_keyword": "mochahost vps review",
+      "secondary_keywords": [
+        "mochahost managed vps",
+        "mochahost windows vps",
+        "mochahost nvme vps pricing",
+        "managed linux vps 2026"
+      ],
+      "hot_topic_source": "dead-card soft-404 fix (mochahost 4.0 highest remaining dead card alongside hostnamaste) + verified from mochahost.com/linux-servers + /windows-vps live SPA pages (NVMe/RAM ladder 4GB/80GB up to 32GB/640GB; Windows VPS + Linux cPanel plans); daily briefing cron 3ea88f8bb2d0 still FAILED (reasoning_content 400)",
+      "faqqage_jsonld_included": true,
+      "build_verified": true,
+      "build_pages_added": 1,
+      "build_exit_code": 0,
+      "sitemap_urls_added": 1,
+      "meta_title_chars": 57,
+      "meta_desc_chars": 155,
+      "published_at": "2026-08-13T02:52:01.938241+00:00",
+      "deployed_url_en": "https://vpstier.com/vps/mochahost/",
+      "git_commit": "be4a444",
+      "live_verified": true
     }
   ],
   "drafts": [
@@ -2050,19 +2078,64 @@
       "content_gap_evidence": "0 'outage roundup' / 0 'biggest cloud outages' / 0 'multi-cloud redundancy' matches in src/ (grep verified 2026-08-11); only single-incident aws-us-east-1-outage-2026 exists; no redundancy/fault-tolerance buyer-guide on site",
       "self_check": "PASSED (excluded-merchant-in-outline=0 incl. rationale, cjk=0, zh-routes=0 new [2 self-doc audit lines], title=54, desc=139, h2=9, faq=5, racknerd=7 CTA exact match, 12/12 internal links resolve; briefing-failure fallback via direct Google News RSS; facts multi-outlet attributed)",
       "note": "Briefing FAILED again 2026-08-11 (HTTP 400 'reasoning_content'; intermittent - 8-10 succeeded). Direct Google News RSS fallback picked CRN Jul-30 '10 Biggest Cloud Outages of 2026' + a dense multi-outlet 2026 outage cluster (AWS thermal/regional, Google Cloud NL power/cooling, AI-tool-caused AWS outages, Oracle->TikTok, geopolitical DC strikes) -> multi-provider redundancy/fault-tolerance buyer-guide, orthogonal to all pending outlines and to the already-covered single-incident aws-us-east-1-outage-2026. Content gap confirmed (0 outage-roundup / 0 multi-cloud-redundancy matches). AI-agent security angle (Paperclip/OpenClaw) surfaced but NOT re-picked (overlaps queued kernel-escape + agent-zero). GSC today = only 'ovh vps ssd' (already captured by 8-07 ovhcloud outline). Outline only - awaiting publish."
+    },
+    {
+      "date": "2026-08-14",
+      "slug": "best-vps-for-ai-agents-2026",
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 daily-briefing substitute (briefing FAILED 400 'reasoning_content' 2026-08-14 - intermittent, successes 8-10 only; direct Google News RSS fallback); GSC 2026-08-14 'how to deploy ai agent on vps' rank 75 + orphan index card best-vps-for-ai-agents-2026 (no .astro on disk) + multi-outlet AI-agent-VPS cluster (Cybernews Best VPS for AI Agents Jul-24, Hostinger Paperclip intro Aug-13, autogpt Hermes self-host Jul-20, TechRadar OpenClaw self-host Apr-01)",
+      "type": "multi-provider comparison / buyer-guide (7 providers)",
+      "title_en": "Best VPS for AI Agents 2026: 7 Providers Compared",
+      "title_chars": 49,
+      "description_en": "Compare 7 VPS providers for AI agents in 2026. RAM for local LLMs, GPU availability, uptime, and cost per agent \u2014 budget to production.",
+      "description_chars": 135,
+      "outline_file": "drafts/outline-2026-08-14-vpstier-daily.md",
+      "run_record_file": "drafts/run-record-2026-08-14-vpstier-daily-outline.md",
+      "en_astro": "src/pages/blog/best-vps-for-ai-agents-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "contabo",
+        "linode",
+        "hostarmada"
+      ],
+      "primary_affiliate": "racknerd",
+      "h2_count": 10,
+      "faq_count": 4,
+      "racknerd_placements_planned": 6,
+      "heat_source": "GSC 2026-08-14 'how to deploy ai agent on vps' rank 75 (no clicks, informational) + orphan index card + Cybernews 'Best VPS for AI Agents in 2026' (2026-07-24) + Hostinger 'Getting started with Paperclip' (2026-08-13) + autogpt.net Hermes Agent self-host guide (2026-07-20) + TechRadar OpenClaw self-host (2026-04-01) + Cybernews AI-VPS cluster (Ollama/DeepSeek/ChatGPT hosting guides)",
+      "internal_cross_links": [
+        "/blog/ai-agent-vps-api-guide/",
+        "/blog/cheap-vps-local-llm-inference-2026/",
+        "/blog/nvme-vps-under-10-2026/",
+        "/blog/amd-epyc-vs-intel-xeon-vps-2026/",
+        "/blog/vps-buying-guide/",
+        "/vps/racknerd/",
+        "/vps/vultr/",
+        "/vps/digitalocean/"
+      ],
+      "content_gap_evidence": "grep 'openclaw|paperclip|hermes agent|agent host' over src/ = 0 matches (verified 2026-08-14); no 7-provider AI-agent comparison on site; ai-agent-vps-api-guide covers API/Ollama-tutorial angle not provider selection; blog/index.astro has card for best-vps-for-ai-agents-2026 with NO .astro on disk and not in state.published[] (orphan/phantom card - writing this article resolves it).",
+      "self_check": "0 banned-merchant name in whole draft (grep case-insensitive); 0 CJK; slug not in published or drafts; differentiation vs ai-agent-vps-api-guide confirmed; all 7 providers whitelisted in providers.json; title 49 chars (30-60), desc 135 chars (70-155); 6 RackNerd CTA placements; internal links verified on disk.",
+      "note": "Resolves orphan index card best-vps-for-ai-agents-2026 (referenced in blog/index.astro + cross-linked from 2 queued outlines but no file on disk)."
     }
   ],
   "recent_topics": [
+    "mochahost-vps-review-2026",
     "atlantic-net-vps-review-2026",
     "vps-price-hikes-2026-ramageddon",
     "hivelocity-vps-review-2026",
-    "cloud-outages-2026-redundant-vps-setup",
-    "liquidweb-vps-review-2026"
+    "cloud-outages-2026-redundant-vps-setup"
   ],
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 24,
-  "published_count": 69,
-  "last_run": "2026-08-12",
-  "last_publish": "2026-08-12",
-  "publish_notes": "2026-08-12: Atlantic.Net VPS review (add-provider-and-review, dead-card fix atlantic-net 4.1, verified live G3 pricing) + RAMageddon price-hike news-analysis blog (banned-pivot from Hetzner brief; OVH 87% Aug 11 hook)."
+  "published_count": 70,
+  "last_run": "2026-08-14",
+  "last_publish": "2026-08-13",
+  "publish_notes": [
+    "2026-08-13: MochaHost VPS review added (add-provider-and-review, dead-card fix mochahost 4.0, managed Linux+Windows NVMe plans from $30.63, verified from mochahost.com live pages).",
+    "2026-08-14: outline best-vps-for-ai-agents-2026 (7-provider AI-agent comparison, GSC how-to-deploy-ai-agent-on-vps signal + orphan index-card fix, Cybernews Jul-24 cluster)."
+  ]
 }
