@@ -1432,6 +1432,29 @@
       "deployed_url_en": "https://vpstier.com/vps/mochahost/",
       "git_commit": "be4a444",
       "live_verified": true
+    },
+    {
+      "slug": "hostnamaste-vps-review-2026",
+      "date": "2026-08-16",
+      "type": "add-provider-and-review",
+      "title_en": "HostNamaste VPS Review 2026: KVM from $3.99/mo, India-Native",
+      "title_zh": null,
+      "outline_file": null,
+      "en_astro": "src/pages/blog/hostnamaste-vps-review-2026.astro",
+      "zh_astro": null,
+      "vps_astro": "src/pages/vps/hostnamaste.astro",
+      "status": "published",
+      "providers_featured": [
+        "hostnamaste",
+        "racknerd"
+      ],
+      "primary_affiliate": "racknerd",
+      "hot_topic_source": "dead-card-provider-fallback-hostnamaste-4.0",
+      "git_commit": "e770f0a",
+      "deployment_id": "3b82e1b8.vpstier-com.pages.dev",
+      "live_verified": true,
+      "published_at": "2026-08-16T02:50:11.449507+00:00",
+      "note": "Dead-card provider fix (2026-08-16). Highest-rated remaining dead card = HostNamaste (4.0 vs virmach 3.6), major verifiable provider. Created /vps/hostnamaste.astro provider page + /blog/hostnamaste-vps-review-2026.astro review. India-native angle (Mumbai/Pune DCs), physical-CPU VDS tier under $50, KVM from $3.99/mo. Metrics: provider title 46c/desc 150c; article title 60c/desc 126c/1303 words/5 FAQ. Build 114 pages, deploy 117 files, live-verified both URLs, sitemap 114 URLs. Remaining dead cards: virmach."
     }
   ],
   "drafts": [
@@ -2163,20 +2186,16 @@
     }
   ],
   "recent_topics": [
+    "hostnamaste-vps-review-2026",
     "namecheap-outage-dns-email-vps-resilience-2026",
     "mochahost-vps-review-2026",
     "atlantic-net-vps-review-2026",
-    "vps-price-hikes-2026-ramageddon",
-    "hivelocity-vps-review-2026"
+    "vps-price-hikes-2026-ramageddon"
   ],
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 26,
-  "published_count": 70,
+  "published_count": 71,
   "last_run": "2026-08-16",
-  "last_publish": "2026-08-13",
-  "publish_notes": [
-    "2026-08-13: MochaHost VPS review added (add-provider-and-review, dead-card fix mochahost 4.0, managed Linux+Windows NVMe plans from $30.63, verified from mochahost.com live pages).",
-    "2026-08-14: outline best-vps-for-ai-agents-2026 (7-provider AI-agent comparison, GSC how-to-deploy-ai-agent-on-vps signal + orphan index-card fix, Cybernews Jul-24 cluster).",
-    "2026-08-16: outline namecheap-outage-dns-email-vps-resilience-2026 (news-analysis + DNS/email control-plane separation buyer-guide; Namecheap Phoenix cooling outage Aug 13-15 hook, Domain Name Wire body + 11-outlet verify; briefing succeeded but vpstier stars were excluded-merchant -> banned-pivot)"
-  ]
+  "last_publish": "2026-08-16",
+  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live."
 }
