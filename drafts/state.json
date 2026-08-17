@@ -2183,6 +2183,48 @@
       "content_gap_evidence": "grep 'DNS outage|cooling failure|private email|EasyWP|external DNS|DNS provider separate|secondary DNS|DNS redundancy' over src/ = 0 matches for every term (verified 2026-08-16); no site article covers DNS/email control-plane separation or single-DC concentration risk; closest pages aws-us-east-1-outage-2026 + shutdown-cloud-services-vps-migration don't cover this angle. Differentiated from queued namecheap-vps-review-2026 (review intent) and cloud-outages-2026-redundant-vps-setup (workload-level vs control-plane-level).",
       "self_check": "0 banned-merchant name in whole draft (grep case-insensitive, verified); 0 CJK; slug not in published or drafts; all 5 providers whitelisted in providers.json (Cloudflare referenced only as free external-DNS recommendation, outside VPS-whitelist scope); title 59 chars (30-60), desc 155 chars (70-155); 10 H2, 5 FAQ, 7 RackNerd CTA placements; internal blog links verified on disk except cloud-outages-2026-redundant-vps-setup (flagged 'when it publishes', NOT linked).",
       "note": "News-analysis + resilience buyer-guide: Namecheap one-DC cooling outage proves the control-plane-concentration lesson - keep DNS + email off the same data center as your VPS/workload tier so one cooling failure can't take your whole operation offline (incl. your ability to reroute)."
+    },
+    {
+      "date": "2026-08-17",
+      "slug": "cloud-outage-insurance-vps-risk-2026",
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 daily-briefing FAILED 2026-08-17 (HTTP 400 'reasoning_content' unsupported, recurring intermittent) -> briefing-failure fallback; substituted fresh multi-outlet story: AIG launched Parametric Cloud Outage Solution with Parametrix (Aug 13-14, 2026) - automated BI-loss payout on measured cloud downtime x financial impact",
+      "type": "news-analysis + outage-risk buyer-guide (financial / risk-transfer 'third layer' of the cloud-outage theme)",
+      "title_en": "Cloud Outage Insurance for VPS: Manage the Real Risk in 2026",
+      "title_chars": 60,
+      "description_en": "AIG just launched parametric cloud-outage insurance with Parametrix. For VPS owners, the real lesson is the 3-layer outage-risk strategy.",
+      "description_chars": 137,
+      "outline_file": "drafts/outline-2026-08-17-vpstier-daily.md",
+      "run_record_file": "drafts/run-record-2026-08-17-vpstier-daily-outline.md",
+      "en_astro": "src/pages/blog/cloud-outage-insurance-vps-risk-2026.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostarmada",
+        "hostinger"
+      ],
+      "primary_affiliate": "racknerd",
+      "h2_count": 10,
+      "faq_count": 5,
+      "racknerd_placements_planned": 8,
+      "heat_source": "Google News RSS + Artemis.bm + reinsurancene.ws wp-json bodies (2026-08-14): AIG launched Parametric Cloud Outage Solution with Parametrix (Aug 13-14, 2026) - automatic payout when measured cloud downtime x financial impact crosses a predefined-formula threshold; Parametrix monitors 750+ data centers + 9,000+ software/tech providers; precedent - paid claims swiftly after Oct 20, 2025 AWS outage. 9 named outlets with dates: Insurance Journal 8-14, Artemis.bm 8-14 (body), Business Wire 8-13, Intelligent Insurer 8-14, reinsurancene.ws 8-14 (body), TradingView 8-14, Yahoo Finance UK 8-15, StreetInsider 8-13, simplywall.st 8-16. Briefing FAILED -> briefing-failure fallback; financial-layer gap.",
+      "internal_cross_links": [
+        "/blog/aws-us-east-1-outage-2026/",
+        "/blog/2026-shutdown-cloud-services-vps-migration/",
+        "/blog/vps-buying-guide/",
+        "/blog/vps-price-hikes-2026-ramageddon/",
+        "/blog/racknerd-deep-review-2025/",
+        "/blog/vultr-deep-review/",
+        "/blog/hostinger-review/",
+        "/blog/hostarmada-vps-review-2026/",
+        "/blog/cloud-outages-2026-redundant-vps-setup/",
+        "/blog/namecheap-outage-dns-email-vps-resilience-2026/"
+      ],
+      "content_gap_evidence": "grep 'insurance|outage insurance|risk transfer|parametric|business interruption|cloud outage cover' over src/ = 0 matches for every term (verified 2026-08-17); no site article covers the financial/insurance layer of outage risk. Differentiated at the strategy layer from queued cloud-outages-2026-redundant-vps-setup (workload-level technical) and namecheap-outage-dns-email-vps-resilience-2026 (control-plane-level technical) - today is the financial/risk-transfer third layer.",
+      "self_check": "0 banned-merchant name in whole draft (grep case-insensitive, verified); 0 CJK; slug not in published or drafts; all 5 providers whitelisted in providers.json; title 60 chars (30-60), desc 137 chars (70-155); 10 H2, 5 FAQ, 8 RackNerd CTA placements; internal blog links verified on disk except cloud-outages-2026-redundant-vps-setup + namecheap-outage-dns-email-vps-resilience-2026 (flagged 'when it publishes', NOT linked).",
+      "note": "News-analysis + outage-risk buyer-guide: AIG/Parametrix parametric cloud-outage insurance exposes the financial (risk-transfer) layer of outage risk, which the site's two prior technical outlines (workload redundancy + DNS/email control-plane separation) do not cover. For the budget-VPS buyer the equivalent is a cheap annual second host as 'self-insurance' -> RackNerd CTA anchor. Three layers presented as one strategy in H2 #4."
     }
   ],
   "recent_topics": [
@@ -2195,7 +2237,7 @@
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 26,
   "published_count": 71,
-  "last_run": "2026-08-16",
+  "last_run": "2026-08-17",
   "last_publish": "2026-08-16",
-  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live."
+  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs)."
 }
