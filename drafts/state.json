@@ -1455,6 +1455,42 @@
       "live_verified": true,
       "published_at": "2026-08-16T02:50:11.449507+00:00",
       "note": "Dead-card provider fix (2026-08-16). Highest-rated remaining dead card = HostNamaste (4.0 vs virmach 3.6), major verifiable provider. Created /vps/hostnamaste.astro provider page + /blog/hostnamaste-vps-review-2026.astro review. India-native angle (Mumbai/Pune DCs), physical-CPU VDS tier under $50, KVM from $3.99/mo. Metrics: provider title 46c/desc 150c; article title 60c/desc 126c/1303 words/5 FAQ. Build 114 pages, deploy 117 files, live-verified both URLs, sitemap 114 URLs. Remaining dead cards: virmach."
+    },
+    {
+      "slug": "tmdhosting-vps-review-2026",
+      "date": "2026-08-18",
+      "type": "add-provider-and-review",
+      "title_en": "TMDHosting VPS Review 2026: Managed cPanel from $69/mo",
+      "en_file": "src/pages/vps/tmdhosting.astro",
+      "en_astro": "src/pages/vps/tmdhosting.astro",
+      "blog_astro": "src/pages/blog/tmdhosting-vps-review-2026.astro",
+      "en_url": "https://vpstier.com/vps/tmdhosting/",
+      "blog_url": "https://vpstier.com/blog/tmdhosting-vps-review-2026/",
+      "status": "published",
+      "primary_keyword": "tmdhosting vps review",
+      "secondary_keywords": [
+        "tmdhosting cpanel",
+        "tmdhosting managed vps",
+        "tmdhosting amdf epyc"
+      ],
+      "hot_topic_source": "fill-in: no specific briefing pick (provider rotation)",
+      "faqqage_jsonld_included": true,
+      "build_verified": true,
+      "build_pages_added": 2,
+      "build_exit_code": 0,
+      "sitemap_urls_added": [
+        "https://vpstier.com/vps/tmdhosting/",
+        "https://vpstier.com/blog/tmdhosting-vps-review-2026/"
+      ],
+      "meta_title_chars": 54,
+      "meta_desc_chars": 126,
+      "published_at": "2026-08-18T09:28:01.053028+00:00",
+      "deployed_url_en": "https://vpstier.com/vps/tmdhosting/",
+      "live_verified": true,
+      "git_commit": "bd35ce67aace130c61c1126540b99d36c9b0424f",
+      "deployment_id": "8b787ac7.vpstier-com.pages.dev",
+      "deploy_files_uploaded": 121,
+      "build_pages_total": 118
     }
   ],
   "drafts": [
@@ -2228,16 +2264,16 @@
     }
   ],
   "recent_topics": [
+    "tmdhosting-vps-review-2026",
     "hostnamaste-vps-review-2026",
     "namecheap-outage-dns-email-vps-resilience-2026",
     "mochahost-vps-review-2026",
-    "atlantic-net-vps-review-2026",
-    "vps-price-hikes-2026-ramageddon"
+    "atlantic-net-vps-review-2026"
   ],
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 26,
-  "published_count": 71,
-  "last_run": "2026-08-17",
-  "last_publish": "2026-08-16",
-  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs)."
+  "published_count": 72,
+  "last_run": "2026-08-18",
+  "last_publish": "2026-08-18",
+  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files."
 }
