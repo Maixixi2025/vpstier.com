@@ -3818,5 +3818,102 @@
       "You want a hyperscaler-grade SLA (99.99%+) — Cloudzy SLA is 99.95%"
     ],
     "lastUpdated": "2026-07-31"
+  },
+  {
+    "id": "tmdhosting",
+    "name": "TMDHosting",
+    "tagline": "Managed cPanel/WHM VPS on AMD EPYC + NVMe (est. 2007)",
+    "startingPrice": 69.0,
+    "cpu": "AMD EPYC",
+    "ram": "4GB - 64GB",
+    "storage": "100GB - 800GB NVMe SSD",
+    "bandwidth": "1TB - 4TB+",
+    "datacenters": [
+      "Chicago",
+      "London",
+      "Amsterdam",
+      "Singapore",
+      "Sydney",
+      "Tokyo",
+      "Johannesburg",
+      "Mumbai"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": false,
+    "commission": "",
+    "rating": 4.1,
+    "pros": [
+      "All plans include cPanel/WHM + CloudLinux (no separate license fee)",
+      "AMD EPYC CPUs and NVMe SSD storage on every tier",
+      "8+ global data centers across US, UK, EU, APAC, Africa",
+      "99.99% uptime guarantee with credit SLA",
+      "24/7/365 human monitoring bundled on every plan"
+    ],
+    "cons": [
+      "$69/mo entry price is 3-35x higher than budget hosts",
+      "No GPU instances (CPU-only compute)",
+      "Single panel (cPanel/WHM) — no custom ISO, no Plesk option at entry",
+      "Owned by Newfold Digital / Endurance International Group (corporate parent)"
+    ],
+    "bestFor": [
+      "cPanel-committed users wanting managed Linux VPS",
+      "Small businesses that want set-it-and-forget-it hosting with bundled security",
+      "Agencies reselling cPanel-based hosting to clients",
+      "WordPress + WooCommerce sites needing Litespeed (16GB+ tiers)"
+    ],
+    "featured": false,
+    "status": "active",
+    "features": [
+      "AMD EPYC CPUs and NVMe SSD on every shared tier (no SSD fallback)",
+      "cPanel/WHM bundled — no separate license fee",
+      "CloudLinux + Apache HTTP/2 + HTTP/3 + QUIC, Litespeed (16GB+)",
+      "PHP 5.6 through 8.5 selectable; MariaDB 11.4 default",
+      "100% dedicated RAM (not burstable) on every tier",
+      "Bundled security: Auto SSL, WAF, Monarx malware scanner, daily backups",
+      "24/7/365 human server monitoring on every plan",
+      "8+ global data centers (Chicago, London, Amsterdam, Singapore, Sydney, Tokyo, Johannesburg, Mumbai)"
+    ],
+    "vpsPlans": [
+      {
+        "name": "Managed cPanel 4GB",
+        "price": 69.0,
+        "cpu": "2 vCPU (AMD EPYC)",
+        "ram": "4GB",
+        "storage": "100GB NVMe",
+        "bandwidth": "1TB"
+      },
+      {
+        "name": "Managed cPanel 8GB",
+        "price": 109.0,
+        "cpu": "4 vCPU (AMD EPYC)",
+        "ram": "8GB",
+        "storage": "150GB NVMe",
+        "bandwidth": "2TB"
+      },
+      {
+        "name": "Managed cPanel 16GB (Most Popular)",
+        "price": 169.0,
+        "cpu": "8 vCPU (AMD EPYC)",
+        "ram": "16GB",
+        "storage": "300GB NVMe",
+        "bandwidth": "3TB"
+      },
+      {
+        "name": "Managed cPanel 32GB",
+        "price": 279.0,
+        "cpu": "16 vCPU (AMD EPYC)",
+        "ram": "32GB",
+        "storage": "400GB NVMe",
+        "bandwidth": "4TB"
+      },
+      {
+        "name": "Managed cPanel 64GB",
+        "price": 499.0,
+        "cpu": "32 vCPU (AMD EPYC)",
+        "ram": "64GB",
+        "storage": "800GB NVMe",
+        "bandwidth": "Higher tier"
+      }
+    ]
   }
 ]
