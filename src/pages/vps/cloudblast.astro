@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Cloudblast VPS Review 2026: €3.6/mo Unlimited BW + 10 Gbps" description="Cloudblast VPS review: 4 GB KVM-Proxmox from €3.6/mo with 10 Gbps uplink + DDoS protection standard across Amsterdam, Salt Lake City, and Hong Kong.">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "VPS Reviews", "item": "https://vpstier.com/vps/"}, {"@type": "ListItem", "position": 3, "name": "Cloudblast Review", "item": "https://vpstier.com/vps/cloudblast/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Review", "name": "Cloudblast Review", "reviewRating": {"@type": "Rating", "ratingValue": "3.9", "bestRating": "5"}, "author": {"@type": "Organization", "name": "VPSTier.com"}, "itemReviewed": {"@type": "Product", "name": "Cloudblast VPS Hosting", "description": "Review of Cloudblast hourly-billed cloud VPS across Amsterdam, Salt Lake City and Hong Kong"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the cheapest Cloudblast VPS plan?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudblast's entry tier VMA11 starts at €3.6/month (€0.0049/hour) for 1 vCPU AMD EPYC, 3 GB RAM, 20 GB NVMe SSD, and a 10 Gbps port with unlimited bandwidth in Amsterdam and Salt Lake City (1 TB cap in Hong Kong). All plans ship 1 IPv4 + /64 IPv6 + DDoS protection as standard."}}, {"@type": "Question", "name": "Where are Cloudblast's data centers located?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudblast operates three active data centers: Amsterdam (Digital Realty AMS5, Netherlands), Salt Lake City (SLC1, Utah, United States), and Hong Kong (Eons Data). A Birmingham (UK) location is listed as 'coming soon' on cloudblast.io."}}, {"@type": "Question", "name": "Does Cloudblast include DDoS protection in the price?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Cloudblast bundles DDoS protection as standard on every VPS plan at no additional cost. Combined with the 10 Gbps network port and unlimited traffic on Amsterdam and Salt Lake City tiers, it is one of the more DDoS-friendly entry-level offerings."}}, {"@type": "Question", "name": "What virtualization does Cloudblast use?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudblast runs KVM/Proxmox virtualization on AMD EPYC host nodes (7551P / 7C13 / 7663 depending on the node). Instances are billed by the hour and can be resized, deleted, or rebuilt from the panel at any time without commitment."}}, {"@type": "Question", "name": "How does Cloudblast compare to RackNerd or Vultr?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudblast's €3.6/mo entry undercuts RackNerd's $1.99 entry in absolute price on most tiers but bundles DDoS protection + a 10 Gbps port that RackNerd does not. Vultr's $5/mo 1 GB tier is comparable to Cloudblast VMA11 (€3.6/mo) but Vultr ships 32+ global data centers vs Cloudblast's three. For pure-budget Linux, RackNerd remains the value leader; for DDoS-included Asia-Pacific or EU entry-level, Cloudblast is competitive."}}]}
+  </script>
+
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <a href="/vps" class="text-gray-500 hover:text-orange-500 text-sm mb-6 block">← Back to VPS Reviews</a>
+
+    <div class="flex flex-wrap gap-4 items-start justify-between mb-8">
+      <div>
+        <h1 class="text-3xl font-bold mb-2">Cloudblast Review</h1>
+        <div class="flex gap-4 text-sm text-gray-400">
+          <span>Founded: <strong class="text-orange-500">New entrant (2026)</strong></span>
+          <span>Datacenters: <strong>3 active + 1 coming</strong></span>
+          <span>Specialty: <strong>10 Gbps + DDoS-included KVM</strong></span>
+        </div>
+      </div>
+      <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener"
+         class="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-lg font-medium transition">
+        See Our Top Pick →
+      </a>
+    </div>
+
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-2xl font-bold">3.9/5</span>
+        <span class="text-gray-500">Hourly KVM-Proxmox VPS Rating</span>
+      </div>
+      <p class="text-gray-300">Cloudblast is a new entrant that surfaced on LowEndBox in August 2026 with a sharp opening offer: €3.6/mo for 1 vCPU / 3 GB RAM / 20 GB NVMe, a 10 Gbps network port, and DDoS protection bundled on every plan. Three active data centers (Amsterdam, Salt Lake City, Hong Kong) cover most low-latency needs; a fourth UK location is announced as "coming soon".</p>
+      <p class="text-gray-400 mt-2">Starting at €3.6/mo (VMA11, hourly billing available)</p>
+    </div>
+
+    <!-- Pricing Table -->
+    <div class="bg-[#111] border border-white/5 rounded-2xl p-6 mb-8 overflow-x-auto">
+      <h2 class="text-xl font-bold text-white mb-4">Cloudblast VPS Plans (Hourly + Monthly, EUR)</h2>
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="text-gray-500 border-b border-white/5">
+            <th class="text-left py-2 font-medium">Plan</th>
+            <th class="text-right py-2 font-medium">€/mo</th>
+            <th class="text-right py-2 font-medium">€/hr</th>
+            <th class="text-right py-2 font-medium">vCPU</th>
+            <th class="text-right py-2 font-medium">RAM</th>
+            <th class="text-right py-2 font-medium">NVMe</th>
+            <th class="text-right py-2 font-medium">Bandwidth</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-300">
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA11</td>
+            <td class="text-right">€3.6</td>
+            <td class="text-right">€0.0049</td>
+            <td class="text-right">1 (AMD EPYC)</td>
+            <td class="text-right">3 GB</td>
+            <td class="text-right">20 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5 bg-green-500/5">
+            <td class="py-2"><strong>VMA21</strong> <span class="text-orange-400 text-xs">(Best Value)</span></td>
+            <td class="text-right"><strong>€4.8</strong></td>
+            <td class="text-right">€0.0067</td>
+            <td class="text-right">2 (AMD EPYC)</td>
+            <td class="text-right">4 GB</td>
+            <td class="text-right">30 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA31</td>
+            <td class="text-right">€7.2</td>
+            <td class="text-right">€0.010</td>
+            <td class="text-right">3 (AMD EPYC)</td>
+            <td class="text-right">6 GB</td>
+            <td class="text-right">40 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA41</td>
+            <td class="text-right">€9.6</td>
+            <td class="text-right">€0.014</td>
+            <td class="text-right">4 (AMD EPYC)</td>
+            <td class="text-right">8 GB</td>
+            <td class="text-right">40 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA51</td>
+            <td class="text-right">€19.2</td>
+            <td class="text-right">€0.027</td>
+            <td class="text-right">8 (AMD EPYC)</td>
+            <td class="text-right">16 GB</td>
+            <td class="text-right">60 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA61</td>
+            <td class="text-right">€28.8</td>
+            <td class="text-right">€0.040</td>
+            <td class="text-right">8 (AMD EPYC)</td>
+            <td class="text-right">24 GB</td>
+            <td class="text-right">60 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-2">VMA71</td>
+            <td class="text-right">€38.4</td>
+            <td class="text-right">€0.054</td>
+            <td class="text-right">10 (AMD EPYC)</td>
+            <td class="text-right">32 GB</td>
+            <td class="text-right">140 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+          <tr>
+            <td class="py-2">VMA81</td>
+            <td class="text-right">€78.8</td>
+            <td class="text-right">€0.109</td>
+            <td class="text-right">16 (AMD EPYC)</td>
+            <td class="text-right">64 GB</td>
+            <td class="text-right">200 GB</td>
+            <td class="text-right">10 Gbps / Unlimited*</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-xs text-gray-500 mt-3">*Bandwidth: unlimited in Amsterdam (Digital Realty AMS5) and Salt Lake City (SLC1); capped at 1 TB/month in Hong Kong. All plans include 1 IPv4 + /64 IPv6 + DDoS protection as standard. Source: cloudblast.io/pricing (verified 2026-08-19).</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <div>
+        <h2 class="text-xl font-bold mb-4 text-green-400">Pros</h2>
+        <ul class="space-y-2">
+          <li class="text-gray-300 text-sm">✅ €3.6/mo entry undercuts most EU/US budget VPS at the same tier while including 10 Gbps + DDoS standard</li>
+          <li class="text-gray-300 text-sm">✅ 10 Gbps network port on every instance — unusual at this price point (most budget VPS tiers ship 1 Gbps)</li>
+          <li class="text-gray-300 text-sm">✅ DDoS protection bundled on every plan, not a paid add-on</li>
+          <li class="text-gray-300 text-sm">✅ True hourly billing — resize, rebuild, or delete from the panel without commitment</li>
+          <li class="text-gray-300 text-sm">✅ KVM/Proxmox virtualization on AMD EPYC 7551P / 7C13 / 7663 host nodes</li>
+          <li class="text-gray-300 text-sm">✅ Accepts Monero (XMR), AliPay, and credit cards via Stripe</li>
+          <li class="text-gray-300 text-sm">✅ One-click apps for Coolify, Dokploy, n8n, Nextcloud, Pterodactyl, Supabase, WordPress + 9 more</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-4 text-red-400">Cons</h2>
+        <ul class="space-y-2">
+          <li class="text-gray-300 text-sm">⚠️ Only 3 active data centers (Amsterdam, Salt Lake City, Hong Kong) vs Vultr's 32+ or HostHatch's 14</li>
+          <li class="text-gray-300 text-sm">⚠️ Hong Kong bandwidth capped at 1 TB/month while US/NL are unlimited — buyers picking HK specifically need to size accordingly</li>
+          <li class="text-gray-300 text-sm">⚠️ New vendor (Aug 2026 LEB coverage) — limited public track record, no uptime history beyond the August launch window</li>
+          <li class="text-gray-300 text-sm">⚠️ Storage tops out at 200 GB NVMe even on the 64 GB tier — heavy-disk workloads need block storage add-on (€0.15/GB/mo)</li>
+          <li class="text-gray-300 text-sm">⚠️ No GPU instances, no managed-service tier — bare self-managed KVM only</li>
+          <li class="text-gray-300 text-sm">⚠️ No published SLA / uptime guarantee on the pricing page (only LowEndBox-mentioned "DDoS protection standard")</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-[#111] border border-white/5 rounded-2xl p-8 mb-8">
+      <h2 class="text-xl font-bold text-white mb-4">Our Verdict</h2>
+      <p class="text-gray-400 leading-relaxed mb-3">Cloudblast is the right pick if you specifically want a <strong>10 Gbps + DDoS-included</strong> entry-level KVM VPS in one of three locations and you don't need the global coverage of Vultr or the bare-budget pricing of RackNerd. The €3.6/mo entry is well-priced for what it includes — most competitors at this tier ship 1 Gbps ports and treat DDoS as a paid add-on. Hourly billing makes it a strong fit for short-lived workloads (CI runners, scraping, dev sandboxes).</p>
+      <p class="text-gray-400 leading-relaxed">The trade-offs are the small datacenter footprint, the 1 TB Hong Kong bandwidth cap, and the absence of any public SLA. For pure-budget Linux VPS without the 10 Gbps + DDoS bundle, see our <a href="/vps/racknerd" class="text-orange-400 hover:underline">RackNerd review</a>. For global coverage at €5/mo, see <a href="/vps/vultr" class="text-orange-400 hover:underline">Vultr</a> or <a href="/vps/linode" class="text-orange-400 hover:underline">Linode (Akamai)</a>.</p>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8">
+      <a href="https://my.racknerd.com/aff.php?aff=16299" target="_blank" rel="noopener"
+         class="block text-center bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg font-bold transition">
+        See Our Top Affordable Pick (RackNerd from $1.99/mo) →
+      </a>
+      <p class="text-center text-gray-500 text-xs mt-3">
+        We earn a commission when you sign up via affiliate links. This doesn't affect our editorial reviews.
+      </p>
+    </div>
+  </section>
+
+</BaseLayout>
