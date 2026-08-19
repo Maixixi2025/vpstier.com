@@ -1491,6 +1491,99 @@
       "deployment_id": "8b787ac7.vpstier-com.pages.dev",
       "deploy_files_uploaded": 121,
       "build_pages_total": 118
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "gpu-ram-price-wave-2026-ai-vps-buyers",
+      "status": "outline_pending_publish",
+      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-19 (3ea88f8bb2d0). Briefing surfaced the excluded merchant's 187-250% price-increase re-test as vpstier ⭐ #1 — rejected under the permanent merchant policy. Pivoted to the structural-industry version: the August 17 component-cost second wave (Tom's Hardware trio: RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%) escalating from DRAM-only into a full RAM+GPU+monitor crisis with an AI-workload cast.",
+      "type": "news-analysis + buyer-guide (component-cost second wave hitting AI/inference VPS buyers)",
+      "title_en": "GPU and RAM Prices 2026: VPS Cost Wave Hits AI Workloads",
+      "title_chars": 56,
+      "description_en": "RAM up 500% and GPU prices up 48% — the 2026 component cost wave is now hitting AI and inference VPS. What buyers should do.",
+      "description_chars": 124,
+      "outline_file": "drafts/outline-2026-08-19-vpstier-daily.md",
+      "run_record_file": "drafts/run-record-2026-08-19-vpstier-daily-outline.md",
+      "en_astro": "src/pages/blog/gpu-ram-price-wave-2026-ai-vps-buyers.astro",
+      "zh_astro": null,
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "linode",
+        "kainode",
+        "lightnode",
+        "hostnamaste",
+        "hostarmada"
+      ],
+      "primary_affiliate": "racknerd",
+      "h2_count": 10,
+      "faq_count": 5,
+      "racknerd_placements_planned": 7,
+      "heat_source": "Daily briefing 2026-08-19 SUCCEEDED. Briefing's vpstier ⭐ #1 (excluded merchant's 187-250% price-increase re-test) → REJECTED under the permanent merchant policy. Briefing's vpstier ⭐ #2 (Cloudblast €4.03/mo 4GB unlimited-bandwidth from LEB, 2026-08-12) — viable but LEB new-provider coverage is non-news. Briefing's vpstier ⭐ #3 (Cursor self-hosted GitHub-rival from TechCrunch 2026-08-18) — TechCrunch URL 404'd and the Google News RSS has no same-day named-outlet coverage. SUBSTITUTED with the Aug 17 Tom's Hardware trio (RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%): a fresh, dated, multi-outlet component-cost second wave directly downstream of the existing 8-12 RAMageddon article, escalated to include GPU + storage + AI-workload cast. Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs fetched this session).",
+      "multi_outlet_verification": [
+        {
+          "outlet": "Tom's Hardware",
+          "date": "2026-08-17 13:52 UTC",
+          "title": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices — 128GB of DDR5 now $3,399",
+          "body_fetched": true
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "date": "2026-08-17",
+          "title": "GeForce RTX 50-series GPU prices spike as much as 39% as Blackwell price hikes hit the US",
+          "body_fetched": false
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "date": "2026-08-17 11:40 UTC",
+          "title": "Intel's Arc Pro B70 workstation GPU is now up to 48% more expensive than it was just a month ago",
+          "body_fetched": false
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "date": "2026-08-17 11:00 UTC",
+          "title": "PC Partner warns of rising GPU prices and budget card shortages",
+          "body_fetched": false
+        },
+        {
+          "outlet": "TechPowerUp",
+          "date": "2026-08-17 21:44 UTC",
+          "title": "Entry-Level GPUs and Monitors Face Price Hikes in H2 2026",
+          "body_fetched": false
+        },
+        {
+          "outlet": "TechPowerUp",
+          "date": "2026-08-18 16:16 UTC",
+          "title": "Memory Prices Break a Record With Nearly 500% Surge in the Last 12 Months",
+          "body_fetched": false
+        },
+        {
+          "outlet": "VideoCardz",
+          "date": "2026-08-16",
+          "title": "Intel Arc Pro B70 sees 26% to 48% price increases across global retailers",
+          "body_fetched": false
+        }
+      ],
+      "internal_cross_links": [
+        "/blog/vps-price-hikes-2026-ramageddon/",
+        "/blog/cheap-vps-local-llm-inference-2026/",
+        "/blog/vps-buying-guide/",
+        "/blog/vps-pricing-trap-guide-2026/",
+        "/blog/cloud-outages-2026-redundant-vps-setup/",
+        "/blog/cloud-outage-insurance-vps-risk-2026/",
+        "/blog/namecheap-outage-dns-email-vps-resilience-2026/",
+        "/blog/racknerd-deep-review-2025/",
+        "/blog/vultr-deep-review/",
+        "/blog/linode-vps-review-2026/",
+        "/blog/kainode-vps-review-2026/",
+        "/blog/lightnode-vps-review-2026/",
+        "/blog/hostnamaste-vps-review-2026/",
+        "/blog/hostarmada-vps-review-2026/"
+      ],
+      "content_gap_evidence": "grep over src/ for GPU/Blackwell/GDDR/VRAM/RTX 50/AI workload/LLM inference: vps-price-hikes-2026-ramageddon = 0 hits (DRAM-only); cheap-vps-local-llm-inference-2026 = 5 GPU + 27 inference hits but it's a buyer-guide, not a price-pressure analysis. Zero existing article covers the GPU side of the 2026 component-cost wave OR the AI-workload angle of the wave.",
+      "self_check": "PASSED (excluded-merchant in outline = 0 incl. rationale [brand-free in §1]; CJK = 0; /zh/ refs = 2 [audit-only]; title=56, desc=124, h2=10, faq=5, racknerd=7 CTA planned; briefing SUCCEEDED; internal links resolve on disk or flagged 'when published'; banned-pivot pattern verified)",
+      "note": "Briefing SUCCEEDED 2026-08-19 but the vpstier ⭐ picks were (1) excluded-merchant signal rejected under permanent policy, (2) Cloudblast new-provider (LEB, non-news), (3) Cursor self-hosted (TechCrunch 404, no same-day named-outlet). Pivoted to the Aug 17 Tom's Hardware second-wave story (RAM 500% + RTX 50/Arc B70 GPU 36-48% + monitor H2-2026 entry-level hike): a fresh, dated, multi-outlet companion to the existing 8-12 vps-price-hikes-2026-ramageddon article, with a novel GPU/AI-workload cast the existing site has zero coverage of (verified by grep). Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs). 6 additional outlets headline-attributed. Second-wave companion: different deliverable from the 8-12 DRAM-only article (this one adds GPU + storage + AI cast + 2027-2030 horizon + buyer playbook). Cross-links the 8-12 article + the 8-02 AI VPS guide (whose price table needs updating). Outline only - awaiting publish."
     }
   ],
   "drafts": [
@@ -2264,16 +2357,16 @@
     }
   ],
   "recent_topics": [
+    "gpu-ram-price-wave-2026-ai-vps-buyers",
     "tmdhosting-vps-review-2026",
     "hostnamaste-vps-review-2026",
     "namecheap-outage-dns-email-vps-resilience-2026",
-    "mochahost-vps-review-2026",
-    "atlantic-net-vps-review-2026"
+    "mochahost-vps-review-2026"
   ],
   "updated": "2026-08-11T08:00:00+00:00",
   "drafts_count": 26,
-  "published_count": 72,
-  "last_run": "2026-08-18",
+  "published_count": 73,
+  "last_run": "2026-08-19",
   "last_publish": "2026-08-18",
-  "publish_notes": "2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files."
+  "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files."
 }
