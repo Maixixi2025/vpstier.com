@@ -4040,5 +4040,58 @@
         "bandwidth": "10 Gbps / Unlimited (US/NL); 1TB (HK)"
       }
     ]
+  },
+  {
+    "id": "milesweb",
+    "name": "MilesWeb",
+    "tagline": "Managed Linux KVM VPS from $69.99/mo across 32 datacenters",
+    "startingPrice": 69.99,
+    "cpu": "KVM (dedicated vCPU)",
+    "ram": "4GB - 16GB+",
+    "storage": "80GB - 320GB NVMe SSD",
+    "bandwidth": "3TB - 5TB+",
+    "datacenters": [
+      "US East",
+      "US West",
+      "London",
+      "Amsterdam",
+      "Singapore",
+      "Sydney",
+      "Mumbai",
+      "+ 25 more global"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": false,
+    "commission": "",
+    "rating": 4.1,
+    "pros": [
+      "Fully managed plans \u2014 updates, patching, and configuration handled by support",
+      "32 global datacenter locations for low-latency targeting",
+      "Free end-to-end migration (files, databases, email, DNS)",
+      "30-day money-back guarantee on first-term VPS plans",
+      "NVMe SSD storage, 1 Gbps uplink, and network DDoS protection included",
+      "cPanel, CyberPanel, Webuzo, Plesk, or DirectAdmin control panels"
+    ],
+    "cons": [
+      "$69.99/mo entry price is 10-35x higher than budget unmanaged hosts",
+      "No GPU instances (CPU-only compute)",
+      "Renewal pricing is higher than the first-term discounted rate"
+    ],
+    "bestFor": [
+      "Small businesses and agencies wanting managed Linux VPS with cPanel",
+      "Buyers migrating from shared hosting who want free hands-on migration",
+      "Niche-geography sites needing presence in Mumbai, Singapore, or Middle East",
+      "Set-and-forget managed hosting with 24/7 human support"
+    ],
+    "featured": false,
+    "status": "active",
+    "features": [
+      "Managed Linux KVM with full server management",
+      "Unmanaged Linux and Windows VPS tiers also available",
+      "Free end-to-end migration by support team",
+      "30-day money-back guarantee on first term",
+      "NVMe SSD + 1 Gbps uplink + network DDoS protection",
+      "Provisioning in under 2 minutes"
+    ]
   }
 ]
