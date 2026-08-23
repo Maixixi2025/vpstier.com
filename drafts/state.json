@@ -1,6 +1,29 @@
 {
-  "current_index": 58,
+  "current_index": 59,
   "published": [
+    {
+      "slug": "iozoom-vps-review-2026",
+      "date": "2026-08-23",
+      "type": "review",
+      "en_astro": "src/pages/blog/iozoom-vps-review-2026.astro",
+      "zh_astro": null,
+      "provider_astro": "src/pages/vps/iozoom.astro",
+      "status": "published",
+      "providers_featured": [
+        "iozoom",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "title_en": "IO Zoom VPS Review 2026: KVM from $10/mo, 8 DCs",
+      "description_en": "IO Zoom VPS review 2026: true KVM from $10/mo with 10 Gbps DDoS protection across 8 US/EU datacenters.",
+      "hot_topic_source": "half-completed add-provider cleanup: orphaned-but-live iozoom.astro (2026-08-22, never committed/built/deployed, missing frontmatter + React-style structure) — completed as today's add-provider + review",
+      "published_at": "2026-08-23",
+      "deployed_url_en": "https://vpstier.com/blog/iozoom-vps-review-2026/",
+      "deployed_url_vps": "https://vpstier.com/vps/iozoom/",
+      "note": "Completed broken orphan from a prior interrupted add-provider run. The iozoom.astro was untracked (never committed), missing frontmatter delimiters, used a React-style function/return + JSON.stringify + custom <style> structure that esbuild + Astro cannot build. Rewrote as a proper Astro page (top-level JSX + plain JSON-LD string literals, 1984.astro template). Added providers.json entry (id iozoom, rating 3.8, 7 features), vps/index.astro card, blog/index.astro card, blog review article (154-char desc, 1897 words, FAQPage+BreadcrumbList+Review JSON-LD, RackNerd affiliate CTAs). Build 126 pages; deploy uploaded 7 files; verified live both /vps/iozoom/ + /blog/iozoom-vps-review-2026/. 0 banned-provider mentions."
+    },
     {
       "slug": "hosthatch-vps-review-2026",
       "date": "2026-07-26",
@@ -2494,16 +2517,16 @@
     }
   ],
   "recent_topics": [
+    "iozoom-vps-review-2026",
     "data-center-heat-siting-vps-selection-2026",
     "milesweb-vps-review-2026",
     "best-ryzen-gaming-single-core-vps-2026",
-    "ultahost-vps-review-2026",
-    "vps-vs-vds-2026-which-to-choose"
+    "ultahost-vps-review-2026"
   ],
-  "updated": "2026-08-20",
+  "updated": "2026-08-23",
   "drafts_count": 30,
-  "published_count": 76,
+  "published_count": 77,
   "last_run": "2026-08-23",
-  "last_publish": "2026-08-21",
+  "last_publish": "2026-08-23",
   "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from €3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118→120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)"
 }
