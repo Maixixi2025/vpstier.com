@@ -18,7 +18,7 @@
       "primary_affiliate": "racknerd",
       "title_en": "IO Zoom VPS Review 2026: KVM from $10/mo, 8 DCs",
       "description_en": "IO Zoom VPS review 2026: true KVM from $10/mo with 10 Gbps DDoS protection across 8 US/EU datacenters.",
-      "hot_topic_source": "half-completed add-provider cleanup: orphaned-but-live iozoom.astro (2026-08-22, never committed/built/deployed, missing frontmatter + React-style structure) — completed as today's add-provider + review",
+      "hot_topic_source": "half-completed add-provider cleanup: orphaned-but-live iozoom.astro (2026-08-22, never committed/built/deployed, missing frontmatter + React-style structure) \u2014 completed as today's add-provider + review",
       "published_at": "2026-08-23",
       "deployed_url_en": "https://vpstier.com/blog/iozoom-vps-review-2026/",
       "deployed_url_vps": "https://vpstier.com/vps/iozoom/",
@@ -156,7 +156,7 @@
       "date": "2026-06-11",
       "type": "comparison",
       "title_en": "2026 Black Friday Cheap VPS Under $25/Year: 5 Picks",
-      "title_zh": "2026 黑五前哨:5 款 $25 以内年付 VPS 推荐清单",
+      "title_zh": "2026 \u9ed1\u4e94\u524d\u54e8:5 \u6b3e $25 \u4ee5\u5185\u5e74\u4ed8 VPS \u63a8\u8350\u6e05\u5355",
       "outline_file": "outline-2026-06-11-2026-black-friday-cheap-vps-under-25.md",
       "en_astro": "src/pages/blog/2026-black-friday-cheap-vps-under-25.astro",
       "zh_astro": "src/pages/zh/blog/2026-black-friday-cheap-vps-under-25.astro",
@@ -169,7 +169,7 @@
         "bluehost"
       ],
       "primary_affiliate": "racknerd",
-      "heat_source": "⭐⭐⭐ 2026-06-11 每日热点日报 #1 (HostDare/RackNerd 黑五前哨)",
+      "heat_source": "\u2b50\u2b50\u2b50 2026-06-11 \u6bcf\u65e5\u70ed\u70b9\u65e5\u62a5 #1 (HostDare/RackNerd \u9ed1\u4e94\u524d\u54e8)",
       "racknerd_cta_count": 10
     },
     {
@@ -183,7 +183,7 @@
         "buyvm"
       ],
       "primary_affiliate": "racknerd",
-      "heat_source": "Single-provider add task (cron — not rotation)"
+      "heat_source": "Single-provider add task (cron \u2014 not rotation)"
     },
     {
       "slug": "2026-shutdown-cloud-services-vps-migration",
@@ -191,7 +191,7 @@
       "type": "incident-postmortem+guide",
       "status": "published",
       "title_en": "Garnix Shutdown 2026: How to Migrate Small SaaS to a VPS",
-      "title_zh": "Garnix 关停复盘：2026 小众云服务迁移 VPS 完整指南",
+      "title_zh": "Garnix \u5173\u505c\u590d\u76d8\uff1a2026 \u5c0f\u4f17\u4e91\u670d\u52a1\u8fc1\u79fb VPS \u5b8c\u6574\u6307\u5357",
       "en_astro": "src/pages/blog/2026-shutdown-cloud-services-vps-migration.astro",
       "zh_astro": "src/pages/zh/blog/2026-shutdown-cloud-services-vps-migration.astro",
       "primary_affiliate": "racknerd",
@@ -203,7 +203,7 @@
         "contabo",
         "hostinger"
       ],
-      "hot_topic_source": "⭐ 2026-06-06 daily report #2 (Garnix shutdown)",
+      "hot_topic_source": "\u2b50 2026-06-06 daily report #2 (Garnix shutdown)",
       "banned_self_check": "PASSED",
       "racknerd_cta_count": 6,
       "published_at": "2026-06-13"
@@ -294,7 +294,7 @@
       "date": "2026-06-06",
       "type": "review",
       "title_en": "UpCloud VPS Review 2026: maxIOPS Performance + 8 Datacenters",
-      "title_zh": "UpCloud VPS 评测 2026：maxIOPS 性能 + 8 个机房 + $5/月起",
+      "title_zh": "UpCloud VPS \u8bc4\u6d4b 2026\uff1amaxIOPS \u6027\u80fd + 8 \u4e2a\u673a\u623f + $5/\u6708\u8d77",
       "status": "published",
       "provider": "upcloud",
       "en_astro": "src/pages/blog/upcloud-review.astro",
@@ -313,7 +313,7 @@
         "digitalocean",
         "scalahosting"
       ],
-      "hot_topic_source": "⏭️ Not used (task was provider+review, not hot-topic blog)",
+      "hot_topic_source": "\u23ed\ufe0f Not used (task was provider+review, not hot-topic blog)",
       "commit_short": "fcf235c",
       "published_at": "2026-06-13",
       "deployed_url_en": "https://vpstier.com/blog/upcloud-review/",
@@ -324,7 +324,7 @@
       "date": "2026-06-06",
       "type": "incident-postmortem",
       "title_en": "AWS us-east-1 Outage May 2026: Single AZ Failure Cost & Multi-Region Backup Strategy",
-      "title_zh": "2026 年 5 月 AWS us-east-1 outage 复盘：单点故障的代价 + 多 AZ 备份策略",
+      "title_zh": "2026 \u5e74 5 \u6708 AWS us-east-1 outage \u590d\u76d8\uff1a\u5355\u70b9\u6545\u969c\u7684\u4ee3\u4ef7 + \u591a AZ \u5907\u4efd\u7b56\u7565",
       "outline_file": "outline-2026-06-06-aws-us-east-1-outage-2026.md",
       "en_astro": "src/pages/blog/aws-us-east-1-outage-2026.astro",
       "zh_astro": "src/pages/zh/blog/aws-us-east-1-outage-2026.astro",
@@ -337,7 +337,7 @@
         "scalahosting"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-06 daily report (HN 267 pts + CNBC)",
+      "hot_topic_source": "\u2b50\u2b50\u2b50 2026-06-06 daily report (HN 267 pts + CNBC)",
       "published_at": "2026-06-06",
       "deployed_url_en": "https://vpstier.com/blog/aws-us-east-1-outage-2026/",
       "deployed_url_zh": "https://vpstier.com/zh/blog/aws-us-east-1-outage-2026/"
@@ -347,9 +347,9 @@
       "date": "2026-06-05",
       "type": "comparison",
       "title_en": "Best Asia-Pacific VPS 2026: 5 Providers Ranked by Latency & Price",
-      "title_zh": "2026 亚太 VPS 推荐：5 家延迟与价格实测排名",
+      "title_zh": "2026 \u4e9a\u592a VPS \u63a8\u8350\uff1a5 \u5bb6\u5ef6\u8fdf\u4e0e\u4ef7\u683c\u5b9e\u6d4b\u6392\u540d",
       "description_en": "Compare 5 Asia-Pacific VPS providers in 2026. Real latency data from Tokyo, Singapore, Seoul, and Hong Kong. Pricing from $1.99/mo.",
-      "description_zh": "2026 年 5 家亚太 VPS 提供商对比,实测东京、新加坡、首尔、香港节点延迟,最低 $1.99/月起。",
+      "description_zh": "2026 \u5e74 5 \u5bb6\u4e9a\u592a VPS \u63d0\u4f9b\u5546\u5bf9\u6bd4,\u5b9e\u6d4b\u4e1c\u4eac\u3001\u65b0\u52a0\u5761\u3001\u9996\u5c14\u3001\u9999\u6e2f\u8282\u70b9\u5ef6\u8fdf,\u6700\u4f4e $1.99/\u6708\u8d77\u3002",
       "outline_file": "2026-06-05-best-asia-pacific-vps-2026.md",
       "en_astro": "src/pages/blog/best-asia-pacific-vps-2026.astro",
       "zh_astro": "src/pages/zh/blog/best-asia-pacific-vps-2026.astro",
@@ -371,7 +371,7 @@
       "date": "2026-06-08",
       "type": "review",
       "title_en": "TurnKey Internet VPS Review 2026: Green NY Datacenter",
-      "title_zh": "TurnKey Internet VPS 评测 2026: 纽约绿色数据中心",
+      "title_zh": "TurnKey Internet VPS \u8bc4\u6d4b 2026: \u7ebd\u7ea6\u7eff\u8272\u6570\u636e\u4e2d\u5fc3",
       "vps_astro": "src/pages/vps/turnkey-internet.astro",
       "status": "published",
       "providers_featured": [
@@ -437,7 +437,7 @@
       ],
       "primary_affiliate": "racknerd",
       "racknerd_cta_count": 7,
-      "hot_topic_source": "⭐ 2026-06-13 daily report (Godlike.Host bait-and-switch pricing, LowEndBox community warnings)"
+      "hot_topic_source": "\u2b50 2026-06-13 daily report (Godlike.Host bait-and-switch pricing, LowEndBox community warnings)"
     },
     {
       "slug": "linode",
@@ -474,7 +474,7 @@
         "ovhcloud"
       ],
       "primary_affiliate": "racknerd",
-      "heat_source": "GSC signals: racknerd (rank 50, 4 imp) + vultr vps (rank 59, 3 imp). No ⭐⭐⭐ hot topics. Gap: no European VPS comparison published.",
+      "heat_source": "GSC signals: racknerd (rank 50, 4 imp) + vultr vps (rank 59, 3 imp). No \u2b50\u2b50\u2b50 hot topics. Gap: no European VPS comparison published.",
       "banned_self_check": "PASSED",
       "affiliate_placements": {
         "racknerd": 6,
@@ -495,7 +495,7 @@
       "date": "2026-06-17",
       "type": "review",
       "title_en": "IONOS VPS Review 2026: EU-Native Hosting from $1/mo Tested",
-      "title_zh": "IONOS VPS 评测 2026：欧盟本土托管 $1/月起",
+      "title_zh": "IONOS VPS \u8bc4\u6d4b 2026\uff1a\u6b27\u76df\u672c\u571f\u6258\u7ba1 $1/\u6708\u8d77",
       "outline_file": null,
       "en_astro": "src/pages/vps/ionos.astro",
       "blog_astro": "src/pages/blog/ionos-vps-review-2026.astro",
@@ -624,10 +624,10 @@
         "contabo"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)",
+      "hot_topic_source": "\u2b50\u2b50\u2b50 2026-06-24 daily report (EU provider price hike \u2192 privacy-focused alternatives)",
       "vps_astro": "src/pages/vps/1984.astro",
       "published_at": "2026-06-24",
-      "heat_source": "⭐⭐⭐ 2026-06-24 daily report (EU provider price hike → privacy-focused alternatives)",
+      "heat_source": "\u2b50\u2b50\u2b50 2026-06-24 daily report (EU provider price hike \u2192 privacy-focused alternatives)",
       "banned_self_check": "PASSED",
       "racknerd_cta_count": 3,
       "state_json_deduplicated": "2026-06-25T10:30:00+08:00"
@@ -652,7 +652,7 @@
         "scalahosting"
       ],
       "primary_affiliate": "racknerd",
-      "heat_source": "GSC signal: kamatera vps (rank 35, 5 imp) + kamatera (rank 60, 2 imp). No ⭐⭐⭐ hot topics: today's VPS section featured a banned provider only. Pivoted to provider gap scan — Kamatera has 0 blog content, only /vps/kamatera.astro card exists. Strongest 2026-06-24 GSC signal pointing to an unaddressed provider.",
+      "heat_source": "GSC signal: kamatera vps (rank 35, 5 imp) + kamatera (rank 60, 2 imp). No \u2b50\u2b50\u2b50 hot topics: today's VPS section featured a banned provider only. Pivoted to provider gap scan \u2014 Kamatera has 0 blog content, only /vps/kamatera.astro card exists. Strongest 2026-06-24 GSC signal pointing to an unaddressed provider.",
       "banned_self_check": "PASSED",
       "racknerd_cta_count_planned": 7,
       "published_at": "2026-06-24T14:23:00+08:00"
@@ -675,7 +675,7 @@
         "contabo"
       ],
       "primary_affiliate": "racknerd",
-      "heat_source": "User directive 2026-06-26: add new VPS provider + review. ZAP-Hosting is a 25+ year German provider with 10+ global datacenters, 480 Gbps DDoS, and 50+ game server installers — distinct from existing lineup.",
+      "heat_source": "User directive 2026-06-26: add new VPS provider + review. ZAP-Hosting is a 25+ year German provider with 10+ global datacenters, 480 Gbps DDoS, and 50+ game server installers \u2014 distinct from existing lineup.",
       "banned_self_check": "PASSED",
       "published_at": "2026-06-26T11:01:31+08:00",
       "deployed_url_vps": "https://vpstier.com/vps/zap-hosting/",
@@ -736,7 +736,7 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "vpstier-orphaned-card-tier-4-fallback (2026-06-30)",
-      "note": "Direct addition via vpstier-add-provider cron (2026-06-30). Tier 4 fallback — orphaned card in /vps/ for months. Picked cherry over 7 other orphans (a2-hosting/aliyun/cloudcone/inmotion-hosting/yecaoyun/yinnet) for unique differentiator: only whitelisted EU bare-metal specialist + ISO 27001 + 25-year longevity, fills the gap left by EU market's June 2025 price shock. Title 56/60, desc 155/155, 0 banned-provider mentions, 5 JSON-LD blocks all parse, RackNerd primary affiliate."
+      "note": "Direct addition via vpstier-add-provider cron (2026-06-30). Tier 4 fallback \u2014 orphaned card in /vps/ for months. Picked cherry over 7 other orphans (a2-hosting/aliyun/cloudcone/inmotion-hosting/yecaoyun/yinnet) for unique differentiator: only whitelisted EU bare-metal specialist + ISO 27001 + 25-year longevity, fills the gap left by EU market's June 2025 price shock. Title 56/60, desc 155/155, 0 banned-provider mentions, 5 JSON-LD blocks all parse, RackNerd primary affiliate."
     },
     {
       "slug": "a2-hosting-vps-review-2026",
@@ -774,7 +774,7 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "tier-2-provider-gap-scan",
-      "note": "Tier 2 fallback (2026-07-02). Daily ⭐ VPS briefing #1 and #2 were both banned-merchant stories (price hike + 30-day outage open letter). Provider gap scan returned 4 uncovered active providers (chemicloud/greengeeks/siteground/mochahost); picked mochahost for richest providers.json data (8 pros / 6 cons / 10 features + cpu/ram/storage/bandwidth specs absent from the other 3), 23-year longevity, multi-region DCs, and existing /vps/mochahost.astro profile card. Affiliate quirk: mochahost.affiliateAvailable=true but affiliateUrl defaults to RackNerd per skill data quirk — RackNerd is primary affiliate per convention."
+      "note": "Tier 2 fallback (2026-07-02). Daily \u2b50 VPS briefing #1 and #2 were both banned-merchant stories (price hike + 30-day outage open letter). Provider gap scan returned 4 uncovered active providers (chemicloud/greengeeks/siteground/mochahost); picked mochahost for richest providers.json data (8 pros / 6 cons / 10 features + cpu/ram/storage/bandwidth specs absent from the other 3), 23-year longevity, multi-region DCs, and existing /vps/mochahost.astro profile card. Affiliate quirk: mochahost.affiliateAvailable=true but affiliateUrl defaults to RackNerd per skill data quirk \u2014 RackNerd is primary affiliate per convention."
     },
     {
       "slug": "chemicloud-vps-review-2026",
@@ -794,7 +794,7 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "tier-2-provider-gap-scan",
-      "note": "Tier 2 provider gap scan pick. ChemiCloud was the only active provider in providers.json missing a dedicated blog review (providers.json + /vps/ card already exist, PARTIAL matrix → only blog review was needed). 7 global datacenters, free cPanel, free migrations, 60-day refund. RackNerd-default affiliate per data quirk. 11 H2 sections, 8 FAQ Q&A. Unmetered bandwidth on all plans."
+      "note": "Tier 2 provider gap scan pick. ChemiCloud was the only active provider in providers.json missing a dedicated blog review (providers.json + /vps/ card already exist, PARTIAL matrix \u2192 only blog review was needed). 7 global datacenters, free cPanel, free migrations, 60-day refund. RackNerd-default affiliate per data quirk. 11 H2 sections, 8 FAQ Q&A. Unmetered bandwidth on all plans."
     },
     {
       "slug": "best-vps-deals-codes-2026",
@@ -833,7 +833,7 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "vpstier-orphaned-card-tier-4-fallback (2026-07-07)",
-      "note": "Direct addition via vpstier-add-provider cron (2026-07-07). Tier 4 fallback — orphaned card in /vps/inmotion-hosting.astro existed for months. Daily briefing focused on banned-EU-merchant story (Tier 1 fail) + Tier 2 gap scan exhausted (only greengeeks pending outline already covered). Tier 4 candidates: inmotion-hosting (RackNerd-default affiliate, EN-focused, Western audience fit) vs hostdare (own aff, CN2 routes, mixed audience) vs aliyun/yecaoyun/yinnet (CN-only, excluded for vpstier EN-only audience). Picked inmotion-hosting per canonical Tier-4 priority #2 (Western audience fit) + #3 (NVMe differentiation no other whitelisted provider serves). providers.json mutated 37→38 entries. Title 58/60, desc 141/155, 5 JSON-LD blocks (BreadcrumbList + Article + FAQPage + 2 Article extras). 12 RackNerd placements + 6 Vultr + 4 ChemiCloud + 1 SiteGround. 0 banned-provider mentions in article body or self-check."
+      "note": "Direct addition via vpstier-add-provider cron (2026-07-07). Tier 4 fallback \u2014 orphaned card in /vps/inmotion-hosting.astro existed for months. Daily briefing focused on banned-EU-merchant story (Tier 1 fail) + Tier 2 gap scan exhausted (only greengeeks pending outline already covered). Tier 4 candidates: inmotion-hosting (RackNerd-default affiliate, EN-focused, Western audience fit) vs hostdare (own aff, CN2 routes, mixed audience) vs aliyun/yecaoyun/yinnet (CN-only, excluded for vpstier EN-only audience). Picked inmotion-hosting per canonical Tier-4 priority #2 (Western audience fit) + #3 (NVMe differentiation no other whitelisted provider serves). providers.json mutated 37\u219238 entries. Title 58/60, desc 141/155, 5 JSON-LD blocks (BreadcrumbList + Article + FAQPage + 2 Article extras). 12 RackNerd placements + 6 Vultr + 4 ChemiCloud + 1 SiteGround. 0 banned-provider mentions in article body or self-check."
     },
     {
       "slug": "aliyun-vps-review-2026",
@@ -855,7 +855,7 @@
       "primary_affiliate": "racknerd",
       "url": "https://vpstier.com/blog/aliyun-vps-review-2026/",
       "hot_topic_source": "tier-4-orphan-card-fallback",
-      "tier_decision": "Tier 4 — daily Tier 1 VPS briefing all Hetzner-anchored (hard-banned); tier 0 GSC comparison covered 2026-07-12; aliyun was the safe Tier 4 orphan (state.json had entry with no status; hostdare outline_pending_publish skipped; virmach /vps/ already complete)"
+      "tier_decision": "Tier 4 \u2014 daily Tier 1 VPS briefing all Hetzner-anchored (hard-banned); tier 0 GSC comparison covered 2026-07-12; aliyun was the safe Tier 4 orphan (state.json had entry with no status; hostdare outline_pending_publish skipped; virmach /vps/ already complete)"
     },
     {
       "slug": "kainode-vps-review-2026",
@@ -875,7 +875,7 @@
       "primary_affiliate": "racknerd",
       "hot_topic_source": "daily-briefing-2026-07-16-kainode-singapore-vps",
       "title": "Kainode VPS Review 2026: Singapore VPS from $16.99/mo Tested",
-      "description": "Kainode VPS review 2026 — VDS plans from $16.99/mo across Singapore, Germany, USA. NVMe + DDoS-by-default. Tested vs RackNerd + Vultr.",
+      "description": "Kainode VPS review 2026 \u2014 VDS plans from $16.99/mo across Singapore, Germany, USA. NVMe + DDoS-by-default. Tested vs RackNerd + Vultr.",
       "live_urls": {
         "vps_card": "https://vpstier.com/vps/kainode/",
         "blog": "https://vpstier.com/blog/kainode-vps-review-2026/",
@@ -892,7 +892,7 @@
       "title": "LightNode VPS Review 2026: 40+ Locations from $7.70/mo",
       "description": "LightNode VPS review 2026: KVM VPS in 40+ locations across Asia, Middle East, South America. NVMe + hourly billing from $7.70/mo. Tested vs RackNerd.",
       "category": "Review",
-      "tier": "Tier 2 (provider gap scan) — LightNode was the next uncovered provider from the suggested list after Kainode",
+      "tier": "Tier 2 (provider gap scan) \u2014 LightNode was the next uncovered provider from the suggested list after Kainode",
       "vps_page": "/vps/lightnode/",
       "blog_page": "/blog/lightnode-vps-review-2026/",
       "racknerd_count": 7,
@@ -907,7 +907,7 @@
       },
       "verified_data_file": "drafts/lightnode-verified-data-2026-07-17.md",
       "topic_source": "manual curation from task brief (provider not in existing list; LightNode is a 2021 HK-registered KVM VPS with 40+ locations)",
-      "rationale": "Picked LightNode because: (1) all suggested new providers from the cron task brief are already covered except serverpeacock (no public data) — LightNode is a known real provider with verified pricing and 21+ city locations; (2) complementary to recent Kainode Singapore coverage — LightNode's 40+ locations cover APAC/Middle East/SA where Kainode only covers SG/DE/USA; (3) monthly-bill no-lock-in angle complements RackNerd annual-special floor; (4) tier-2 provider gap scan uncovered it directly"
+      "rationale": "Picked LightNode because: (1) all suggested new providers from the cron task brief are already covered except serverpeacock (no public data) \u2014 LightNode is a known real provider with verified pricing and 21+ city locations; (2) complementary to recent Kainode Singapore coverage \u2014 LightNode's 40+ locations cover APAC/Middle East/SA where Kainode only covers SG/DE/USA; (3) monthly-bill no-lock-in angle complements RackNerd annual-special floor; (4) tier-2 provider gap scan uncovered it directly"
     },
     {
       "date": "2026-07-18",
@@ -991,8 +991,8 @@
     },
     {
       "slug": "webdock-vps-review-2026",
-      "title": "Webdock VPS Review 2026: Own Denmark DC + GDPR from €2.15/mo",
-      "description": "Webdock VPS review 2026: own DK-DC1 datacenter in Nørre Aaby, Denmark. Xeon + Epyc tiers, free DDoS + SSL + backups, EU jurisdiction. From €2.15/mo.",
+      "title": "Webdock VPS Review 2026: Own Denmark DC + GDPR from \u20ac2.15/mo",
+      "description": "Webdock VPS review 2026: own DK-DC1 datacenter in N\u00f8rre Aaby, Denmark. Xeon + Epyc tiers, free DDoS + SSL + backups, EU jurisdiction. From \u20ac2.15/mo.",
       "date": "2026-07-21",
       "datePublished": "2026-07-21",
       "dateModified": "2026-07-21",
@@ -1000,13 +1000,13 @@
       "deployUrl": "https://vpstier.com/blog/webdock-vps-review-2026/",
       "providerCardUrl": "https://vpstier.com/vps/webdock/",
       "providerId": "webdock",
-      "cardTitle": "Webdock VPS Review 2026: Own Denmark DC from €2.15/mo",
+      "cardTitle": "Webdock VPS Review 2026: Own Denmark DC from \u20ac2.15/mo",
       "tier": "Tier 2 (provider gap scan)",
       "rating": 4.1,
-      "priceMin": "€2.15/mo",
+      "priceMin": "\u20ac2.15/mo",
       "category": "Self-Managed",
       "datacenters": [
-        "Nørre Aaby, Funen, Denmark (own DK-DC1)"
+        "N\u00f8rre Aaby, Funen, Denmark (own DK-DC1)"
       ],
       "keyFeatures": [
         "own DK-DC1 datacenter (built 2024)",
@@ -1045,7 +1045,7 @@
       "providerCardUrl": "https://vpstier.com/vps/ramnode/",
       "providerId": "ramnode",
       "cardTitle": "RamNode VPS Review 2026: Hourly Billing from $2/mo",
-      "tier": "Tier 2 (provider gap scan) — RamNode picked via batch-probe fallback",
+      "tier": "Tier 2 (provider gap scan) \u2014 RamNode picked via batch-probe fallback",
       "rating": 4.0,
       "priceMin": "$2/mo Lite",
       "category": "Long-running boutique VPS (InMotion Hosting operator)",
@@ -1099,8 +1099,8 @@
     {
       "slug": "alphavps-vps-review-2026",
       "type": "vps-review",
-      "title": "AlphaVPS VPS Review 2026: EU-Native, 7 DCs, from €2.54/mo",
-      "description": "AlphaVPS VPS review 2026: EU-native provider in Sofia, Bulgaria since 2013. 7 DCs, AMD EPYC + Ryzen 9 CPUs, ISO 27001. From €2.54/mo.",
+      "title": "AlphaVPS VPS Review 2026: EU-Native, 7 DCs, from \u20ac2.54/mo",
+      "description": "AlphaVPS VPS review 2026: EU-native provider in Sofia, Bulgaria since 2013. 7 DCs, AMD EPYC + Ryzen 9 CPUs, ISO 27001. From \u20ac2.54/mo.",
       "provider": "alphavps",
       "category": "vps-review",
       "date": "2026-07-24",
@@ -1113,7 +1113,7 @@
       "affiliateLinks": 6
     },
     {
-      "title": "ServerPeacock VPS Review 2026: Dutch KVM from €3.99/mo",
+      "title": "ServerPeacock VPS Review 2026: Dutch KVM from \u20ac3.99/mo",
       "slug": "serverpeacock-vps-review-2026",
       "date": "2026-07-29",
       "status": "published",
@@ -1147,7 +1147,7 @@
       "deploy_id": "50003e86",
       "published_at": "2026-07-31T12:00:00Z",
       "verified_data_file": "drafts/cloudzy-verified-data-2026-07-31.md",
-      "tier": "Tier 2 (provider gap scan) — Cloudzy was the next uncovered reputable independent provider with 18-year track record + DDR5 + 40 Gbps infrastructure not in 56 existing providers",
+      "tier": "Tier 2 (provider gap scan) \u2014 Cloudzy was the next uncovered reputable independent provider with 18-year track record + DDR5 + 40 Gbps infrastructure not in 56 existing providers",
       "rating": 4.4,
       "priceMin": "$2.48/mo (promo, 50% off standard $4.95/mo)",
       "category": "Independent self-funded cloud (formerly RouterHosting)",
@@ -1177,8 +1177,8 @@
       },
       "build": "NODE_OPTIONS=--max-old-space-size=512 npm run build, 92 pages, 3.05s",
       "deploy": "npx wrangler pages deploy dist --project-name=vpstier-com --commit-dirty=true, 94 files uploaded, deployment ID 50003e86",
-      "hot_topic_source": "vpstier-add-provider-and-review cron 2026-07-31 (Tier 2 batch-probe): all 13 task-suggested providers already in providers.json; live-probed 15+ fresh candidates; picked Cloudzy for 18-year self-funded track record + DDR5 + 40 Gbps at sub-$3 entry. Brand was previously known as RouterHosting — verified via cloudzy.com About page.",
-      "selection_rationale": "Picked Cloudzy: (1) not in existing 56 providers list, not in /vps/ folder, (2) 18-year self-funded track record (2008 founding, no acquisition, no VC funding) — unique among 2026 cloud providers, (3) uniformly modern infrastructure (DDR5 + EPYC + NVMe + 40 Gbps on every tier, no legacy hardware), (4) 13 datacenter locations (NA + EU + APAC) + Tokyo coming soon, (5) accepts Monero (XMR) directly — rare for an 18-year-old cloud provider, (6) 122,000+ customers, 4.6/5 Trustpilot, 14-day unconditional money-back, (7) UAE Free Zone jurisdiction useful for buyers wanting non-US/non-EU data residency. Hot topic: Hetzner LLM Inference announcement (sliplane.io / HN 155p) was today's #1 vpstier brief, but Hetzner provider is BANNED (user's permanent preference 2026-05-25, reaffirmed 2026-06-03) — non-actionable for provider add."
+      "hot_topic_source": "vpstier-add-provider-and-review cron 2026-07-31 (Tier 2 batch-probe): all 13 task-suggested providers already in providers.json; live-probed 15+ fresh candidates; picked Cloudzy for 18-year self-funded track record + DDR5 + 40 Gbps at sub-$3 entry. Brand was previously known as RouterHosting \u2014 verified via cloudzy.com About page.",
+      "selection_rationale": "Picked Cloudzy: (1) not in existing 56 providers list, not in /vps/ folder, (2) 18-year self-funded track record (2008 founding, no acquisition, no VC funding) \u2014 unique among 2026 cloud providers, (3) uniformly modern infrastructure (DDR5 + EPYC + NVMe + 40 Gbps on every tier, no legacy hardware), (4) 13 datacenter locations (NA + EU + APAC) + Tokyo coming soon, (5) accepts Monero (XMR) directly \u2014 rare for an 18-year-old cloud provider, (6) 122,000+ customers, 4.6/5 Trustpilot, 14-day unconditional money-back, (7) UAE Free Zone jurisdiction useful for buyers wanting non-US/non-EU data residency. Hot topic: Hetzner LLM Inference announcement (sliplane.io / HN 155p) was today's #1 vpstier brief, but Hetzner provider is BANNED (user's permanent preference 2026-05-25, reaffirmed 2026-06-03) \u2014 non-actionable for provider add."
     },
     {
       "slug": "cheap-vps-local-llm-inference-2026",
@@ -1231,7 +1231,7 @@
       "racknerd_placements": 1,
       "h2_count": 6,
       "faq_count": 3,
-      "self_check": "PASS (excluded-merchant=0, providers.json factually corrected: founded 2001→2004; tagline added)",
+      "self_check": "PASS (excluded-merchant=0, providers.json factually corrected: founded 2001\u21922004; tagline added)",
       "language": "en",
       "founders_year_corrected": "2004"
     },
@@ -1519,11 +1519,11 @@
       "date": "2026-08-19",
       "slug": "gpu-ram-price-wave-2026-ai-vps-buyers",
       "status": "outline_pending_publish",
-      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-19 (3ea88f8bb2d0). Briefing surfaced the excluded merchant's 187-250% price-increase re-test as vpstier ⭐ #1 — rejected under the permanent merchant policy. Pivoted to the structural-industry version: the August 17 component-cost second wave (Tom's Hardware trio: RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%) escalating from DRAM-only into a full RAM+GPU+monitor crisis with an AI-workload cast.",
+      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-19 (3ea88f8bb2d0). Briefing surfaced the excluded merchant's 187-250% price-increase re-test as vpstier \u2b50 #1 \u2014 rejected under the permanent merchant policy. Pivoted to the structural-industry version: the August 17 component-cost second wave (Tom's Hardware trio: RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%) escalating from DRAM-only into a full RAM+GPU+monitor crisis with an AI-workload cast.",
       "type": "news-analysis + buyer-guide (component-cost second wave hitting AI/inference VPS buyers)",
       "title_en": "GPU and RAM Prices 2026: VPS Cost Wave Hits AI Workloads",
       "title_chars": 56,
-      "description_en": "RAM up 500% and GPU prices up 48% — the 2026 component cost wave is now hitting AI and inference VPS. What buyers should do.",
+      "description_en": "RAM up 500% and GPU prices up 48% \u2014 the 2026 component cost wave is now hitting AI and inference VPS. What buyers should do.",
       "description_chars": 124,
       "outline_file": "drafts/outline-2026-08-19-vpstier-daily.md",
       "run_record_file": "drafts/run-record-2026-08-19-vpstier-daily-outline.md",
@@ -1543,12 +1543,12 @@
       "h2_count": 10,
       "faq_count": 5,
       "racknerd_placements_planned": 7,
-      "heat_source": "Daily briefing 2026-08-19 SUCCEEDED. Briefing's vpstier ⭐ #1 (excluded merchant's 187-250% price-increase re-test) → REJECTED under the permanent merchant policy. Briefing's vpstier ⭐ #2 (Cloudblast €4.03/mo 4GB unlimited-bandwidth from LEB, 2026-08-12) — viable but LEB new-provider coverage is non-news. Briefing's vpstier ⭐ #3 (Cursor self-hosted GitHub-rival from TechCrunch 2026-08-18) — TechCrunch URL 404'd and the Google News RSS has no same-day named-outlet coverage. SUBSTITUTED with the Aug 17 Tom's Hardware trio (RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%): a fresh, dated, multi-outlet component-cost second wave directly downstream of the existing 8-12 RAMageddon article, escalated to include GPU + storage + AI-workload cast. Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs fetched this session).",
+      "heat_source": "Daily briefing 2026-08-19 SUCCEEDED. Briefing's vpstier \u2b50 #1 (excluded merchant's 187-250% price-increase re-test) \u2192 REJECTED under the permanent merchant policy. Briefing's vpstier \u2b50 #2 (Cloudblast \u20ac4.03/mo 4GB unlimited-bandwidth from LEB, 2026-08-12) \u2014 viable but LEB new-provider coverage is non-news. Briefing's vpstier \u2b50 #3 (Cursor self-hosted GitHub-rival from TechCrunch 2026-08-18) \u2014 TechCrunch URL 404'd and the Google News RSS has no same-day named-outlet coverage. SUBSTITUTED with the Aug 17 Tom's Hardware trio (RAM 500% / RTX 50 +36-39% / Intel Arc B70 +48%): a fresh, dated, multi-outlet component-cost second wave directly downstream of the existing 8-12 RAMageddon article, escalated to include GPU + storage + AI-workload cast. Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs fetched this session).",
       "multi_outlet_verification": [
         {
           "outlet": "Tom's Hardware",
           "date": "2026-08-17 13:52 UTC",
-          "title": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices — 128GB of DDR5 now $3,399",
+          "title": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices \u2014 128GB of DDR5 now $3,399",
           "body_fetched": true
         },
         {
@@ -1605,14 +1605,14 @@
         "/blog/hostarmada-vps-review-2026/"
       ],
       "content_gap_evidence": "grep over src/ for GPU/Blackwell/GDDR/VRAM/RTX 50/AI workload/LLM inference: vps-price-hikes-2026-ramageddon = 0 hits (DRAM-only); cheap-vps-local-llm-inference-2026 = 5 GPU + 27 inference hits but it's a buyer-guide, not a price-pressure analysis. Zero existing article covers the GPU side of the 2026 component-cost wave OR the AI-workload angle of the wave.",
-      "self_check": "PASSED (excluded-merchant in outline = 0 incl. rationale [brand-free in §1]; CJK = 0; /zh/ refs = 2 [audit-only]; title=56, desc=124, h2=10, faq=5, racknerd=7 CTA planned; briefing SUCCEEDED; internal links resolve on disk or flagged 'when published'; banned-pivot pattern verified)",
-      "note": "Briefing SUCCEEDED 2026-08-19 but the vpstier ⭐ picks were (1) excluded-merchant signal rejected under permanent policy, (2) Cloudblast new-provider (LEB, non-news), (3) Cursor self-hosted (TechCrunch 404, no same-day named-outlet). Pivoted to the Aug 17 Tom's Hardware second-wave story (RAM 500% + RTX 50/Arc B70 GPU 36-48% + monitor H2-2026 entry-level hike): a fresh, dated, multi-outlet companion to the existing 8-12 vps-price-hikes-2026-ramageddon article, with a novel GPU/AI-workload cast the existing site has zero coverage of (verified by grep). Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs). 6 additional outlets headline-attributed. Second-wave companion: different deliverable from the 8-12 DRAM-only article (this one adds GPU + storage + AI cast + 2027-2030 horizon + buyer playbook). Cross-links the 8-12 article + the 8-02 AI VPS guide (whose price table needs updating). Outline only - awaiting publish."
+      "self_check": "PASSED (excluded-merchant in outline = 0 incl. rationale [brand-free in \u00a71]; CJK = 0; /zh/ refs = 2 [audit-only]; title=56, desc=124, h2=10, faq=5, racknerd=7 CTA planned; briefing SUCCEEDED; internal links resolve on disk or flagged 'when published'; banned-pivot pattern verified)",
+      "note": "Briefing SUCCEEDED 2026-08-19 but the vpstier \u2b50 picks were (1) excluded-merchant signal rejected under permanent policy, (2) Cloudblast new-provider (LEB, non-news), (3) Cursor self-hosted (TechCrunch 404, no same-day named-outlet). Pivoted to the Aug 17 Tom's Hardware second-wave story (RAM 500% + RTX 50/Arc B70 GPU 36-48% + monitor H2-2026 entry-level hike): a fresh, dated, multi-outlet companion to the existing 8-12 vps-price-hikes-2026-ramageddon article, with a novel GPU/AI-workload cast the existing site has zero coverage of (verified by grep). Body-verified source-of-truth: Tom's Hardware 2026-08-17 RAM-500% article (35 paragraphs). 6 additional outlets headline-attributed. Second-wave companion: different deliverable from the 8-12 DRAM-only article (this one adds GPU + storage + AI cast + 2027-2030 horizon + buyer playbook). Cross-links the 8-12 article + the 8-02 AI VPS guide (whose price table needs updating). Outline only - awaiting publish."
     },
     {
       "slug": "cloudblast-vps-review-2026",
       "date": "2026-08-19",
       "type": "add-provider-and-review",
-      "title_en": "Cloudblast VPS Review 2026: €3.6/mo 10 Gbps + DDoS-Included",
+      "title_en": "Cloudblast VPS Review 2026: \u20ac3.6/mo 10 Gbps + DDoS-Included",
       "en_file": "src/pages/vps/cloudblast.astro",
       "blog_astro": "src/pages/blog/cloudblast-vps-review-2026.astro",
       "en_url": "https://vpstier.com/vps/cloudblast/",
@@ -1636,11 +1636,11 @@
       "git_commit": "fd494b7",
       "deployment_id": "6d239220",
       "verified_data": "drafts/cloudblast-verified-data-2026-08-19.md",
-      "description_en": "Cloudblast VPS review: hourly-billed KVM-Proxmox from €3.6/mo with 10 Gbps uplink and DDoS protection standard in Amsterdam, Salt Lake City, and Hong Kong.",
+      "description_en": "Cloudblast VPS review: hourly-billed KVM-Proxmox from \u20ac3.6/mo with 10 Gbps uplink and DDoS protection standard in Amsterdam, Salt Lake City, and Hong Kong.",
       "published_at": "2026-08-19",
       "deployed_url_en": "https://vpstier.com/vps/cloudblast/",
       "deployed_url_blog": "https://vpstier.com/blog/cloudblast-vps-review-2026/",
-      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-19 (3ea88f8bb2d0) vpstier pick #2 cloudblast 4gb vps le 4.03. New vendor from August 2026 LEB coverage. KVM-Proxmox + 10 Gbps + DDoS standard at €3.6/mo entry."
+      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-19 (3ea88f8bb2d0) vpstier pick #2 cloudblast 4gb vps le 4.03. New vendor from August 2026 LEB coverage. KVM-Proxmox + 10 Gbps + DDoS standard at \u20ac3.6/mo entry."
     },
     {
       "slug": "milesweb-vps-review-2026",
@@ -1656,6 +1656,14 @@
       "type": "vps_review",
       "date": "2026-08-21",
       "git_commit": "9430065",
+      "status": "published"
+    },
+    {
+      "slug": "dedirock-vps-review-2026",
+      "title": "DediRock VPS Review 2026: i9 Single-Core from $24.88/yr",
+      "type": "vps_review",
+      "date": "2026-08-24",
+      "git_commit": "92c3c57",
       "status": "published"
     }
   ],
@@ -1677,7 +1685,7 @@
       "primary_affiliate": "racknerd",
       "deployed_url_en": "https://vpstier.com/blog/siteground-vps-review-2026/",
       "deployed_url_zh": null,
-      "note": "Tier 2 provider gap scan pick (2 candidates: greengeeks, siteground). Picked siteground over greengeeks due to higher brand recognition + Google Cloud backbone differentiator + 3-tier plan structure (better SEO price-tier coverage). siteground already in providers.json + /vps/siteground.astro (PARTIAL matrix → only blog review was needed). Both candidates are RackNerd-default affiliate, so no own-affiliate tiebreaker. 14 RackNerd placements (1 direct CTA + 13 internal /vps/racknerd cross-links). 12 H2 sections, 8 FAQ Q&A. Built 86 pages in 1.21s on heap=1200, deployed 88 new files. Live verified HTTP 200 on all 4 URLs."
+      "note": "Tier 2 provider gap scan pick (2 candidates: greengeeks, siteground). Picked siteground over greengeeks due to higher brand recognition + Google Cloud backbone differentiator + 3-tier plan structure (better SEO price-tier coverage). siteground already in providers.json + /vps/siteground.astro (PARTIAL matrix \u2192 only blog review was needed). Both candidates are RackNerd-default affiliate, so no own-affiliate tiebreaker. 14 RackNerd placements (1 direct CTA + 13 internal /vps/racknerd cross-links). 12 H2 sections, 8 FAQ Q&A. Built 86 pages in 1.21s on heap=1200, deployed 88 new files. Live verified HTTP 200 on all 4 URLs."
     },
     {
       "slug": "hostwinds-review",
@@ -1713,7 +1721,7 @@
         "chemicloud"
       ],
       "primary_affiliate": "racknerd",
-      "hot_topic_source": "Manual — category-launch article",
+      "hot_topic_source": "Manual \u2014 category-launch article",
       "note": "Hub-launch article creating /promo-codes/ Astro route. Only RackNerd dedicated has verified standalone code (15OFFDEDI); other deals are link-based credits or auto-applied banners. Article pivots from 'coupon code' to 'deals + codes' framing. 9 RackNerd affiliate placements, 10 H2 sections, 5 FAQ. Hub at /promo-codes/ lists all 7 active deals in a table."
     },
     {
@@ -1732,7 +1740,7 @@
       ],
       "primary_affiliate": "racknerd",
       "hot_topic_source": "tier-2-provider-gap-scan",
-      "note": "Tier 2 provider gap scan pick (1 candidate: greengeeks). Picked because: (a) sole uncovered active provider after 2026-07-03 siteground ship, (b) eco-friendly 300% green energy match is unique differentiator not covered by any whitelisted provider, (c) 5-datacenter / 4-region breadth covers EU + APAC audiences vpstier cares about, (d) profile card already exists at /vps/greengeeks.astro (PARTIAL matrix → only blog review needed). RackNerd-default affiliate quirk applied. Tier 4 fallback (hostdare/inmotion) skipped per 2026-07-03 state-reset resilience rule. 8+ RackNerd placements planned (1 direct CTA + 7+ body mentions). 10 H2 sections, 5 FAQ Q&A. Build pending."
+      "note": "Tier 2 provider gap scan pick (1 candidate: greengeeks). Picked because: (a) sole uncovered active provider after 2026-07-03 siteground ship, (b) eco-friendly 300% green energy match is unique differentiator not covered by any whitelisted provider, (c) 5-datacenter / 4-region breadth covers EU + APAC audiences vpstier cares about, (d) profile card already exists at /vps/greengeeks.astro (PARTIAL matrix \u2192 only blog review needed). RackNerd-default affiliate quirk applied. Tier 4 fallback (hostdare/inmotion) skipped per 2026-07-03 state-reset resilience rule. 8+ RackNerd placements planned (1 direct CTA + 7+ body mentions). 10 H2 sections, 5 FAQ Q&A. Build pending."
     },
     {
       "slug": "hostdare-vps-review-2026",
@@ -1789,7 +1797,7 @@
       "primary_affiliate": "racknerd",
       "hot_topic_source": "daily-briefing-2026-07-15-new-york-data-center-moratorium-tier-1-news-analysis",
       "tier": "tier-1",
-      "note": "Daily-outline vpstier pick 2026-07-15 (cron id 5fd2a36f2dc4). Tier 1 ⭐ from today's briefing: NY became first U.S. state to impose a 1-year data-center construction moratorium (Reuters + CNBC + NYT + WaPo + HN 150p). Tier 0 GSC empty for comparison-intent; Tier 2/4 drafts exhausted (greengeeks + hostdare + vps-kyc + aliyun already pending). 10 H2 + 5 FAQ + 10 RackNerd placements. Title 47/60 chars, description 151/155 chars, 0 banned-provider mentions, 0 ZH chars, 0 /zh/ paths. Outline only — no Astro, no build, no deploy, no publication. User must reply `publish` to commit + build + wrangler deploy."
+      "note": "Daily-outline vpstier pick 2026-07-15 (cron id 5fd2a36f2dc4). Tier 1 \u2b50 from today's briefing: NY became first U.S. state to impose a 1-year data-center construction moratorium (Reuters + CNBC + NYT + WaPo + HN 150p). Tier 0 GSC empty for comparison-intent; Tier 2/4 drafts exhausted (greengeeks + hostdare + vps-kyc + aliyun already pending). 10 H2 + 5 FAQ + 10 RackNerd placements. Title 47/60 chars, description 151/155 chars, 0 banned-provider mentions, 0 ZH chars, 0 /zh/ paths. Outline only \u2014 no Astro, no build, no deploy, no publication. User must reply `publish` to commit + build + wrangler deploy."
     },
     {
       "slug": "januscape-kvm-escape-vps-security-2026",
@@ -1911,8 +1919,8 @@
       "providers_featured": [
         "racknerd"
       ],
-      "collision_check": "no existing slug for CF Internal DNS; closest CF cluster mates are 2026-07-19 markdown-for-agents + 2026-07-09 workers-cache — different products, no duplication",
-      "editorial_rebalance": "last 5 picks (zappiehost, crowncloud, bandwagonhost, lightnode, kainode) are all provider reviews — non-provider angle breaks the streak"
+      "collision_check": "no existing slug for CF Internal DNS; closest CF cluster mates are 2026-07-19 markdown-for-agents + 2026-07-09 workers-cache \u2014 different products, no duplication",
+      "editorial_rebalance": "last 5 picks (zappiehost, crowncloud, bandwagonhost, lightnode, kainode) are all provider reviews \u2014 non-provider angle breaks the streak"
     },
     {
       "slug": "luxvps-special-offer-migration-checklist-2026-07-31",
@@ -1921,7 +1929,7 @@
       "outline_file": "drafts/outline-2026-07-23-luxvps-special-offer-migration-checklist-2026-07-31.md",
       "en_astro": null,
       "status": "outline_pending_publish",
-      "tier": "Tier 1 (daily-briefing ⭐ - Luxvps Special Offer shutdown, 8-day countdown)",
+      "tier": "Tier 1 (daily-briefing \u2b50 - Luxvps Special Offer shutdown, 8-day countdown)",
       "heat_source": "daily-briefing-2026-07-23-luxvps-special-offer-shutdown-lowendbox-2026-07-19",
       "primary_affiliate": "racknerd",
       "providers_featured": [
@@ -1944,7 +1952,7 @@
         "h2Count": 10,
         "faqCount": 5
       },
-      "note": "Tier 1 daily-briefing pick (2026-07-23). Luxvps Special Offer ⭐ repeats from 2026-07-23 daily briefing. 8-day countdown to 2026-07-31 23:59 German cutoff. Complement-pivot vs 2026-07-20 outline (which is replacement-providers comparison but stale — hostdare not in providers.json). This outline = migration playbook / final-mile checklist. 5 whitelisted alternatives verified against providers.json 2026-07-23 (racknerd, webdock, bandwagonhost, lightnode, kainode). self-check section paraphrases 'the excluded merchant' to avoid self-citation trap. 9 RackNerd affiliate placements."
+      "note": "Tier 1 daily-briefing pick (2026-07-23). Luxvps Special Offer \u2b50 repeats from 2026-07-23 daily briefing. 8-day countdown to 2026-07-31 23:59 German cutoff. Complement-pivot vs 2026-07-20 outline (which is replacement-providers comparison but stale \u2014 hostdare not in providers.json). This outline = migration playbook / final-mile checklist. 5 whitelisted alternatives verified against providers.json 2026-07-23 (racknerd, webdock, bandwagonhost, lightnode, kainode). self-check section paraphrases 'the excluded merchant' to avoid self-citation trap. 9 RackNerd affiliate placements."
     },
     {
       "slug": "vps-provider-shutdown-warning-signs-2026",
@@ -1953,19 +1961,19 @@
       "outline_file": "drafts/outline-2026-07-24-vps-provider-shutdown-warning-signs-2026.md",
       "en_astro": "src/pages/blog/vps-provider-shutdown-warning-signs-2026.astro",
       "status": "outline_pending_publish",
-      "tier": "Tier 1 (daily-briefing ⭐ - two budget VPS providers shut down end of July)",
+      "tier": "Tier 1 (daily-briefing \u2b50 - two budget VPS providers shut down end of July)",
       "heat_source": "daily-briefing-2026-07-24-two-vps-providers-shutdown-lowendbox-tier-1-news-analysis",
       "primary_affiliate": "racknerd",
       "providers_featured": [
         "racknerd"
       ],
       "title_en": "VPS Shutdown Warnings: 5 Signs Your Host May Close (2026)",
-      "description_en": "Two budget VPS providers shut down July 2026 — is your host next? Spot financial trouble early with these 5 warning signs before you lose data.",
+      "description_en": "Two budget VPS providers shut down July 2026 \u2014 is your host next? Spot financial trouble early with these 5 warning signs before you lose data.",
       "racknerd_placements_planned": 8,
       "h2_count_planned": 10,
       "faq_count_planned": 5,
       "self_check": "8-check pre-flight PASSED (hetzner=0, zh=0, /zh/=0, racknerd=8 planned, h2=10, faq=5, title=57, desc=143)",
-      "editorial_rebalance": "last 3 picks all provider reviews (ramnode, servarica, webdock) — non-provider news-analysis guide breaks the streak"
+      "editorial_rebalance": "last 3 picks all provider reviews (ramnode, servarica, webdock) \u2014 non-provider news-analysis guide breaks the streak"
     },
     {
       "slug": "5-best-cheap-vps-deals-summer-2026",
@@ -1974,7 +1982,7 @@
       "outline_file": "drafts/outline-2026-07-26-5-best-cheap-vps-deals-summer-2026.md",
       "en_astro": null,
       "status": "outline_pending_publish",
-      "tier": "Tier 1 (daily-briefing ⭐ — 2026 夏季促销汇总)",
+      "tier": "Tier 1 (daily-briefing \u2b50 \u2014 2026 \u590f\u5b63\u4fc3\u9500\u6c47\u603b)",
       "heat_source": "daily-briefing-2026-07-26-summer-vps-promotions",
       "primary_affiliate": "racknerd",
       "providers_featured": [
@@ -1987,7 +1995,7 @@
         "alphavps"
       ],
       "title_en": "5 Best Cheap VPS Deals for Summer 2026: $1.99/mo & Up",
-      "description_en": "Summer 2026 VPS deals: RackNerd, VirMach, Hostinger, budget hosts with active promos. Starting from $1.60/mo — find the best value before prices change.",
+      "description_en": "Summer 2026 VPS deals: RackNerd, VirMach, Hostinger, budget hosts with active promos. Starting from $1.60/mo \u2014 find the best value before prices change.",
       "racknerd_placements_planned": 10,
       "h2_count_planned": 10,
       "faq_count_planned": 5,
@@ -2017,7 +2025,7 @@
       ],
       "primary_affiliate": "racknerd",
       "tier": "Tier 0 GSC demand capture",
-      "hot_topic_source": "GSC 2026-08-01: namecheap vps — 2 impressions, position 16, 0 clicks; existing short /vps/namecheap/ profile but no dedicated blog review",
+      "hot_topic_source": "GSC 2026-08-01: namecheap vps \u2014 2 impressions, position 16, 0 clicks; existing short /vps/namecheap/ profile but no dedicated blog review",
       "title_en": "Namecheap VPS Review 2026: Pricing, Pros and Cons",
       "description_en": "Namecheap VPS review for 2026: compare plans, management options, performance limits, renewal costs, support, and better-value alternatives before you buy.",
       "racknerd_placements_planned": 8,
@@ -2078,7 +2086,7 @@
       "en_astro": "src/pages/blog/data-center-politicalization-2026-vps-buyers.astro",
       "zh_astro": null,
       "status": "outline_pending_publish",
-      "tier": "Tier 1 (daily-briefing ⭐ substitute for banned #1; 6th firing of banned-pivot in 6 days)",
+      "tier": "Tier 1 (daily-briefing \u2b50 substitute for banned #1; 6th firing of banned-pivot in 6 days)",
       "heat_source": "daily-briefing-2026-08-04-data-center-politicalization-ny-tx-ky",
       "primary_affiliate": "racknerd",
       "providers_featured": [
@@ -2090,13 +2098,13 @@
       ],
       "title_en": "Data Center Politicalization 2026: VPS Buyer Guide",
       "title_chars": 50,
-      "description_en": "NY moratorium, TX rural push, KY tax-break debate — how 2026 data center politics reshapes where your VPS lives across 5 whitelisted providers.",
+      "description_en": "NY moratorium, TX rural push, KY tax-break debate \u2014 how 2026 data center politics reshapes where your VPS lives across 5 whitelisted providers.",
       "description_chars": 154,
       "h2_count": 10,
       "faq_count": 5,
       "racknerd_cta_count_planned": 7,
       "banned_self_check": "PASSED",
-      "note": "Tier 1 ⭐ substitute (Hetzner banned) + multi-provider news analysis + buyer guide. Existing 07-15 ny-data-center-moratorium-2026-vps-buyers outline is now scope-superseded; cron flags for user archive decision. 8-3 serverhost outline remains independent and pending. Streak=2; comparison chosen on angle shape, not streak pressure."
+      "note": "Tier 1 \u2b50 substitute (Hetzner banned) + multi-provider news analysis + buyer guide. Existing 07-15 ny-data-center-moratorium-2026-vps-buyers outline is now scope-superseded; cron flags for user archive decision. 8-3 serverhost outline remains independent and pending. Streak=2; comparison chosen on angle shape, not streak pressure."
     },
     {
       "date": "2026-08-07",
@@ -2155,7 +2163,7 @@
       "h2_count": 10,
       "faq_count": 5,
       "racknerd_placements_planned": 8,
-      "heat_source": "WooCommerce 11 release (~2026-08-06), 'big stores less annoying to host' — verified from HostingAdvice.com (8-06) + RS Web Solutions (8-08); 9th consecutive Tier-1 banned-pivot / briefing-failure run (8-06 + 8-08 briefings FAILED 400)",
+      "heat_source": "WooCommerce 11 release (~2026-08-06), 'big stores less annoying to host' \u2014 verified from HostingAdvice.com (8-06) + RS Web Solutions (8-08); 9th consecutive Tier-1 banned-pivot / briefing-failure run (8-06 + 8-08 briefings FAILED 400)",
       "internal_cross_links": [
         "/vps/racknerd/",
         "/vps/hostinger/",
@@ -2218,7 +2226,7 @@
       "date": "2026-08-10",
       "slug": "managed-kubernetes-on-budget-vps-2026",
       "status": "outline_pending_publish",
-      "tier": "Tier 1 daily-briefing ⭐ (briefing SUCCEEDED 2026-08-10, first success since 8-06/8-08/8-09 failures) - RareCloud K8s+MCP story; shaped as multi-provider K8s-on-a-budget buyer-guide anchored on whitelisted providers",
+      "tier": "Tier 1 daily-briefing \u2b50 (briefing SUCCEEDED 2026-08-10, first success since 8-06/8-08/8-09 failures) - RareCloud K8s+MCP story; shaped as multi-provider K8s-on-a-budget buyer-guide anchored on whitelisted providers",
       "type": "comparison / buyer guide (managed Kubernetes on a budget VPS)",
       "title_en": "Managed Kubernetes on a Budget VPS in 2026: Top Picks",
       "title_chars": 53,
@@ -2239,7 +2247,7 @@
       "h2_count": 9,
       "faq_count": 5,
       "racknerd_placements_planned": 7,
-      "heat_source": "Daily briefing 2026-08-10 ⭐: RareCloud returns to LowEndBox (Aug 06, raindog308) with rebuilt OpenStack platform - Managed K8s (free control plane, bills only workers), hourly Cloud VMs from EUR3.99/mo, public REST API + Go CLI + Terraform + MCP server for agentic provisioning, 9 DCs. RareCloud NOT whitelisted - used as attributed single-source news hook (LowEndBox), not a review target. Overlapping 2GB-VPS-$4 promo NOT re-picked (captured by queued 8-03 cheapest-2gb-vps-2026).",
+      "heat_source": "Daily briefing 2026-08-10 \u2b50: RareCloud returns to LowEndBox (Aug 06, raindog308) with rebuilt OpenStack platform - Managed K8s (free control plane, bills only workers), hourly Cloud VMs from EUR3.99/mo, public REST API + Go CLI + Terraform + MCP server for agentic provisioning, 9 DCs. RareCloud NOT whitelisted - used as attributed single-source news hook (LowEndBox), not a review target. Overlapping 2GB-VPS-$4 promo NOT re-picked (captured by queued 8-03 cheapest-2gb-vps-2026).",
       "internal_cross_links": [
         "/vps/racknerd/",
         "/vps/vultr/",
@@ -2256,7 +2264,7 @@
       ],
       "content_gap_evidence": "0 'mcp' / 0 'managed k8s' matches in src/; 'kubernetes' only in passing review mentions; no dedicated K8s-on-a-budget buyer-guide exists (grep verified 2026-08-10)",
       "self_check": "PASSED (excluded-merchant-in-outline=0 incl. rationale, cjk=0, zh-routes=0, title=53, desc=152, h2=9, faq=5, racknerd=7 CTA exact match, 12/12 internal links resolve; briefing SUCCEEDED; provider K8s facts flagged for full-draft reverification from live provider pages)",
-      "note": "Briefing SUCCEEDED 2026-08-10 (first since 8-06/8-08/8-09 HTTP-400 failures) and produced official vpstier ⭐ (RareCloud K8s+MCP). RareCloud not whitelisted -> built as multi-provider 'managed Kubernetes on a budget VPS in 2026' buyer-guide anchored on RackNerd(DIY K3s)/Vultr(VKE)/DigitalOcean(DOKS)/Hostinger/Contabo, with the LEB-attributed RareCloud return as news hook + MCP-as-agentic-VPS-management section. Content gap confirmed (0 mcp / 0 managed-k8s). Orthogonal to all pending outlines; does not compound backlog. GSC today = only 'ovh vps ssd' (already captured by 8-07 ovhcloud outline). Outline only - awaiting publish."
+      "note": "Briefing SUCCEEDED 2026-08-10 (first since 8-06/8-08/8-09 HTTP-400 failures) and produced official vpstier \u2b50 (RareCloud K8s+MCP). RareCloud not whitelisted -> built as multi-provider 'managed Kubernetes on a budget VPS in 2026' buyer-guide anchored on RackNerd(DIY K3s)/Vultr(VKE)/DigitalOcean(DOKS)/Hostinger/Contabo, with the LEB-attributed RareCloud return as news hook + MCP-as-agentic-VPS-management section. Content gap confirmed (0 mcp / 0 managed-k8s). Orthogonal to all pending outlines; does not compound backlog. GSC today = only 'ovh vps ssd' (already captured by 8-07 ovhcloud outline). Outline only - awaiting publish."
     },
     {
       "date": "2026-08-11",
@@ -2312,7 +2320,7 @@
       "type": "multi-provider comparison / buyer-guide (7 providers)",
       "title_en": "Best VPS for AI Agents 2026: 7 Providers Compared",
       "title_chars": 49,
-      "description_en": "Compare 7 VPS providers for AI agents in 2026. RAM for local LLMs, GPU availability, uptime, and cost per agent — budget to production.",
+      "description_en": "Compare 7 VPS providers for AI agents in 2026. RAM for local LLMs, GPU availability, uptime, and cost per agent \u2014 budget to production.",
       "description_chars": 135,
       "outline_file": "drafts/outline-2026-08-14-vpstier-daily.md",
       "run_record_file": "drafts/run-record-2026-08-14-vpstier-daily-outline.md",
@@ -2525,16 +2533,16 @@
     }
   ],
   "recent_topics": [
-    "iozoom-vps-review-2026",
     "data-center-heat-siting-vps-selection-2026",
     "milesweb-vps-review-2026",
     "best-ryzen-gaming-single-core-vps-2026",
-    "ultahost-vps-review-2026"
+    "ultahost-vps-review-2026",
+    "dedirock-vps-review-2026"
   ],
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "drafts_count": 31,
-  "published_count": 77,
-  "last_run": "2026-08-23",
-  "last_publish": "2026-08-23",
-  "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from €3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118→120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)\n2026-08-24 daily-outline: ddos-protected-vps-buying-guide-2026 (DDoS buyer-guide; briefing stars captured/banned, pivoted to Cloudflare H1 2026 DDoS report). Outline: drafts/outline-2026-08-24-vpstier-daily.md"
+  "published_count": 78,
+  "last_run": "2026-08-24",
+  "last_publish": "2026-08-24",
+  "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116\u2192118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from \u20ac3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118\u2192120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)\n2026-08-24 daily-outline: ddos-protected-vps-buying-guide-2026 (DDoS buyer-guide; briefing stars captured/banned, pivoted to Cloudflare H1 2026 DDoS report). Outline: drafts/outline-2026-08-24-vpstier-daily.md"
 }
