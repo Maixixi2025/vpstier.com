@@ -7,13 +7,29 @@ const vpsDir = path.resolve('src/pages/vps');
 const vpsFiles = fs.readdirSync(vpsDir).filter(f => f.endsWith('.astro') && f !== 'index.astro');
 const vpsCount = vpsFiles.length;
 
-const posts = [
-  { slug: 'best-vps-for-small-business-2026', title: 'Best VPS for Small Business 2026: 6 Providers Compared', date: 'June 15, 2026', category: 'Comparison' },
-  { slug: 'nvme-vps-under-10-2026', title: 'NVMe VPS Under $10/Month 2026: 5 Best Providers', date: 'June 14, 2026', category: 'Comparison' },
-  { slug: 'vps-pricing-trap-guide-2026', title: 'VPS Pricing Traps 2026: Avoid Bait-and-Switch Renewal Fees', date: 'June 13, 2026', category: 'Guide' },
-  { slug: 'best-unmetered-bandwidth-vps-north-america-2026', title: 'Top Unmetered Bandwidth VPS in North America 2026', date: 'June 12, 2026', category: 'Comparison' },
-];
+// Read frontmatter titles for VPS pages
+const vpsPages = vpsFiles.map(f => {
+  const slug = f.replace('.astro', '');
+  const content = fs.readFileSync(path.join(vpsDir, f), 'utf8');
+  const m = content.match(/^title:\s*["']?([^"'\n]+)/m);
+  const title = m ? m[1].trim().replace(/^["']|["']$/g, '') : slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return { slug, title };
+});
 
+// Read blog frontmatter
+const blogDir = path.resolve('src/pages/blog');
+const blogFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.astro') && f !== 'index.astro');
+const blogPosts = blogFiles.map(f => {
+  const slug = f.replace('.astro', '');
+  const content = fs.readFileSync(path.join(blogDir, f), 'utf8');
+  const titleMatch = content.match(/^title:\s*["']?([^"'\n]+)/m);
+  const dateMatch = content.match(/^pubDate:\s*["']?([^"'\n]+)/m);
+  const title = titleMatch ? titleMatch[1].trim().replace(/^["']|["']$/g, '') : slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const date = dateMatch ? dateMatch[1].trim().replace(/^["']|["']$/g, '') : '';
+  return { slug, title, date };
+}).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+// Hardcoded featured providers (kept for visual interest on hero)
 const featuredProviders = [
   { slug: 'racknerd', name: 'RackNerd', tag: 'Top Pick', tagColor: 'green', icon: 'server', price: '$17.88/yr', commission: '$80-100', cookie: '45 day', desc: 'Best value VPS with 10+ North American datacenters and NVMe storage.' },
   { slug: 'vultr', name: 'Vultr', tag: 'GPU Available', tagColor: 'green', icon: 'bolt', price: '$2.5/mo', commission: '$10-100', cookie: '30 day', desc: '32 global locations, GPU instances (A100/H100), and developer-friendly API.' },
@@ -41,49 +57,60 @@ const iconBgColors = {
   cloud: 'from-blue-500/20 to-blue-600/20 border-blue-500/20',
 };
 
-const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
+// Split VPS into chunks of 3 for the alphabetical grid
+const vpsPagesChunked: typeof vpsPages[] = [];
+for (let i = 0; i < vpsPages.length; i += 3) {
+  vpsPagesChunked.push(vpsPages.slice(i, i + 3));
+}
 ---
 
 <BaseLayout title="VPSTier.com - Best VPS Hosting for AI Agents & Developers">
-  
+
   <!-- Hero -->
   <section class="hero-gradient relative overflow-hidden">
     <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
-    
+
     <div class="max-w-6xl mx-auto px-6 py-24 relative">
       <div class="max-w-3xl">
         <div class="badge badge-green mb-6 w-fit">
           <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4"/></svg>
           Independent VPS Reviews
         </div>
-        
+
         <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-          Find the 
+          Find the
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
             Best VPS
           </span>
           for Your AI Agents
         </h1>
-        
+
         <p class="text-xl text-gray-400 mb-10 max-w-2xl">
-          Real reviews from developers who self-host AI agents and build production projects. 
+          Real reviews from developers who self-host AI agents and build production projects.
           Commission rates included — you know exactly what you'll earn.
         </p>
-        
+
         <div class="flex flex-wrap gap-4 mb-16">
           <a href="/vps" class="btn-primary">
             Browse {vpsCount} Reviews
           </a>
-          <a href="/compare" class="btn-secondary">
-            Compare Plans
+          <a href="/blog" class="btn-secondary">
+            Read {blogPosts.length} Articles
+          </a>
+          <a href="/sitemap" class="btn-secondary">
+            Sitemap
           </a>
         </div>
-        
+
         <!-- Stats -->
         <div class="flex flex-wrap gap-12">
           <div>
             <div class="text-3xl font-bold text-white">{vpsCount}</div>
             <div class="text-gray-500 text-sm">VPS Providers</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-white">{blogPosts.length}</div>
+            <div class="text-gray-500 text-sm">Articles &amp; Guides</div>
           </div>
           <div>
             <div class="text-3xl font-bold text-white">$50-175</div>
@@ -92,10 +119,6 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
           <div>
             <div class="text-3xl font-bold text-white">120</div>
             <div class="text-gray-500 text-sm">Max Cookie Days</div>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-white">100%</div>
-            <div class="text-gray-500 text-sm">Independent Reviews</div>
           </div>
         </div>
       </div>
@@ -113,7 +136,7 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
         View all {vpsCount} →
       </a>
     </div>
-    
+
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {featuredProviders.map((p) => (
         <a href={`/vps/${p.slug}`} class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
@@ -124,10 +147,10 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
               {p.tag}
             </div>
           </div>
-          
+
           <h3 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">{p.name}</h3>
           <p class="text-gray-500 text-sm mb-4">{p.desc}</p>
-          
+
           <div class="flex items-center justify-between pt-4 border-t border-white/5">
             <div>
               <div class="text-orange-400 font-bold text-lg">{p.commission}<span class="text-gray-500 text-xs font-normal">/sale</span></div>
@@ -140,28 +163,65 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
     </div>
   </section>
 
-  <!-- Latest Articles -->
+  <!-- Latest Articles (dynamic) -->
   <section class="border-t border-white/5">
     <div class="max-w-6xl mx-auto px-6 py-20">
       <div class="flex items-end justify-between mb-10">
         <div>
-          <h2 class="section-heading">Latest Articles</h2>
-          <p class="section-subheading">Weekly VPS comparisons and commission benchmarks.</p>
+          <h2 class="section-heading">Latest Articles &amp; Guides</h2>
+          <p class="section-subheading">{blogPosts.length} reviews, comparisons, and buying guides.</p>
         </div>
         <a href="/blog" class="text-orange-500 hover:text-orange-400 text-sm font-medium transition-colors">
           View all →
         </a>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {posts.map((post) => (
+        {blogPosts.slice(0, 12).map((post) => (
           <a href={`/blog/${post.slug}`} class="group bg-[#111] border border-white/5 rounded-2xl p-6 card-hover block">
-            <div class="flex items-center gap-2 mb-3">
-              <span class={`${categoryBadge[post.category] || 'badge-orange'} text-xs`}>{post.category}</span>
-              <span class="text-gray-600 text-xs">{post.date}</span>
-            </div>
             <h3 class="text-base font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
               {post.title}
             </h3>
+            {post.date && <div class="text-gray-600 text-xs mt-3">{post.date}</div>}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- All VPS Providers (NEW — full list for SEO) -->
+  <section class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <h2 class="section-heading">All VPS Provider Reviews</h2>
+          <p class="section-subheading">{vpsCount} providers reviewed. Pick the one that fits your workload.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        {vpsPages.map((p) => (
+          <a href={`/vps/${p.slug}`} class="group flex items-center gap-2 text-gray-400 hover:text-orange-400 transition-colors py-1.5">
+            <svg class="w-3.5 h-3.5 text-orange-500/60 group-hover:text-orange-400 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+            <span class="text-sm">{p.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- All Articles (NEW — full list for SEO) -->
+  <section class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <h2 class="section-heading">All Articles &amp; Reviews</h2>
+          <p class="section-subheading">{blogPosts.length} articles. VPS reviews, buying guides, outage postmortems.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        {blogPosts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="group flex items-center gap-2 text-gray-400 hover:text-orange-400 transition-colors py-1.5">
+            <svg class="w-3.5 h-3.5 text-orange-500/60 group-hover:text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span class="text-sm">{post.title}</span>
           </a>
         ))}
       </div>
@@ -175,7 +235,7 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
         <div>
           <h2 class="section-heading mb-4">Why Trust VPSTier?</h2>
           <p class="text-gray-400 mb-8">
-            We use these VPS providers ourselves for AI agent deployments, side projects, and client work. 
+            We use these VPS providers ourselves for AI agent deployments, side projects, and client work.
             Every review is based on real usage — not copied from marketing materials.
           </p>
           <div class="space-y-4">
@@ -217,7 +277,7 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
         <div class="bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 rounded-2xl p-8">
           <div class="text-orange-400 font-semibold text-sm mb-4">COMMISSION DISCLOSURE</div>
           <p class="text-gray-300 text-sm leading-relaxed">
-            VPSTier.com is an independent review site. We earn commissions from VPS providers when you sign up through our links. 
+            VPSTier.com is an independent review site. We earn commissions from VPS providers when you sign up through our links.
             This does not affect our reviews or rankings. We only recommend products we believe in.
           </p>
         </div>
@@ -234,8 +294,8 @@ const categoryBadge = { Comparison: 'badge-orange', Guide: 'badge-blue' };
         <a href="/vps" class="btn-primary">
           View {vpsCount} VPS Reviews
         </a>
-        <a href="/compare" class="btn-secondary">
-          Compare Plans
+        <a href="/sitemap" class="btn-secondary">
+          See Full Sitemap
         </a>
       </div>
     </div>
