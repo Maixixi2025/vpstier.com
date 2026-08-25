@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vpstier.com/sitemap-index.xml
+Sitemap: https://vpstier.com/sitemap-v2.xml
