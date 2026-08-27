@@ -2,6 +2,29 @@
   "current_index": 59,
   "published": [
     {
+      "slug": "serverhub-vps-review-2026",
+      "date": "2026-08-26",
+      "type": "review",
+      "en_astro": "src/pages/blog/serverhub-vps-review-2026.astro",
+      "zh_astro": null,
+      "provider_astro": "src/pages/vps/serverhub.astro",
+      "status": "published",
+      "providers_featured": [
+        "serverhub",
+        "racknerd",
+        "vultr",
+        "digitalocean"
+      ],
+      "primary_affiliate": "racknerd",
+      "title_en": "ServerHub VPS Review 2026: IronGrid from $5/mo, 9 Datacenters",
+      "description_en": "ServerHub VPS review: IronGrid Pure SSD + SSD-Cached from $5/mo across 9 datacenters with 10 Gbit network and IPv6-native since 2011. 23-year track record, RAID-10 storage.",
+      "hot_topic_source": "briefing-star-EXHAUSTED + all-13-prompt-options-covered (8-19 Cloudblast -> 8-20 MilesWeb -> 8-21 Ultahost -> 8-23 IO Zoom -> 8-25 HostNOC -> 8-26 ServerHub): batch-403 probe (Veloxhost/Datapacket/HostDime/Psychz/Sharktech rejected; ServerHub won with 9-DC + 23-year track record)",
+      "published_at": "2026-08-26",
+      "deployed_url_en": "https://vpstier.com/blog/serverhub-vps-review-2026/",
+      "deployed_url_vps": "https://vpstier.com/vps/serverhub/",
+      "note": "RECONCILIATION 2026-08-27: the 08-26 add-provider run deployed ServerHub live but hit iteration-budget post-deploy pre-state.json (per references/vpstier-add-provider-2026-08-26-serverhub.md open items). This entry records it as published (it IS live on site) and was committed 2026-08-27 by today's add-provider run. 4-plan-names-repeated-8x disambiguation (PRO/Master/Starter/VALUE x2 = 8 tiers); 10G-network + 23-year-track-record angle; no-free-DDoS cons-list differentiator."
+    },
+    {
       "slug": "iozoom-vps-review-2026",
       "date": "2026-08-23",
       "type": "review",
@@ -2541,19 +2564,63 @@
       "status": "outline_pending_publish",
       "slug": "racknerd-inc-5000-2026-review",
       "outline_file": "drafts/outline-2026-08-26-vpstier-daily.md"
+    },
+    {
+      "date": "2026-08-27",
+      "status": "outline_pending_publish",
+      "slug": "vps-provider-exit-warning-signs-2026",
+      "outline_file": "drafts/outline-2026-08-27-vpstier-daily.md",
+      "run_record_file": "drafts/run-record-2026-08-27-vpstier-daily-outline.md",
+      "format": "evergreen buyer-guide (provider-trust / merchant-exit vetting)",
+      "topic": "Budget-VPS provider trust / exit-warning-signs vetting (merchant-exit protection)",
+      "title_en": "How to Spot a VPS Provider About to Exit: 2026 Warning Signs",
+      "title_chars": 60,
+      "description_en": "Hosts vanish, get seized, or shut down and take your data with them. Here are the warning signs to vet a budget VPS provider before you pay.",
+      "description_chars": 140,
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "contabo"
+      ],
+      "primary_affiliate": "racknerd",
+      "h2_count": 10,
+      "faq_count": 5,
+      "racknerd_cta_count": 7,
+      "en_astro": "src/pages/blog/vps-provider-exit-warning-signs-2026.astro",
+      "zh_astro": null,
+      "heat_source": "daily briefing 2026-08-27: vpstier star = 'VPS merchant exit / runaway warning (Italian regulatory review case)' — compressed label, NO merchant name or URL; unverifiable after exhaustive search (Google News RSS 30+ EN/IT families, HN Algolia, LowEndBox feed, DDG) -> theme adopted, fact NOT asserted. Anchored on two body-verified dated incidents: Krebs on Security 2026-05-25 Netherlands seizes 800 servers (hosting customers told data 'lost and cannot be recovered') + Europol 2026-05-21 cybercriminal VPN dismantled (33 servers). Content-gap: whole-disk 0 hits for exit-scam/fly-by-night/vet/trustworth/seized/takedown; existing shutdown article is Garnix SaaS-tool postmortem, not provider-trust.",
+      "tier": "Tier 1 daily-briefing SUCCEEDED 2026-08-27, star theme = merchant-exit warning; specific incident unverifiable (anti-fabrication -> theme-adoption); gap-fill provider-trust evergreen buyer-guide",
+      "internal_cross_links": [
+        "/blog/2026-shutdown-cloud-services-vps-migration/",
+        "/blog/vps-pricing-trap-guide-2026/",
+        "/blog/vps-buying-guide/",
+        "/blog/racknerd-deep-review-2025/",
+        "/blog/racknerd-vs-vultr-2025/",
+        "/blog/vultr-deep-review/",
+        "/blog/hostinger-review/",
+        "/blog/contabo-vps-review-2025/",
+        "/blog/aws-us-east-1-outage-2026/",
+        "/blog/nvme-vps-under-10-2026/"
+      ],
+      "content_gap_evidence": "whole-disk body-grep across 56 blog + 68 vps .astro files = 0 hits for exit scam / fly-by-night / runaway / walkaway / vet / trustworth / seized / takedown / vanished / dead host / abandoned / provider went / gone out of business / before you pay (verified 2026-08-27); due diligence = 1 passing mention (CherryServers review). Existing shutdown article 2026-shutdown-cloud-services-vps-migration is a Garnix SaaS-tool postmortem + migration guide, not a VPS-provider trust/vetting page. Distinct page class from reviews (racknerd-deep-review-2025), pricing traps (vps-pricing-trap-guide-2026), and outages (aws-us-east-1-outage-2026).",
+      "self_check": "0 banned-merchant name in whole draft (grep case-insensitive, verified); 0 CJK (briefing CJK star label NOT quoted); /zh/ = 2 legitimate audit lines; slug not in published or drafts; all 5 providers whitelisted in providers.json; title 60 chars (30-60), desc 140 chars (70-155); 10 H2, 5 FAQ, 7 RackNerd CTA placements; internal blog links verified on disk (pending companions NOT linked).",
+      "note": "Evergreen buyer-guide: how to vet a budget VPS provider's trustworthiness BEFORE paying — 4 exit/runaway warning signs (no verifiable company, unsustainable pricing, support/reliability decay, abusive/high-risk traffic profile that invites the regulatory-takedown special case) + the off-site-backup defense + a 10-minute repeatable trust checklist. Anchored on body-verified incident evidence (Krebs 2026-05-25 Netherlands 800-server seizure w/ permanent data loss; Europol 2026-05-21 VPN dismantling). RackNerd honesty pattern: anchored on verifiable 7-yr LowEndTalk community track record + 6x Inc. honoree longevity, NOT on performance superiority (Vultr/DO lead there, presented honestly). Update-source note: if the 'Italian regulatory review case' merchant story becomes available, upgrade §1 anchors with it — structure is incident-independent."
     }
   ],
   "recent_topics": [
+    "serverhub-vps-review-2026",
     "data-center-heat-siting-vps-selection-2026",
     "milesweb-vps-review-2026",
     "best-ryzen-gaming-single-core-vps-2026",
     "ultahost-vps-review-2026",
     "dedirock-vps-review-2026"
   ],
-  "updated": "2026-08-25",
-  "drafts_count": 33,
-  "published_count": 78,
-  "last_run": "2026-08-26",
-  "last_publish": "2026-08-24",
-  "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from €3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118→120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)\n2026-08-24 daily-outline: ddos-protected-vps-buying-guide-2026 (DDoS buyer-guide; briefing stars captured/banned, pivoted to Cloudflare H1 2026 DDoS report). Outline: drafts/outline-2026-08-24-vpstier-daily.md\n2026-08-26 daily-outline: racknerd-inc-5000-2026-review (RackNerd 2026 Inc. 5000 #3693 / 6x Inc. honoree / 72.33% 3-yr growth / 7-yr LowEndBox track record; company-longevity + current-cheapest-plans buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock #2 captured as queued-8-21 hook -> dropped; RackNerd is the site's own primary affiliate = whitelisted selectable pick)"
+  "updated": "2026-08-27",
+  "drafts_count": 34,
+  "published_count": 79,
+  "last_run": "2026-08-27",
+  "last_publish": "2026-08-26",
+  "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from €3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118→120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)\n2026-08-24 daily-outline: ddos-protected-vps-buying-guide-2026 (DDoS buyer-guide; briefing stars captured/banned, pivoted to Cloudflare H1 2026 DDoS report). Outline: drafts/outline-2026-08-24-vpstier-daily.md\n2026-08-26 daily-outline: racknerd-inc-5000-2026-review (RackNerd 2026 Inc. 5000 #3693 / 6x Inc. honoree / 72.33% 3-yr growth / 7-yr LowEndBox track record; company-longevity + current-cheapest-plans buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock #2 captured as queued-8-21 hook -> dropped; RackNerd is the site's own primary affiliate = whitelisted selectable pick)\n2026-08-27: daily outline vps-provider-exit-warning-signs-2026 (budget-VPS provider trust / merchant-exit vetting; evergreen buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing star theme = merchant-exit warning, specific 'Italian regulatory review case' unverifiable -> theme adopted, fact NOT asserted; anchored on body-verified Krebs 2026-05-25 Netherlands 800-server seizure + Europol 2026-05-21 VPN dismantling; distinct from Garnix SaaS shutdown article; 5 whitelisted providers RackNerd/Vultr/DO/Hostinger/Contabo)\n2026-08-26 (reconciled 2026-08-27): add-provider ServerHub (IronGrid Pure SSD + SSD-Cached from $5/mo, 9 DCs US+EU, 10G port standard, IPv6-native since 2011, founded 2002). Build 125 pages; deployed live 08-26 but state.json entry + git commit were missing (iteration-budget hit) -> recorded + committed this run."
 }
