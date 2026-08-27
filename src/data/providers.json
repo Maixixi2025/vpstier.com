@@ -4389,5 +4389,105 @@
     ],
     "status": "active",
     "featured": false
+  },
+  {
+    "id": "accuwev",
+    "name": "AccuWeb",
+    "tagline": "Managed/enterprise-grade Linux VPS from $4.95/mo across 16+ global data centers with dedicated vCPUs, ECC RAM, and RAID-10 SSD",
+    "startingPrice": 4.95,
+    "cpu": "KVM + Xen (dedicated vCPUs, no overselling) on Intel Scalable + AMD EPYC",
+    "ram": "4GB - 32GB (ECC DDR4/DDR5)",
+    "storage": "50GB - 400GB pure SSD (RAID 6 & 10) + separate SSD backup array",
+    "bandwidth": "250GB - 1TB (1 Gbps port), Earth+/Saturn+/Sun+/Galaxy+ variants to 3TB",
+    "datacenters": [
+      "Denver CO",
+      "New York NY",
+      "N. Virginia VA",
+      "Ohio OH",
+      "Oregon OR",
+      "Montreal CA",
+      "London UK",
+      "Frankfurt DE",
+      "Paris FR",
+      "Ireland IE",
+      "Stockholm SE",
+      "Singapore SG",
+      "Sydney AU",
+      "Tokyo JP",
+      "Seoul KR",
+      "Hyderabad IN",
+      "Johannesburg ZA"
+    ],
+    "affiliateUrl": "https://my.racknerd.com/aff.php?aff=16299",
+    "affiliateAvailable": false,
+    "commission": "",
+    "rating": 4.4,
+    "features": [
+      "KVM and Xen virtualization with dedicated vCPUs and guaranteed CPU - no overselling",
+      "ECC RAM (DDR4/DDR5) and enterprise pure-SSD storage with hardware RAID 6 & RAID 10",
+      "Separate SSD backup array plus off-site backups for disaster recovery",
+      "16+ verified worldwide data centers (US, Canada, Europe, APAC, India, Africa) - SOC 2 Type II certified and GDPR-ready",
+      "23-year operating track record (founded 2003) as part of Vaghasia Group of Companies, 55,000+ hosting accounts",
+      "Managed and unmanaged Linux VPS with full root access, SSH and VNC console, easy OS reinstalls",
+      "99.9% uptime SLA with under-15-minute response for critical issues and migration assistance",
+      "1 Gbps port, 1 dedicated IP included, DDoS mitigation up to 5 Gbps, customizable on-request firewall"
+    ],
+    "pros": [
+      "Dedicated (non-oversold) vCPUs with KVM + Xen - real enterprise virtualization at budget prices",
+      "ECC RAM + enterprise pure SSD on RAID 6/10 with separate backup array - rare in this price band",
+      "16+ global data centers spanning six continents - far broader than most budget hosts",
+      "23-year track record (founded 2003) with a real company behind it (Vaghasia Group)",
+      "Managed and unmanaged options with under-15-minute critical support",
+      "99.9% uptime SLA, 1 Gbps port, dedicated IP, DDoS mitigation to 5 Gbps, SOC 2 Type II facilities"
+    ],
+    "cons": [
+      "Promo pricing ($4.95-$19.95/mo) renews at a higher standard monthly list (Edge $18.99, Supreme $151.99) - lock the promo or read the renewal rate",
+      "DDoS mitigation capped at 5 Gbps - below the always-on in-line tiers on RackNerd/Vultr",
+      "Entry VPS Edge ships only 1 vCPU - 4 GB RAM but single-core compute",
+      "Floor bandwidth is modest (250 GB on Edge) vs unlimited-bandwidth budget hosts",
+      "No public hourly billing - VPS plans bill monthly without Vultr-style instant spin-up"
+    ],
+    "bestFor": [
+      "Buyers who want enterprise-grade infrastructure (dedicated vCPUs, ECC RAM, RAID-10 SSD) at a mid-budget rate",
+      "Small businesses and non-sysadmins who need a managed VPS with real support and setup guidance",
+      "Workloads that need a physically close server in APAC, India, Africa, or Europe",
+      "Production sites that value a 23-year operating track record over the youngest budget entrants"
+    ],
+    "vpsPlans": [
+      {
+        "name": "VPS Edge",
+        "price": 4.95,
+        "cpu": "1 vCPU",
+        "ram": "4GB",
+        "storage": "50GB SSD",
+        "bandwidth": "250GB"
+      },
+      {
+        "name": "VPS Peak",
+        "price": 6.95,
+        "cpu": "2 vCPU",
+        "ram": "8GB",
+        "storage": "100GB SSD",
+        "bandwidth": "450GB"
+      },
+      {
+        "name": "VPS Power",
+        "price": 9.95,
+        "cpu": "3 vCPU",
+        "ram": "16GB",
+        "storage": "200GB SSD",
+        "bandwidth": "650GB"
+      },
+      {
+        "name": "VPS Supreme",
+        "price": 19.95,
+        "cpu": "4 vCPU",
+        "ram": "32GB",
+        "storage": "400GB SSD",
+        "bandwidth": "1TB"
+      }
+    ],
+    "status": "active",
+    "featured": false
   }
 ]
