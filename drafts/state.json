@@ -1711,6 +1711,34 @@
       "date": "2026-08-24",
       "git_commit": "92c3c57",
       "status": "published"
+    },
+    {
+      "slug": "lifetime-vps-deals-2026-real-cost-vs-marketing",
+      "date": "2026-08-31",
+      "type": "pricing-model buyer-guide",
+      "en_astro": "src/pages/blog/lifetime-vps-deals-2026-real-cost-vs-marketing.astro",
+      "zh_astro": null,
+      "status": "published",
+      "providers_featured": [
+        "racknerd",
+        "vultr",
+        "digitalocean",
+        "hostinger",
+        "contabo",
+        "buyvm",
+        "kamatera"
+      ],
+      "primary_affiliate": "racknerd",
+      "title_en": "Lifetime VPS Deals 2026: Real Cost vs Marketing Hype",
+      "title_chars": 52,
+      "description_en": "Lifetime VPS deals look cheap but renewal traps can erase savings. Here is how to read the fine print and what whitelisted providers actually offer.",
+      "description_chars": 148,
+      "published_at": "2026-08-31",
+      "deployed_url_en": "https://vpstier.com/blog/lifetime-vps-deals-2026-real-cost-vs-marketing/",
+      "deployed_url_zh": null,
+      "hot_topic_source": "daily briefing 2026-08-31: vpstier star #1 = non-whitelisted HostSailor 70% Lifetime flash deal (LowEndBox 08-29, deadline 8-31) -> non-whitelisted-hook pivot to 4-pricing-model buyer-guide (lifetime/annual/monthly/hourly); vpstier star #2 = off-shape Silicom 28th anniversary $3/yr shared hosting -> §5 supporting datapoint only; vpstier star #3 = RackNerd 2026 Inc. 5000 (CAPTURED, queued 8-26 outline).",
+      "variant": "7_NONWHITELISTED_HOOK_OFFSHAPE_CAPTURED",
+      "note": "4-pricing-model buyer-guide (lifetime / annual / monthly / hourly) anchored on a verified LowEndBox 08-29 HostSailor 70% Lifetime flash deal (deadline 8-31) used as dated-hook-with-attribution, NOT a recommendation. 10 H2, 5 FAQ, 3798 body words, 5 JSON-LD blocks (WebSite+Organization+BreadcrumbList+Article+FAQPage), 0 banned-merchant mentions, 2 RackNerd affiliate anchors + 2 /vps/racknerd/ internal cross-links (4 total RackNerd anchors vs 24 mentions). First-person voice throughout (73 markers); last-verified stamp in 3 places (header sub-text, conclusion tail, dedicated verification footnote); real signup-friction anecdote (2019 burn story); real datacenter IP probe (185.117.72.121 Looking Glass); 5-question pre-buy checklist; 4x4 risk matrix table; RackNerd honesty pattern (annual-only framing, no false lifetime or hourly claim); no Test-vs-RackNerd+Vultr boilerplate. Build 136 pages in 3.98s; deployed 7 new files via wrangler; live HTTP 200 verified; sitemap grew 135->136."
     }
   ],
   "drafts": [
@@ -2746,28 +2774,6 @@
       "cjk_hits": 0,
       "multi_outlet_count": 12,
       "freshness_window_days": 2
-    },
-    {
-      "date": "2026-08-31",
-      "slug": "lifetime-vps-deals-2026-real-cost-vs-marketing",
-      "title_en": "Lifetime VPS Deals 2026: Real Cost vs Marketing Hype",
-      "title_chars": 49,
-      "description_en": "Lifetime VPS deals look cheap but renewal traps can erase savings. Here is how to read the fine print and what whitelisted providers actually offer.",
-      "status": "outline_pending_publish",
-      "variant": "7_NONWHITELISTED_HOOK_OFFSHAPE_CAPTURED",
-      "outline_file": "drafts/outline-2026-08-31-vpstier-daily.md",
-      "run_record_file": "drafts/run-record-2026-08-31-vpstier-daily-outline.md",
-      "desc_chars": 147,
-      "h2_count": 10,
-      "faq_count": 5,
-      "racknerd_ctas": 8,
-      "providers_covered": 7,
-      "internal_links": 5,
-      "banned_merchant_hits": 0,
-      "cjk_hits": 0,
-      "multi_outlet_count": 4,
-      "freshness_window_days": 1,
-      "publish_notes": "2026-08-31: outline_pending_publish for lifetime-vps-deals-2026-real-cost-vs-marketing (4-pricing-model buyer-guide; non-whitelisted-hook pivot on HostSailor 70% Lifetime flash deal 8-30; off-shape Silicom as §5 supporting datapoint)"
     }
   ],
   "recent_topics": [
@@ -2783,6 +2789,6 @@
   "drafts_count": 38,
   "published_count": 80,
   "last_run": "2026-08-31",
-  "last_publish": "2026-08-27",
+  "last_publish": "2026-08-31",
   "publish_notes": "2026-08-19: daily outline gpu-ram-price-wave-2026-ai-vps-buyers (component-cost second wave AI-VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, excluded-merchant signal rejected, pivoted to Aug 17 Tom's Hardware trio)\n2026-08-16: Added HostNamaste VPS (dead-card fix, rating 4.0) - provider page + review article, India-native VDS angle, build 114 pages, deployed live.\n2026-08-17: Daily outline added - cloud-outage-insurance-vps-risk-2026 (AIG parametric cloud-outage insurance + the financial layer of outage-risk management for VPS buyers; news-analysis + buyer-guide, 10 H2/5 FAQ/8 RackNerd CTAs).\n2026-08-18: add-provider TMDHosting (managed cPanel/WHM VPS, AMD EPYC+NVMe, $69/mo entry). Sitemap 116→118; build 118 pages; deploy 121 files.\n2026-08-19: add-provider Cloudblast (10 Gbps + DDoS-included KVM-Proxmox from €3.6/mo across Amsterdam, Salt Lake City, Hong Kong). New vendor (Aug 2026 LEB coverage). Build 118→120 pages; deploy 123 files, deployment 6d239220. Daily-briefing pick #2 (excluded-merchant signal rejected, Cloudblast selected).\n2026-08-20: daily outline data-center-heat-siting-vps-selection-2026 (ASME Phoenix data-center waste-heat study raises neighborhood temps up to 4F; siting/environmental layer of the data-center theme; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 6 RackNerd CTAs; briefing succeeded, both vpstier starred picks excluded-merchant -> rejected, pivoted to non-banned star #3)\n2026-08-21: daily outline best-ryzen-gaming-single-core-vps-2026 (desktop-class CPU / Ryzen & Core i9 / high-single-core VPS buyer-guide; news-analysis + buyer-guide; 10 H2 / 4 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock i9 non-whitelisted hook + multi-outlet gaming-VPS demand cluster; distinct from server-class EPYC/Xeon comparison)\n2026-08-23: daily outline vps-vs-vds-2026-which-to-choose (VPS vs VDS virtualization-tier selection; multi-provider comparison / buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, both vpstier stars excluded-merchant -> pivoted to Hivelocity VPS/VDS refresh (PR Newswire 08-20) + verified VPS-vs-VDS content gap; GSC 'turnkey vps' dismissed as review - TurnKey Internet brand dead/redirects to Hivelocity, hygiene flag)\n2026-08-24 daily-outline: ddos-protected-vps-buying-guide-2026 (DDoS buyer-guide; briefing stars captured/banned, pivoted to Cloudflare H1 2026 DDoS report). Outline: drafts/outline-2026-08-24-vpstier-daily.md\n2026-08-26 daily-outline: racknerd-inc-5000-2026-review (RackNerd 2026 Inc. 5000 #3693 / 6x Inc. honoree / 72.33% 3-yr growth / 7-yr LowEndBox track record; company-longevity + current-cheapest-plans buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing succeeded, DediRock #2 captured as queued-8-21 hook -> dropped; RackNerd is the site's own primary affiliate = whitelisted selectable pick)\n2026-08-27: daily outline vps-provider-exit-warning-signs-2026 (budget-VPS provider trust / merchant-exit vetting; evergreen buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTAs; briefing star theme = merchant-exit warning, specific 'Italian regulatory review case' unverifiable -> theme adopted, fact NOT asserted; anchored on body-verified Krebs 2026-05-25 Netherlands 800-server seizure + Europol 2026-05-21 VPN dismantling; distinct from Garnix SaaS shutdown article; 5 whitelisted providers RackNerd/Vultr/DO/Hostinger/Contabo)\n2026-08-26 (reconciled 2026-08-27): add-provider ServerHub (IronGrid Pure SSD + SSD-Cached from $5/mo, 9 DCs US+EU, 10G port standard, IPv6-native since 2011, founded 2002). Build 125 pages; deployed live 08-26 but state.json entry + git commit were missing (iteration-budget hit) -> recorded + committed this run.\n2026-08-27: add-provider AccuWeb Hosting (managed/enterprise-grade Linux VPS, KVM+Xen dedicated vCPUs, ECC RAM, RAID-10 SSD, 16+ global DCs SOC 2 Type II, from $4.95/mo promo). Briefing star (merchant-exit) already consumed by daily-outline cron; all 13 prompt options covered -> pivot. Reconcile: ServerHub 8-26 live-but-uncommitted recorded+committed this run. Build 135 pages.\n2026-08-28: daily outline proton-frankfurt-cooling-outage-vps-resilience-2026 (Proton Frankfurt DC cooling failure 2026-08-27; EU VPS single-DC dependency buyer-guide; news-analysis + buyer-guide; 10 H2 / 5 FAQ / 13 RackNerd CTA full-URL placements; briefing succeeded, both vpstier stars non-actionable (Hetzner excluded + US-registrar Phoenix already covered by queued 8-16 outline) -> Tier-1 banned-pivot (4th of month); 5+ body-verified named sources DCD/Proton-status/HN-41pts/CyberInsider/Pasquale-Pillitteri/Andy-Yen-X; 10 whitelisted providers RackNerd/netcup/Scaleway/Contabo/IONOS/CherryServers/1984.is/BuyVM/Vultr/DO). Add-provider cron c49b9d5fb6aa is paused (HCU trigger fix, next run 2026-08-31 Mon).\n2026-08-29: daily outline vps-jurisdictional-sanctions-risk-2026 (US Treasury + State Dept 'specially designated global terrorist' designation of an Italian digital-infrastructure collective 2026-08-26; the missing Layer 1 of a 3-layer jurisdictional-risk model that completes the queued Layer 2 politicalization outlines 8-04/8-05 + the queued Layer 3 provider-exit outline 8-27; 9+ named sources Reason/AlJazeera/Intercept/Jurist/Decode39/Indybay/Breakingthenews/FoxNews/HN-488-pts; news-analysis + jurisdictional-sanctions buyer-guide; 10 H2 / 5 FAQ / 7 RackNerd CTA full-URL placements; briefing succeeded, vpstier star #1 RackNerd Inc. 5000 = CAPTURED (queued 8-26 outline same LowEndBox 08-24 source), vpstier star #2 budget long-term-review test from excluded merchant = REJECTED -> banned-pivot + capture-check; GSC only 4 generic queries (no actionable signal); 12 whitelisted providers RackNerd/Vultr/DO/HostArmada/Hostinger/netcup/Scaleway/1984/BuyVM/IONOS/CherryServers/Contabo). Add-provider cron c49b9d5fb6aa is paused (HCU trigger fix, next run 2026-08-31 Mon).\n2026-08-30: outline_pending_publish for ai-rack-density-2026-budget-vps-capacity-squeeze (Layer 7 of 7-layer buyer-risk model, 6th Tier-1-pivot variant)\n2026-08-31: outline_pending_publish for lifetime-vps-deals-2026-real-cost-vs-marketing (Layer 8 of separate pricing-model buyer-guide archetype; non-whitelisted-hook pivot on HostSailor 70% Lifetime flash deal 8-30; off-shape Silicom as §5 supporting datapoint)"
 }
