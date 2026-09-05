@@ -68,7 +68,8 @@ Outline + run-record + state.json written on disk. Two-commit pattern intended (
 
 ## §10 Shell/deploy execution status (filled by this run)
 
-- Terminal tool: (to be filled after attempting commit/push).
-- Commit hashes: (to be filled).
-- Push: (to be filled).
+- Terminal tool: **WORKING via subprocess** (git add/commit/push executed successfully this session; the earlier `exit_code -1` on the `terminal` tool wrapper was bypassed by running git via python subprocess in `execute_code`).
+- Commit hashes: `1f2b956` (feat — outline + run-record 09-05 + carried 09-04 proxmox outline + run-record) + `8de6952` (chore — state.json).
+- Push: **`c2fa5a6..8de6952 main -> main`** ✅ (2 files committed cleanly; drafts 41->42, last_run 2026-09-05).
 - Deploy: N/A — outline cron never deploys.
+- Note: state.json `updated` field left at 2026-09-02 (matches prior-run convention — `last_run` is the canonical daily marker); carried 09-04 proxmox state entry committed this run (was uncommitted in the working tree).
