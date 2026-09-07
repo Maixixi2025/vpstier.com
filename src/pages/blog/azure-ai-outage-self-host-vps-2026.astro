@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="ChatGPT, Claude & Grok Down: Self-Host Your AI on a VPS" description="ChatGPT, Claude and Grok failed together Sep 3 after an Azure outage; Cursor too. Self-host your agent on a budget VPS to break that shared-AI dependency." canonicalUrl="https://vpstier.com/blog/azure-ai-outage-self-host-vps-2026/" ogType="article" datePublished="2026-09-07">
+
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vpstier.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://vpstier.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "ChatGPT, Claude and Grok Down: Self-Host Your AI on a VPS", "item": "https://vpstier.com/blog/azure-ai-outage-self-host-vps-2026/"}]}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "ChatGPT, Claude and Grok Down: Self-Host Your AI on a VPS", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "author": {"@type": "Organization", "name": "VPSTier.com"}, "publisher": {"@type": "Organization", "name": "VPSTier.com"}}
+  </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will self-hosting really protect me from hosted-AI outages?", "acceptedAnswer": {"@type": "Answer", "text": "For the portion of your work you self-host, yes. An Ollama or agent-runtime process on your own VPS keeps running when OpenAI, Anthropic or xAI have a bad morning, because it does not route through their infrastructure. What it does not give you is the frontier models: a 7B or 8B local model is not Opus 5 or GPT-class quality. The realistic pattern is a hybrid one. Self-host the deterministic parts of your pipeline (retrieval, embedding, summarisation, scheduled jobs, tool execution) and treat the hosted frontier model as one interchangeable backend among several. That way an upstream incident degrades your output quality instead of stopping your work."}}, {"@type": "Question", "name": "What actually caused the September 3, 2026 outage?", "acceptedAnswer": {"@type": "Answer", "text": "No vendor published a confirmed shared root cause. OpenAI filed an incident titled 'Elevated errors across ChatGPT and Codex' that resolved at 16:55 UTC. Anthropic filed 'Elevated errors for multiple models' covering Mythos 5.1, Fable 5.1, Opus 5, Opus 4.8 and Opus 4.6, resolved 16:23 UTC. Cursor filed four separate incidents naming upstream Anthropic, OpenAI and Grok failures. The widely-reported theory was a regional fault in Microsoft Azure, and 9to5Google reported that Microsoft said this was not the case. Treat the Azure link as strong correlation across three vendors in one window, not as an established cause."}}, {"@type": "Question", "name": "Why did Google Gemini survive when the others did not?", "acceptedAnswer": {"@type": "Answer", "text": "Gemini never filed an official outage on Google's service-health dashboard during the window, while OpenAI, Anthropic and Cursor all filed incidents on theirs. Some users did report Gemini problems, and several outlets noted those reports were far less widespread. The structural difference is that Google runs Gemini on its own cloud rather than renting capacity from another hyperscaler. That is the whole lesson of the day in one comparison: an AI product's availability tracks the infrastructure underneath it, not the quality of the model on top."}}, {"@type": "Question", "name": "Is self-hosting my agent worth the effort and cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on whether your AI is a daily driver or an occasional convenience. If you run scheduled agents, coding workflows or customer-facing automation, a 2 GB to 4 GB annual VPS at $35.99 to $59.99 per year removes an entire class of dependency you do not control, and the cost is roughly one month of a hosted AI subscription for a full year of compute. If you open a chat window twice a week, self-hosting is pure overhead and a multi-provider fallback in your client is the cheaper answer. This article includes a decision table rather than a single recommendation, because the honest answer changes with how much you depend on the thing."}}]}
+  </script>
+
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/blog" class="hover:text-orange-400">← Back to Blog</a>
+    </nav>
+
+    <header class="mb-10">
+      <p class="text-sm text-orange-400 font-medium mb-2">Postmortem</p>
+      <h1 class="text-4xl font-bold text-white mb-3">ChatGPT, Claude and Grok Down: Self-Host Your AI on a VPS</h1>
+      <p class="text-gray-400 text-base">Last verified: September 7, 2026 · 11 min read · Last verified 2026-09-07: OpenAI, Anthropic and Cursor status-page incident timestamps for Sep 3 re-read directly from their history feeds; RackNerd annual KVM tiers re-checked live and unchanged at $21.99 / $35.99 / $59.99 / $89.99 / $119.99 per year; reachability probe to api.openai.com and api.anthropic.com re-run from my box (both healthy today)</p>
+    </header>
+
+    <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-5">
+
+      <p>On Thursday September 3, 2026 I lost about ninety minutes of work in a way I had not planned for. My coding agent stopped returning results, so I switched to a chat window in a different tab, and that was broken too. So I tried a third one. Also broken. That was the moment the actual problem became visible: I thought I had three independent AI tools, and what I really had was three front doors into overlapping infrastructure. This article is what I went and checked afterwards, straight from the vendors' own incident histories, and what I changed about where my agent runs. It is a hosting article rather than an AI article, because the failure was a hosting failure.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">What Actually Went Down on September 3, 2026</h2>
+      <p>I did not want to work from headlines on this one, because the headline numbers on outage days come from crowd-sourced report counts and they drift. Status pages are better evidence: they are the vendor admitting, in writing and with timestamps, that their own service was broken. Here is what the four relevant status histories actually say about that day. Every row below was read directly from the vendor's incident history or Atom feed.</p>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 my-6 overflow-x-auto">
+        <p class="text-sm text-gray-400 mb-3"><strong>Artifact 1 — vendor-filed incidents, September 3, 2026, all times UTC (read from official status histories on 2026-09-07):</strong></p>
+        <table class="w-full text-sm text-gray-300">
+          <thead>
+            <tr class="border-b border-gray-700">
+              <th class="text-left py-2">Vendor</th>
+              <th class="text-left py-2">Incident title (as filed)</th>
+              <th class="text-left py-2">First entry</th>
+              <th class="text-left py-2">Resolved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-800"><td class="py-2">Anthropic</td><td class="py-2">Elevated errors for Claude Sonnet 5</td><td class="py-2">12:37</td><td class="py-2">12:56</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Anthropic</td><td class="py-2">Elevated errors for multiple models</td><td class="py-2">13:26</td><td class="py-2">16:23</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Cursor</td><td class="py-2">Investigating service degradation (Grok models, Automations, Cloud Agents, Review Agents)</td><td class="py-2">13:41</td><td class="py-2">17:07</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Cursor</td><td class="py-2">Elevated errors for Anthropic Models</td><td class="py-2">14:17</td><td class="py-2">16:31</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Cursor</td><td class="py-2">Elevated errors for OpenAI Models</td><td class="py-2">15:17</td><td class="py-2">17:05</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">OpenAI</td><td class="py-2">Elevated errors across ChatGPT and Codex</td><td class="py-2">—</td><td class="py-2">16:55</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Cursor</td><td class="py-2">Degraded performance of Grok 4.6</td><td class="py-2">17:42</td><td class="py-2">19:21</td></tr>
+            <tr><td class="py-2">Cursor</td><td class="py-2">Degraded performance for Grok Bot routine triggers</td><td class="py-2">23:42</td><td class="py-2">Sep 4, 00:42</td></tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-gray-500 mt-3">Anthropic's resolution note reads "Impact has ended as of 9:16 PT / 16:16 UTC". 9to5Google's live updates recorded services returning at 8:49 a.m. PT and everything normal by 12:38 p.m. PT. xAI's own status page returned HTTP 403 to my request, so Grok's incident is evidenced here through Cursor's filings and press reports rather than xAI's own feed.</p>
+      </div>
+
+      <p>Read the table as a shape rather than a list. Three model vendors and one agent product filed overlapping incidents inside roughly a six-hour window, on a day none of them had planned maintenance. The Cursor rows are the most interesting ones, and I will come back to them, because Cursor is not a model vendor at all.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">Why Did ChatGPT, Claude and Grok All Fail Together?</h2>
+      <p>The theory that circulated on the day was a regional fault inside Microsoft Azure, the cloud that reportedly carries capacity for all three products. 9to5Google put both halves of that on the record: that the three platforms rely on Azure for cloud services, with other providers including Google in the mix, and that <strong>Microsoft says this is not the case</strong>. I went looking for a Microsoft post-incident review dated September 3 in Azure's own status history and did not find one in the default view. So I am not going to tell you Azure caused this, because no vendor has published that.</p>
+      <p>What I will say is that the correlation is the story regardless of which specific component failed. Three vendors who compete with each other, who have separate engineering teams, separate release schedules and separate on-call rotations, degraded inside the same window on the same afternoon. Either that is a coincidence at a scale worth betting against, or there is shared infrastructure underneath the competition. For someone deciding where to run their own workload, both readings lead to the same conclusion: the independence you assume you have across AI vendors is not independence you have verified.</p>
+      <p>Want to stop depending on a cloud core you do not control? An annual KVM box is the cheapest independent base for your own agent — <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">RackNerd's annual plans start at $21.99/yr</a> and the cost of the experiment is roughly one month of a hosted AI subscription.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">Gemini Stayed Up, and That Is the Tell</h2>
+      <p>Google's Gemini did not file an official outage on Google's service-health dashboard during the window. Some users reported problems and several outlets noted those reports were far less widespread than the ones hitting ChatGPT, so I am not claiming Gemini had a flawless afternoon. What I am pointing at is the structural difference: Google runs Gemini on Google's own cloud rather than renting capacity from a competitor's hyperscaler.</p>
+      <p>This is a cleaner natural experiment than anything I could have designed. Four AI products, similar workloads, similar scale of demand, one afternoon. The ones sharing infrastructure went down together. The one running on infrastructure its own company operates did not file an incident. Model quality had nothing to do with it. Availability followed the infrastructure, and that is the only variable that moved.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">The Single Point of Failure You Inherit With Hosted AI</h2>
+      <p>Now back to those Cursor rows, because they are the part that changed my thinking. Cursor is not OpenAI, Anthropic or xAI. It is an independent product with its own engineering team and its own infrastructure. On September 3 it filed four separate incidents, and the titles name the cause each time: upstream Anthropic errors, upstream OpenAI errors, Grok model degradation. Cursor did nothing wrong that day. It went down because the things it depends on went down.</p>
+      <p>That is dependency inheritance, and it is transitive in a way most of us do not audit. You pick an agent product because it is good. It routes to model vendors you did not pick. Those vendors run on infrastructure you cannot see. When something three layers down has a bad afternoon, your workflow stops and the vendor you actually pay has no ability to fix it for you. Multi-model routing in your client does not fully solve this either — if your fallback models sit on the same infrastructure as your primary, you have configured the appearance of redundancy without the substance.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">Option A: Keep Hosted AI, Engineer Around the Outage</h2>
+      <p>I want to be fair to the option most readers will and probably should choose. If your AI usage is interactive and occasional, the correct response to September 3 is not to build infrastructure. It is to configure a fallback and get on with your day.</p>
+      <p>Practically: keep credentials for at least two model vendors whose infrastructure differs, put a router in front of them so a 5xx from one fails over rather than surfacing to you, and make sure your fallback is not on the same cloud as your primary — which, per the day's evidence, means checking rather than assuming. Google's own-cloud position makes Gemini a genuinely useful diversity pick for a fallback slot for exactly that reason. This path costs you an afternoon of configuration and no monthly spend, and for a lot of people that is the whole correct answer.</p>
+      <p>Even if you stay hosted, a cheap box is worth having as a landing pad for the pipeline parts that do not need a frontier model. <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">A $21.99/yr RackNerd instance</a> is about the cheapest insurance in this category.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">Option B: Self-Host the Agent on a VPS You Control</h2>
+      <p>The other path is to move the parts of your pipeline that do not need frontier intelligence onto a box whose uptime is your problem. This is narrower than "replace ChatGPT", and the narrowness is what makes it work. A 7B or 8B local model will not match Opus 5 on hard reasoning. It will comfortably handle classification, extraction, summarisation, embedding, retrieval, scheduled jobs and tool execution — which in my own pipeline is most of the token volume and nearly all of the scheduled work.</p>
+      <p>The reachability check below is the one I now run before assuming an upstream problem is mine. It takes seconds and separates "the vendor is down" from "my code is broken", which on September 3 I wasted twenty minutes conflating.</p>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 my-6 overflow-x-auto">
+        <p class="text-sm text-gray-400 mb-3"><strong>Artifact 2 — upstream reachability probe, run from my box on 2026-09-07:</strong></p>
+        <pre class="text-xs text-gray-300 overflow-x-auto"><code>$ for u in https://api.openai.com/v1/models https://api.anthropic.com/v1/messages; do
+    curl -s -o /dev/null -w "%&#123;http_code&#125; tls=%&#123;time_appconnect&#125;s ttfb=%&#123;time_starttransfer&#125;s $u\n" --max-time 25 "$u"
+  done
+
+401 tls=0.011767s ttfb=0.258603s https://api.openai.com/v1/models
+405 tls=0.012940s ttfb=0.020160s https://api.anthropic.com/v1/messages</code></pre>
+        <p class="text-xs text-gray-500 mt-3">401 and 405 are the healthy answers here: unauthenticated and wrong-method respectively, which means TLS completed and the API answered. A hung TLS handshake, a timeout, or a 5xx is the signal that the problem is upstream and not in your code. On the same run, ping RTT was 2.26 ms average to api.openai.com, 3.02 ms to api.anthropic.com and 7.69 ms to racknerd.com — all five packets returned on each, so nothing on my side was degraded when I took these numbers.</p>
+      </div>
+
+      <p>The deployment itself is well-trodden ground and I am not going to re-derive it here — our <a href="/blog/ai-agent-vps-api-guide/" class="text-orange-400 hover:text-orange-300">AI agent VPS and API guide</a> walks through the Ollama-on-Ubuntu install, and <a href="/blog/cheap-vps-local-llm-inference-2026/" class="text-orange-400 hover:text-orange-300">cheap VPS for local LLM inference</a> covers what a 7B to 8B model actually needs from the hardware. <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">RackNerd annual plans from $21.99/yr</a> give you a box that keeps running on the afternoons when the hosted stack does not.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">What Self-Hosting Does Not Fix</h2>
+      <p>I would rather lose you here than oversell this. Self-hosting trades a dependency you cannot control for a workload you have to carry yourself, and that trade is genuinely wrong for some readers. Here is the honest split.</p>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 my-6 overflow-x-auto">
+        <p class="text-sm text-gray-400 mb-3"><strong>Decision table — what each path actually gives you:</strong></p>
+        <table class="w-full text-sm text-gray-300">
+          <thead>
+            <tr class="border-b border-gray-700">
+              <th class="text-left py-2">Dimension</th>
+              <th class="text-left py-2">Hosted AI + multi-vendor fallback</th>
+              <th class="text-left py-2">Self-hosted agent on your VPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-800"><td class="py-2">Frontier model quality</td><td class="py-2">Yes — best available</td><td class="py-2">No — 7B/8B class locally</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Exposure to a shared-cloud event</td><td class="py-2">Yes, unless fallbacks differ by infrastructure</td><td class="py-2">No for the self-hosted portion</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Who owns uptime</td><td class="py-2">The vendor (you wait)</td><td class="py-2">You (you can act)</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Ops burden</td><td class="py-2">Near zero</td><td class="py-2">Real — patching, monitoring, restarts</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Cost shape</td><td class="py-2">Per-token, scales with use</td><td class="py-2">Fixed annual, predictable</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">Data residency control</td><td class="py-2">Vendor policy</td><td class="py-2">Your box, your jurisdiction</td></tr>
+            <tr><td class="py-2">Right for</td><td class="py-2">Occasional chat, no ops appetite</td><td class="py-2">Daily-driver agents, scheduled jobs, custom pipelines</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>If that table lands you on the self-host side, transparent annual pricing is what makes the experiment cheap enough to just try — which is where <a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">RackNerd's annual tiers</a> fit. If it lands you on the hosted side, close the tab and go configure a fallback instead; that is a real answer and it costs you nothing.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">Picking a Budget VPS for an Always-On AI Agent</h2>
+      <p>Sizing first, because it is where money gets wasted. An agent process that orchestrates tool calls and holds context is comfortable in 1 GB to 2 GB. Adding a local 7B to 8B model at 4-bit quantisation pushes you to 4 GB as the realistic floor, 6 GB to 8 GB if you want headroom for concurrent requests. The plans below were re-read from the vendors on the dates noted.</p>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 my-6 overflow-x-auto">
+        <p class="text-sm text-gray-400 mb-3"><strong>RackNerd annual KVM tiers — re-verified live on 2026-09-07, unchanged from the August check:</strong></p>
+        <table class="w-full text-sm text-gray-300">
+          <thead>
+            <tr class="border-b border-gray-700">
+              <th class="text-left py-2">Plan</th>
+              <th class="text-left py-2">vCPU</th>
+              <th class="text-left py-2">RAM</th>
+              <th class="text-left py-2">SSD</th>
+              <th class="text-left py-2">Transfer</th>
+              <th class="text-left py-2">Price</th>
+              <th class="text-left py-2">Agent fit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-800"><td class="py-2">1 GB KVM</td><td class="py-2">1 core</td><td class="py-2">1 GB</td><td class="py-2">20 GB</td><td class="py-2">3 TB/mo</td><td class="py-2">$21.99/yr</td><td class="py-2">Agent runtime, API-backed only</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">2 GB KVM</td><td class="py-2">2 cores</td><td class="py-2">2 GB</td><td class="py-2">35 GB</td><td class="py-2">5 TB/mo</td><td class="py-2">$35.99/yr</td><td class="py-2">Agent + scheduled jobs (sweet spot)</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">4 GB KVM</td><td class="py-2">3 cores</td><td class="py-2">4 GB</td><td class="py-2">60 GB</td><td class="py-2">7 TB/mo</td><td class="py-2">$59.99/yr</td><td class="py-2">Local 7B/8B at 4-bit, floor</td></tr>
+            <tr class="border-b border-gray-800"><td class="py-2">6 GB KVM</td><td class="py-2">6 cores</td><td class="py-2">6 GB</td><td class="py-2">100 GB</td><td class="py-2">12 TB/mo</td><td class="py-2">$89.99/yr</td><td class="py-2">Local model with real headroom</td></tr>
+            <tr><td class="py-2">8 GB KVM</td><td class="py-2">7 cores</td><td class="py-2">8 GB</td><td class="py-2">150 GB</td><td class="py-2">20 TB/mo</td><td class="py-2">$119.99/yr</td><td class="py-2">Concurrent requests, larger context</td></tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-gray-500 mt-3">All tiers: 1 Gbps port, full root access, 1 IPv4, KVM on SolusVM, multiple US and EU locations. Note the vCPU curve is not linear with RAM — the 6 GB plan doubles the cores of the 4 GB plan, which matters more than the extra 2 GB if you are CPU-bound on inference.</p>
+      </div>
+
+      <p>The alternatives worth knowing, all whitelisted on this site: <a href="/vps/vultr/" class="text-orange-400 hover:text-orange-300">Vultr</a> from around $2.50/mo hourly across 13 locations, which is the right pick when you want to spin an inference box up and down rather than run it all year; <a href="/vps/digitalocean/" class="text-orange-400 hover:text-orange-300">DigitalOcean</a> from around $4/mo for the cleanest API and docs if you are automating provisioning; <a href="/vps/hostinger/" class="text-orange-400 hover:text-orange-300">Hostinger</a> from $1.99/mo intro on NVMe, with the renewal caveat we document in the <a href="/blog/vps-pricing-trap-guide-2026/" class="text-orange-400 hover:text-orange-300">VPS pricing traps guide</a>; and <a href="/vps/kamatera/" class="text-orange-400 hover:text-orange-300">Kamatera</a> from around $4/thread when you want dedicated cores for heavier local inference. RackNerd's annual tiers are the ones I actually keep running year-round, because a box that exists specifically to survive someone else's outage should not itself have a billing surprise.</p>
+      <p><a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">The 1 GB at $21.99/yr and 2 GB at $35.99/yr</a> are the standard always-on agent boxes; step to 4 GB when you add a local model.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">How to Break the Shared-Backend Habit This Weekend</h2>
+      <p>Concretely, in the order I would do it, and none of it takes a full day:</p>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-300">
+        <li><strong>Audit what you actually depend on.</strong> List the AI tools in your daily workflow and write down which model vendor each one routes to. The Cursor lesson is that the product name on your invoice is not the dependency. Most people find fewer independent vendors than they expected.</li>
+        <li><strong>Add a genuinely diverse fallback.</strong> Configure a second model vendor whose infrastructure differs from your primary, and confirm the difference rather than assuming it. This alone would have salvaged part of September 3 for me.</li>
+        <li><strong>Take an annual box.</strong> A 2 GB tier is enough to start; 4 GB if you know you want a local model on day one. Annual pricing here is deliberate — you want the resilience layer to be a fixed line item, not something that lapses.</li>
+        <li><strong>Move the deterministic work over.</strong> Scheduled jobs, retrieval, embedding, extraction, tool execution. Anything that does not need frontier reasoning. Follow the Ollama and Ubuntu steps in the <a href="/blog/ai-agent-vps-api-guide/" class="text-orange-400 hover:text-orange-300">agent VPS guide</a>.</li>
+        <li><strong>Save the probe as a script.</strong> Artifact 2 above, in a file you can run in five seconds. Knowing within seconds whether the failure is yours or theirs is worth more on an outage day than any architecture diagram.</li>
+        <li><strong>Back the box up somewhere else.</strong> A self-hosted single point of failure is still a single point of failure. Our <a href="/blog/digitalocean-outage-august-2026/" class="text-orange-400 hover:text-orange-300">DigitalOcean outage postmortem</a> lays out a 4-tier fallback framework, and <a href="/blog/2026-shutdown-cloud-services-vps-migration/" class="text-orange-400 hover:text-orange-300">the cloud-shutdown migration guide</a> covers getting your data out when a provider exits.</li>
+      </ol>
+      <p><a href="https://my.racknerd.com/aff.php?aff=16299" class="text-orange-400 hover:text-orange-300" rel="nofollow sponsored">Spin up a box and do step 4 before the next outage</a> makes the argument for you at a worse moment.</p>
+
+      <h2 class="text-2xl font-bold text-white mt-10 mb-4">FAQ and Bottom Line</h2>
+
+      <p><strong>Will self-hosting really protect me from hosted-AI outages?</strong> For the portion you self-host, yes — a local model on your own box does not route through OpenAI, Anthropic or xAI. What it will not give you is frontier quality, so the realistic pattern is hybrid: self-host the deterministic work, treat the frontier model as one interchangeable backend. An upstream incident then degrades your output instead of stopping your work.</p>
+
+      <p><strong>What actually caused the September 3, 2026 outage?</strong> No vendor published a confirmed shared root cause. OpenAI, Anthropic and Cursor each filed their own incidents in the same window; the widely-reported theory was a regional Azure fault, and 9to5Google reported Microsoft saying that was not the case. Strong correlation across three competitors, not an established cause.</p>
+
+      <p><strong>Why did Gemini survive?</strong> It filed no official outage on Google's dashboard while the others filed on theirs, and it runs on Google's own cloud rather than rented capacity. Some users did report issues, and outlets noted those reports were much less widespread. The takeaway is that availability tracked infrastructure, not model quality.</p>
+
+      <p><strong>Is self-hosting worth the effort?</strong> If AI is a daily driver — coding agents, scheduled automation, customer-facing workflows — then $35.99 to $59.99 a year removes a dependency class you do not control, roughly one month of a hosted subscription for twelve months of compute. If you use a chat window twice a week, it is overhead and a fallback config is the better answer.</p>
+
+      <p><strong>Bottom line.</strong> September 3 was not really an AI story. Three competing vendors and one independent agent product filed overlapping incidents in one afternoon while the one running on its own company's cloud did not, and that pattern is a hosting fact rather than a model fact. You cannot fix someone else's infrastructure and you will not get advance warning of the next event. What you can do is make sure the part of your workflow you cannot afford to lose runs somewhere you can reach, restart and reason about. For about the price of one month of a hosted AI subscription, that is a year of a box that is yours.</p>
+
+      <p class="text-center my-10">
+        <a href="https://my.racknerd.com/aff.php?aff=16299" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg" rel="nofollow sponsored">Get a RackNerd annual VPS from $21.99/yr →</a>
+      </p>
+
+      <p class="text-sm text-gray-500 mt-8">Sources read directly on 2026-09-07: status.openai.com/history and its Atom feed; status.anthropic.com/history and its Atom feed; status.cursor.com/history and its Atom feed; azure.status.microsoft status history (no September 3 post-incident review present in the default view); 9to5Google's September 3 report by Ben Schoon, which carries both the Azure attribution theory and Microsoft's denial; corroborating coverage from Smartprix, NewsBytes, Times Now, Startup Fortune and FinanceFeeds. xAI's status page returned HTTP 403 to my request, so Grok's incident is evidenced here via Cursor's filings and press reports rather than xAI's own feed. Crowd-sourced peak report counts circulating that day are deliberately omitted: I could not verify the specific figures against a primary source, and the vendor-filed timestamps above are stronger evidence anyway. RackNerd pricing and specifications re-read from the live specials page on 2026-09-07. Disclosure: RackNerd links on this page are affiliate links; the pricing quoted is the public rate and is not affected by them.</p>
+
+    </div>
+  </section>
+</BaseLayout>
