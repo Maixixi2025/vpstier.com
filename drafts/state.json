@@ -1803,7 +1803,7 @@
   "drafts": [
     {
       "date": "2026-10-11",
-      "status": "outline_pending_user_approval",
+      "status": "superseded_do_not_publish",
       "slug": "webdock-vps-review-2026",
       "title": "Webdock VPS Review 2026: Budget AI Containers with SSH Workspaces",
       "title_en": "Webdock VPS Review 2026: Budget AI Containers with SSH Workspaces",
@@ -1821,7 +1821,9 @@
       "racknerd_cta": 8,
       "cross_links_planned": 9,
       "banned_merchant_zero": "0/0 (verified across outline + run-record)",
-      "cjk_zero": "0/0 (verified)"
+      "cjk_zero": "0/0 (verified)",
+      "superseded_reason": "AUDIT 2026-10-29 - 6 defects: (1) names the excluded merchant 2x (FAQ #4, plus the self-check row that describes the check); (2) 8 CJK characters in the section headings, violating the English-only policy; (3) the state.json title is 65 chars, over the 60-char gate (the outline file's own Title field is 46); (4) 5 of 9 cross-link targets do not exist on disk (cheap-vps-under-5-2026, webdock, vps-vs-dedicated-server-decision-guide, vps-for-ai-agents-api-guide, vps-for-kubernetes-vs-vm-2026); (5) the self-check row claims '0 hits' for the excluded merchant while the document contains 2 - the check was never actually run; (6) the slug webdock-vps-review-2026 is ALREADY PUBLISHED (2026-07-21, 'Webdock VPS Review 2026: Own Denmark DC + GDPR from EUR 2.15/mo'), so publishing this would create a duplicate URL. Retained for the record; NOT to be published.",
+      "audited_on": "2026-10-29"
     },
     {
       "slug": "siteground-vps-review-2026",
